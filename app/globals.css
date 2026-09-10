@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #07080b;
+  --foreground: #f8fafc;
+  --font-inter: var(--font-inter), system-ui, -apple-system, sans-serif;
+  --font-jetbrains-mono: var(--font-jetbrains-mono), 'JetBrains Mono', 'Fira Code', monospace;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: #07080b;
+  color: #e2e8f0;
+  font-family: var(--font-inter);
+  font-size: 1rem;
+  line-height: 1.6;
+  overflow-x: hidden;
+  selection-background-color: rgba(239, 68, 68, 0.35);
+  selection-color: #ffffff;
+}
+
+::selection {
+  background: rgba(239, 68, 68, 0.4);
+  color: #ffffff;
+}
+
+/* Subtle archival film grain */
+.bg-grain {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+/* Atmospheric grid lines */
+.bg-archival-grid {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+}
+
+/* Scanline animation */
+.scanline-overlay {
+  position: relative;
+  overflow: hidden;
+}
+.scanline-overlay::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.03), rgba(0, 255, 0, 0.01), rgba(0, 0, 255, 0.03));
+  z-index: 20;
+  background-size: 100% 3px, 6px 100%;
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+/* Custom Archival Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #07080b;
+}
+::-webkit-scrollbar-thumb {
+  background: #1c202e;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #272c3d;
+}
+
+/* Tombstone card subtle illumination */
+.grave-card {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  background: rgba(13, 15, 21, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.grave-card:hover {
+  border-color: rgba(255, 255, 255, 0.22);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px -10px rgba(0, 0, 0, 0.8), 0 0 20px -5px rgba(255, 255, 255, 0.05);
+}
+
+/* Glow helpers */
+.glow-red {
+  box-shadow: 0 0 25px rgba(239, 68, 68, 0.25);
+}
+.glow-amber {
+  box-shadow: 0 0 25px rgba(245, 158, 11, 0.25);
+}
+.glow-emerald {
+  box-shadow: 0 0 25px rgba(16, 185, 129, 0.25);
+}
