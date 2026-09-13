@@ -13,7 +13,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen.svg?style=for-the-badge)](CONTRIBUTING.md)
 
-[**Explore Live Grounds**](http://localhost:3000) • [**Audio Vault**](http://localhost:3000/sounds) • [**Autopsy Rivals**](http://localhost:3000/compare) • [**Sunset Gazette**](http://localhost:3000/gazette) • [**Cemetery Map**](http://localhost:3000/grounds)
+[**Explore Live Grounds**](https://internet-graveyard-seven.vercel.app/) • [**Audio Vault**](https://internet-graveyard-seven.vercel.app/sounds) • [**Autopsy Rivals**](https://internet-graveyard-seven.vercel.app/compare) • [**Sunset Gazette**](https://internet-graveyard-seven.vercel.app/gazette) • [**Cemetery Map**](https://internet-graveyard-seven.vercel.app/grounds)
 
 ---
 
