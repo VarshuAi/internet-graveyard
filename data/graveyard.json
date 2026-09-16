@@ -3109,7 +3109,11 @@
       "verified_at": "2017-12-31T00:00:00Z",
       "created_at": "2024-01-01T00:00:00Z",
       "updated_at": "2024-01-01T00:00:00Z",
-      "related_slugs": [],
+      "related_slugs": [
+        "secret",
+        "formspring",
+        "bebo"
+      ],
       "last_known_state": {
         "website": {
           "status_code": 404,
@@ -3399,7 +3403,11 @@
       "verified_at": "2013-12-31T00:00:00Z",
       "created_at": "2024-01-01T00:00:00Z",
       "updated_at": "2024-01-01T00:00:00Z",
-      "related_slugs": [],
+      "related_slugs": [
+        "lycos",
+        "ask-jeeves",
+        "yahoo-directory"
+      ],
       "last_known_state": {
         "website": {
           "status_code": 404,
@@ -3658,7 +3666,11 @@
       "verified_at": "2018-12-31T00:00:00Z",
       "created_at": "2024-01-01T00:00:00Z",
       "updated_at": "2024-01-01T00:00:00Z",
-      "related_slugs": [],
+      "related_slugs": [
+        "gowalla",
+        "dailybooth",
+        "secret"
+      ],
       "last_known_state": {
         "website": {
           "status_code": 404,
@@ -3917,7 +3929,11 @@
       "verified_at": "2017-12-31T00:00:00Z",
       "created_at": "2024-01-01T00:00:00Z",
       "updated_at": "2024-01-01T00:00:00Z",
-      "related_slugs": [],
+      "related_slugs": [
+        "yahoo-directory",
+        "dmoz",
+        "digg-v4"
+      ],
       "last_known_state": {
         "website": {
           "status_code": 404,
@@ -4194,7 +4210,11 @@
       "verified_at": "2015-12-31T00:00:00Z",
       "created_at": "2024-01-01T00:00:00Z",
       "updated_at": "2024-01-01T00:00:00Z",
-      "related_slugs": [],
+      "related_slugs": [
+        "myspace",
+        "bebo",
+        "orkut"
+      ],
       "last_known_state": {
         "website": {
           "status_code": 404,
@@ -4651,7 +4671,11 @@
       "verified_at": "2006-12-31T00:00:00Z",
       "created_at": "2024-01-01T00:00:00Z",
       "updated_at": "2024-01-01T00:00:00Z",
-      "related_slugs": [],
+      "related_slugs": [
+        "altavista",
+        "lycos",
+        "yahoo-directory"
+      ],
       "last_known_state": {
         "website": {
           "status_code": 404,
@@ -4920,7 +4944,11 @@
       "verified_at": "2013-12-31T00:00:00Z",
       "created_at": "2024-01-01T00:00:00Z",
       "updated_at": "2024-01-01T00:00:00Z",
-      "related_slugs": [],
+      "related_slugs": [
+        "songza",
+        "audiogalaxy",
+        "grooveshark"
+      ],
       "last_known_state": {
         "website": {
           "status_code": 404,
@@ -5043,7 +5071,11 @@
       "verified_at": "2016-12-31T00:00:00Z",
       "created_at": "2024-01-01T00:00:00Z",
       "updated_at": "2024-01-01T00:00:00Z",
-      "related_slugs": [],
+      "related_slugs": [
+        "periscope",
+        "houseparty",
+        "vine"
+      ],
       "last_known_state": {
         "website": {
           "status_code": 404,
@@ -5166,7 +5198,11 @@
       "verified_at": "2010-12-31T00:00:00Z",
       "created_at": "2024-01-01T00:00:00Z",
       "updated_at": "2024-01-01T00:00:00Z",
-      "related_slugs": [],
+      "related_slugs": [
+        "delicious",
+        "gawker",
+        "google-reader"
+      ],
       "last_known_state": {
         "website": {
           "status_code": 404,
@@ -5289,7 +5325,11 @@
       "verified_at": "2023-12-31T00:00:00Z",
       "created_at": "2024-01-01T00:00:00Z",
       "updated_at": "2024-01-01T00:00:00Z",
-      "related_slugs": [],
+      "related_slugs": [
+        "quibi",
+        "turntable-fm",
+        "songza"
+      ],
       "last_known_state": {
         "website": {
           "status_code": 404,
@@ -5412,7 +5452,11 @@
       "verified_at": "2014-12-31T00:00:00Z",
       "created_at": "2024-01-01T00:00:00Z",
       "updated_at": "2024-01-01T00:00:00Z",
-      "related_slugs": [],
+      "related_slugs": [
+        "dmoz",
+        "altavista",
+        "lycos"
+      ],
       "last_known_state": {
         "website": {
           "status_code": 404,
@@ -5495,6 +5539,22 @@
           "status": "APPROVED",
           "created_at": "2024-01-10T12:00:00Z"
         }
+      ],
+      "successors": [
+        {
+          "id": "succ-ydir-1",
+          "entity_id": "grave-ydir-031",
+          "name": "Google Search",
+          "relationship_type": "Direct Successor",
+          "description": "Automated web crawlers and PageRank rendered human-curated taxonomy directories extinct."
+        },
+        {
+          "id": "succ-ydir-2",
+          "entity_id": "grave-ydir-031",
+          "name": "Wikipedia",
+          "relationship_type": "Spiritual Successor",
+          "description": "Crowdsourced encyclopedia organizing knowledge about every notable website, entity, and topic on Earth."
+        }
       ]
     },
     {
@@ -5525,7 +5585,11 @@
       "verified_at": "2017-12-31T00:00:00Z",
       "created_at": "2024-01-01T00:00:00Z",
       "updated_at": "2024-01-01T00:00:00Z",
-      "related_slugs": [],
+      "related_slugs": [
+        "yahoo-directory",
+        "altavista",
+        "delicious"
+      ],
       "last_known_state": {
         "website": {
           "status_code": 404,
@@ -5608,6 +5672,15 @@
           "status": "APPROVED",
           "created_at": "2024-01-10T12:00:00Z"
         }
+      ],
+      "successors": [
+        {
+          "id": "succ-dmoz-1",
+          "entity_id": "grave-dmoz-032",
+          "name": "Wikidata & Wikipedia",
+          "relationship_type": "Spiritual Successor",
+          "description": "Open structured collaborative data ontologies maintained by global volunteers."
+        }
       ]
     },
     {
@@ -5638,7 +5711,11 @@
       "verified_at": "2017-12-31T00:00:00Z",
       "created_at": "2024-01-01T00:00:00Z",
       "updated_at": "2024-01-01T00:00:00Z",
-      "related_slugs": [],
+      "related_slugs": [
+        "icq",
+        "msn-messenger",
+        "yahoo-messenger"
+      ],
       "last_known_state": {
         "website": {
           "status_code": 404,
@@ -5721,6 +5798,22 @@
           "status": "APPROVED",
           "created_at": "2024-01-10T12:00:00Z"
         }
+      ],
+      "successors": [
+        {
+          "id": "succ-aim-1",
+          "entity_id": "grave-aim-033",
+          "name": "Discord",
+          "relationship_type": "Spiritual Successor",
+          "description": "Modern social messaging, custom statuses, persistent buddy lounges, and voice channels."
+        },
+        {
+          "id": "succ-aim-2",
+          "entity_id": "grave-aim-033",
+          "name": "Apple iMessage",
+          "relationship_type": "Inherited Audience",
+          "description": "Native mobile SMS and blue-bubble instant messaging across all iOS devices."
+        }
       ]
     },
     {
@@ -5751,7 +5844,11 @@
       "verified_at": "2018-12-31T00:00:00Z",
       "created_at": "2024-01-01T00:00:00Z",
       "updated_at": "2024-01-01T00:00:00Z",
-      "related_slugs": [],
+      "related_slugs": [
+        "aim",
+        "msn-messenger",
+        "icq"
+      ],
       "last_known_state": {
         "website": {
           "status_code": 404,
@@ -5834,6 +5931,15 @@
           "status": "APPROVED",
           "created_at": "2024-01-10T12:00:00Z"
         }
+      ],
+      "successors": [
+        {
+          "id": "succ-ym-1",
+          "entity_id": "grave-ym-034",
+          "name": "WhatsApp",
+          "relationship_type": "Inherited Audience",
+          "description": "Became the dominant cross-platform messaging application in international markets where Yahoo ruled."
+        }
       ]
     },
     {
@@ -5864,7 +5970,11 @@
       "verified_at": "2022-12-31T00:00:00Z",
       "created_at": "2024-01-01T00:00:00Z",
       "updated_at": "2024-01-01T00:00:00Z",
-      "related_slugs": [],
+      "related_slugs": [
+        "google-hangouts",
+        "google-allo",
+        "aim"
+      ],
       "last_known_state": {
         "website": {
           "status_code": 404,
@@ -5947,6 +6057,15 @@
           "status": "APPROVED",
           "created_at": "2024-01-10T12:00:00Z"
         }
+      ],
+      "successors": [
+        {
+          "id": "succ-gtalk-1",
+          "entity_id": "grave-gtalk-035",
+          "name": "Google Chat",
+          "relationship_type": "Direct Successor",
+          "description": "Google enterprise and consumer workspace messaging service embedded directly inside Gmail."
+        }
       ]
     },
     {
@@ -5977,7 +6096,11 @@
       "verified_at": "2019-12-31T00:00:00Z",
       "created_at": "2024-01-01T00:00:00Z",
       "updated_at": "2024-01-01T00:00:00Z",
-      "related_slugs": [],
+      "related_slugs": [
+        "google-talk",
+        "google-hangouts",
+        "secret"
+      ],
       "last_known_state": {
         "website": {
           "status_code": 404,
@@ -6060,6 +6183,15 @@
           "status": "APPROVED",
           "created_at": "2024-01-10T12:00:00Z"
         }
+      ],
+      "successors": [
+        {
+          "id": "succ-allo-1",
+          "entity_id": "grave-allo-036",
+          "name": "Google Messages (RCS)",
+          "relationship_type": "Direct Successor",
+          "description": "Google shifted AI features and modern messaging protocols directly into Android native RCS texting."
+        }
       ]
     },
     {
@@ -6090,7 +6222,11 @@
       "verified_at": "2022-12-31T00:00:00Z",
       "created_at": "2024-01-01T00:00:00Z",
       "updated_at": "2024-01-01T00:00:00Z",
-      "related_slugs": [],
+      "related_slugs": [
+        "google-talk",
+        "google-allo",
+        "skype"
+      ],
       "last_known_state": {
         "website": {
           "status_code": 404,
@@ -6173,6 +6309,15 @@
           "status": "APPROVED",
           "created_at": "2024-01-10T12:00:00Z"
         }
+      ],
+      "successors": [
+        {
+          "id": "succ-hangouts-1",
+          "entity_id": "grave-hangouts-037",
+          "name": "Google Meet",
+          "relationship_type": "Direct Successor",
+          "description": "Dedicated cloud video conferencing platform for business and educational collaboration."
+        }
       ]
     },
     {
@@ -6203,7 +6348,11 @@
       "verified_at": "2019-12-31T00:00:00Z",
       "created_at": "2024-01-01T00:00:00Z",
       "updated_at": "2024-01-01T00:00:00Z",
-      "related_slugs": [],
+      "related_slugs": [
+        "aim",
+        "yahoo-messenger",
+        "msn-messenger"
+      ],
       "last_known_state": {
         "website": {
           "status_code": 404,
@@ -6286,6 +6435,15 @@
           "status": "APPROVED",
           "created_at": "2024-01-10T12:00:00Z"
         }
+      ],
+      "successors": [
+        {
+          "id": "succ-bbm-1",
+          "entity_id": "grave-bbm-038",
+          "name": "WhatsApp",
+          "relationship_type": "Inherited Audience",
+          "description": "Cross-platform push messaging captured the millions of teens and professionals who dumped BlackBerry PINs."
+        }
       ]
     },
     {
@@ -6316,7 +6474,11 @@
       "verified_at": "2019-12-31T00:00:00Z",
       "created_at": "2024-01-01T00:00:00Z",
       "updated_at": "2024-01-01T00:00:00Z",
-      "related_slugs": [],
+      "related_slugs": [
+        "google-talk",
+        "aim",
+        "skiff"
+      ],
       "last_known_state": {
         "website": {
           "status_code": 404,
@@ -6399,6 +6561,15 @@
           "status": "APPROVED",
           "created_at": "2024-01-10T12:00:00Z"
         }
+      ],
+      "successors": [
+        {
+          "id": "succ-hipchat-1",
+          "entity_id": "grave-hipchat-039",
+          "name": "Slack",
+          "relationship_type": "Direct Successor",
+          "description": "Atlassian partnered with Slack in 2018, shuttering HipChat and migrating its user base to Slack."
+        }
       ]
     },
     {
@@ -6429,7 +6600,11 @@
       "verified_at": "2015-12-31T00:00:00Z",
       "created_at": "2024-01-01T00:00:00Z",
       "updated_at": "2024-01-01T00:00:00Z",
-      "related_slugs": [],
+      "related_slugs": [
+        "formspring",
+        "yik-yak",
+        "path"
+      ],
       "last_known_state": {
         "website": {
           "status_code": 404,
@@ -6512,6 +6687,15 @@
           "status": "APPROVED",
           "created_at": "2024-01-10T12:00:00Z"
         }
+      ],
+      "successors": [
+        {
+          "id": "succ-secret-1",
+          "entity_id": "grave-secret-040",
+          "name": "Blind",
+          "relationship_type": "Spiritual Successor",
+          "description": "Verified anonymous workplace network where employees discuss compensation, layoffs, and executive leadership."
+        }
       ]
     },
     {
@@ -6542,7 +6726,11 @@
       "verified_at": "2011-12-31T00:00:00Z",
       "created_at": "2024-01-01T00:00:00Z",
       "updated_at": "2024-01-01T00:00:00Z",
-      "related_slugs": [],
+      "related_slugs": [
+        "friendfeed",
+        "google-plus",
+        "posterous"
+      ],
       "last_known_state": {
         "website": {
           "status_code": 404,
@@ -6625,6 +6813,15 @@
           "status": "APPROVED",
           "created_at": "2024-01-10T12:00:00Z"
         }
+      ],
+      "successors": [
+        {
+          "id": "succ-buzz-1",
+          "entity_id": "grave-buzz-041",
+          "name": "Google+",
+          "relationship_type": "Direct Successor",
+          "description": "Google consolidated social efforts into Circles and Google+ following the Buzz privacy disaster."
+        }
       ]
     },
     {
@@ -6655,7 +6852,11 @@
       "verified_at": "2015-12-31T00:00:00Z",
       "created_at": "2024-01-01T00:00:00Z",
       "updated_at": "2024-01-01T00:00:00Z",
-      "related_slugs": [],
+      "related_slugs": [
+        "google-buzz",
+        "artifact",
+        "posterous"
+      ],
       "last_known_state": {
         "website": {
           "status_code": 404,
@@ -6738,6 +6939,15 @@
           "status": "APPROVED",
           "created_at": "2024-01-10T12:00:00Z"
         }
+      ],
+      "successors": [
+        {
+          "id": "succ-ff-1",
+          "entity_id": "grave-ff-042",
+          "name": "Facebook News Feed",
+          "relationship_type": "Direct Successor",
+          "description": "Facebook acquired FriendFeed in 2009, adopting its real-time feed architecture and the iconic \"Like\" button."
+        }
       ]
     },
     {
@@ -6768,7 +6978,11 @@
       "verified_at": "2016-12-31T00:00:00Z",
       "created_at": "2024-01-01T00:00:00Z",
       "updated_at": "2024-01-01T00:00:00Z",
-      "related_slugs": [],
+      "related_slugs": [
+        "audiogalaxy",
+        "purevolume",
+        "rdio"
+      ],
       "last_known_state": {
         "website": {
           "status_code": 404,
@@ -6851,6 +7065,15 @@
           "status": "APPROVED",
           "created_at": "2024-01-10T12:00:00Z"
         }
+      ],
+      "successors": [
+        {
+          "id": "succ-songza-1",
+          "entity_id": "grave-songza-043",
+          "name": "YouTube Music & Google Play Music",
+          "relationship_type": "Direct Successor",
+          "description": "Google acquired Songza in 2014 to integrate its contextual \"Concierge\" mood playlists directly into its streaming services."
+        }
       ]
     },
     {
@@ -6881,7 +7104,11 @@
       "verified_at": "2002-12-31T00:00:00Z",
       "created_at": "2024-01-01T00:00:00Z",
       "updated_at": "2024-01-01T00:00:00Z",
-      "related_slugs": [],
+      "related_slugs": [
+        "songza",
+        "limewire",
+        "kazaa"
+      ],
       "last_known_state": {
         "website": {
           "status_code": 404,
@@ -6964,6 +7191,15 @@
           "status": "APPROVED",
           "created_at": "2024-01-10T12:00:00Z"
         }
+      ],
+      "successors": [
+        {
+          "id": "succ-audiogalaxy-1",
+          "entity_id": "grave-audiogalaxy-044",
+          "name": "Dropbox",
+          "relationship_type": "Direct Successor",
+          "description": "Dropbox acquired AudioGalaxy founders in 2012 to develop cloud media streaming and personal locker infrastructure."
+        }
       ]
     },
     {
@@ -6994,7 +7230,11 @@
       "verified_at": "2018-12-31T00:00:00Z",
       "created_at": "2024-01-01T00:00:00Z",
       "updated_at": "2024-01-01T00:00:00Z",
-      "related_slugs": [],
+      "related_slugs": [
+        "myspace",
+        "audiogalaxy",
+        "songza"
+      ],
       "last_known_state": {
         "website": {
           "status_code": 404,
@@ -7077,6 +7317,22 @@
           "status": "APPROVED",
           "created_at": "2024-01-10T12:00:00Z"
         }
+      ],
+      "successors": [
+        {
+          "id": "succ-purevolume-1",
+          "entity_id": "grave-purevolume-045",
+          "name": "SoundCloud",
+          "relationship_type": "Inherited Audience",
+          "description": "The global home for unsigned indie musicians, bedroom producers, and direct fan engagement."
+        },
+        {
+          "id": "succ-purevolume-2",
+          "entity_id": "grave-purevolume-045",
+          "name": "Bandcamp",
+          "relationship_type": "Spiritual Successor",
+          "description": "Ethical direct-to-artist music downloads and merchandise sales platform."
+        }
       ]
     },
     {
@@ -7107,7 +7363,11 @@
       "verified_at": "2019-12-31T00:00:00Z",
       "created_at": "2024-01-01T00:00:00Z",
       "updated_at": "2024-01-01T00:00:00Z",
-      "related_slugs": [],
+      "related_slugs": [
+        "google-stadia",
+        "pebble",
+        "playstation-home"
+      ],
       "last_known_state": {
         "website": {
           "status_code": 404,
@@ -7190,6 +7450,22 @@
           "status": "APPROVED",
           "created_at": "2024-01-10T12:00:00Z"
         }
+      ],
+      "successors": [
+        {
+          "id": "succ-ouya-1",
+          "entity_id": "grave-ouya-046",
+          "name": "Steam Deck (Valve)",
+          "relationship_type": "Spiritual Successor",
+          "description": "Proved open-platform portable and TV-connected PC gaming with thousands of indie titles."
+        },
+        {
+          "id": "succ-ouya-2",
+          "entity_id": "grave-ouya-046",
+          "name": "Nintendo Switch",
+          "relationship_type": "Inherited Audience",
+          "description": "Became the ultimate mainstream console home for indie gems like Hollow Knight, Celeste, and Hades."
+        }
       ]
     },
     {
@@ -7220,7 +7496,11 @@
       "verified_at": "2008-12-31T00:00:00Z",
       "created_at": "2024-01-01T00:00:00Z",
       "updated_at": "2024-01-01T00:00:00Z",
-      "related_slugs": [],
+      "related_slugs": [
+        "club-penguin",
+        "toontown-online",
+        "playstation-home"
+      ],
       "last_known_state": {
         "website": {
           "status_code": 404,
@@ -7303,6 +7583,15 @@
           "status": "APPROVED",
           "created_at": "2024-01-10T12:00:00Z"
         }
+      ],
+      "successors": [
+        {
+          "id": "succ-vmk-1",
+          "entity_id": "grave-vmk-047",
+          "name": "Club Penguin",
+          "relationship_type": "Direct Successor",
+          "description": "Disney acquired Club Penguin and redirected its virtual world marketing after closing VMK."
+        }
       ]
     },
     {
@@ -7333,7 +7622,11 @@
       "verified_at": "2000-12-31T00:00:00Z",
       "created_at": "2024-01-01T00:00:00Z",
       "updated_at": "2024-01-01T00:00:00Z",
-      "related_slugs": [],
+      "related_slugs": [
+        "geocities",
+        "yahoo-directory",
+        "thinkgeek"
+      ],
       "last_known_state": {
         "website": {
           "status_code": 404,
@@ -7416,6 +7709,15 @@
           "status": "APPROVED",
           "created_at": "2024-01-10T12:00:00Z"
         }
+      ],
+      "successors": [
+        {
+          "id": "succ-pets-1",
+          "entity_id": "grave-pets-048",
+          "name": "Chewy.com",
+          "relationship_type": "Spiritual Successor",
+          "description": "Built a multi-billion dollar pet food e-commerce empire on subscription delivery and stellar customer service."
+        }
       ]
     },
     {
@@ -7446,7 +7748,11 @@
       "verified_at": "2016-12-31T00:00:00Z",
       "created_at": "2024-01-01T00:00:00Z",
       "updated_at": "2024-01-01T00:00:00Z",
-      "related_slugs": [],
+      "related_slugs": [
+        "digg-v4",
+        "delicious",
+        "gawker"
+      ],
       "last_known_state": {
         "website": {
           "status_code": 404,
@@ -7529,6 +7835,22 @@
           "status": "APPROVED",
           "created_at": "2024-01-10T12:00:00Z"
         }
+      ],
+      "successors": [
+        {
+          "id": "succ-gawker-1",
+          "entity_id": "grave-gawker-049",
+          "name": "Defector Media",
+          "relationship_type": "Spiritual Successor",
+          "description": "Worker-owned, subscription-funded investigative journalism and cultural commentary cooperative."
+        },
+        {
+          "id": "succ-gawker-2",
+          "entity_id": "grave-gawker-049",
+          "name": "404 Media",
+          "relationship_type": "Spiritual Successor",
+          "description": "Independent journalist-founded digital publication fearlessly uncovering internet fraud and AI abuse."
+        }
       ]
     },
     {
@@ -7559,7 +7881,12 @@
       "verified_at": "2010-12-31T00:00:00Z",
       "created_at": "2024-01-01T00:00:00Z",
       "updated_at": "2024-01-01T00:00:00Z",
-      "related_slugs": [],
+      "related_slugs": [
+        "napster",
+        "kazaa",
+        "grooveshark",
+        "audiogalaxy"
+      ],
       "last_known_state": {
         "website": {
           "status_code": 404,
@@ -7642,6 +7969,22 @@
           "status": "APPROVED",
           "created_at": "2024-01-10T12:00:00Z"
         }
+      ],
+      "successors": [
+        {
+          "id": "succ-lime-1",
+          "entity_id": "grave-limewire-008",
+          "name": "BitTorrent & qBittorrent",
+          "relationship_type": "Inherited Audience",
+          "description": "Decentralized torrent tracker and swarm protocols replaced centralized P2P file-sharing networks."
+        },
+        {
+          "id": "succ-lime-2",
+          "entity_id": "grave-limewire-008",
+          "name": "Spotify",
+          "relationship_type": "Spiritual Successor",
+          "description": "Licensed on-demand streaming rendered illegal MP3 downloading obsolete for mainstream audiences."
+        }
       ]
     },
     {
@@ -7672,7 +8015,11 @@
       "verified_at": "2023-12-31T00:00:00Z",
       "created_at": "2024-01-01T00:00:00Z",
       "updated_at": "2024-01-01T00:00:00Z",
-      "related_slugs": [],
+      "related_slugs": [
+        "ouya",
+        "playstation-home",
+        "google-glass"
+      ],
       "last_known_state": {
         "website": {
           "status_code": 404,
@@ -7755,6 +8102,22 @@
           "status": "APPROVED",
           "created_at": "2024-01-10T12:00:00Z"
         }
+      ],
+      "successors": [
+        {
+          "id": "succ-stadia-1",
+          "entity_id": "grave-stadia-010",
+          "name": "GeForce NOW (NVIDIA)",
+          "relationship_type": "Direct Successor",
+          "description": "Succeeded by allowing players to stream existing Steam and Epic library titles rather than rebuying games."
+        },
+        {
+          "id": "succ-stadia-2",
+          "entity_id": "grave-stadia-010",
+          "name": "Xbox Cloud Gaming (xCloud)",
+          "relationship_type": "Inherited Audience",
+          "description": "Integrated cloud streaming directly into Game Pass subscription tiers without separate retail purchases."
+        }
       ]
     },
     {
@@ -7785,7 +8148,11 @@
       "verified_at": "2022-12-31T00:00:00Z",
       "created_at": "2024-01-01T00:00:00Z",
       "updated_at": "2024-01-01T00:00:00Z",
-      "related_slugs": [],
+      "related_slugs": [
+        "netscape",
+        "adobe-flash",
+        "silverlight"
+      ],
       "last_known_state": {
         "website": {
           "status_code": 404,
@@ -7868,6 +8235,22 @@
           "status": "APPROVED",
           "created_at": "2024-01-10T12:00:00Z"
         }
+      ],
+      "successors": [
+        {
+          "id": "succ-ie-1",
+          "entity_id": "grave-ie-012",
+          "name": "Microsoft Edge (Chromium)",
+          "relationship_type": "Direct Successor",
+          "description": "Microsoft decommissioned the Trident/MSHTML engine and rebuilt Edge on open-source Chromium."
+        },
+        {
+          "id": "succ-ie-2",
+          "entity_id": "grave-ie-012",
+          "name": "Google Chrome",
+          "relationship_type": "Inherited Audience",
+          "description": "Captured over 65% global browser market share as IE fell into performance degradation and web standards lag."
+        }
       ]
     },
     {
@@ -7898,7 +8281,11 @@
       "verified_at": "2024-12-31T00:00:00Z",
       "created_at": "2024-01-01T00:00:00Z",
       "updated_at": "2024-01-01T00:00:00Z",
-      "related_slugs": [],
+      "related_slugs": [
+        "skiff",
+        "invision",
+        "google-reader"
+      ],
       "last_known_state": {
         "website": {
           "status_code": 404,
@@ -7981,6 +8368,22 @@
           "status": "APPROVED",
           "created_at": "2024-01-10T12:00:00Z"
         }
+      ],
+      "successors": [
+        {
+          "id": "succ-mint-1",
+          "entity_id": "grave-mint-014",
+          "name": "Monarch Money",
+          "relationship_type": "Spiritual Successor",
+          "description": "Founded by former Mint product manager Val Agostino as a modern, clean, ad-free personal finance tracker."
+        },
+        {
+          "id": "succ-mint-2",
+          "entity_id": "grave-mint-014",
+          "name": "YNAB (You Need A Budget)",
+          "relationship_type": "Inherited Audience",
+          "description": "Absorbed budgeting power users seeking intentional cash-flow allocation after Intuit discontinued Mint."
+        }
       ]
     },
     {
@@ -8011,7 +8414,11 @@
       "verified_at": "2024-12-31T00:00:00Z",
       "created_at": "2024-01-01T00:00:00Z",
       "updated_at": "2024-01-01T00:00:00Z",
-      "related_slugs": [],
+      "related_slugs": [
+        "skiff",
+        "mint",
+        "delicious"
+      ],
       "last_known_state": {
         "website": {
           "status_code": 404,
@@ -8094,6 +8501,15 @@
           "status": "APPROVED",
           "created_at": "2024-01-10T12:00:00Z"
         }
+      ],
+      "successors": [
+        {
+          "id": "succ-invision-1",
+          "entity_id": "grave-invision-015",
+          "name": "Figma",
+          "relationship_type": "Direct Successor",
+          "description": "Browser-native multiplayer vector design, autolayout, and unified prototyping rendered InVision workflows obsolete."
+        }
       ]
     },
     {
@@ -8124,7 +8540,11 @@
       "verified_at": "2024-12-31T00:00:00Z",
       "created_at": "2024-01-01T00:00:00Z",
       "updated_at": "2024-01-01T00:00:00Z",
-      "related_slugs": [],
+      "related_slugs": [
+        "invision",
+        "google-reader",
+        "secret"
+      ],
       "last_known_state": {
         "website": {
           "status_code": 404,
@@ -8207,6 +8627,22 @@
           "status": "APPROVED",
           "created_at": "2024-01-10T12:00:00Z"
         }
+      ],
+      "successors": [
+        {
+          "id": "succ-skiff-1",
+          "entity_id": "grave-skiff-016",
+          "name": "Proton Mail & Drive",
+          "relationship_type": "Inherited Audience",
+          "description": "The premier open-source, Swiss-hosted end-to-end encrypted email and collaborative storage suite."
+        },
+        {
+          "id": "succ-skiff-2",
+          "entity_id": "grave-skiff-016",
+          "name": "Notion",
+          "relationship_type": "Spiritual Successor",
+          "description": "All-in-one modular productivity workspace for collaborative pages, notes, and relational databases."
+        }
       ]
     },
     {
@@ -8237,7 +8673,11 @@
       "verified_at": "2013-12-31T00:00:00Z",
       "created_at": "2024-01-01T00:00:00Z",
       "updated_at": "2024-01-01T00:00:00Z",
-      "related_slugs": [],
+      "related_slugs": [
+        "club-penguin",
+        "virtual-magic-kingdom",
+        "playstation-home"
+      ],
       "last_known_state": {
         "website": {
           "status_code": 404,
@@ -8320,6 +8760,22 @@
           "status": "APPROVED",
           "created_at": "2024-01-10T12:00:00Z"
         }
+      ],
+      "successors": [
+        {
+          "id": "succ-toontown-1",
+          "entity_id": "grave-toontown-017",
+          "name": "Toontown Rewritten",
+          "relationship_type": "Spiritual Successor",
+          "description": "A completely free community-led volunteer recreation preserving the original Disney MMO without microtransactions."
+        },
+        {
+          "id": "succ-toontown-2",
+          "entity_id": "grave-toontown-017",
+          "name": "Roblox",
+          "relationship_type": "Inherited Audience",
+          "description": "The dominant user-generated multiplayer platform where millions of younger virtual world players migrated."
+        }
       ]
     },
     {
@@ -8350,7 +8806,11 @@
       "verified_at": "2015-12-31T00:00:00Z",
       "created_at": "2024-01-01T00:00:00Z",
       "updated_at": "2024-01-01T00:00:00Z",
-      "related_slugs": [],
+      "related_slugs": [
+        "toontown-online",
+        "club-penguin",
+        "virtual-magic-kingdom"
+      ],
       "last_known_state": {
         "website": {
           "status_code": 404,
@@ -8433,6 +8893,22 @@
           "status": "APPROVED",
           "created_at": "2024-01-10T12:00:00Z"
         }
+      ],
+      "successors": [
+        {
+          "id": "succ-pshome-1",
+          "entity_id": "grave-pshome-018",
+          "name": "VRChat",
+          "relationship_type": "Spiritual Successor",
+          "description": "User-created 3D virtual spaces, customizable avatars, and live hangout lounges across VR and desktop."
+        },
+        {
+          "id": "succ-pshome-2",
+          "entity_id": "grave-pshome-018",
+          "name": "Fortnite Creative",
+          "relationship_type": "Inherited Audience",
+          "description": "Evolved into 3D social hub featuring interactive brand activations, virtual concerts, and custom islands."
+        }
       ]
     },
     {
@@ -8463,7 +8939,11 @@
       "verified_at": "2024-12-31T00:00:00Z",
       "created_at": "2024-01-01T00:00:00Z",
       "updated_at": "2024-01-01T00:00:00Z",
-      "related_slugs": [],
+      "related_slugs": [
+        "songza",
+        "rdio",
+        "google-play-music"
+      ],
       "last_known_state": {
         "website": {
           "status_code": 404,
@@ -8546,6 +9026,22 @@
           "status": "APPROVED",
           "created_at": "2024-01-10T12:00:00Z"
         }
+      ],
+      "successors": [
+        {
+          "id": "succ-gpod-1",
+          "entity_id": "grave-gpod-019",
+          "name": "YouTube Music Podcasts",
+          "relationship_type": "Direct Successor",
+          "description": "Google consolidated audio and video podcast feeds directly into the YouTube Music mobile and web apps."
+        },
+        {
+          "id": "succ-gpod-2",
+          "entity_id": "grave-gpod-019",
+          "name": "Pocket Casts",
+          "relationship_type": "Spiritual Successor",
+          "description": "Cross-platform, feature-rich independent podcast client favored by podcast purists for RSS integrity."
+        }
       ]
     },
     {
@@ -8576,7 +9072,11 @@
       "verified_at": "2019-12-31T00:00:00Z",
       "created_at": "2024-01-01T00:00:00Z",
       "updated_at": "2024-01-01T00:00:00Z",
-      "related_slugs": [],
+      "related_slugs": [
+        "pets-com",
+        "delicious",
+        "stumbleupon"
+      ],
       "last_known_state": {
         "website": {
           "status_code": 404,
@@ -8659,6 +9159,15 @@
           "status": "APPROVED",
           "created_at": "2024-01-10T12:00:00Z"
         }
+      ],
+      "successors": [
+        {
+          "id": "succ-thinkgeek-1",
+          "entity_id": "grave-thinkgeek-020",
+          "name": "GameStop Collectibles",
+          "relationship_type": "Direct Successor",
+          "description": "Parent company GameStop folded ThinkGeek inventory and IP into its mainstream retail portal."
+        }
       ]
     },
     {
@@ -8689,7 +9198,11 @@
       "verified_at": "2024-12-31T00:00:00Z",
       "created_at": "2024-01-01T00:00:00Z",
       "updated_at": "2024-01-01T00:00:00Z",
-      "related_slugs": [],
+      "related_slugs": [
+        "google-reader",
+        "posterous",
+        "friendfeed"
+      ],
       "last_known_state": {
         "website": {
           "status_code": 404,
@@ -8772,6 +9285,15 @@
           "status": "APPROVED",
           "created_at": "2024-01-10T12:00:00Z"
         }
+      ],
+      "successors": [
+        {
+          "id": "succ-artifact-1",
+          "entity_id": "grave-artifact-021",
+          "name": "Yahoo News",
+          "relationship_type": "Direct Successor",
+          "description": "Yahoo acquired Artifact in April 2024 to integrate its AI categorization, summarization, and personalization."
+        }
       ]
     },
     {
@@ -8802,7 +9324,11 @@
       "verified_at": "2021-12-31T00:00:00Z",
       "created_at": "2024-01-01T00:00:00Z",
       "updated_at": "2024-01-01T00:00:00Z",
-      "related_slugs": [],
+      "related_slugs": [
+        "vine",
+        "meerkat",
+        "periscope"
+      ],
       "last_known_state": {
         "website": {
           "status_code": 404,
@@ -8885,6 +9411,22 @@
           "status": "APPROVED",
           "created_at": "2024-01-10T12:00:00Z"
         }
+      ],
+      "successors": [
+        {
+          "id": "succ-hp-1",
+          "entity_id": "grave-houseparty-022",
+          "name": "Discord",
+          "relationship_type": "Inherited Audience",
+          "description": "Persistent group voice and video channels became the default virtual hangout for gaming and social circles."
+        },
+        {
+          "id": "succ-hp-2",
+          "entity_id": "grave-houseparty-022",
+          "name": "FaceTime & Zoom",
+          "relationship_type": "Direct Successor",
+          "description": "Mainstream mobile operating systems integrated effortless group video calls and screen sharing natively."
+        }
       ]
     },
     {
@@ -8915,7 +9457,11 @@
       "verified_at": "2013-12-31T00:00:00Z",
       "created_at": "2024-01-01T00:00:00Z",
       "updated_at": "2024-01-01T00:00:00Z",
-      "related_slugs": [],
+      "related_slugs": [
+        "myspace",
+        "friendster",
+        "dailybooth"
+      ],
       "last_known_state": {
         "website": {
           "status_code": 404,
@@ -8998,6 +9544,15 @@
           "status": "APPROVED",
           "created_at": "2024-01-10T12:00:00Z"
         }
+      ],
+      "successors": [
+        {
+          "id": "succ-bebo-1",
+          "entity_id": "grave-bebo-023",
+          "name": "Facebook",
+          "relationship_type": "Inherited Audience",
+          "description": "Absorbed the entire UK and European teenage demographic as Bebo suffered technical instability post-AOL sale."
+        }
       ]
     },
     {
@@ -9028,7 +9583,11 @@
       "verified_at": "2013-12-31T00:00:00Z",
       "created_at": "2024-01-01T00:00:00Z",
       "updated_at": "2024-01-01T00:00:00Z",
-      "related_slugs": [],
+      "related_slugs": [
+        "secret",
+        "yik-yak",
+        "bebo"
+      ],
       "last_known_state": {
         "website": {
           "status_code": 404,
@@ -9111,6 +9670,22 @@
           "status": "APPROVED",
           "created_at": "2024-01-10T12:00:00Z"
         }
+      ],
+      "successors": [
+        {
+          "id": "succ-formspring-1",
+          "entity_id": "grave-formspring-024",
+          "name": "Ask.fm",
+          "relationship_type": "Direct Successor",
+          "description": "Carried the anonymous Q&A paradigm forward through the early mobile smartphone era."
+        },
+        {
+          "id": "succ-formspring-2",
+          "entity_id": "grave-formspring-024",
+          "name": "NGL (Not Gonna Lie)",
+          "relationship_type": "Spiritual Successor",
+          "description": "Instagram story sticker integration allowing anonymous questions and confessionals."
+        }
       ]
     },
     {
@@ -9141,7 +9716,11 @@
       "verified_at": "2012-12-31T00:00:00Z",
       "created_at": "2024-01-01T00:00:00Z",
       "updated_at": "2024-01-01T00:00:00Z",
-      "related_slugs": [],
+      "related_slugs": [
+        "path",
+        "dailybooth",
+        "foursquare"
+      ],
       "last_known_state": {
         "website": {
           "status_code": 404,
@@ -9224,6 +9803,22 @@
           "status": "APPROVED",
           "created_at": "2024-01-10T12:00:00Z"
         }
+      ],
+      "successors": [
+        {
+          "id": "succ-gowalla-1",
+          "entity_id": "grave-gowalla-025",
+          "name": "Foursquare",
+          "relationship_type": "Inherited Audience",
+          "description": "Won the early location check-in wars before pivoting into enterprise geospatial intelligence."
+        },
+        {
+          "id": "succ-gowalla-2",
+          "entity_id": "grave-gowalla-025",
+          "name": "BeReal",
+          "relationship_type": "Spiritual Successor",
+          "description": "Location-tagged authentic daily check-ins showing where friends actually spend their lives."
+        }
       ]
     },
     {
@@ -9254,7 +9849,11 @@
       "verified_at": "2014-12-31T00:00:00Z",
       "created_at": "2024-01-01T00:00:00Z",
       "updated_at": "2024-01-01T00:00:00Z",
-      "related_slugs": [],
+      "related_slugs": [
+        "vine",
+        "meerkat",
+        "periscope"
+      ],
       "last_known_state": {
         "website": {
           "status_code": 404,
@@ -9337,6 +9936,22 @@
           "status": "APPROVED",
           "created_at": "2024-01-10T12:00:00Z"
         }
+      ],
+      "successors": [
+        {
+          "id": "succ-justin-1",
+          "entity_id": "grave-justintv-026",
+          "name": "Twitch",
+          "relationship_type": "Direct Successor",
+          "description": "Justin.tv spun out its gaming category into Twitch in 2011, which exploded into global livestreaming hegemony."
+        },
+        {
+          "id": "succ-justin-2",
+          "entity_id": "grave-justintv-026",
+          "name": "YouTube Live",
+          "relationship_type": "Inherited Audience",
+          "description": "Google expanded YouTube to provide turnkey live video broadcasting for creators worldwide."
+        }
       ]
     },
     {
@@ -9367,7 +9982,11 @@
       "verified_at": "2013-12-31T00:00:00Z",
       "created_at": "2024-01-01T00:00:00Z",
       "updated_at": "2024-01-01T00:00:00Z",
-      "related_slugs": [],
+      "related_slugs": [
+        "friendfeed",
+        "artifact",
+        "google-buzz"
+      ],
       "last_known_state": {
         "website": {
           "status_code": 404,
@@ -9450,6 +10069,22 @@
           "status": "APPROVED",
           "created_at": "2024-01-10T12:00:00Z"
         }
+      ],
+      "successors": [
+        {
+          "id": "succ-posterous-1",
+          "entity_id": "grave-posterous-027",
+          "name": "Substack",
+          "relationship_type": "Spiritual Successor",
+          "description": "Publish-by-email newsletter platform empowering independent writers to monetize direct reader relationships."
+        },
+        {
+          "id": "succ-posterous-2",
+          "entity_id": "grave-posterous-027",
+          "name": "Medium",
+          "relationship_type": "Inherited Audience",
+          "description": "Distraction-free publishing platform with built-in network distribution."
+        }
       ]
     },
     {
@@ -9480,7 +10115,11 @@
       "verified_at": "2012-12-31T00:00:00Z",
       "created_at": "2024-01-01T00:00:00Z",
       "updated_at": "2024-01-01T00:00:00Z",
-      "related_slugs": [],
+      "related_slugs": [
+        "vine",
+        "gowalla",
+        "path"
+      ],
       "last_known_state": {
         "website": {
           "status_code": 404,
@@ -9562,6 +10201,22 @@
           "candle_lit": true,
           "status": "APPROVED",
           "created_at": "2024-01-10T12:00:00Z"
+        }
+      ],
+      "successors": [
+        {
+          "id": "succ-dailybooth-1",
+          "entity_id": "grave-dailybooth-028",
+          "name": "Instagram",
+          "relationship_type": "Inherited Audience",
+          "description": "Smartphone cameras and visual feeds made desktop webcam photoblogging obsolete virtually overnight."
+        },
+        {
+          "id": "succ-dailybooth-2",
+          "entity_id": "grave-dailybooth-028",
+          "name": "BeReal",
+          "relationship_type": "Spiritual Successor",
+          "description": "A photo once a day with your friends, reviving the authentic non-influencer selfie culture."
         }
       ]
     }

@@ -30,16 +30,23 @@ export default function HomePage() {
   const stats = graveyardDb.getStats();
   const recentlyBuried = graveyardDb.getRecentlyBuried(8);
   const atRiskEntities = graveyardDb.getAtRiskEntities().slice(0, 3);
+  const allEntities = graveyardDb.getAllEntities();
+
+  // Dynamically tally authentic grave counts per category
+  const categoryCounts: Record<string, number> = {};
+  allEntities.forEach(e => {
+    categoryCounts[e.category] = (categoryCounts[e.category] || 0) + 1;
+  });
 
   const categories = [
-    { name: 'Social', count: '142 Graves', desc: 'Networks, feeds & graphs', href: '/explore?category=Social' },
-    { name: 'Messaging', count: '89 Graves', desc: 'Instant chat, P2P & IRC', href: '/explore?category=Messaging' },
-    { name: 'Gaming', count: '164 Graves', desc: 'MMOs, virtual worlds & flash', href: '/explore?category=Gaming' },
-    { name: 'Streaming', count: '73 Graves', desc: 'Music, video & audio hubs', href: '/explore?category=Streaming' },
-    { name: 'Search', count: '41 Graves', desc: 'Early crawlers & portals', href: '/explore?category=Search' },
-    { name: 'Developer tools', count: '115 Graves', desc: 'APIs, frameworks & task apps', href: '/explore?category=Developer+tools' },
-    { name: 'Web technology', count: '98 Graves', desc: 'Runtimes, protocols & plug-ins', href: '/explore?category=Web+technology' },
-    { name: 'Communities', count: '180 Graves', desc: 'Forums, Q&As & guestbooks', href: '/explore?category=Communities' },
+    { name: 'Social', count: `${categoryCounts['Social'] || 0} Graves`, desc: 'Networks, feeds & graphs', href: '/explore?category=Social' },
+    { name: 'Messaging', count: `${categoryCounts['Messaging'] || 0} Graves`, desc: 'Instant chat, P2P & IRC', href: '/explore?category=Messaging' },
+    { name: 'Gaming', count: `${categoryCounts['Gaming'] || 0} Graves`, desc: 'MMOs, virtual worlds & flash', href: '/explore?category=Gaming' },
+    { name: 'Streaming', count: `${categoryCounts['Streaming'] || 0} Graves`, desc: 'Music, video & audio hubs', href: '/explore?category=Streaming' },
+    { name: 'Search', count: `${categoryCounts['Search'] || 0} Graves`, desc: 'Early crawlers & portals', href: '/explore?category=Search' },
+    { name: 'Developer tools', count: `${categoryCounts['Developer tools'] || 0} Graves`, desc: 'APIs, frameworks & task apps', href: '/explore?category=Developer+tools' },
+    { name: 'Web technology', count: `${categoryCounts['Web technology'] || 0} Graves`, desc: 'Runtimes, protocols & plug-ins', href: '/explore?category=Web+technology' },
+    { name: 'Communities', count: `${categoryCounts['Communities'] || 0} Graves`, desc: 'Forums, Q&As & guestbooks', href: '/explore?category=Communities' },
   ];
 
   return (

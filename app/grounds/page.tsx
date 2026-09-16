@@ -44,15 +44,23 @@ const CEMETERY_PLOTS: CemeteryPlot[] = [
     name: 'The Google Mausoleum',
     subtitle: 'Silicon Valley Sunset Crypt',
     description: 'The resting ground for beloved products terminated by the Alphabet executive committee.',
-    filter: (e) => e.parent_company?.toLowerCase().includes('google') || e.slug.includes('google') || e.slug === 'stadia' || e.slug === 'orkut',
+    filter: (e) => e.parent_company?.toLowerCase().includes('google') || e.slug.includes('google') || ['stadia', 'orkut', 'songza'].includes(e.slug),
     accentColor: 'border-amber-500/40 text-amber-400'
+  },
+  {
+    id: 'web1-pioneers',
+    name: 'Web 1.0 & Pioneer Row',
+    subtitle: 'The Dawn of Cyberspace (1990 — 2004)',
+    description: 'The earliest web portals, foundational search engines, and hypertext pioneers that charted the uncharted internet.',
+    filter: (e) => ['netscape', 'altavista', 'lycos', 'ask-jeeves', 'geocities', 'infoseek', 'excite', 'webcrawler', 'yahoo-directory', 'dmoz', 'pets-com'].includes(e.slug) || (Boolean(e.founded_year) && e.founded_year <= 2001),
+    accentColor: 'border-yellow-500/40 text-yellow-400'
   },
   {
     id: 'p2p-pirate-cove',
     name: 'The P2P & Pirate Cove',
     subtitle: 'The Decentralized Rebellion',
     description: 'Peer-to-peer file sharing protocols and music platforms that challenged copyright giants and lost in federal court.',
-    filter: (e) => ['napster', 'kazaa', 'limewire', 'grooveshark', 'rdio'].includes(e.slug) || e.category === 'Streaming',
+    filter: (e) => ['napster', 'kazaa', 'limewire', 'grooveshark', 'rdio', 'audiogalaxy', 'purevolume', 'songza'].includes(e.slug) || e.category === 'Streaming',
     accentColor: 'border-cyan-500/40 text-cyan-400'
   },
   {
@@ -60,7 +68,7 @@ const CEMETERY_PLOTS: CemeteryPlot[] = [
     name: 'Social Media Grounds',
     subtitle: 'The Fallen Feeds',
     description: 'Pioneering social networks whose users migrated, outgrew them, or abandoned them for algorithmic feeds.',
-    filter: (e) => e.category === 'Social' || ['vine', 'myspace', 'friendster', 'path', 'secret'].includes(e.slug),
+    filter: (e) => e.category === 'Social' || ['vine', 'myspace', 'friendster', 'path', 'secret', 'bebo', 'formspring', 'gowalla', 'dailybooth', 'houseparty', 'artifact', 'peach'].includes(e.slug),
     accentColor: 'border-red-500/40 text-red-400'
   },
   {
@@ -68,7 +76,7 @@ const CEMETERY_PLOTS: CemeteryPlot[] = [
     name: 'Messaging Valley',
     subtitle: 'Silent Chat Rooms',
     description: 'The real-time instant messengers, chat protocols, and stranger-matching sites that kept generations awake until dawn.',
-    filter: (e) => e.category === 'Messaging' || ['icq', 'aim', 'omegle', 'msn-messenger'].includes(e.slug),
+    filter: (e) => e.category === 'Messaging' || ['icq', 'aim', 'omegle', 'msn-messenger', 'skype', 'yahoo-messenger', 'bbm', 'hipchat', 'skiff'].includes(e.slug),
     accentColor: 'border-emerald-500/40 text-emerald-400'
   },
   {
@@ -76,8 +84,16 @@ const CEMETERY_PLOTS: CemeteryPlot[] = [
     name: 'Gaming & Virtual Crypt',
     subtitle: 'Virtual Worlds & Flash Relics',
     description: 'Virtual avatar worlds, Flash engines, and interactive experiences that dissolved when underlying standards shifted.',
-    filter: (e) => e.category === 'Gaming' || ['club-penguin', 'adobe-flash', 'quibi', 'heardle'].includes(e.slug),
+    filter: (e) => e.category === 'Gaming' || ['club-penguin', 'adobe-flash', 'toontown-online', 'playstation-home', 'virtual-magic-kingdom', 'ouya', 'stadia', 'heardle'].includes(e.slug),
     accentColor: 'border-purple-500/40 text-purple-400'
+  },
+  {
+    id: 'hardware-crypt',
+    name: 'Silicon Hardware & Device Row',
+    subtitle: 'Defunct Silicon & Wearables',
+    description: 'Beloved smartwatches, experimental micro-consoles, and mobile platforms crushed by Big Tech monopolies.',
+    filter: (e) => e.category === 'Hardware' || ['pebble', 'ouya', 'essential-phone', 'google-glass', 'windows-phone', 'blackberry-os'].includes(e.slug),
+    accentColor: 'border-blue-500/40 text-blue-400'
   }
 ];
 

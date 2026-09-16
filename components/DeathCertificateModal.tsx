@@ -36,6 +36,17 @@ export const DeathCertificateModal: React.FC<DeathCertificateModalProps> = ({
   const hashSum = entity.id.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0);
   const caseNumber = `MORT-${entity.death_year || 2024}-${entity.slug.toUpperCase().slice(0, 6)}-${(hashSum % 8999) + 1000}`;
 
+  const formattedInquestDate = React.useMemo(() => {
+    if (!entity.verified_at) return 'December 2024';
+    try {
+      const d = new Date(entity.verified_at);
+      if (isNaN(d.getTime())) return entity.verified_at;
+      return d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+    } catch {
+      return entity.verified_at;
+    }
+  }, [entity.verified_at]);
+
   const handleCopyLink = () => {
     if (typeof window !== 'undefined' && navigator.clipboard) {
       navigator.clipboard.writeText(window.location.href);
@@ -114,10 +125,17 @@ export const DeathCertificateModal: React.FC<DeathCertificateModalProps> = ({
         </div>
 
         {/* The Certificate Body */}
-        <div className="p-6 sm:p-10 space-y-6 bg-gradient-to-b from-zinc-900/50 via-zinc-950 to-zinc-950 print:bg-white print:text-black">
+        <div className="relative overflow-hidden p-6 sm:p-10 space-y-6 bg-gradient-to-b from-zinc-900/50 via-zinc-950 to-zinc-950 print:bg-white print:text-black">
           
+          {/* Subtle Archival Seal Watermark */}
+          <div className="absolute inset-0 flex items-center justify-center opacity-[0.03] print:opacity-[0.06] pointer-events-none select-none -z-0">
+            <div className="w-[32rem] h-[32rem] rounded-full border-[14px] border-dashed border-amber-500 flex items-center justify-center print:border-black">
+              <Award className="w-72 h-72 text-amber-500 print:text-black" />
+            </div>
+          </div>
+
           {/* Certificate Header Stamp */}
-          <div className="text-center space-y-2 border-b-2 border-amber-500/30 pb-6 print:border-black">
+          <div className="relative z-10 text-center space-y-2 border-b-2 border-amber-500/30 pb-6 print:border-black">
             <div className="flex items-center justify-center gap-2 text-xs font-mono tracking-widest text-amber-400/90 uppercase font-bold print:text-zinc-700">
               <span>Department of Digital Mortality & Archival Forensics</span>
             </div>
@@ -242,7 +260,7 @@ export const DeathCertificateModal: React.FC<DeathCertificateModalProps> = ({
                 Chief Digital Pathologist & Coroner
               </div>
               <div className="text-[11px] text-zinc-500 print:text-zinc-700">
-                Inquest Finalized: {entity.verified_at || 'December 2024'}
+                Inquest Finalized: {formattedInquestDate}
               </div>
             </div>
 

@@ -81,6 +81,35 @@ export const SOUND_RELICS: AudioRelic[] = [
     description: 'The energetic 8-bit synthesizer melody of the Night Club and Dance Lounge.',
     culturalImpact: 'Hundreds of millions of penguins did the /dance command to this loop.',
     durationSec: 2.5
+  },
+  {
+    id: 'yahoo-yodel',
+    name: "Yahoo! Messenger Notification Ping",
+    entitySlug: 'yahoo-messenger',
+    platform: 'Yahoo! Messenger',
+    year: '1999',
+    description: 'The playful rising melodic ping that heralded an incoming buddy chat or file transfer in the late 90s.',
+    culturalImpact: 'Filled cybercafes and computer labs across Asia and the Americas during the dot-com boom.',
+    durationSec: 1.2
+  },
+  {
+    id: 'mac-startup',
+    name: 'Apple iMac G3 PowerPC Chime',
+    platform: 'Apple Macintosh / Mac OS 8 & 9',
+    year: '1998',
+    description: 'The triumphant, crystal-clear F# major chord composed by Jim Reekes for translucent Bondi Blue iMacs.',
+    culturalImpact: 'Signaled Steve Jobs’ iconic return to Apple and the dawn of friendly personal computing.',
+    durationSec: 3.2
+  },
+  {
+    id: 'ps1-startup',
+    name: 'PlayStation 1 Atmospheric Swell',
+    entitySlug: 'playstation-home',
+    platform: 'Sony PlayStation (PSX)',
+    year: '1994',
+    description: 'The mystical deep sub-bass cosmic drone composed by Takafumi Fujisawa that greeted 3D CD-ROM gamers.',
+    culturalImpact: 'Heard by over 102 million console owners upon inserting legendary black-bottom CD discs.',
+    durationSec: 3.8
   }
 ];
 
@@ -143,6 +172,15 @@ class RelicAudioSynthesizer {
           break;
         case 'club-penguin-theme':
           this.playClubPenguin(ctx, finish);
+          break;
+        case 'yahoo-yodel':
+          this.playYahooYodel(ctx, finish);
+          break;
+        case 'mac-startup':
+          this.playMacStartup(ctx, finish);
+          break;
+        case 'ps1-startup':
+          this.playPS1Startup(ctx, finish);
           break;
         default:
           finish();
@@ -473,6 +511,145 @@ class RelicAudioSynthesizer {
 
     const timer = setTimeout(onEnd, 2000);
     this.currentStopFn = () => {
+      clearTimeout(timer);
+    };
+  }
+
+  // 8. Yahoo! Messenger Notification Ping
+  private playYahooYodel(ctx: AudioContext, onEnd: () => void) {
+    const now = ctx.currentTime;
+    // Rising melodic triad: C5 (523Hz), E5 (659Hz), G5 (784Hz), C6 (1046Hz)
+    const notes = [
+      { freq: 523.25, time: 0, dur: 0.12 },
+      { freq: 659.25, time: 0.12, dur: 0.12 },
+      { freq: 783.99, time: 0.24, dur: 0.15 },
+      { freq: 1046.50, time: 0.39, dur: 0.6 }
+    ];
+
+    const oscillators: OscillatorNode[] = [];
+
+    notes.forEach((n) => {
+      const osc = ctx.createOscillator();
+      const gain = ctx.createGain();
+
+      osc.type = 'triangle';
+      osc.frequency.setValueAtTime(n.freq, now + n.time);
+      // Add slight playful frequency vibrato on highest note
+      if (n.freq > 1000) {
+        osc.frequency.linearRampToValueAtTime(n.freq * 1.03, now + n.time + 0.15);
+        osc.frequency.linearRampToValueAtTime(n.freq * 0.98, now + n.time + 0.3);
+        osc.frequency.linearRampToValueAtTime(n.freq, now + n.time + 0.5);
+      }
+
+      gain.gain.setValueAtTime(0.01, now + n.time);
+      gain.gain.linearRampToValueAtTime(0.2, now + n.time + 0.02);
+      gain.gain.exponentialRampToValueAtTime(0.001, now + n.time + n.dur);
+
+      osc.connect(gain);
+      gain.connect(ctx.destination);
+
+      osc.start(now + n.time);
+      osc.stop(now + n.time + n.dur);
+      oscillators.push(osc);
+    });
+
+    const timer = setTimeout(onEnd, 1200);
+    this.currentStopFn = () => {
+      oscillators.forEach(o => { try { o.stop(); } catch {} });
+      clearTimeout(timer);
+    };
+  }
+
+  // 9. Apple iMac G3 PowerPC Chime
+  private playMacStartup(ctx: AudioContext, onEnd: () => void) {
+    const now = ctx.currentTime;
+    // Resonant F# Major Chord: F#2, C#3, F#3, A#3, C#4, F#4, A#4
+    const freqs = [92.50, 138.59, 185.00, 233.08, 277.18, 369.99, 466.16];
+    const oscillators: OscillatorNode[] = [];
+
+    freqs.forEach((freq, idx) => {
+      const osc = ctx.createOscillator();
+      const gain = ctx.createGain();
+
+      osc.type = idx < 2 ? 'triangle' : 'sine';
+      // Subtle natural analog detuning
+      const detune = (idx % 2 === 0 ? 1 : -1) * (idx * 1.5);
+      osc.frequency.setValueAtTime(freq + (detune * 0.1), now);
+
+      const peakGain = idx < 3 ? 0.15 : 0.08;
+      gain.gain.setValueAtTime(0.001, now);
+      gain.gain.linearRampToValueAtTime(peakGain, now + 0.06);
+      gain.gain.exponentialRampToValueAtTime(0.0005, now + 3.0);
+
+      osc.connect(gain);
+      gain.connect(ctx.destination);
+
+      osc.start(now);
+      osc.stop(now + 3.1);
+      oscillators.push(osc);
+    });
+
+    const timer = setTimeout(onEnd, 3200);
+    this.currentStopFn = () => {
+      oscillators.forEach(o => { try { o.stop(); } catch {} });
+      clearTimeout(timer);
+    };
+  }
+
+  // 10. PlayStation 1 (PS1) Atmospheric Swell
+  private playPS1Startup(ctx: AudioContext, onEnd: () => void) {
+    const now = ctx.currentTime;
+    const oscillators: OscillatorNode[] = [];
+
+    // Deep sub-bass swell: 55Hz & 110Hz
+    const bassOsc1 = ctx.createOscillator();
+    const bassOsc2 = ctx.createOscillator();
+    const bassGain = ctx.createGain();
+
+    bassOsc1.type = 'sine';
+    bassOsc1.frequency.setValueAtTime(55, now);
+    bassOsc2.type = 'triangle';
+    bassOsc2.frequency.setValueAtTime(110, now);
+
+    bassGain.gain.setValueAtTime(0.01, now);
+    bassGain.gain.linearRampToValueAtTime(0.25, now + 0.8);
+    bassGain.gain.exponentialRampToValueAtTime(0.001, now + 3.6);
+
+    bassOsc1.connect(bassGain);
+    bassOsc2.connect(bassGain);
+    bassGain.connect(ctx.destination);
+
+    bassOsc1.start(now);
+    bassOsc2.start(now);
+    bassOsc1.stop(now + 3.7);
+    bassOsc2.stop(now + 3.7);
+    oscillators.push(bassOsc1, bassOsc2);
+
+    // Ethereal crystal pad chord: 440Hz, 554.37Hz, 659.25Hz, 880Hz
+    const padFreqs = [440, 554.37, 659.25, 880];
+    padFreqs.forEach((freq, i) => {
+      const osc = ctx.createOscillator();
+      const gain = ctx.createGain();
+
+      osc.type = 'sine';
+      osc.frequency.setValueAtTime(freq, now + 0.3);
+      osc.frequency.linearRampToValueAtTime(freq * 1.005, now + 2.5);
+
+      gain.gain.setValueAtTime(0.001, now + 0.3);
+      gain.gain.linearRampToValueAtTime(0.06, now + 1.2 + (i * 0.1));
+      gain.gain.exponentialRampToValueAtTime(0.0005, now + 3.6);
+
+      osc.connect(gain);
+      gain.connect(ctx.destination);
+
+      osc.start(now + 0.3);
+      osc.stop(now + 3.7);
+      oscillators.push(osc);
+    });
+
+    const timer = setTimeout(onEnd, 3800);
+    this.currentStopFn = () => {
+      oscillators.forEach(o => { try { o.stop(); } catch {} });
       clearTimeout(timer);
     };
   }

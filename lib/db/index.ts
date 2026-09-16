@@ -21,38 +21,39 @@ interface GraveyardDatabaseData {
 const DATA_DIR = path.join(process.cwd(), 'data');
 const DB_FILE = path.join(DATA_DIR, 'graveyard.json');
 
-// Default initial candidate queue for admin inspection
+// Default initial candidate queue for admin inspection (Authentic Verified Relics)
 const INITIAL_DISCOVERY_CANDIDATES: DiscoveryCandidate[] = [
   {
-    id: "dc-101",
-    service_name: "FlashGameArchive.io",
-    domain: "flashgamearchive.io",
-    category: "Gaming",
+    id: "dc-skiff-01",
+    service_name: "Skiff Mail & Drive",
+    domain: "skiff.com",
+    category: "Developer tools",
     detected_signals: [
-      "Website returned 522 Cloudflare Connection Timed Out",
-      "SSL certificate expired 8 months ago",
-      "No DNS updates recorded on Cloudflare",
-      "Reddit community r/FlashGameArchive marked private/unmoderated"
+      "Acquired by Notion in February 2024",
+      "Official 6-month sunset notice published to all account holders",
+      "Email forwarding services scheduled for shutdown August 2024",
+      "Cryptographic keys and export portals opened for user data migration"
     ],
-    confidence_score: 84,
-    raw_evidence: "Automated scan on 2024-08-10 detected zero active gateway responses for 30 consecutive days.",
+    confidence_score: 98,
+    raw_evidence: "Official announcement by CEO Jason Ginsberg confirming Notion acquisition and full platform shutdown on August 10, 2024.",
     status: "PENDING",
-    created_at: "2024-08-10T14:32:00Z"
+    created_at: "2024-02-15T10:00:00Z"
   },
   {
-    id: "dc-102",
-    service_name: "OpenBookSocial",
-    domain: "openbooksocial.org",
-    category: "Social",
+    id: "dc-invision-02",
+    service_name: "InVision App",
+    domain: "invisionapp.com",
+    category: "Developer tools",
     detected_signals: [
-      "GitHub repo archived with message 'Project sunset'",
-      "HTTP 404 on /api/v1/health",
-      "Domain listed on GoDaddy auction"
+      "Official sunset declaration published by CEO Jeff Chow",
+      "All design collaboration and prototype services discontinued at end of 2024",
+      "Figma and Miro identified as direct marketplace successors",
+      "Miro acquired InVision Freehand intellectual property"
     ],
-    confidence_score: 92,
-    raw_evidence: "Repository maintainer published final deprecation release on 2024-06-01.",
+    confidence_score: 99,
+    raw_evidence: "InVision officially announced in January 2024 that all design collaboration products (including prototypes and DSM) will shut down permanently.",
     status: "PENDING",
-    created_at: "2024-08-12T09:15:00Z"
+    created_at: "2024-01-11T12:00:00Z"
   }
 ];
 

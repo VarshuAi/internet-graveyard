@@ -66,6 +66,7 @@ function ExploreContent() {
   const [selectedStatus, setSelectedStatus] = useState<string>(initialStatus);
   const [selectedCategory, setSelectedCategory] = useState<string>(initialCategory);
   const [selectedCause, setSelectedCause] = useState<string>('ALL');
+  const [selectedEra, setSelectedEra] = useState<'ALL' | 'WEB1' | 'WEB2' | 'MODERN'>('ALL');
   const [yearFrom, setYearFrom] = useState<string>('');
   const [yearTo, setYearTo] = useState<string>('');
   const [sortBy, setSortBy] = useState<'recent' | 'candles' | 'name' | 'oldest'>('recent');
@@ -103,7 +104,7 @@ function ExploreContent() {
       }
     }
 
-    // Direct text search
+    // Direct text search across all rich fields
     if (q.length > 0) {
       list = list.filter(e => {
         return (
@@ -112,11 +113,23 @@ function ExploreContent() {
           e.primary_domain.toLowerCase().includes(q) ||
           e.tagline.toLowerCase().includes(q) ||
           e.description.toLowerCase().includes(q) ||
+          (e.parent_company && e.parent_company.toLowerCase().includes(q)) ||
           e.cause_of_death_summary.toLowerCase().includes(q) ||
           e.cause_category.toLowerCase().includes(q) ||
-          e.category.toLowerCase().includes(q)
+          e.category.toLowerCase().includes(q) ||
+          (e.country && e.country.toLowerCase().includes(q)) ||
+          (e.status_reason && e.status_reason.toLowerCase().includes(q))
         );
       });
+    }
+
+    // Historical Era filter
+    if (selectedEra === 'WEB1') {
+      list = list.filter(e => (e.founded_year && e.founded_year <= 2004) || (e.death_year && e.death_year <= 2004));
+    } else if (selectedEra === 'WEB2') {
+      list = list.filter(e => (e.founded_year && e.founded_year >= 2005 && e.founded_year <= 2015) || (e.death_year && e.death_year >= 2005 && e.death_year <= 2015));
+    } else if (selectedEra === 'MODERN') {
+      list = list.filter(e => (e.founded_year && e.founded_year >= 2016) || (e.death_year && e.death_year >= 2016));
     }
 
     // Status filter
@@ -157,18 +170,19 @@ function ExploreContent() {
     }
 
     return list;
-  }, [searchQuery, selectedStatus, selectedCategory, selectedCause, yearFrom, yearTo, sortBy]);
+  }, [searchQuery, selectedStatus, selectedCategory, selectedCause, selectedEra, yearFrom, yearTo, sortBy]);
 
   const clearAllFilters = () => {
     setSearchQuery('');
     setSelectedStatus('ALL');
     setSelectedCategory('ALL');
     setSelectedCause('ALL');
+    setSelectedEra('ALL');
     setYearFrom('');
     setYearTo('');
   };
 
-  const hasActiveFilters = searchQuery || selectedStatus !== 'ALL' || selectedCategory !== 'ALL' || selectedCause !== 'ALL' || yearFrom || yearTo;
+  const hasActiveFilters = searchQuery || selectedStatus !== 'ALL' || selectedCategory !== 'ALL' || selectedCause !== 'ALL' || selectedEra !== 'ALL' || yearFrom || yearTo;
 
   return (
     <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 py-12 space-y-10 font-sans">
@@ -221,6 +235,34 @@ function ExploreContent() {
               Reset Filters
             </button>
           )}
+        </div>
+
+        {/* Historical Internet Era Filters */}
+        <div className="space-y-2 pt-1 border-t border-white/8">
+          <div className="text-xs font-mono uppercase text-zinc-400 font-bold tracking-wider">
+            Filter by Historical Internet Era:
+          </div>
+          <div className="flex flex-wrap gap-2">
+            {[
+              { id: 'ALL', label: 'All Eras' },
+              { id: 'WEB1', label: 'Web 1.0 Pioneers (1990 — 2004)' },
+              { id: 'WEB2', label: 'Web 2.0 Golden Age (2005 — 2015)' },
+              { id: 'MODERN', label: 'Modern App & SaaS (2016 — 2024)' },
+            ].map((era) => (
+              <button
+                key={era.id}
+                type="button"
+                onClick={() => setSelectedEra(era.id as any)}
+                className={`px-3 py-1.5 rounded-xl text-xs font-sans font-bold transition-all cursor-pointer border ${
+                  selectedEra === era.id
+                    ? 'bg-red-600 border-red-500 text-white shadow-md'
+                    : 'bg-zinc-950 border-white/10 text-zinc-300 hover:text-white hover:bg-zinc-800'
+                }`}
+              >
+                {era.label}
+              </button>
+            ))}
+          </div>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 items-end">
