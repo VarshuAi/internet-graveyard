@@ -29,18 +29,33 @@ import {
   AlertTriangle,
   Lock,
   Key,
-  LogOut
+  LogOut,
+  Bot,
+  Play,
+  Sparkles,
+  Globe
 } from 'lucide-react';
 import { ALL_SEED_ENTITIES } from '@/data/seed-entities-batch2';
 
 export default function AdminDashboardPage() {
-  const [activeTab, setActiveTab] = useState<'overview' | 'review_queue' | 'submissions' | 'entities' | 'scanner'>('overview');
+  const [activeTab, setActiveTab] = useState<'overview' | 'review_queue' | 'submissions' | 'entities' | 'scanner' | 'scraper'>('overview');
   const [loading, setLoading] = useState(false);
 
   const [stats, setStats] = useState<GraveyardStats | null>(null);
   const [candidates, setCandidates] = useState<DiscoveryCandidate[]>([]);
   const [submissions, setSubmissions] = useState<UserSubmission[]>([]);
   const [entities, setEntities] = useState<GraveEntity[]>([]);
+
+  // Scraper Engine State
+  const [scraperSource, setScraperSource] = useState<'all' | 'wikipedia' | 'hn' | 'probe'>('all');
+  const [scraperLimit, setScraperLimit] = useState(8);
+  const [scraperAutoIngest, setScraperAutoIngest] = useState(false);
+  const [scraperTargetDomain, setScraperTargetDomain] = useState('');
+  const [scraperLoading, setScraperLoading] = useState(false);
+  const [scraperReport, setScraperReport] = useState<any>(null);
+  const [scraperLogs, setScraperLogs] = useState<string[]>([
+    '[System Ready] Automation Scraper Engine idle. Select archival sources and execute discovery.'
+  ]);
 
   // Live scanner state
   const [probeUrl, setProbeUrl] = useState('');
@@ -188,6 +203,55 @@ export default function AdminDashboardPage() {
       console.error('Probe error:', err);
     } finally {
       setProbeLoading(false);
+    }
+  };
+
+  const handleRunScraper = async (e?: React.FormEvent) => {
+    if (e) e.preventDefault();
+    if (scraperLoading) return;
+
+    setScraperLoading(true);
+    setScraperReport(null);
+    setScraperLogs(prev => [
+      ...prev,
+      `[${new Date().toLocaleTimeString()}] Initializing automated scrape pipeline (Source: ${scraperSource}, Limit: ${scraperLimit}, Auto-Ingest: ${scraperAutoIngest})...`
+    ]);
+
+    try {
+      const res = await fetch('/api/scraper', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          source: scraperSource,
+          limit: scraperLimit,
+          autoIngest: scraperAutoIngest,
+          targetDomain: scraperTargetDomain.trim() || undefined
+        })
+      });
+
+      const data = await res.json();
+      if (res.ok && data.success) {
+        setScraperReport(data.report);
+        const logLines = (data.report.logs || []).map((l: string) => `[${new Date().toLocaleTimeString()}] ${l}`);
+        setScraperLogs(prev => [
+          ...prev,
+          ...logLines,
+          `[${new Date().toLocaleTimeString()}] Pipeline completed! Discovered: ${data.report.totalDiscovered}, Auto-Ingested: ${data.report.autoIngested}, Candidates Queued: ${data.report.candidatesQueued}`
+        ]);
+        fetchAdminData();
+      } else {
+        setScraperLogs(prev => [
+          ...prev,
+          `[${new Date().toLocaleTimeString()}] Scraper error: ${data.error || 'Unknown error'}`
+        ]);
+      }
+    } catch (err: any) {
+      setScraperLogs(prev => [
+        ...prev,
+        `[${new Date().toLocaleTimeString()}] Scraper request failed: ${err?.message || err}`
+      ]);
+    } finally {
+      setScraperLoading(false);
     }
   };
 
@@ -397,6 +461,18 @@ export default function AdminDashboardPage() {
         >
           <Activity className="w-4 h-4 text-red-400" />
           <span>Live Health Prober</span>
+        </button>
+        <button
+          onClick={() => setActiveTab('scraper')}
+          className={`flex items-center gap-2 px-5 py-2.5 rounded-xl transition-all cursor-pointer font-medium ${
+            activeTab === 'scraper' ? 'bg-white/15 text-white font-bold shadow-md' : 'text-zinc-400 hover:text-white hover:bg-white/5'
+          }`}
+        >
+          <Bot className="w-4 h-4 text-emerald-400" />
+          <span>Automation Scraper</span>
+          <span className="px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-400 text-xs font-mono font-bold">
+            AI ENGINE
+          </span>
         </button>
       </div>
 
@@ -937,6 +1013,235 @@ export default function AdminDashboardPage() {
                   </div>
                 </div>
               </div>
+            </div>
+          )}
+        </div>
+      )}
+
+      {/* 6. AUTOMATION SCRAPER TAB */}
+      {activeTab === 'scraper' && (
+        <div className="space-y-8 animate-in fade-in">
+          {/* Header Banner */}
+          <div className="p-6 rounded-2xl bg-gradient-to-r from-emerald-950/40 via-zinc-900 to-zinc-900 border border-emerald-500/30 space-y-3 relative overflow-hidden shadow-xl">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+              <div className="space-y-1">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-950/60 border border-emerald-500/40 text-emerald-400 text-xs font-mono font-bold uppercase tracking-wider">
+                  <Bot className="w-3.5 h-3.5" />
+                  <span>Automated Archival Crawler Engine</span>
+                </div>
+                <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight">
+                  Multi-Source Discovery Pipeline
+                </h2>
+                <p className="text-xs sm:text-sm text-zinc-300 max-w-2xl leading-relaxed">
+                  Autonomous archaeology bot that scours Wikipedia historical category archives, Hacker News shutdown declarations (Algolia API), Internet Archive Wayback snapshots, and live DNS/HTTP/SSL signals.
+                </p>
+              </div>
+
+              <div className="flex items-center gap-2">
+                <span className="flex h-3 w-3 relative">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
+                </span>
+                <span className="text-xs font-mono font-bold text-emerald-400 tracking-wider">
+                  ENGINE ONLINE
+                </span>
+              </div>
+            </div>
+          </div>
+
+          {/* Controls Form */}
+          <form onSubmit={handleRunScraper} className="p-6 rounded-2xl bg-zinc-900/90 border border-white/10 space-y-6 shadow-lg">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+              {/* Source Selector */}
+              <div className="space-y-2">
+                <label className="text-xs font-mono font-bold uppercase text-zinc-300">
+                  Data Source Engine:
+                </label>
+                <select
+                  value={scraperSource}
+                  onChange={(e) => setScraperSource(e.target.value as any)}
+                  className="w-full p-3 rounded-xl bg-zinc-800 border border-white/15 text-xs text-white focus:outline-none focus:border-emerald-500 cursor-pointer"
+                >
+                  <option value="all">All Sources (Wikipedia + Hacker News)</option>
+                  <option value="wikipedia">Wikipedia Defunct Categories & Infoboxes</option>
+                  <option value="hn">Hacker News Shutdown & Sunset Letters</option>
+                  <option value="probe">Single Target Deep Probe</option>
+                </select>
+              </div>
+
+              {/* Batch Discovery Limit */}
+              <div className="space-y-2">
+                <label className="text-xs font-mono font-bold uppercase text-zinc-300">
+                  Batch Ingestion Limit:
+                </label>
+                <input
+                  type="number"
+                  min="1"
+                  max="30"
+                  value={scraperLimit}
+                  onChange={(e) => setScraperLimit(parseInt(e.target.value) || 5)}
+                  className="w-full p-3 rounded-xl bg-zinc-800 border border-white/15 text-xs text-white focus:outline-none focus:border-emerald-500 font-mono"
+                />
+              </div>
+
+              {/* Target Domain (Optional) */}
+              <div className="space-y-2">
+                <label className="text-xs font-mono font-bold uppercase text-zinc-300">
+                  Target Domain (Optional):
+                </label>
+                <input
+                  type="text"
+                  placeholder="e.g. vine.co, skiff.com, invisionapp.com"
+                  value={scraperTargetDomain}
+                  onChange={(e) => setScraperTargetDomain(e.target.value)}
+                  className="w-full p-3 rounded-xl bg-zinc-800 border border-white/15 text-xs text-white placeholder-zinc-500 focus:outline-none focus:border-emerald-500 font-mono"
+                />
+              </div>
+            </div>
+
+            {/* Toggle Auto-Ingest and Action Button */}
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pt-4 border-t border-white/10">
+              <label className="flex items-center gap-3 cursor-pointer group select-none">
+                <input
+                  type="checkbox"
+                  checked={scraperAutoIngest}
+                  onChange={(e) => setScraperAutoIngest(e.target.checked)}
+                  className="w-4 h-4 rounded text-emerald-600 bg-zinc-800 border-zinc-700 focus:ring-emerald-500 focus:ring-offset-zinc-900 cursor-pointer"
+                />
+                <div>
+                  <span className="text-xs font-bold text-white group-hover:text-emerald-300 transition-colors">
+                    Direct Autopsy Auto-Ingest
+                  </span>
+                  <p className="text-[11px] text-zinc-400">
+                    {scraperAutoIngest 
+                      ? 'High-confidence candidates are published directly into the graveyard catalog.' 
+                      : 'Candidates will be held in the Discovery Queue for curator review (recommended).'}
+                  </p>
+                </div>
+              </label>
+
+              <button
+                type="submit"
+                disabled={scraperLoading}
+                className="px-6 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 disabled:opacity-50 text-white font-mono font-bold text-xs uppercase tracking-wider transition-all shadow-[0_0_20px_rgba(16,185,129,0.3)] flex items-center justify-center gap-2 cursor-pointer shrink-0"
+              >
+                {scraperLoading ? (
+                  <>
+                    <RefreshCw className="w-4 h-4 animate-spin" />
+                    <span>Executing Scraper Pipeline...</span>
+                  </>
+                ) : (
+                  <>
+                    <Play className="w-4 h-4 fill-white" />
+                    <span>Run Automation Scraper</span>
+                  </>
+                )}
+              </button>
+            </div>
+          </form>
+
+          {/* Live Terminal Output */}
+          <div className="rounded-2xl bg-zinc-950 border border-emerald-500/20 shadow-2xl overflow-hidden font-mono">
+            <div className="flex items-center justify-between px-4 py-3 bg-zinc-900/90 border-b border-white/10">
+              <div className="flex items-center gap-2">
+                <Terminal className="w-4 h-4 text-emerald-400" />
+                <span className="text-xs font-bold text-zinc-300 uppercase tracking-wider">
+                  Archaeological Scraper Telemetry Console
+                </span>
+              </div>
+              <button
+                type="button"
+                onClick={() => setScraperLogs(['[Console Cleared]'])}
+                className="text-[11px] text-zinc-400 hover:text-white px-2 py-1 rounded bg-zinc-800 border border-white/5 transition-colors cursor-pointer"
+              >
+                Clear Log
+              </button>
+            </div>
+            <div className="p-4 max-h-64 overflow-y-auto space-y-1.5 text-xs text-emerald-400/90 selection:bg-emerald-500/30">
+              {scraperLogs.map((log, idx) => (
+                <div key={idx} className="leading-relaxed break-words font-mono">
+                  {log.includes('error') || log.includes('Failed') ? (
+                    <span className="text-red-400">{log}</span>
+                  ) : log.includes('completed') || log.includes('Success') || log.includes('Auto-Ingested') ? (
+                    <span className="text-emerald-300 font-bold">{log}</span>
+                  ) : log.includes('Wikipedia') ? (
+                    <span className="text-cyan-300">{log}</span>
+                  ) : log.includes('HackerNews') ? (
+                    <span className="text-amber-300">{log}</span>
+                  ) : (
+                    <span>{log}</span>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Scraper Report Summary Card */}
+          {scraperReport && (
+            <div className="p-6 rounded-2xl bg-zinc-900/90 border border-emerald-500/30 space-y-6 shadow-xl animate-in fade-in">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-white/10">
+                <div className="space-y-1">
+                  <div className="flex items-center gap-2">
+                    <CheckCircle2 className="w-5 h-5 text-emerald-400" />
+                    <h3 className="text-base font-bold text-white font-mono">
+                      Scrape Execution Report
+                    </h3>
+                  </div>
+                  <p className="text-xs text-zinc-400">
+                    Source: <span className="text-emerald-400 uppercase font-mono">{scraperReport.source}</span> • Duration: <span className="text-white font-mono">{scraperReport.durationMs}ms</span>
+                  </p>
+                </div>
+                <div className="flex items-center gap-4 text-xs font-mono">
+                  <div className="text-center px-3 py-1.5 rounded-lg bg-zinc-800 border border-white/10">
+                    <div className="text-zinc-400 text-[10px] uppercase">Discovered</div>
+                    <div className="text-base font-black text-white">{scraperReport.totalDiscovered}</div>
+                  </div>
+                  <div className="text-center px-3 py-1.5 rounded-lg bg-zinc-800 border border-white/10">
+                    <div className="text-zinc-400 text-[10px] uppercase">Queued</div>
+                    <div className="text-base font-black text-amber-400">{scraperReport.candidatesQueued}</div>
+                  </div>
+                  <div className="text-center px-3 py-1.5 rounded-lg bg-zinc-800 border border-white/10">
+                    <div className="text-zinc-400 text-[10px] uppercase">Auto-Ingested</div>
+                    <div className="text-base font-black text-emerald-400">{scraperReport.autoIngested}</div>
+                  </div>
+                </div>
+              </div>
+
+              {scraperReport.discoveredItems && scraperReport.discoveredItems.length > 0 && (
+                <div className="space-y-3">
+                  <div className="text-xs font-mono uppercase text-zinc-400 font-bold">
+                    Discovered Relics & Verified Candidates:
+                  </div>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                    {scraperReport.discoveredItems.map((item: any, idx: number) => (
+                      <div key={idx} className="p-4 rounded-xl bg-zinc-950 border border-white/10 space-y-2">
+                        <div className="flex items-center justify-between">
+                          <span className="font-bold text-white text-sm">{item.name}</span>
+                          <span className="text-xs font-mono text-emerald-400">{item.domain || item.source}</span>
+                        </div>
+                        <p className="text-xs text-zinc-400 line-clamp-2 leading-relaxed">
+                          {item.evidenceSummary || item.description || 'Defunct web platform identified via automated historical crawl.'}
+                        </p>
+                        <div className="flex items-center gap-2 pt-1">
+                          <span className="px-2 py-0.5 rounded text-[10px] bg-red-500/20 text-red-300 font-mono">
+                            {item.status || 'DEAD'}
+                          </span>
+                          {item.archiveUrl && (
+                            <a
+                              href={item.archiveUrl}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-[10px] text-zinc-400 hover:text-white underline font-mono ml-auto"
+                            >
+                              Wayback Snapshot →
+                            </a>
+                          )}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
             </div>
           )}
         </div>

@@ -20,6 +20,12 @@
   "author": "Varshan (VarshuAi)",
   "license": "MIT",
   "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "scrape": "node scripts/run-scraper.mjs"
+  },
   "dependencies": {
     "canvas-confetti": "^1.9.4",
     "clsx": "^2.1.1",

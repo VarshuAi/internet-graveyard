@@ -1,5 +1,6 @@
 import { GraveEntity } from '@/types/graveyard';
 import { SEED_ENTITIES as BATCH_1 } from './seed-entities';
+import { BATCH_3_ENTITIES } from './seed-entities-batch3';
 
 export const ADDITIONAL_ENTITIES: GraveEntity[] = [
   {
@@ -281,4 +282,4 @@ export const ADDITIONAL_ENTITIES: GraveEntity[] = [
   }
 ];
 
-export const ALL_SEED_ENTITIES = [...BATCH_1, ...ADDITIONAL_ENTITIES];
+export const ALL_SEED_ENTITIES = [...BATCH_1, ...ADDITIONAL_ENTITIES, ...BATCH_3_ENTITIES];

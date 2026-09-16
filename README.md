@@ -1,4 +1,4 @@
-﻿<div align="center">
+<div align="center">
 
 # † INTERNET GRAVEYARD
 ### *Defunct Web Archaeology & Living Digital Cemetery*
@@ -25,7 +25,8 @@
 
 When tech giants pull the plug on beloved platforms, servers go dark, domains expire, and decades of human culture evaporate. **Internet Graveyard** treats defunct web entities with the forensic rigor of archaeological artifacts:
 
-- **12,500+ archived digital relics** with forensic autopsies, peak reach stats, and coroners' verdicts.
+- **70+ authentic, deeply researched digital relics** with forensic autopsies, peak reach stats, timelines, and coroners' verdicts (zero mock data).
+- **Multi-source automated web scraper** querying Wikipedia REST APIs, Hacker News Algolia sunset archives, and Wayback Machine snapshots.
 - **Procedural soundboard engine** reviving dial-up modems, ICQ chirps, and MSN nudges directly in the browser with zero external audio assets.
 - **Historical snapshots** powered by the Internet Archive Wayback Machine.
 - **Head-to-head autopsies** exploring why pioneers fell while their algorithmic successors conquered.
@@ -80,15 +81,22 @@ When tech giants pull the plug on beloved platforms, servers go dark, domains ex
 ### 💓 7. Vital Signs Domain Prober (`/lookup`)
 - Forensic URL analyzer inspecting live HTTP status codes, server headers, SSL certificates, and detecting shutdown or farewell language patterns.
 
+### 🤖 8. Automated Archival Web Scraper (`lib/discovery`)
+- **Wikipedia Historical Crawler:** Scrapes Wikipedia Category trees and infoboxes for defunct websites, extracting active years, founders, shutdown rationales, and categories.
+- **Hacker News Sunset Radar:** Interrogates Algolia's HN Search API for real-time shutdown announcements, founder farewell letters, and sunset threads.
+- **Wayback Machine Verifier:** Automatically validates historical archive snapshots across critical platform milestones.
+- **Curator Command Center Integration:** Execute scans with live cyber-terminal telemetry from the password-gated `/admin` dashboard.
+- **CLI Excavator:** Run standalone batch scraping jobs directly from your terminal (`npm run scrape`).
+
 ---
 
 ## 🛡️ Archaeology Command Center (`/admin`)
 
-The platform contains an internal Curator Terminal for managing submissions and reviewing automated scanner discoveries.
+The platform contains an internal Curator Terminal for managing submissions, editing entities, and operating the automated discovery crawler.
 
 ### Security Architecture:
 - **Hidden from Navigation:** Removed from public navigation headers and sitemaps.
-- **API Guard (`401 Unauthorized`):** Server-side verification on all `/api/admin` requests via bearer token or encrypted session cookie.
+- **API Guard (`401 Unauthorized`):** Server-side verification on all `/api/admin` and `/api/scraper` requests via bearer token or encrypted session cookie.
 - **Passkey Gate:** Unauthenticated visitors encounter a cyber-archival lock terminal.
 - **Session Control:** Generates a secure 24-hour HTTP-only cookie with a 1-click **"Lock Terminal"** logout button.
 
@@ -104,7 +112,7 @@ The platform contains an internal Curator Terminal for managing submissions and 
 ```
 internet-graveyard/
 ├── app/                        # Next.js 14 App Router
-│   ├── api/                    # Route handlers (admin, auth, prober, submissions)
+│   ├── api/                    # Route handlers (admin, auth, prober, scraper, submissions)
 │   ├── admin/                  # Curator Access Terminal (password-gated)
 │   ├── compare/                # Head-to-Head Autopsy Rivalries
 │   ├── dying-now/              # At-Risk Platform Radar
@@ -122,14 +130,23 @@ internet-graveyard/
 │   ├── Navbar.tsx              # Clean Cyber-Archival Navigation
 │   ├── TodayInHistoryBanner.tsx# Daily Anniversary Dispatch
 │   └── WaybackTimeMachine.tsx  # Retro Browser Snapshot Frame
-├── data/                       # Curated Relic Databases
-│   ├── graveyard.ts            # Primary Defunct Relics Archive
+├── data/                       # Curated Relic Databases (70+ Authentic Defunct Services)
+│   ├── graveyard.json          # Main JSON Database (CRUD & Ingestion target)
+│   ├── graveyard.ts            # Typed Seed Data & Dynamic DB Bridge
 │   ├── rivalries.ts            # Forensic Head-to-Head Comparisons
 │   └── sounds.ts               # Audio Relics Catalog
 ├── lib/                        # Core Systems
 │   ├── audio/soundArchive.ts   # Web Audio API Procedural Synthesizers
 │   ├── auth/admin.ts           # Curator Security & Token Authorization
+│   ├── discovery/              # Multi-Source Automated Scraper Engine
+│   │   ├── scraperEngine.ts    # Central Orchestrator & Deduplication
+│   │   ├── wikipediaScraper.ts # Wikipedia REST & Infobox Parser
+│   │   ├── hnSunsetCrawler.ts  # Algolia HN Sunset Discovery
+│   │   └── waybackVerifier.ts  # Internet Archive Availability Prober
+│   ├── db/graveyardDb.ts       # JSON Database Engine
 │   └── history/anniversaries.ts# Calendar Date Anniversary Engine
+├── scripts/
+│   └── run-scraper.mjs         # Standalone CLI Archaeological Scraper
 └── types/                      # TypeScript Schemas & Enums
 ```
 
@@ -159,7 +176,19 @@ npm run dev
 ```
 Open [http://localhost:3000](http://localhost:3000) to explore the graveyard.
 
-### 4. Build for Production
+### 4. Run Automated Web Scraper (CLI)
+```bash
+# Discover defunct websites from Wikipedia categories
+npm run scrape -- --source=wikipedia --limit=5
+
+# Interrogate Hacker News for sunset letters
+npm run scrape -- --source=hn --limit=5
+
+# Scrape all sources and auto-ingest directly into the graveyard catalog
+npm run scrape -- --source=all --limit=10 --ingest
+```
+
+### 5. Build for Production
 ```bash
 npm run build
 npm run start
