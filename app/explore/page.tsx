@@ -67,7 +67,7 @@ function ExploreContent() {
   const [selectedStatus, setSelectedStatus] = useState<string>(initialStatus);
   const [selectedCategory, setSelectedCategory] = useState<string>(initialCategory);
   const [selectedCause, setSelectedCause] = useState<string>('ALL');
-  const [selectedEra, setSelectedEra] = useState<'ALL' | 'WEB1' | 'WEB2' | 'MODERN'>('ALL');
+  const [selectedEra, setSelectedEra] = useState<'ALL' | 'RECENT' | 'WEB1' | 'WEB2' | 'MODERN'>('ALL');
   const [yearFrom, setYearFrom] = useState<string>('');
   const [yearTo, setYearTo] = useState<string>('');
   const [sortBy, setSortBy] = useState<'recent' | 'candles' | 'name' | 'oldest'>('recent');
@@ -111,7 +111,9 @@ function ExploreContent() {
     }
 
     // Historical Era filter
-    if (selectedEra === 'WEB1') {
+    if (selectedEra === 'RECENT') {
+      list = list.filter(e => e.death_year && e.death_year >= 2022);
+    } else if (selectedEra === 'WEB1') {
       list = list.filter(e => (e.founded_year && e.founded_year <= 2004) || (e.death_year && e.death_year <= 2004));
     } else if (selectedEra === 'WEB2') {
       list = list.filter(e => (e.founded_year && e.founded_year >= 2005 && e.founded_year <= 2015) || (e.death_year && e.death_year >= 2005 && e.death_year <= 2015));
@@ -232,9 +234,10 @@ function ExploreContent() {
           <div className="flex flex-wrap gap-2">
             {[
               { id: 'ALL', label: 'All Eras' },
-              { id: 'WEB1', label: 'Web 1.0 Pioneers (1990 — 2004)' },
+              { id: 'RECENT', label: '⚡ Recently Buried (2022 — 2026)' },
+              { id: 'MODERN', label: 'Modern Era (2016 — 2026)' },
               { id: 'WEB2', label: 'Web 2.0 Golden Age (2005 — 2015)' },
-              { id: 'MODERN', label: 'Modern App & SaaS (2016 — 2024)' },
+              { id: 'WEB1', label: 'Web 1.0 Pioneers (1990 — 2004)' },
             ].map((era) => (
               <button
                 key={era.id}

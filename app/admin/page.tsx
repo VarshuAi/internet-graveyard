@@ -38,7 +38,7 @@ import {
 import { ALL_SEED_ENTITIES } from '@/data/seed-entities-batch2';
 
 export default function AdminDashboardPage() {
-  const [activeTab, setActiveTab] = useState<'overview' | 'review_queue' | 'submissions' | 'entities' | 'scanner' | 'scraper'>('overview');
+  const [activeTab, setActiveTab] = useState<'overview' | 'review_queue' | 'submissions' | 'entities' | 'scanner' | 'scraper' | 'automation'>('overview');
   const [loading, setLoading] = useState(false);
 
   const [stats, setStats] = useState<GraveyardStats | null>(null);
@@ -55,6 +55,17 @@ export default function AdminDashboardPage() {
   const [scraperReport, setScraperReport] = useState<any>(null);
   const [scraperLogs, setScraperLogs] = useState<string[]>([
     '[System Ready] Automation Scraper Engine idle. Select archival sources and execute discovery.'
+  ]);
+
+  // Autonomous Cron Daemon State
+  const [automationLoading, setAutomationLoading] = useState(false);
+  const [automationReport, setAutomationReport] = useState<any>(null);
+  const [autoHn, setAutoHn] = useState(true);
+  const [autoWiki, setAutoWiki] = useState(true);
+  const [autoProbe, setAutoProbe] = useState(true);
+  const [autoApprove, setAutoApprove] = useState(false);
+  const [automationLogs, setAutomationLogs] = useState<string[]>([
+    '[Daemon Initialized] Automated archaeology cron pipeline armed. Ready for scheduled or manual triggers.'
   ]);
 
   // Live scanner state
@@ -252,6 +263,51 @@ export default function AdminDashboardPage() {
       ]);
     } finally {
       setScraperLoading(false);
+    }
+  };
+
+  const handleRunAutomation = async () => {
+    setAutomationLoading(true);
+    setAutomationLogs(prev => [
+      ...prev,
+      `[${new Date().toLocaleTimeString()}] Triggering automated discovery and health sweep pipeline...`
+    ]);
+
+    try {
+      const res = await fetch('/api/cron', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          crawlHn: autoHn,
+          scrapeWikipedia: autoWiki,
+          probeBatchSize: autoProbe ? 6 : 0,
+          autoApprove: autoApprove,
+          maxNewCandidates: 8
+        })
+      });
+
+      const data = await res.json();
+      if (res.ok && data.report) {
+        setAutomationReport(data.report);
+        setAutomationLogs(prev => [
+          ...prev,
+          ...(data.report.logs || []),
+          `[${new Date().toLocaleTimeString()}] ✅ ${data.report.summary}`
+        ]);
+        fetchAdminData();
+      } else {
+        setAutomationLogs(prev => [
+          ...prev,
+          `[${new Date().toLocaleTimeString()}] ❌ Automation error: ${data.error || 'Failed'}`
+        ]);
+      }
+    } catch (err: any) {
+      setAutomationLogs(prev => [
+        ...prev,
+        `[${new Date().toLocaleTimeString()}] ❌ Network error: ${err.message}`
+      ]);
+    } finally {
+      setAutomationLoading(false);
     }
   };
 
@@ -473,6 +529,16 @@ export default function AdminDashboardPage() {
           <span className="px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-400 text-xs font-mono font-bold">
             AI ENGINE
           </span>
+        </button>
+        <button
+          onClick={() => setActiveTab('automation')}
+          className={`flex items-center gap-2 px-5 py-2.5 rounded-xl transition-all cursor-pointer font-medium ${
+            activeTab === 'automation' ? 'bg-white/15 text-white font-bold shadow-md' : 'text-zinc-400 hover:text-white hover:bg-white/5'
+          }`}
+        >
+          <Sparkles className="w-4 h-4 text-purple-400" />
+          <span>Scheduled Cron Daemon</span>
+          <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
         </button>
       </div>
 
@@ -1235,6 +1301,226 @@ export default function AdminDashboardPage() {
                             >
                               Wayback Snapshot →
                             </a>
+                          )}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
+          )}
+        </div>
+      )}
+
+      {/* 7. AUTONOMOUS CRON DAEMON TAB */}
+      {activeTab === 'automation' && (
+        <div className="space-y-6">
+          <div className="p-7 rounded-2xl bg-zinc-900/90 border border-purple-500/30 space-y-6 shadow-2xl relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-80 h-80 bg-purple-600/10 rounded-full blur-3xl pointer-events-none" />
+
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 border-b border-white/10">
+              <div className="space-y-1.5">
+                <div className="flex items-center gap-3">
+                  <div className="p-2.5 rounded-xl bg-purple-950/60 border border-purple-500/40 text-purple-400">
+                    <Sparkles className="w-5 h-5" />
+                  </div>
+                  <h2 className="text-xl font-black text-white font-mono tracking-tight">
+                    AUTONOMOUS CRON & ARCHAEOLOGY DAEMON
+                  </h2>
+                </div>
+                <p className="text-xs text-zinc-300 font-sans max-w-2xl leading-relaxed">
+                  Automated background pipeline that crawls Algolia Hacker News, checks Wikipedia defunct registries, and probes live domain DNS/HTTP heartbeats to identify dead services and domain squatters without manual intervention.
+                </p>
+              </div>
+
+              <div className="flex items-center gap-2">
+                <div className="px-3 py-1.5 rounded-xl bg-purple-950/60 border border-purple-500/40 text-purple-300 text-xs font-mono font-bold flex items-center gap-2 shadow-sm">
+                  <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+                  <span>DAEMON: ARMED</span>
+                </div>
+                <div className="px-3 py-1.5 rounded-xl bg-zinc-800 border border-white/10 text-zinc-400 text-xs font-mono">
+                  <span>CRON: 00:00 UTC</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Automation Options Configuration */}
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-4 pt-2">
+              <label className="flex items-center gap-3 p-3.5 rounded-xl bg-zinc-950 border border-white/10 cursor-pointer hover:border-purple-500/40 transition-colors">
+                <input
+                  type="checkbox"
+                  checked={autoHn}
+                  onChange={(e) => setAutoHn(e.target.checked)}
+                  className="rounded border-zinc-700 bg-zinc-900 text-purple-500 focus:ring-purple-500 w-4 h-4 cursor-pointer"
+                />
+                <div className="text-xs">
+                  <div className="font-bold text-white">Hacker News Crawl</div>
+                  <div className="text-zinc-400 text-[11px]">Algolia shutdown stories</div>
+                </div>
+              </label>
+
+              <label className="flex items-center gap-3 p-3.5 rounded-xl bg-zinc-950 border border-white/10 cursor-pointer hover:border-purple-500/40 transition-colors">
+                <input
+                  type="checkbox"
+                  checked={autoWiki}
+                  onChange={(e) => setAutoWiki(e.target.checked)}
+                  className="rounded border-zinc-700 bg-zinc-900 text-purple-500 focus:ring-purple-500 w-4 h-4 cursor-pointer"
+                />
+                <div className="text-xs">
+                  <div className="font-bold text-white">Wikipedia Defunct Scrape</div>
+                  <div className="text-zinc-400 text-[11px]">Defunct web categories</div>
+                </div>
+              </label>
+
+              <label className="flex items-center gap-3 p-3.5 rounded-xl bg-zinc-950 border border-white/10 cursor-pointer hover:border-purple-500/40 transition-colors">
+                <input
+                  type="checkbox"
+                  checked={autoProbe}
+                  onChange={(e) => setAutoProbe(e.target.checked)}
+                  className="rounded border-zinc-700 bg-zinc-900 text-purple-500 focus:ring-purple-500 w-4 h-4 cursor-pointer"
+                />
+                <div className="text-xs">
+                  <div className="font-bold text-white">Domain Health Sweep</div>
+                  <div className="text-zinc-400 text-[11px]">Probe heartbeats & squatters</div>
+                </div>
+              </label>
+
+              <label className="flex items-center gap-3 p-3.5 rounded-xl bg-zinc-950 border border-white/10 cursor-pointer hover:border-purple-500/40 transition-colors">
+                <input
+                  type="checkbox"
+                  checked={autoApprove}
+                  onChange={(e) => setAutoApprove(e.target.checked)}
+                  className="rounded border-zinc-700 bg-zinc-900 text-purple-500 focus:ring-purple-500 w-4 h-4 cursor-pointer"
+                />
+                <div className="text-xs">
+                  <div className="font-bold text-white">Auto-Ingest Graves</div>
+                  <div className="text-zinc-400 text-[11px]">Direct publish high-conf (&gt;90)</div>
+                </div>
+              </label>
+            </div>
+
+            {/* Run Button and Endpoint Info */}
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pt-4 border-t border-white/10">
+              <div className="text-xs font-mono text-zinc-400 flex items-center gap-2">
+                <Terminal className="w-4 h-4 text-purple-400" />
+                <span>Triggerable via Webhook: <code className="text-purple-300 font-bold">GET/POST /api/cron</code></span>
+              </div>
+
+              <button
+                type="button"
+                onClick={handleRunAutomation}
+                disabled={automationLoading}
+                className="flex items-center justify-center gap-2.5 px-6 py-3 rounded-xl bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white font-bold text-sm cursor-pointer shadow-lg shadow-purple-900/30 transition-all disabled:opacity-50"
+              >
+                {automationLoading ? (
+                  <>
+                    <RefreshCw className="w-4 h-4 animate-spin" />
+                    <span>Executing Pipeline...</span>
+                  </>
+                ) : (
+                  <>
+                    <Play className="w-4 h-4 fill-white" />
+                    <span>Run Automated Pipeline Now</span>
+                  </>
+                )}
+              </button>
+            </div>
+          </div>
+
+          {/* Terminal Console Output */}
+          <div className="rounded-2xl bg-zinc-950 border border-white/10 shadow-2xl overflow-hidden font-mono">
+            <div className="flex items-center justify-between px-4 py-3 bg-zinc-900 border-b border-white/10 text-xs">
+              <div className="flex items-center gap-2 text-zinc-400">
+                <Terminal className="w-4 h-4 text-purple-400" />
+                <span>daemon-runner.log</span>
+                <span className="px-1.5 py-0.5 rounded bg-purple-500/20 text-purple-300 text-[10px]">
+                  CRON ENGINE
+                </span>
+              </div>
+              <button
+                type="button"
+                onClick={() => setAutomationLogs(['[Console Cleared]'])}
+                className="text-[11px] text-zinc-400 hover:text-white px-2 py-1 rounded bg-zinc-800 border border-white/5 transition-colors cursor-pointer"
+              >
+                Clear Log
+              </button>
+            </div>
+            <div className="p-4 max-h-64 overflow-y-auto space-y-1.5 text-xs text-purple-300/90 selection:bg-purple-500/30">
+              {automationLogs.map((log, idx) => (
+                <div key={idx} className="leading-relaxed break-words font-mono">
+                  {log.includes('❌') || log.includes('Warning') || log.includes('failed') ? (
+                    <span className="text-red-400">{log}</span>
+                  ) : log.includes('✅') || log.includes('Auto-Ingest') ? (
+                    <span className="text-emerald-300 font-bold">{log}</span>
+                  ) : log.includes('Alert') ? (
+                    <span className="text-amber-300 font-bold">{log}</span>
+                  ) : log.includes('Discovery') ? (
+                    <span className="text-cyan-300">{log}</span>
+                  ) : (
+                    <span>{log}</span>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Execution Report Card */}
+          {automationReport && (
+            <div className="p-6 rounded-2xl bg-zinc-900/90 border border-purple-500/30 space-y-6 shadow-xl animate-in fade-in">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-white/10">
+                <div className="space-y-1">
+                  <div className="flex items-center gap-2">
+                    <CheckCircle2 className="w-5 h-5 text-purple-400" />
+                    <h3 className="text-base font-bold text-white font-mono">
+                      Automated Pipeline Execution Report
+                    </h3>
+                  </div>
+                  <p className="text-xs text-zinc-400">
+                    Duration: <span className="text-white font-mono">{automationReport.duration_ms}ms</span> • Timestamp: <span className="text-purple-300 font-mono">{automationReport.timestamp.split('T')[1].slice(0, 8)} UTC</span>
+                  </p>
+                </div>
+                <div className="flex items-center gap-3 text-xs font-mono">
+                  <div className="text-center px-3 py-1.5 rounded-lg bg-zinc-800 border border-white/10">
+                    <div className="text-zinc-400 text-[10px] uppercase">Queued</div>
+                    <div className="text-base font-black text-amber-400">{automationReport.new_candidates_queued}</div>
+                  </div>
+                  <div className="text-center px-3 py-1.5 rounded-lg bg-zinc-800 border border-white/10">
+                    <div className="text-zinc-400 text-[10px] uppercase">Auto-Published</div>
+                    <div className="text-base font-black text-emerald-400">{automationReport.auto_approved_count}</div>
+                  </div>
+                  <div className="text-center px-3 py-1.5 rounded-lg bg-zinc-800 border border-white/10">
+                    <div className="text-zinc-400 text-[10px] uppercase">Probed</div>
+                    <div className="text-base font-black text-purple-300">{automationReport.domains_probed.length}</div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Probed Domains Grid */}
+              {automationReport.domains_probed && automationReport.domains_probed.length > 0 && (
+                <div className="space-y-3">
+                  <div className="text-xs font-mono uppercase text-zinc-400 font-bold">
+                    Domain Heartbeat & Squatter Probe Results:
+                  </div>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                    {automationReport.domains_probed.map((p: any, idx: number) => (
+                      <div key={idx} className="p-3.5 rounded-xl bg-zinc-950 border border-white/10 space-y-1.5 text-xs font-mono">
+                        <div className="flex items-center justify-between">
+                          <span className="font-bold text-white truncate max-w-[140px]">{p.domain}</span>
+                          <span className={`px-2 py-0.5 rounded text-[10px] ${
+                            p.status === 'ACTIVE' ? 'bg-emerald-500/20 text-emerald-300' :
+                            p.status === 'CONFIRMED_DEAD' ? 'bg-red-500/20 text-red-300' :
+                            p.status === 'ZOMBIE' ? 'bg-purple-500/20 text-purple-300' : 'bg-amber-500/20 text-amber-300'
+                          }`}>
+                            {p.status}
+                          </span>
+                        </div>
+                        <div className="flex items-center justify-between text-zinc-400 text-[11px]">
+                          <span>HTTP: {p.http_status ?? 'Failed'}</span>
+                          {p.parking_detected ? (
+                            <span className="text-red-400 font-bold">🚨 SQUATTER DETECTED</span>
+                          ) : (
+                            <span className="text-zinc-500">No Squatter</span>
                           )}
                         </div>
                       </div>

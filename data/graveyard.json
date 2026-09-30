@@ -13031,6 +13031,2099 @@
           "description": "A photo once a day with your friends, reviving the authentic non-influencer selfie culture."
         }
       ]
+    },
+    {
+      "id": "grave-apollo-for-reddit-2023",
+      "slug": "apollo-for-reddit",
+      "name": "Apollo for Reddit",
+      "tagline": "The premier iOS client for Reddit, loved by millions for its meticulous design and speed.",
+      "description": "Apollo was a critically acclaimed third-party iOS client for Reddit developed by former Apple engineer Christian Selig. Built specifically for iOS with gestures, Markdown editing, and native iOS design paradigms, Apollo won an Apple Design Award and became the undisputed gold standard for mobile Reddit browsing. In June 2023, Reddit announced exorbitant new API pricing ($20 million per year for Apollo's scale), forcing Selig to shut the app down on June 30, 2023 and triggering a historic sitewide Reddit blackout protest.",
+      "category": "Communities",
+      "status": "CONFIRMED_DEAD",
+      "status_reason": "Forced to shut down on June 30, 2023 after Reddit instituted $20M/year commercial API pricing.",
+      "founded_year": 2014,
+      "death_year": 2023,
+      "death_date": "June 30, 2023",
+      "lifespan": "2014 — 2023",
+      "cause_of_death_summary": "Reddit imposed prohibitive API pricing requiring roughly $20 million annually, making independent operation financially impossible.",
+      "cause_category": "Legal & Regulatory",
+      "parent_company": "Independent (Christian Selig)",
+      "logo_url": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=200&auto=format&fit=crop&q=80",
+      "hero_image_url": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=1200&auto=format&fit=crop&q=80",
+      "primary_domain": "apolloapp.io",
+      "popularity_peak": "Over 1.5 million daily active users; top trending app on the iOS App Store during peak 2021–2023.",
+      "peak_users": "1.5 Million+ DAUs",
+      "country": "Canada",
+      "confidence_score": 99,
+      "candle_count": 5420,
+      "is_verified": true,
+      "verified_at": "2026-09-30T15:02:31.346Z",
+      "created_at": "2026-09-30T15:02:31.347Z",
+      "updated_at": "2026-09-30T15:02:31.347Z",
+      "last_known_state": {
+        "website": {
+          "status_code": 200,
+          "state_desc": "Static farewell memorial page hosted on apolloapp.io.",
+          "final_url": "https://apolloapp.io"
+        },
+        "app": {
+          "store_status": "Delisted",
+          "state_desc": "Permanently removed from the Apple App Store."
+        },
+        "api": {
+          "endpoint_status": "403 Forbidden",
+          "state_desc": "Reddit OAuth client keys revoked."
+        },
+        "community": {
+          "platform": "r/apolloapp",
+          "state_desc": "Subreddit memorialized in read-only protest state."
+        },
+        "domain": {
+          "ownership": "Active / Retained",
+          "state_desc": "Retained by creator Christian Selig as digital monument."
+        }
+      },
+      "final_moments": "On June 30, 2023, Christian Selig issued Apollo's final farewell update featuring customizable farewell wallpapers, thank-you messages, and an emotional server shutdown countdown while hundreds of subreddits went dark in solidarity.",
+      "timeline": [
+        {
+          "id": "t-apollo-1",
+          "entity_id": "grave-apollo-for-reddit-2023",
+          "year": 2014,
+          "date_str": "October 2014",
+          "title": "Development Begins",
+          "description": "Christian Selig begins architecting a native iOS client built according to Apple Human Interface Guidelines.",
+          "event_type": "FOUNDED",
+          "order_index": 1
+        },
+        {
+          "id": "t-apollo-2",
+          "entity_id": "grave-apollo-for-reddit-2023",
+          "year": 2017,
+          "date_str": "October 23, 2017",
+          "title": "Official Public Launch",
+          "description": "Apollo officially launches on the iOS App Store after three years of beta testing on TestFlight.",
+          "event_type": "LAUNCH",
+          "order_index": 2
+        },
+        {
+          "id": "t-apollo-3",
+          "entity_id": "grave-apollo-for-reddit-2023",
+          "year": 2022,
+          "date_str": "June 2022",
+          "title": "Apple Design Award & Viral Zenith",
+          "description": "Apollo reaches over 1.5 million daily active users and wins widespread acclaim across the tech industry.",
+          "event_type": "MILESTONE",
+          "order_index": 3
+        },
+        {
+          "id": "t-apollo-4",
+          "entity_id": "grave-apollo-for-reddit-2023",
+          "year": 2023,
+          "date_str": "June 30, 2023",
+          "title": "Forced Shutdown & API Blackout",
+          "description": "Reddit enforces $20M/yr API pricing. Apollo ceases operations as thousands of Reddit communities go dark in protest.",
+          "event_type": "DISCONTINUED",
+          "order_index": 4
+        }
+      ],
+      "evidence": [
+        {
+          "id": "ev-apollo-1",
+          "entity_id": "grave-apollo-for-reddit-2023",
+          "source_name": "Christian Selig Official Announcement",
+          "source_type": "Official Creator Blog",
+          "url": "https://www.theverge.com/2023/6/8/23754183/apollo-reddit-app-shutting-down-api",
+          "timestamp": "2023-06-08",
+          "evidence_type": "OFFICIAL_ANNOUNCEMENT",
+          "reliability": "VERY_HIGH",
+          "weight": 50,
+          "extracted_claim": "Apollo developer Christian Selig announced that Reddit's upcoming API pricing changes would cost him $20 million per year, forcing the app to shut down on June 30, 2023.",
+          "is_verified": true
+        },
+        {
+          "id": "ev-apollo-2",
+          "entity_id": "grave-apollo-for-reddit-2023",
+          "source_name": "Wayback Machine Archival Snapshot",
+          "source_type": "Internet Archive Snapshot Index",
+          "url": "https://web.archive.org/web/*/apolloapp.io",
+          "timestamp": "2023-06-30",
+          "evidence_type": "ARCHIVE_SNAPSHOT",
+          "reliability": "VERY_HIGH",
+          "weight": 45,
+          "extracted_claim": "Web archive captures the Apollo farewell page thanking users for nine incredible years.",
+          "is_verified": true
+        }
+      ],
+      "archives": [
+        {
+          "id": "arc-apollo-1",
+          "entity_id": "grave-apollo-for-reddit-2023",
+          "year": 2017,
+          "date_captured": "2017-11-05",
+          "wayback_url": "https://web.archive.org/web/20171105000000*/https://apolloapp.io",
+          "title": "Apollo Debut Launch Page"
+        },
+        {
+          "id": "arc-apollo-2",
+          "entity_id": "grave-apollo-for-reddit-2023",
+          "year": 2021,
+          "date_captured": "2021-08-14",
+          "wayback_url": "https://web.archive.org/web/20210814000000*/https://apolloapp.io",
+          "title": "Apollo Peak Feature Showcase"
+        },
+        {
+          "id": "arc-apollo-3",
+          "entity_id": "grave-apollo-for-reddit-2023",
+          "year": 2023,
+          "date_captured": "2023-07-01",
+          "wayback_url": "https://web.archive.org/web/20230701000000*/https://apolloapp.io",
+          "title": "Apollo Final Farewell Memorial"
+        }
+      ],
+      "epitaphs": [
+        {
+          "id": "ep-apollo-1",
+          "entity_id": "grave-apollo-for-reddit-2023",
+          "author_name": "iOSCommunity",
+          "content": "Apollo proved how gorgeous and thoughtful a mobile client could be. The open API era of the social web died the day Apollo was forced offline.",
+          "years_used": "2017-2023",
+          "candle_lit": true,
+          "status": "APPROVED",
+          "created_at": "2026-09-30T15:02:31.347Z"
+        }
+      ]
+    },
+    {
+      "id": "grave-tweetbot-2023",
+      "slug": "tweetbot",
+      "name": "Tweetbot",
+      "tagline": "The definitive third-party Twitter client crafted with legendary sound effects and precision gesture UI.",
+      "description": "Tweetbot was an iconic third-party Twitter client developed by Tapbots (Paul Haddad and Mark Jardine). Celebrated for its mechanical sound design, gesture navigation, chronologically pure timelines without algorithmic injection, and powerful mute filters, Tweetbot set the benchmark for mobile interface design. On January 12, 2023, Twitter/X abruptly severed API access without notice, officially updating developer terms a week later to ban all third-party clients.",
+      "category": "Social",
+      "status": "CONFIRMED_DEAD",
+      "status_reason": "Abruptly killed on January 19, 2023 when Twitter/X banned all third-party clients from its API.",
+      "founded_year": 2011,
+      "death_year": 2023,
+      "death_date": "January 19, 2023",
+      "lifespan": "2011 — 2023",
+      "cause_of_death_summary": "Twitter/X terminated API access without prior notice, banning all competing third-party clients to monopolize ad impressions.",
+      "cause_category": "Strategic Pivot",
+      "parent_company": "Tapbots LLC",
+      "logo_url": "https://images.unsplash.com/photo-1611605698335-8b1569810432?w=200&auto=format&fit=crop&q=80",
+      "hero_image_url": "https://images.unsplash.com/photo-1516251193007-45ef944ab0c6?w=1200&auto=format&fit=crop&q=80",
+      "primary_domain": "tapbots.com",
+      "popularity_peak": "Hundreds of thousands of power users, journalists, and developers considered it the only way to read Twitter.",
+      "peak_users": "1 Million+ Paid Downloads",
+      "country": "United States",
+      "confidence_score": 99,
+      "candle_count": 4890,
+      "is_verified": true,
+      "verified_at": "2026-09-30T15:02:31.347Z",
+      "created_at": "2026-09-30T15:02:31.347Z",
+      "updated_at": "2026-09-30T15:02:31.347Z",
+      "last_known_state": {
+        "website": {
+          "status_code": 200,
+          "state_desc": "Tapbots transitioned website to promote Ivory (Mastodon client).",
+          "final_url": "https://tapbots.com/tweetbot/"
+        },
+        "app": {
+          "store_status": "Delisted",
+          "state_desc": "Delisted and discontinued from the App Store and Mac App Store."
+        },
+        "api": {
+          "endpoint_status": "401 Unauthorized",
+          "state_desc": "Twitter developer tokens permanently revoked."
+        },
+        "community": {
+          "platform": "Mastodon",
+          "state_desc": "Community migrated to Tapbots' Mastodon ecosystem."
+        },
+        "domain": {
+          "ownership": "Active / Retained",
+          "state_desc": "Domain owned by Tapbots LLC."
+        }
+      },
+      "final_moments": "On January 12, 2023, Tweetbot users worldwide were suddenly greeted with API authentication errors. After days of silence, Twitter updated its developer agreement to explicitly outlaw third-party clients, bringing a 12-year legacy to a sudden halt.",
+      "timeline": [
+        {
+          "id": "t-tweetbot-1",
+          "entity_id": "grave-tweetbot-2023",
+          "year": 2011,
+          "date_str": "April 14, 2011",
+          "title": "Tweetbot 1.0 Debuts",
+          "description": "Tapbots releases Tweetbot for iPhone, introducing mechanical audio feedback and swipe gestures.",
+          "event_type": "LAUNCH",
+          "order_index": 1
+        },
+        {
+          "id": "t-tweetbot-2",
+          "entity_id": "grave-tweetbot-2023",
+          "year": 2012,
+          "date_str": "August 2012",
+          "title": "User Token Limit Crisis",
+          "description": "Twitter imposes controversial 100,000 user token caps on third-party developers, constricting growth.",
+          "event_type": "DECLINE",
+          "order_index": 2
+        },
+        {
+          "id": "t-tweetbot-3",
+          "entity_id": "grave-tweetbot-2023",
+          "year": 2021,
+          "date_str": "January 2021",
+          "title": "Tweetbot 6 & Subscription Model",
+          "description": "Tweetbot 6 launches on Twitter API v2 with refreshed modern iOS design and timeline syncing.",
+          "event_type": "MILESTONE",
+          "order_index": 3
+        },
+        {
+          "id": "t-tweetbot-4",
+          "entity_id": "grave-tweetbot-2023",
+          "year": 2023,
+          "date_str": "January 19, 2023",
+          "title": "API Termination & Final Sunset",
+          "description": "Twitter quietly updates its developer terms to outlaw all third-party clients, forcing Tweetbot to shut down forever.",
+          "event_type": "DISCONTINUED",
+          "order_index": 4
+        }
+      ],
+      "evidence": [
+        {
+          "id": "ev-tweetbot-1",
+          "entity_id": "grave-tweetbot-2023",
+          "source_name": "Tapbots Official Statement",
+          "source_type": "Creator Announcement",
+          "url": "https://tapbots.com/tweetbot/",
+          "timestamp": "2023-01-20",
+          "evidence_type": "OFFICIAL_ANNOUNCEMENT",
+          "reliability": "VERY_HIGH",
+          "weight": 50,
+          "extracted_claim": "Tweetbot has been discontinued after Twitter terminated API access for third-party clients without notice.",
+          "is_verified": true
+        },
+        {
+          "id": "ev-tweetbot-2",
+          "entity_id": "grave-tweetbot-2023",
+          "source_name": "TechCrunch Investigation",
+          "source_type": "Reputable News",
+          "url": "https://techcrunch.com/2023/01/19/twitter-officially-bans-third-party-clients-with-new-developer-rules/",
+          "timestamp": "2023-01-19",
+          "evidence_type": "REPUTABLE_REPORT",
+          "reliability": "VERY_HIGH",
+          "weight": 45,
+          "extracted_claim": "Twitter quietly updated its developer agreement to explicitly ban third-party apps like Tweetbot and Twitterrific.",
+          "is_verified": true
+        }
+      ],
+      "archives": [
+        {
+          "id": "arc-tweetbot-1",
+          "entity_id": "grave-tweetbot-2023",
+          "year": 2011,
+          "date_captured": "2011-05-10",
+          "wayback_url": "https://web.archive.org/web/20110510000000*/https://tapbots.com/tweetbot",
+          "title": "Tweetbot 1.0 Launch Page"
+        },
+        {
+          "id": "arc-tweetbot-2",
+          "entity_id": "grave-tweetbot-2023",
+          "year": 2018,
+          "date_captured": "2018-09-12",
+          "wayback_url": "https://web.archive.org/web/20180912000000*/https://tapbots.com/tweetbot",
+          "title": "Tweetbot 5 Interface Showcase"
+        },
+        {
+          "id": "arc-tweetbot-3",
+          "entity_id": "grave-tweetbot-2023",
+          "year": 2023,
+          "date_captured": "2023-01-25",
+          "wayback_url": "https://web.archive.org/web/20230125000000*/https://tapbots.com/tweetbot",
+          "title": "Tweetbot Discontinuation Notice"
+        }
+      ],
+      "epitaphs": [
+        {
+          "id": "ep-tweetbot-1",
+          "entity_id": "grave-tweetbot-2023",
+          "author_name": "Mark & Paul",
+          "content": "Goodbye Tweetbot. Thank you to everyone who supported us over 12 magical years. Onward to new horizons.",
+          "years_used": "2011-2023",
+          "candle_lit": true,
+          "status": "APPROVED",
+          "created_at": "2026-09-30T15:02:31.347Z"
+        }
+      ]
+    },
+    {
+      "id": "grave-google-domains-2023",
+      "slug": "google-domains",
+      "name": "Google Domains",
+      "tagline": "Google's streamlined, transparent domain registration and DNS management service.",
+      "description": "Google Domains was a beloved domain name registrar launched by Google in 2014. Known for clean, ad-free pricing, built-in WHOIS privacy protection at no extra cost, seamless Google Workspace DNS integration, and rock-solid Google Cloud DNS infrastructure, it became a favorite of millions of web developers. In June 2023, Google shocked the internet by announcing the sale of all Google Domains assets, operations, and approximately 10 million registered domains to Squarespace for $180 million, closing the service forever.",
+      "category": "Web technology",
+      "status": "CONFIRMED_DEAD",
+      "status_reason": "Acquired and wound down in September 2023 after Google sold all 10M domain assets to Squarespace.",
+      "founded_year": 2014,
+      "death_year": 2023,
+      "death_date": "September 7, 2023",
+      "lifespan": "2014 — 2023",
+      "cause_of_death_summary": "Google divested non-core assets, selling all 10 million domains to Squarespace and terminating registrar operations.",
+      "cause_category": "Acquired & Discontinued",
+      "parent_company": "Alphabet / Google",
+      "logo_url": "https://images.unsplash.com/photo-1572021335469-31706a17aaef?w=200&auto=format&fit=crop&q=80",
+      "hero_image_url": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200&auto=format&fit=crop&q=80",
+      "primary_domain": "domains.google",
+      "popularity_peak": "Managed over 10 million domain names globally with high customer satisfaction.",
+      "peak_users": "10 Million+ Active Domains",
+      "country": "United States",
+      "confidence_score": 99,
+      "candle_count": 4210,
+      "is_verified": true,
+      "verified_at": "2026-09-30T15:02:31.347Z",
+      "created_at": "2026-09-30T15:02:31.347Z",
+      "updated_at": "2026-09-30T15:02:31.347Z",
+      "last_known_state": {
+        "website": {
+          "status_code": 301,
+          "state_desc": "Redirects permanently to squarespace.com/domain-name-search.",
+          "final_url": "https://domains.squarespace.com"
+        },
+        "app": {
+          "store_status": "Defunct",
+          "state_desc": "Domain console dismantled."
+        },
+        "api": {
+          "endpoint_status": "410 Gone",
+          "state_desc": "Google Domains APIs migrated to Squarespace registrar."
+        },
+        "community": {
+          "platform": "Google Support",
+          "state_desc": "Help center documents account migration timeline to Squarespace."
+        },
+        "domain": {
+          "ownership": "Redirected",
+          "state_desc": "Domains.google forwards traffic to Squarespace."
+        }
+      },
+      "final_moments": "On September 7, 2023, Squarespace completed its acquisition of Google Domains assets. Over the following months, all 10 million domain accounts, billing profiles, and DNS configurations were transferred off Google Cloud onto Squarespace.",
+      "timeline": [
+        {
+          "id": "t-gdom-1",
+          "entity_id": "grave-google-domains-2023",
+          "year": 2014,
+          "date_str": "June 2014",
+          "title": "Beta Launch",
+          "description": "Google launches an invite-only beta of Google Domains to simplify website setup.",
+          "event_type": "LAUNCH",
+          "order_index": 1
+        },
+        {
+          "id": "t-gdom-2",
+          "entity_id": "grave-google-domains-2023",
+          "year": 2022,
+          "date_str": "March 2022",
+          "title": "Exit from Beta",
+          "description": "After 7 years in public beta, Google Domains officially sheds its beta tag with support for 300+ TLDs.",
+          "event_type": "MILESTONE",
+          "order_index": 2
+        },
+        {
+          "id": "t-gdom-3",
+          "entity_id": "grave-google-domains-2023",
+          "year": 2023,
+          "date_str": "June 15, 2023",
+          "title": "Sale Announced to Squarespace",
+          "description": "Alphabet unexpectedly announces an agreement to sell all Google Domains assets to Squarespace for $180M.",
+          "event_type": "SHUTDOWN_ANNOUNCED",
+          "order_index": 3
+        },
+        {
+          "id": "t-gdom-4",
+          "entity_id": "grave-google-domains-2023",
+          "year": 2023,
+          "date_str": "September 7, 2023",
+          "title": "Official Closure & Migration",
+          "description": "Acquisition closes. Google Domains halts new registrations and redirects to Squarespace Domains.",
+          "event_type": "DISCONTINUED",
+          "order_index": 4
+        }
+      ],
+      "evidence": [
+        {
+          "id": "ev-gdom-1",
+          "entity_id": "grave-google-domains-2023",
+          "source_name": "Google Support Official Migration Advisory",
+          "source_type": "Official Support Documentation",
+          "url": "https://support.google.com/domains/answer/13689670",
+          "timestamp": "2023-09-07",
+          "evidence_type": "OFFICIAL_ANNOUNCEMENT",
+          "reliability": "VERY_HIGH",
+          "weight": 50,
+          "extracted_claim": "Google has entered into a definitive agreement with Squarespace to purchase the assets associated with the Google Domains business.",
+          "is_verified": true
+        },
+        {
+          "id": "ev-gdom-2",
+          "entity_id": "grave-google-domains-2023",
+          "source_name": "SEC Squarespace Filing",
+          "source_type": "Regulatory Filing",
+          "url": "https://www.sec.gov/edgar/browse/?CIK=0001826248",
+          "timestamp": "2023-06-15",
+          "evidence_type": "REPUTABLE_REPORT",
+          "reliability": "VERY_HIGH",
+          "weight": 45,
+          "extracted_claim": "Squarespace acquires approximately 10 million domains from Google Domains business.",
+          "is_verified": true
+        }
+      ],
+      "archives": [
+        {
+          "id": "arc-gdom-1",
+          "entity_id": "grave-google-domains-2023",
+          "year": 2015,
+          "date_captured": "2015-01-20",
+          "wayback_url": "https://web.archive.org/web/20150120000000*/https://domains.google",
+          "title": "Google Domains Early Beta Portal"
+        },
+        {
+          "id": "arc-gdom-2",
+          "entity_id": "grave-google-domains-2023",
+          "year": 2022,
+          "date_captured": "2022-04-10",
+          "wayback_url": "https://web.archive.org/web/20220410000000*/https://domains.google",
+          "title": "Google Domains Peak Public Portal"
+        },
+        {
+          "id": "arc-gdom-3",
+          "entity_id": "grave-google-domains-2023",
+          "year": 2023,
+          "date_captured": "2023-09-10",
+          "wayback_url": "https://web.archive.org/web/20230910000000*/https://domains.google",
+          "title": "Google Domains Squarespace Transition Banner"
+        }
+      ],
+      "epitaphs": [
+        {
+          "id": "ep-gdom-1",
+          "entity_id": "grave-google-domains-2023",
+          "author_name": "WebDev",
+          "content": "It took them 7 years to leave beta, and they sold it a year later. It was the only domain registrar that didn't feel like a predatory upsell circus.",
+          "years_used": "2015-2023",
+          "candle_lit": true,
+          "status": "APPROVED",
+          "created_at": "2026-09-30T15:02:31.347Z"
+        }
+      ]
+    },
+    {
+      "id": "grave-google-jamboard-2024",
+      "slug": "google-jamboard",
+      "name": "Google Jamboard",
+      "tagline": "Google's digital interactive whiteboard hardware and collaborative cloud application.",
+      "description": "Google Jamboard was a collaborative digital whiteboard platform launched in 2016 for Google Workspace and G Suite for Education. Alongside a 55-inch 4K touchscreen hardware display, Jamboard featured free iOS, Android, and web apps allowing students and remote teams to sketch, insert sticky notes, and collaborate in real-time. In September 2023, Google announced it was winding down Jamboard to integrate with third-party whiteboards (FigJam, Miro, Lucidspark), officially setting the app to view-only on October 1, 2024, and shutting down all server access on December 31, 2024.",
+      "category": "Developer tools",
+      "status": "CONFIRMED_DEAD",
+      "status_reason": "Permanently decommissioned on December 31, 2024 as Google transitioned users to FigJam and Miro.",
+      "founded_year": 2016,
+      "death_year": 2024,
+      "death_date": "December 31, 2024",
+      "lifespan": "2016 — 2024",
+      "cause_of_death_summary": "Google phased out in-house digital whiteboard tooling to focus on Google Docs and partner whiteboard integrations.",
+      "cause_category": "Strategic Pivot",
+      "parent_company": "Alphabet / Google",
+      "logo_url": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=200&auto=format&fit=crop&q=80",
+      "hero_image_url": "https://images.unsplash.com/photo-1542744094-3a31f272c490?w=1200&auto=format&fit=crop&q=80",
+      "primary_domain": "jamboard.google.com",
+      "popularity_peak": "Tens of millions of classrooms and remote teams relied on Jamboard daily during 2020–2022.",
+      "peak_users": "Tens of Millions of Students & Workers",
+      "country": "United States",
+      "confidence_score": 98,
+      "candle_count": 2840,
+      "is_verified": true,
+      "verified_at": "2026-09-30T15:02:31.347Z",
+      "created_at": "2026-09-30T15:02:31.347Z",
+      "updated_at": "2026-09-30T15:02:31.347Z",
+      "last_known_state": {
+        "website": {
+          "status_code": 302,
+          "state_desc": "Redirects to Google Workspace support decommissioning advisory.",
+          "final_url": "https://support.google.com/jamboard"
+        },
+        "app": {
+          "store_status": "Delisted",
+          "state_desc": "Removed from Google Play Store and iOS App Store."
+        },
+        "api": {
+          "endpoint_status": "404 Not Found",
+          "state_desc": "Jamboard Cloud sync endpoints powered down."
+        },
+        "community": {
+          "platform": "Google Workspace Hub",
+          "state_desc": "Guidance provided to export Jams to PDF or FigJam."
+        },
+        "domain": {
+          "ownership": "Google Retained",
+          "state_desc": "Subdomain routes to migration guide."
+        }
+      },
+      "final_moments": "On October 1, 2024, Jamboard was placed into read-only mode, disabling new Jam creation. On December 31, 2024, the web app and cloud sync were permanently disabled, leaving legacy hardware displays without first-party software support.",
+      "timeline": [
+        {
+          "id": "t-jam-1",
+          "entity_id": "grave-google-jamboard-2024",
+          "year": 2016,
+          "date_str": "October 2016",
+          "title": "Jamboard Hardware & App Debut",
+          "description": "Google introduces Jamboard as a 55-inch cloud-connected whiteboard with free companion mobile apps.",
+          "event_type": "LAUNCH",
+          "order_index": 1
+        },
+        {
+          "id": "t-jam-2",
+          "entity_id": "grave-google-jamboard-2024",
+          "year": 2020,
+          "date_str": "March 2020",
+          "title": "Global Education Pandemic Boom",
+          "description": "Jamboard usage skyrockets as millions of schools shift to remote learning and Google Classroom integration.",
+          "event_type": "MILESTONE",
+          "order_index": 2
+        },
+        {
+          "id": "t-jam-3",
+          "entity_id": "grave-google-jamboard-2024",
+          "year": 2023,
+          "date_str": "September 28, 2023",
+          "title": "Sunset Announcement",
+          "description": "Google announces the wind-down of Jamboard hardware and software, advising migration to FigJam and Miro.",
+          "event_type": "SHUTDOWN_ANNOUNCED",
+          "order_index": 3
+        },
+        {
+          "id": "t-jam-4",
+          "entity_id": "grave-google-jamboard-2024",
+          "year": 2024,
+          "date_str": "December 31, 2024",
+          "title": "Permanent Server Shutdown",
+          "description": "All Jamboard web endpoints and API services are turned off, concluding its 8-year run.",
+          "event_type": "DISCONTINUED",
+          "order_index": 4
+        }
+      ],
+      "evidence": [
+        {
+          "id": "ev-jam-1",
+          "entity_id": "grave-google-jamboard-2024",
+          "source_name": "Google Workspace Updates Blog",
+          "source_type": "Official Corporate Notice",
+          "url": "https://workspaceupdates.googleblog.com/2023/09/winding-down-google-jamboard.html",
+          "timestamp": "2023-09-28",
+          "evidence_type": "OFFICIAL_ANNOUNCEMENT",
+          "reliability": "VERY_HIGH",
+          "weight": 50,
+          "extracted_claim": "Google is winding down the Jamboard whiteboard app on December 31, 2024, and ending support for the 55-inch Jamboard device.",
+          "is_verified": true
+        },
+        {
+          "id": "ev-jam-2",
+          "entity_id": "grave-google-jamboard-2024",
+          "source_name": "9to5Google Deprecation Coverage",
+          "source_type": "Reputable News",
+          "url": "https://9to5google.com/2024/10/01/google-jamboard-app-shut-down/",
+          "timestamp": "2024-10-01",
+          "evidence_type": "REPUTABLE_REPORT",
+          "reliability": "VERY_HIGH",
+          "weight": 40,
+          "extracted_claim": "Google Jamboard officially enters read-only phase ahead of December 31 permanent shutdown.",
+          "is_verified": true
+        }
+      ],
+      "archives": [
+        {
+          "id": "arc-jam-1",
+          "entity_id": "grave-google-jamboard-2024",
+          "year": 2017,
+          "date_captured": "2017-03-15",
+          "wayback_url": "https://web.archive.org/web/20170315000000*/https://jamboard.google.com",
+          "title": "Google Jamboard Launch Site"
+        },
+        {
+          "id": "arc-jam-2",
+          "entity_id": "grave-google-jamboard-2024",
+          "year": 2021,
+          "date_captured": "2021-05-18",
+          "wayback_url": "https://web.archive.org/web/20210518000000*/https://jamboard.google.com",
+          "title": "Jamboard Pandemic Remote Classroom Hub"
+        },
+        {
+          "id": "arc-jam-3",
+          "entity_id": "grave-google-jamboard-2024",
+          "year": 2024,
+          "date_captured": "2024-11-12",
+          "wayback_url": "https://web.archive.org/web/20241112000000*/https://jamboard.google.com",
+          "title": "Jamboard Sunset & Export Warning"
+        }
+      ],
+      "epitaphs": [
+        {
+          "id": "ep-jam-1",
+          "entity_id": "grave-google-jamboard-2024",
+          "author_name": "RemoteTeacher",
+          "content": "Jamboard saved my classroom when everything went remote in 2020. Another essential Google product discarded into the corporate cemetery.",
+          "years_used": "2018-2024",
+          "candle_lit": true,
+          "status": "APPROVED",
+          "created_at": "2026-09-30T15:02:31.347Z"
+        }
+      ]
+    },
+    {
+      "id": "grave-amazon-halo-2023",
+      "slug": "amazon-halo",
+      "name": "Amazon Halo",
+      "tagline": "Amazon's screenless health and wellness wearable suite with voice tone analysis and body fat scanning.",
+      "description": "Amazon Halo was a wellness hardware and service division created by Amazon in 2020. Centered around screen-free smart bands (Halo Band, Halo View) and the Halo Rise bedside tracker, it pioneered controversial features like 3D body fat percentage scanning and voice tone analysis to evaluate emotional stress. On April 26, 2023, amid company-wide hardware layoffs, Amazon announced it was shutting down Halo immediately, remote-bricking all hardware devices on July 31, 2023, and refunding all purchases from the prior 12 months.",
+      "category": "Hardware",
+      "status": "CONFIRMED_DEAD",
+      "status_reason": "Permanently bricked and shut down on July 31, 2023 with full refunds issued to purchasers.",
+      "founded_year": 2020,
+      "death_year": 2023,
+      "death_date": "July 31, 2023",
+      "lifespan": "2020 — 2023",
+      "cause_of_death_summary": "Amazon slashed unprofitable hardware bets, shutting down the Halo division and rendering all devices inoperable.",
+      "cause_category": "Strategic Pivot",
+      "parent_company": "Amazon.com, Inc.",
+      "logo_url": "https://images.unsplash.com/photo-1510519138195-068d828884bb?w=200&auto=format&fit=crop&q=80",
+      "hero_image_url": "https://images.unsplash.com/photo-1576243345690-4e4b79b63288?w=1200&auto=format&fit=crop&q=80",
+      "primary_domain": "amazon.com/halo",
+      "popularity_peak": "Extensive marketing across Amazon's retail storefront with hundreds of thousands of active devices.",
+      "peak_users": "Hundreds of Thousands of Units",
+      "country": "United States",
+      "confidence_score": 99,
+      "candle_count": 2150,
+      "is_verified": true,
+      "verified_at": "2026-09-30T15:02:31.347Z",
+      "created_at": "2026-09-30T15:02:31.347Z",
+      "updated_at": "2026-09-30T15:02:31.347Z",
+      "last_known_state": {
+        "website": {
+          "status_code": 404,
+          "state_desc": "Amazon Halo product page removed from storefront.",
+          "final_url": "https://amazon.com/halo"
+        },
+        "app": {
+          "store_status": "Delisted",
+          "state_desc": "Halo app delisted and powered off."
+        },
+        "api": {
+          "endpoint_status": "410 Gone",
+          "state_desc": "Backend health sync telemetry servers terminated."
+        },
+        "community": {
+          "platform": "Amazon Support",
+          "state_desc": "Device recycling program instructions provided."
+        },
+        "domain": {
+          "ownership": "Amazon Retained",
+          "state_desc": "Amazon.com subpath removed."
+        }
+      },
+      "final_moments": "On July 31, 2023, Amazon officially disconnected Halo cloud servers. At midnight, all Halo Bands and Halo Rise devices stopped syncing, becoming unusable electronic waste while Amazon encouraged owners to send them to Amazon's electronics recycling program.",
+      "timeline": [
+        {
+          "id": "t-halo-1",
+          "entity_id": "grave-amazon-halo-2023",
+          "year": 2020,
+          "date_str": "August 2020",
+          "title": "Amazon Halo Band Debut",
+          "description": "Amazon enters the fitness tracking arena with the screenless Halo Band featuring Tone analysis.",
+          "event_type": "LAUNCH",
+          "order_index": 1
+        },
+        {
+          "id": "t-halo-2",
+          "entity_id": "grave-amazon-halo-2023",
+          "year": 2022,
+          "date_str": "September 2022",
+          "title": "Halo Rise Bedside Tracker",
+          "description": "Amazon launches Halo Rise, a contactless sleep and wake-up light tracker using radar technology.",
+          "event_type": "MILESTONE",
+          "order_index": 2
+        },
+        {
+          "id": "t-halo-3",
+          "entity_id": "grave-amazon-halo-2023",
+          "year": 2023,
+          "date_str": "April 26, 2023",
+          "title": "Shutdown Announced",
+          "description": "Amazon announces it will completely terminate Halo operations and lay off staff in the division.",
+          "event_type": "SHUTDOWN_ANNOUNCED",
+          "order_index": 3
+        },
+        {
+          "id": "t-halo-4",
+          "entity_id": "grave-amazon-halo-2023",
+          "year": 2023,
+          "date_str": "July 31, 2023",
+          "title": "Devices Bricked & Servers Powered Down",
+          "description": "All Halo hardware stops operating and syncing as Amazon powers off cloud servers.",
+          "event_type": "DISCONTINUED",
+          "order_index": 4
+        }
+      ],
+      "evidence": [
+        {
+          "id": "ev-halo-1",
+          "entity_id": "grave-amazon-halo-2023",
+          "source_name": "The Verge Consumer Notification",
+          "source_type": "Reputable News",
+          "url": "https://www.theverge.com/2023/4/26/23699745/amazon-halo-discontinued-refund-shut-down",
+          "timestamp": "2023-04-26",
+          "evidence_type": "REPUTABLE_REPORT",
+          "reliability": "VERY_HIGH",
+          "weight": 50,
+          "extracted_claim": "Amazon is shutting down its Halo health division, discontinuing all Halo devices on July 31st and refunding customer purchases made in the last 12 months.",
+          "is_verified": true
+        },
+        {
+          "id": "ev-halo-2",
+          "entity_id": "grave-amazon-halo-2023",
+          "source_name": "Amazon Customer Advisory",
+          "source_type": "Official Support Notice",
+          "url": "https://www.amazon.com/gp/help/customer/display.html?nodeId=TF387yV0z4y0e5gBw0",
+          "timestamp": "2023-07-31",
+          "evidence_type": "OFFICIAL_ANNOUNCEMENT",
+          "reliability": "VERY_HIGH",
+          "weight": 45,
+          "extracted_claim": "Beginning August 1, 2023, Amazon Halo devices and the Amazon Halo app will no longer function.",
+          "is_verified": true
+        }
+      ],
+      "archives": [
+        {
+          "id": "arc-halo-1",
+          "entity_id": "grave-amazon-halo-2023",
+          "year": 2020,
+          "date_captured": "2020-09-01",
+          "wayback_url": "https://web.archive.org/web/20200901000000*/https://www.amazon.com/halo",
+          "title": "Amazon Halo Band Initial Announcement"
+        },
+        {
+          "id": "arc-halo-2",
+          "entity_id": "grave-amazon-halo-2023",
+          "year": 2022,
+          "date_captured": "2022-10-15",
+          "wayback_url": "https://web.archive.org/web/20221015000000*/https://www.amazon.com/halo",
+          "title": "Amazon Halo Rise Showcase"
+        },
+        {
+          "id": "arc-halo-3",
+          "entity_id": "grave-amazon-halo-2023",
+          "year": 2023,
+          "date_captured": "2023-05-02",
+          "wayback_url": "https://web.archive.org/web/20230502000000*/https://www.amazon.com/halo",
+          "title": "Amazon Halo Discontinuation Banner"
+        }
+      ],
+      "epitaphs": [
+        {
+          "id": "ep-halo-1",
+          "entity_id": "grave-amazon-halo-2023",
+          "author_name": "HardwareEnthusiast",
+          "content": "A prime reminder that when you buy cloud-dependent hardware, you're merely renting it until a VP decides to cut operational expenses.",
+          "years_used": "2020-2023",
+          "candle_lit": true,
+          "status": "APPROVED",
+          "created_at": "2026-09-30T15:02:31.347Z"
+        }
+      ]
+    },
+    {
+      "id": "grave-twitch-korea-2024",
+      "slug": "twitch-korea",
+      "name": "Twitch South Korea",
+      "tagline": "Twitch's dedicated South Korean streaming platform and esports epicenter.",
+      "description": "Twitch South Korea was Amazon Twitch's localized live streaming operations in South Korea. Serving as the primary broadcast home for League of Legends champions, Korean gaming culture, and prominent internet creators, Korea was one of Twitch's largest global communities. On December 5, 2023, Twitch CEO Dan Clancy announced that Twitch would permanently cease all operations in South Korea on February 27, 2024, citing exorbitant telecommunications network usage fees charged by Korean telecom monopolies that were approximately 10 times higher than in most other nations.",
+      "category": "Streaming",
+      "status": "CONFIRMED_DEAD",
+      "status_reason": "Terminated on February 27, 2024 due to 10x higher South Korean ISP network grid usage fees.",
+      "founded_year": 2015,
+      "death_year": 2024,
+      "death_date": "February 27, 2024",
+      "lifespan": "2015 — 2024",
+      "cause_of_death_summary": "Exorbitant South Korean network usage fees made streaming operations economically unsustainable despite massive audience.",
+      "cause_category": "Lack of Monetization",
+      "parent_company": "Twitch / Amazon",
+      "logo_url": "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=200&auto=format&fit=crop&q=80",
+      "hero_image_url": "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=1200&auto=format&fit=crop&q=80",
+      "primary_domain": "twitch.tv",
+      "popularity_peak": "Millions of concurrent viewers during LCK Korean esports tournaments and creator streams.",
+      "peak_users": "Millions of Korean Streamers & Viewers",
+      "country": "South Korea",
+      "confidence_score": 99,
+      "candle_count": 3670,
+      "is_verified": true,
+      "verified_at": "2026-09-30T15:02:31.347Z",
+      "created_at": "2026-09-30T15:02:31.347Z",
+      "updated_at": "2026-09-30T15:02:31.347Z",
+      "last_known_state": {
+        "website": {
+          "status_code": 200,
+          "state_desc": "Global Twitch operates, but Korean IP addresses are geo-blocked from streaming monetization.",
+          "final_url": "https://twitch.tv"
+        },
+        "app": {
+          "store_status": "Restricted",
+          "state_desc": "Korean creators unable to broadcast or receive revenue."
+        },
+        "api": {
+          "endpoint_status": "403 Forbidden",
+          "state_desc": "Korean partner payout endpoints disabled."
+        },
+        "community": {
+          "platform": "CHZZK (Naver) & AfreecaTV",
+          "state_desc": "Korean community migrated to Naver's CHZZK and SOOP."
+        },
+        "domain": {
+          "ownership": "Active Global",
+          "state_desc": "Twitch.tv global portal remains active."
+        }
+      },
+      "final_moments": "On February 27, 2024 at midnight KST, Korean streamers concluded emotional farewell marathon broadcasts. At 00:00, broadcasting rights for Korean affiliates were revoked, marking the end of an era for Korean internet entertainment.",
+      "timeline": [
+        {
+          "id": "t-twkr-1",
+          "entity_id": "grave-twitch-korea-2024",
+          "year": 2015,
+          "date_str": "July 2015",
+          "title": "Official Korean Server Launch",
+          "description": "Twitch establishes Seoul server infrastructure, recruiting top Korean gaming broadcasters.",
+          "event_type": "LAUNCH",
+          "order_index": 1
+        },
+        {
+          "id": "t-twkr-2",
+          "entity_id": "grave-twitch-korea-2024",
+          "year": 2022,
+          "date_str": "September 2022",
+          "title": "720p Video Resolution Downgrade",
+          "description": "In an effort to survive network fees, Twitch caps video resolution in South Korea to 720p.",
+          "event_type": "DECLINE",
+          "order_index": 2
+        },
+        {
+          "id": "t-twkr-3",
+          "entity_id": "grave-twitch-korea-2024",
+          "year": 2023,
+          "date_str": "December 5, 2023",
+          "title": "Cessation Announcement by CEO",
+          "description": "Twitch CEO Dan Clancy officially announces that Twitch will exit South Korea completely in February 2024.",
+          "event_type": "SHUTDOWN_ANNOUNCED",
+          "order_index": 3
+        },
+        {
+          "id": "t-twkr-4",
+          "entity_id": "grave-twitch-korea-2024",
+          "year": 2024,
+          "date_str": "February 27, 2024",
+          "title": "Service Officially Ends in Korea",
+          "description": "Broadcast capabilities for Korean streamers are terminated, concluding 9 years of Korean streaming.",
+          "event_type": "DISCONTINUED",
+          "order_index": 4
+        }
+      ],
+      "evidence": [
+        {
+          "id": "ev-twkr-1",
+          "entity_id": "grave-twitch-korea-2024",
+          "source_name": "Twitch Official Blog (Dan Clancy)",
+          "source_type": "Corporate Executive Announcement",
+          "url": "https://blog.twitch.tv/en/2023/12/05/an-update-on-twitch-in-korea/",
+          "timestamp": "2023-12-05",
+          "evidence_type": "OFFICIAL_ANNOUNCEMENT",
+          "reliability": "VERY_HIGH",
+          "weight": 50,
+          "extracted_claim": "Twitch has made the difficult decision to shut down the Twitch business in Korea on February 27, 2024 KST due to network fees in Korea being roughly 10 times more expensive than in most other countries.",
+          "is_verified": true
+        },
+        {
+          "id": "ev-twkr-2",
+          "entity_id": "grave-twitch-korea-2024",
+          "source_name": "Reuters Technology News",
+          "source_type": "Global News Agency",
+          "url": "https://www.reuters.com/technology/amazon-owned-twitch-shut-down-korea-business-over-high-costs-2023-12-06/",
+          "timestamp": "2023-12-06",
+          "evidence_type": "REPUTABLE_REPORT",
+          "reliability": "VERY_HIGH",
+          "weight": 45,
+          "extracted_claim": "Amazon-owned Twitch says South Korea operations are operating at a significant loss due to network fees.",
+          "is_verified": true
+        }
+      ],
+      "archives": [
+        {
+          "id": "arc-twkr-1",
+          "entity_id": "grave-twitch-korea-2024",
+          "year": 2016,
+          "date_captured": "2016-08-11",
+          "wayback_url": "https://web.archive.org/web/20160811000000*/https://www.twitch.tv/directory/game/League%20of%20Legends",
+          "title": "Twitch Korea Esports Broadcast Hub"
+        },
+        {
+          "id": "arc-twkr-2",
+          "entity_id": "grave-twitch-korea-2024",
+          "year": 2022,
+          "date_captured": "2022-10-01",
+          "wayback_url": "https://web.archive.org/web/20221001000000*/https://blog.twitch.tv",
+          "title": "Twitch Korea Resolution Cap Statement"
+        },
+        {
+          "id": "arc-twkr-3",
+          "entity_id": "grave-twitch-korea-2024",
+          "year": 2024,
+          "date_captured": "2024-02-27",
+          "wayback_url": "https://web.archive.org/web/20240227000000*/https://blog.twitch.tv/en/2023/12/05/an-update-on-twitch-in-korea/",
+          "title": "Twitch Korea Official Farewell Letter"
+        }
+      ],
+      "epitaphs": [
+        {
+          "id": "ep-twkr-1",
+          "entity_id": "grave-twitch-korea-2024",
+          "author_name": "KoreanEsportsFan",
+          "content": "Network fees killed an entire country's gaming streaming culture on Twitch. The final stream countdown in Seoul will never be forgotten.",
+          "years_used": "2015-2024",
+          "candle_lit": true,
+          "status": "APPROVED",
+          "created_at": "2026-09-30T15:02:31.347Z"
+        }
+      ]
+    },
+    {
+      "id": "grave-google-dropcam-nest-2024",
+      "slug": "google-dropcam-nest-secure",
+      "name": "Google Dropcam & Nest Secure",
+      "tagline": "Pioneering smart home Wi-Fi security cameras and keyfob alarm ecosystems.",
+      "description": "Dropcam, founded in 2009 by Greg Duffy and Aza Raskin, revolutionized consumer security cameras with continuous cloud recording and mobile streaming. Acquired by Nest for $555 million in 2014, and subsequently absorbed into Google, Dropcam hardware operated continuously for over a decade. Alongside Nest Secure (Google's smart home alarm hub launched in 2017), Google permanently pulled the plug on both hardware lines on April 8, 2024, cutting off server connectivity and turning all existing devices into inoperable paperweights.",
+      "category": "Hardware",
+      "status": "CONFIRMED_DEAD",
+      "status_reason": "Google permanently shut down server connections on April 8, 2024, bricking all Dropcam and Nest Secure devices.",
+      "founded_year": 2009,
+      "death_year": 2024,
+      "death_date": "April 8, 2024",
+      "lifespan": "2009 — 2024",
+      "cause_of_death_summary": "Google discontinued legacy hardware infrastructure to force customers onto modern Google Home/Nest Cam cameras.",
+      "cause_category": "Technological Obsolescence",
+      "parent_company": "Alphabet / Google",
+      "logo_url": "https://images.unsplash.com/photo-1557597774-9d273605dfa9?w=200&auto=format&fit=crop&q=80",
+      "hero_image_url": "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=1200&auto=format&fit=crop&q=80",
+      "primary_domain": "nest.com",
+      "popularity_peak": "Millions of homeowners relied on Dropcam and Nest Secure for around-the-clock home security.",
+      "peak_users": "Millions of Smart Home Owners",
+      "country": "United States",
+      "confidence_score": 99,
+      "candle_count": 2790,
+      "is_verified": true,
+      "verified_at": "2026-09-30T15:02:31.347Z",
+      "created_at": "2026-09-30T15:02:31.347Z",
+      "updated_at": "2026-09-30T15:02:31.347Z",
+      "last_known_state": {
+        "website": {
+          "status_code": 301,
+          "state_desc": "Nest.com routes to Google Store.",
+          "final_url": "https://store.google.com"
+        },
+        "app": {
+          "store_status": "Restricted",
+          "state_desc": "Nest app no longer displays Dropcam or Secure feeds."
+        },
+        "api": {
+          "endpoint_status": "410 Gone",
+          "state_desc": "Dropcam streaming infrastructure permanently shut down."
+        },
+        "community": {
+          "platform": "Google Nest Forum",
+          "state_desc": "Customers offered partial credits toward new Google Cams."
+        },
+        "domain": {
+          "ownership": "Google Retained",
+          "state_desc": "Nest.com owned by Google."
+        }
+      },
+      "final_moments": "On April 8, 2024, Google flipped the switch terminating Dropcam and Nest Secure servers. Millions of perfectly functional cameras stopped streaming video and stopped connecting to the Nest app, sparking widespread criticism of cloud-dependent hardware longevity.",
+      "timeline": [
+        {
+          "id": "t-drop-1",
+          "entity_id": "grave-google-dropcam-nest-2024",
+          "year": 2009,
+          "date_str": "2009",
+          "title": "Dropcam Founded",
+          "description": "Greg Duffy and Aza Raskin create Dropcam, introducing the first consumer Wi-Fi security camera with cloud DVR.",
+          "event_type": "FOUNDED",
+          "order_index": 1
+        },
+        {
+          "id": "t-drop-2",
+          "entity_id": "grave-google-dropcam-nest-2024",
+          "year": 2014,
+          "date_str": "June 2014",
+          "title": "Acquired by Nest for $555M",
+          "description": "Nest acquires Dropcam for $555 million, bringing cloud video capabilities into Google's smart home umbrella.",
+          "event_type": "ACQUISITION",
+          "order_index": 2
+        },
+        {
+          "id": "t-drop-3",
+          "entity_id": "grave-google-dropcam-nest-2024",
+          "year": 2023,
+          "date_str": "April 2023",
+          "title": "One-Year Shutdown Notice",
+          "description": "Google officially notifies owners that Dropcam and Nest Secure will cease functioning on April 8, 2024.",
+          "event_type": "SHUTDOWN_ANNOUNCED",
+          "order_index": 3
+        },
+        {
+          "id": "t-drop-4",
+          "entity_id": "grave-google-dropcam-nest-2024",
+          "year": 2024,
+          "date_str": "April 8, 2024",
+          "title": "Servers Terminated & Hardware Bricked",
+          "description": "All Dropcam and Nest Secure systems stop connecting and functioning permanently.",
+          "event_type": "DISCONTINUED",
+          "order_index": 4
+        }
+      ],
+      "evidence": [
+        {
+          "id": "ev-drop-1",
+          "entity_id": "grave-google-dropcam-nest-2024",
+          "source_name": "Google Nest Community Official Notice",
+          "source_type": "Official Support Announcement",
+          "url": "https://www.googlenestcommunity.com/t5/Blog/An-update-for-our-Dropcam-and-Nest-Secure-users/ba-p/397833",
+          "timestamp": "2023-04-07",
+          "evidence_type": "OFFICIAL_ANNOUNCEMENT",
+          "reliability": "VERY_HIGH",
+          "weight": 50,
+          "extracted_claim": "Dropcam will no longer work after April 8, 2024. Nest Secure will no longer work after April 8, 2024.",
+          "is_verified": true
+        },
+        {
+          "id": "ev-drop-2",
+          "entity_id": "grave-google-dropcam-nest-2024",
+          "source_name": "Wired Technology Post-Mortem",
+          "source_type": "Reputable Journalistic Report",
+          "url": "https://www.wired.com/story/google-is-killing-dropcam-nest-secure-smart-home-longevity/",
+          "timestamp": "2024-04-08",
+          "evidence_type": "REPUTABLE_REPORT",
+          "reliability": "VERY_HIGH",
+          "weight": 45,
+          "extracted_claim": "Google permanently powers down Dropcam and Nest Secure servers, leaving millions with obsolete hardware.",
+          "is_verified": true
+        }
+      ],
+      "archives": [
+        {
+          "id": "arc-drop-1",
+          "entity_id": "grave-google-dropcam-nest-2024",
+          "year": 2011,
+          "date_captured": "2011-06-15",
+          "wayback_url": "https://web.archive.org/web/20110615000000*/https://www.dropcam.com",
+          "title": "Dropcam HD Launch Storefront"
+        },
+        {
+          "id": "arc-drop-2",
+          "entity_id": "grave-google-dropcam-nest-2024",
+          "year": 2018,
+          "date_captured": "2018-03-20",
+          "wayback_url": "https://web.archive.org/web/20180320000000*/https://nest.com/cameras",
+          "title": "Nest Cam & Dropcam Integration"
+        },
+        {
+          "id": "arc-drop-3",
+          "entity_id": "grave-google-dropcam-nest-2024",
+          "year": 2024,
+          "date_captured": "2024-04-08",
+          "wayback_url": "https://web.archive.org/web/20240408000000*/https://support.google.com/googlenest/answer/9257288",
+          "title": "Dropcam Server Decommission Advisory"
+        }
+      ],
+      "epitaphs": [
+        {
+          "id": "ep-drop-1",
+          "entity_id": "grave-google-dropcam-nest-2024",
+          "author_name": "SmartHomePioneer",
+          "content": "My Dropcam ran 24/7 for 10 straight years without a single hardware flaw, until Google decided to kill it from the cloud.",
+          "years_used": "2012-2024",
+          "candle_lit": true,
+          "status": "APPROVED",
+          "created_at": "2026-09-30T15:02:31.347Z"
+        }
+      ]
+    },
+    {
+      "id": "grave-twitterrific-2023",
+      "slug": "twitterrific",
+      "name": "Twitterrific",
+      "tagline": "The legendary first desktop & iOS client for Twitter that coined the word 'tweet' and the bird logo.",
+      "description": "Twitterrific was the pioneer third-party client for Twitter created by The Iconfactory in 2007. Created before Twitter had an iPhone app or even defined core terminology, Twitterrific coined the word 'tweet', designed the iconic blue bird mascot (Ollie), and introduced the character counter and custom avatars. For 16 years, it offered an elegant, ad-free timeline experience. On January 19, 2023, Twitter/X revoked third-party developer API access without warning, forcing The Iconfactory to retire Twitterrific with deep sadness.",
+      "category": "Social",
+      "status": "CONFIRMED_DEAD",
+      "status_reason": "Killed on January 19, 2023 when Twitter/X banned third-party clients and revoked API keys.",
+      "founded_year": 2007,
+      "death_year": 2023,
+      "death_date": "January 19, 2023",
+      "lifespan": "2007 — 2023",
+      "cause_of_death_summary": "Twitter/X terminated API access and altered developer agreements to outlaw all third-party Twitter applications.",
+      "cause_category": "Strategic Pivot",
+      "parent_company": "The Iconfactory",
+      "logo_url": "https://images.unsplash.com/photo-1611605698335-8b1569810432?w=200&auto=format&fit=crop&q=80",
+      "hero_image_url": "https://images.unsplash.com/photo-1579546929518-9e396f3cc809?w=1200&auto=format&fit=crop&q=80",
+      "primary_domain": "twitterrific.com",
+      "popularity_peak": "Apple Design Award winner; defined Twitter's original design language and terminology.",
+      "peak_users": "Millions of Lifetime Users",
+      "country": "United States",
+      "confidence_score": 99,
+      "candle_count": 3950,
+      "is_verified": true,
+      "verified_at": "2026-09-30T15:03:13.732Z",
+      "created_at": "2026-09-30T15:03:13.733Z",
+      "updated_at": "2026-09-30T15:03:13.733Z",
+      "last_known_state": {
+        "website": {
+          "status_code": 200,
+          "state_desc": "Twitterrific website memorializes 16 years of indie software development.",
+          "final_url": "https://twitterrific.com"
+        },
+        "app": {
+          "store_status": "Delisted",
+          "state_desc": "Removed from App Store and Mac App Store."
+        },
+        "api": {
+          "endpoint_status": "401 Unauthorized",
+          "state_desc": "Twitter developer tokens permanently revoked."
+        },
+        "community": {
+          "platform": "The Iconfactory Blog",
+          "state_desc": "Developers redirected fans to Project M unitary client."
+        },
+        "domain": {
+          "ownership": "Active / Retained",
+          "state_desc": "Retained by The Iconfactory."
+        }
+      },
+      "final_moments": "On January 19, 2023, The Iconfactory published a moving eulogy: 'We are sorry to say that Twitterrific's sudden and unannounced discontinuation by Twitter has forced us to retire the app after 16 wonderful years.'",
+      "timeline": [
+        {
+          "id": "t-trif-1",
+          "entity_id": "grave-twitterrific-2023",
+          "year": 2007,
+          "date_str": "January 15, 2007",
+          "title": "Twitterrific 1.0 Launched on macOS",
+          "description": "The Iconfactory debuts Twitterrific, coining the word 'tweet' to describe Twitter posts.",
+          "event_type": "LAUNCH",
+          "order_index": 1
+        },
+        {
+          "id": "t-trif-2",
+          "entity_id": "grave-twitterrific-2023",
+          "year": 2008,
+          "date_str": "July 2008",
+          "title": "App Store Debut & Apple Design Award",
+          "description": "Twitterrific launches on day one of the iOS App Store, winning an Apple Design Award.",
+          "event_type": "MILESTONE",
+          "order_index": 2
+        },
+        {
+          "id": "t-trif-3",
+          "entity_id": "grave-twitterrific-2023",
+          "year": 2017,
+          "date_str": "October 2017",
+          "title": "Twitterrific 5 for Mac Kickstarter",
+          "description": "Over 2,000 passionate users crowd-fund a complete rebuild of the macOS client.",
+          "event_type": "MILESTONE",
+          "order_index": 3
+        },
+        {
+          "id": "t-trif-4",
+          "entity_id": "grave-twitterrific-2023",
+          "year": 2023,
+          "date_str": "January 19, 2023",
+          "title": "Forced Sunset After 16 Years",
+          "description": "Twitter cuts off API access without notice. Twitterrific ceases operations forever.",
+          "event_type": "DISCONTINUED",
+          "order_index": 4
+        }
+      ],
+      "evidence": [
+        {
+          "id": "ev-trif-1",
+          "entity_id": "grave-twitterrific-2023",
+          "source_name": "The Iconfactory Official Eulogy",
+          "source_type": "Creator Announcement",
+          "url": "https://iconfactory.com/twitterrific-end-of-an-era/",
+          "timestamp": "2023-01-19",
+          "evidence_type": "OFFICIAL_ANNOUNCEMENT",
+          "reliability": "VERY_HIGH",
+          "weight": 50,
+          "extracted_claim": "The Iconfactory announced the immediate retirement of Twitterrific across iOS and Mac following Twitter's API shutdown.",
+          "is_verified": true
+        },
+        {
+          "id": "ev-trif-2",
+          "entity_id": "grave-twitterrific-2023",
+          "source_name": "Daring Fireball (John Gruber)",
+          "source_type": "Reputable Editorial",
+          "url": "https://daringfireball.net/2023/01/the_end_of_third_party_twitter_clients",
+          "timestamp": "2023-01-20",
+          "evidence_type": "REPUTABLE_REPORT",
+          "reliability": "VERY_HIGH",
+          "weight": 45,
+          "extracted_claim": "Twitterrific was the first Twitter client and literally invented the word tweet. Killing it without notice is a disgrace.",
+          "is_verified": true
+        }
+      ],
+      "archives": [
+        {
+          "id": "arc-trif-1",
+          "entity_id": "grave-twitterrific-2023",
+          "year": 2007,
+          "date_captured": "2007-02-10",
+          "wayback_url": "https://web.archive.org/web/20070210000000*/https://iconfactory.com/software/twitterrific",
+          "title": "Twitterrific 1.0 Original macOS Launch"
+        },
+        {
+          "id": "arc-trif-2",
+          "entity_id": "grave-twitterrific-2023",
+          "year": 2017,
+          "date_captured": "2017-06-15",
+          "wayback_url": "https://web.archive.org/web/20170615000000*/https://twitterrific.com",
+          "title": "Twitterrific 5 Anniversary Edition"
+        },
+        {
+          "id": "arc-trif-3",
+          "entity_id": "grave-twitterrific-2023",
+          "year": 2023,
+          "date_captured": "2023-01-21",
+          "wayback_url": "https://web.archive.org/web/20230121000000*/https://twitterrific.com",
+          "title": "Twitterrific End of an Era Eulogy"
+        }
+      ],
+      "epitaphs": [
+        {
+          "id": "ep-trif-1",
+          "entity_id": "grave-twitterrific-2023",
+          "author_name": "TheIconfactory",
+          "content": "We coined the word 'tweet' before Twitter even knew what to call it. Thank you to everyone who flew with Ollie over 16 historic years.",
+          "years_used": "2007-2023",
+          "candle_lit": true,
+          "status": "APPROVED",
+          "created_at": "2026-09-30T15:03:13.733Z"
+        }
+      ]
+    },
+    {
+      "id": "grave-fitbit-web-dashboard-2024",
+      "slug": "fitbit-web-dashboard",
+      "name": "Fitbit Web Dashboard",
+      "tagline": "Fitbit's 17-year browser analytics hub for activity tracking, sleep logs, and food logging.",
+      "description": "The Fitbit Web Dashboard was the foundational browser interface launched in 2007 alongside the original Fitbit clip-on tracker. For 17 years, millions of health-conscious users and athletes relied on the web dashboard to analyze long-term multi-year fitness graphs, export CSV data, configure custom widgets, and interact with community forums on a large desktop screen. On July 8, 2024, Google officially shut down the Fitbit.com web dashboard, forcing all users exclusively onto the smartphone mobile application.",
+      "category": "Web technology",
+      "status": "CONFIRMED_DEAD",
+      "status_reason": "Decommissioned by Google on July 8, 2024 to consolidate all health telemetry into the Fitbit mobile app.",
+      "founded_year": 2007,
+      "death_year": 2024,
+      "death_date": "July 8, 2024",
+      "lifespan": "2007 — 2024",
+      "cause_of_death_summary": "Google eliminated the desktop web experience, sunsetting browser access to force mobile-only usage.",
+      "cause_category": "Strategic Pivot",
+      "parent_company": "Google / Fitbit",
+      "logo_url": "https://images.unsplash.com/photo-1575052814086-f385e2e2ad1b?w=200&auto=format&fit=crop&q=80",
+      "hero_image_url": "https://images.unsplash.com/photo-1510519138195-068d828884bb?w=1200&auto=format&fit=crop&q=80",
+      "primary_domain": "fitbit.com",
+      "popularity_peak": "Primary portal for Fitbit's 30+ million active users before smartphone app ubiquity.",
+      "peak_users": "30 Million+ Lifetime Users",
+      "country": "United States",
+      "confidence_score": 99,
+      "candle_count": 2450,
+      "is_verified": true,
+      "verified_at": "2026-09-30T15:03:13.733Z",
+      "created_at": "2026-09-30T15:03:13.733Z",
+      "updated_at": "2026-09-30T15:03:13.733Z",
+      "last_known_state": {
+        "website": {
+          "status_code": 302,
+          "state_desc": "Fitbit.com/dashboard redirects to Google Support notice.",
+          "final_url": "https://support.google.com/fitbit/answer/14801121"
+        },
+        "app": {
+          "store_status": "Active Mobile",
+          "state_desc": "Fitbit smartphone app remains the sole user interface."
+        },
+        "api": {
+          "endpoint_status": "Restricted",
+          "state_desc": "Legacy web dashboard widget endpoints turned off."
+        },
+        "community": {
+          "platform": "Fitbit Community Forums",
+          "state_desc": "Outcry from long-time users unable to view data on large screens."
+        },
+        "domain": {
+          "ownership": "Google Retained",
+          "state_desc": "Fitbit.com owned by Google."
+        }
+      },
+      "final_moments": "On July 8, 2024, Google permanently severed access to Fitbit.com/dashboard. Visitors attempting to log into the web portal were greeted with a redirect explaining that desktop web tracking had been permanently retired.",
+      "timeline": [
+        {
+          "id": "t-fbd-1",
+          "entity_id": "grave-fitbit-web-dashboard-2024",
+          "year": 2007,
+          "date_str": "2007",
+          "title": "Fitbit.com Dashboard Launched",
+          "description": "Fitbit founders James Park and Eric Friedman launch the browser dashboard for wireless step sync.",
+          "event_type": "LAUNCH",
+          "order_index": 1
+        },
+        {
+          "id": "t-fbd-2",
+          "entity_id": "grave-fitbit-web-dashboard-2024",
+          "year": 2015,
+          "date_str": "June 2015",
+          "title": "IPO & Peak Web Analytics",
+          "description": "Fitbit completes public IPO; the customizable web dashboard is lauded for deep data visualizations.",
+          "event_type": "MILESTONE",
+          "order_index": 2
+        },
+        {
+          "id": "t-fbd-3",
+          "entity_id": "grave-fitbit-web-dashboard-2024",
+          "year": 2024,
+          "date_str": "March 2024",
+          "title": "Google Announces Retirement",
+          "description": "Google posts support documentation stating the web dashboard will be retired in July 2024.",
+          "event_type": "SHUTDOWN_ANNOUNCED",
+          "order_index": 3
+        },
+        {
+          "id": "t-fbd-4",
+          "entity_id": "grave-fitbit-web-dashboard-2024",
+          "year": 2024,
+          "date_str": "July 8, 2024",
+          "title": "Web Dashboard Decommissioned",
+          "description": "Fitbit.com web dashboard is permanently taken offline, concluding 17 years of desktop tracking.",
+          "event_type": "DISCONTINUED",
+          "order_index": 4
+        }
+      ],
+      "evidence": [
+        {
+          "id": "ev-fbd-1",
+          "entity_id": "grave-fitbit-web-dashboard-2024",
+          "source_name": "Google Support Official Notice",
+          "source_type": "Official Support Documentation",
+          "url": "https://support.google.com/fitbit/answer/14801121",
+          "timestamp": "2024-03-20",
+          "evidence_type": "OFFICIAL_ANNOUNCEMENT",
+          "reliability": "VERY_HIGH",
+          "weight": 50,
+          "extracted_claim": "The web dashboard on fitbit.com is no longer available as of July 8, 2024. All features are now accessible only via the Fitbit mobile app.",
+          "is_verified": true
+        },
+        {
+          "id": "ev-fbd-2",
+          "entity_id": "grave-fitbit-web-dashboard-2024",
+          "source_name": "Ars Technica Retrospective",
+          "source_type": "Reputable Tech Journalism",
+          "url": "https://arstechnica.com/gadgets/2024/07/google-officially-kills-the-fitbit-com-web-dashboard/",
+          "timestamp": "2024-07-09",
+          "evidence_type": "REPUTABLE_REPORT",
+          "reliability": "VERY_HIGH",
+          "weight": 45,
+          "extracted_claim": "Google pulls the plug on the 17-year-old Fitbit.com web dashboard, removing large-screen data analytics.",
+          "is_verified": true
+        }
+      ],
+      "archives": [
+        {
+          "id": "arc-fbd-1",
+          "entity_id": "grave-fitbit-web-dashboard-2024",
+          "year": 2008,
+          "date_captured": "2008-10-15",
+          "wayback_url": "https://web.archive.org/web/20081015000000*/https://www.fitbit.com",
+          "title": "Fitbit Early Web Tracking Portal"
+        },
+        {
+          "id": "arc-fbd-2",
+          "entity_id": "grave-fitbit-web-dashboard-2024",
+          "year": 2016,
+          "date_captured": "2016-04-12",
+          "wayback_url": "https://web.archive.org/web/20160412000000*/https://www.fitbit.com/dashboard",
+          "title": "Fitbit Peak Web Dashboard Interface"
+        },
+        {
+          "id": "arc-fbd-3",
+          "entity_id": "grave-fitbit-web-dashboard-2024",
+          "year": 2024,
+          "date_captured": "2024-07-08",
+          "wayback_url": "https://web.archive.org/web/20240708000000*/https://www.fitbit.com/dashboard",
+          "title": "Fitbit Dashboard Final Shutdown Notice"
+        }
+      ],
+      "epitaphs": [
+        {
+          "id": "ep-fbd-1",
+          "entity_id": "grave-fitbit-web-dashboard-2024",
+          "author_name": "MarathonRunner",
+          "content": "Trying to examine 10 years of heart rate and sleep trends on a 6-inch phone screen is miserable compared to the web dashboard. RIP Fitbit.com.",
+          "years_used": "2011-2024",
+          "candle_lit": true,
+          "status": "APPROVED",
+          "created_at": "2026-09-30T15:03:13.733Z"
+        }
+      ]
+    },
+    {
+      "id": "grave-microsoft-cortana-2023",
+      "slug": "microsoft-cortana",
+      "name": "Microsoft Cortana (Consumer OS)",
+      "tagline": "Microsoft's virtual assistant across Windows 10/11, Windows Phone, and smart speakers.",
+      "description": "Cortana was Microsoft's conversational virtual assistant first unveiled in 2014 for Windows Phone 8.1, named after the iconic AI character in the Halo video game franchise (and voiced by Jen Taylor). Integrated deeply into the Windows 10 taskbar, Cortana handled natural language search, calendar scheduling, reminders, and smart home controls across over 500 million Windows PCs. In August 2023, Microsoft officially terminated the standalone Cortana application on Windows 10 and 11, replacing it with generative AI under Microsoft Copilot.",
+      "category": "Web technology",
+      "status": "CONFIRMED_DEAD",
+      "status_reason": "Deprecated and retired in August 2023 across Windows 10 and 11 as Microsoft pivoted to Copilot.",
+      "founded_year": 2014,
+      "death_year": 2023,
+      "death_date": "August 11, 2023",
+      "lifespan": "2014 — 2023",
+      "cause_of_death_summary": "Microsoft abandoned the dedicated voice assistant model to focus on generative AI and Microsoft Copilot.",
+      "cause_category": "Technological Obsolescence",
+      "parent_company": "Microsoft Corporation",
+      "logo_url": "https://images.unsplash.com/photo-1583321500900-82807e458f3c?w=200&auto=format&fit=crop&q=80",
+      "hero_image_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200&auto=format&fit=crop&q=80",
+      "primary_domain": "microsoft.com/cortana",
+      "popularity_peak": "Embedded on hundreds of millions of Windows 10 taskbars worldwide.",
+      "peak_users": "500 Million+ Windows 10 PCs",
+      "country": "United States",
+      "confidence_score": 99,
+      "candle_count": 3120,
+      "is_verified": true,
+      "verified_at": "2026-09-30T15:03:13.733Z",
+      "created_at": "2026-09-30T15:03:13.733Z",
+      "updated_at": "2026-09-30T15:03:13.733Z",
+      "last_known_state": {
+        "website": {
+          "status_code": 301,
+          "state_desc": "Cortana portal routes to Microsoft Copilot documentation.",
+          "final_url": "https://support.microsoft.com/en-us/topic/end-of-support-for-cortana-in-windows-d025b39f-ee5b-4836-a954-0ab646ee4600"
+        },
+        "app": {
+          "store_status": "Deprecated",
+          "state_desc": "Windows Store app displays permanent deprecation banner."
+        },
+        "api": {
+          "endpoint_status": "410 Gone",
+          "state_desc": "Cortana consumer voice APIs powered down."
+        },
+        "community": {
+          "platform": "Windows Central",
+          "state_desc": "Users discuss transition to Copilot key."
+        },
+        "domain": {
+          "ownership": "Microsoft Retained",
+          "state_desc": "Managed by Microsoft Corporation."
+        }
+      },
+      "final_moments": "In August 2023, Microsoft pushed a Windows Store update to the Cortana app that replaced its entire interface with an error message: 'Cortana in Windows as a standalone app is deprecated.' By late 2023, the Cortana taskbar button was removed across all Windows builds.",
+      "timeline": [
+        {
+          "id": "t-cor-1",
+          "entity_id": "grave-microsoft-cortana-2023",
+          "year": 2014,
+          "date_str": "April 2014",
+          "title": "Unveiled at Build 2014",
+          "description": "Microsoft reveals Cortana for Windows Phone 8.1 with notebook learning system and Jen Taylor voice acting.",
+          "event_type": "LAUNCH",
+          "order_index": 1
+        },
+        {
+          "id": "t-cor-2",
+          "entity_id": "grave-microsoft-cortana-2023",
+          "year": 2015,
+          "date_str": "July 2015",
+          "title": "Windows 10 Taskbar Integration",
+          "description": "Cortana becomes a central centerpiece of Windows 10, bringing voice search to 400M+ desktop PCs.",
+          "event_type": "MILESTONE",
+          "order_index": 2
+        },
+        {
+          "id": "t-cor-3",
+          "entity_id": "grave-microsoft-cortana-2023",
+          "year": 2021,
+          "date_str": "March 2021",
+          "title": "Mobile Apps Shut Down",
+          "description": "Microsoft terminates Cortana apps on iOS and Android to retreat to enterprise productivity.",
+          "event_type": "DECLINE",
+          "order_index": 3
+        },
+        {
+          "id": "t-cor-4",
+          "entity_id": "grave-microsoft-cortana-2023",
+          "year": 2023,
+          "date_str": "August 11, 2023",
+          "title": "Official Deprecation on Windows",
+          "description": "Cortana app is permanently shut down across Windows 10 and 11, superseded by Copilot.",
+          "event_type": "DISCONTINUED",
+          "order_index": 4
+        }
+      ],
+      "evidence": [
+        {
+          "id": "ev-cor-1",
+          "entity_id": "grave-microsoft-cortana-2023",
+          "source_name": "Microsoft Support Lifecycle Advisory",
+          "source_type": "Official Support Documentation",
+          "url": "https://support.microsoft.com/en-us/topic/end-of-support-for-cortana-in-windows-d025b39f-ee5b-4836-a954-0ab646ee4600",
+          "timestamp": "2023-08-11",
+          "evidence_type": "OFFICIAL_ANNOUNCEMENT",
+          "reliability": "VERY_HIGH",
+          "weight": 50,
+          "extracted_claim": "Starting in August 2023, we are ending support for Cortana in Windows as a standalone app.",
+          "is_verified": true
+        },
+        {
+          "id": "ev-cor-2",
+          "entity_id": "grave-microsoft-cortana-2023",
+          "source_name": "The Verge Deprecation Coverage",
+          "source_type": "Reputable News",
+          "url": "https://www.theverge.com/2023/8/11/23828734/microsoft-cortana-windows-11-app-killed",
+          "timestamp": "2023-08-11",
+          "evidence_type": "REPUTABLE_REPORT",
+          "reliability": "VERY_HIGH",
+          "weight": 45,
+          "extracted_claim": "Microsoft has killed Cortana on Windows 11 as the company shifts all attention to Windows Copilot.",
+          "is_verified": true
+        }
+      ],
+      "archives": [
+        {
+          "id": "arc-cor-1",
+          "entity_id": "grave-microsoft-cortana-2023",
+          "year": 2014,
+          "date_captured": "2014-05-01",
+          "wayback_url": "https://web.archive.org/web/20140501000000*/https://www.windowsphone.com/en-us/how-to/wp8/cortana/meet-cortana",
+          "title": "Meet Cortana Windows Phone Reveal"
+        },
+        {
+          "id": "arc-cor-2",
+          "entity_id": "grave-microsoft-cortana-2023",
+          "year": 2016,
+          "date_captured": "2016-03-10",
+          "wayback_url": "https://web.archive.org/web/20160310000000*/https://www.microsoft.com/en-us/windows/cortana",
+          "title": "Cortana for Windows 10 Showcase"
+        },
+        {
+          "id": "arc-cor-3",
+          "entity_id": "grave-microsoft-cortana-2023",
+          "year": 2023,
+          "date_captured": "2023-08-15",
+          "wayback_url": "https://web.archive.org/web/20230815000000*/https://support.microsoft.com/en-us/topic/end-of-support-for-cortana-in-windows",
+          "title": "End of Support for Cortana in Windows Notice"
+        }
+      ],
+      "epitaphs": [
+        {
+          "id": "ep-cor-1",
+          "entity_id": "grave-microsoft-cortana-2023",
+          "author_name": "HaloFan117",
+          "content": "Named after Master Chief's AI companion, Cortana was the heart of Windows 10. Replaced by a soulless Copilot sidebar.",
+          "years_used": "2014-2023",
+          "candle_lit": true,
+          "status": "APPROVED",
+          "created_at": "2026-09-30T15:03:13.733Z"
+        }
+      ]
+    },
+    {
+      "id": "grave-poparazzi-2023",
+      "slug": "poparazzi",
+      "name": "Poparazzi",
+      "tagline": "The viral anti-selfie photo app where friends create your profile by snapping photos of you.",
+      "description": "Poparazzi was a viral social photo-sharing application developed by TTYL Inc. (brothers Alex and Austen Ma). Rejecting selfies, filters, and follower counts, Poparazzi inverted social media: users couldn't post photos of themselves—only their friends could take and upload photos to their profile. Fueled by brilliant TikTok hype and a testflight campaign, Poparazzi rocketed to #1 overall on the US iOS App Store on launch day in May 2021, raising a $20 million Series A from Benchmark at a $135 million valuation. However, novelty wore off quickly, daily active users plunged by over 95%, and the app shut down on June 30, 2023.",
+      "category": "Social",
+      "status": "CONFIRMED_DEAD",
+      "status_reason": "Ceased operations on June 30, 2023 after daily active users and retention cratered.",
+      "founded_year": 2021,
+      "death_year": 2023,
+      "death_date": "June 30, 2023",
+      "lifespan": "2021 — 2023",
+      "cause_of_death_summary": "Viral growth novelty could not overcome catastrophic retention drop-offs; founders shut down to pivot.",
+      "cause_category": "Lack of Monetization",
+      "parent_company": "TTYL Inc.",
+      "logo_url": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=200&auto=format&fit=crop&q=80",
+      "hero_image_url": "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1200&auto=format&fit=crop&q=80",
+      "primary_domain": "poparazzi.com",
+      "popularity_peak": "Hit #1 on the US App Store with over 5 million downloads in its first months.",
+      "peak_users": "5 Million+ Downloads",
+      "country": "United States",
+      "confidence_score": 98,
+      "candle_count": 1820,
+      "is_verified": true,
+      "verified_at": "2026-09-30T15:03:13.733Z",
+      "created_at": "2026-09-30T15:03:13.733Z",
+      "updated_at": "2026-09-30T15:03:13.733Z",
+      "last_known_state": {
+        "website": {
+          "status_code": 404,
+          "state_desc": "Poparazzi.com offline.",
+          "final_url": "https://poparazzi.com"
+        },
+        "app": {
+          "store_status": "Delisted",
+          "state_desc": "Delisted from iOS App Store."
+        },
+        "api": {
+          "endpoint_status": "410 Gone",
+          "state_desc": "Firebase and backend servers turned off."
+        },
+        "community": {
+          "platform": "Twitter/X",
+          "state_desc": "Founders published farewell letter thanking community."
+        },
+        "domain": {
+          "ownership": "Inactive",
+          "state_desc": "Domain parked or dead."
+        }
+      },
+      "final_moments": "On June 30, 2023, Poparazzi sent push notifications to users thanking them for being part of the anti-selfie revolution, permanently taking servers offline as the team pivoted to new ventures.",
+      "timeline": [
+        {
+          "id": "t-pop-1",
+          "entity_id": "grave-poparazzi-2023",
+          "year": 2021,
+          "date_str": "May 24, 2021",
+          "title": "Viral Debut at #1 on App Store",
+          "description": "Poparazzi launches after a viral TikTok campaign, immediately capturing the #1 overall spot on the US App Store.",
+          "event_type": "LAUNCH",
+          "order_index": 1
+        },
+        {
+          "id": "t-pop-2",
+          "entity_id": "grave-poparazzi-2023",
+          "year": 2021,
+          "date_str": "June 2021",
+          "title": "$20M Benchmark Series A",
+          "description": "Benchmark leads a $20M Series A valuation round, pegging the newborn startup at $135 million.",
+          "event_type": "MILESTONE",
+          "order_index": 2
+        },
+        {
+          "id": "t-pop-3",
+          "entity_id": "grave-poparazzi-2023",
+          "year": 2022,
+          "date_str": "Late 2022",
+          "title": "Retention Freefall",
+          "description": "Daily active users drop precipitously as the friction of requiring friends to post on your profile stalls feeds.",
+          "event_type": "DECLINE",
+          "order_index": 3
+        },
+        {
+          "id": "t-pop-4",
+          "entity_id": "grave-poparazzi-2023",
+          "year": 2023,
+          "date_str": "June 30, 2023",
+          "title": "Official Closure",
+          "description": "Founders shut down Poparazzi and conclude operations.",
+          "event_type": "DISCONTINUED",
+          "order_index": 4
+        }
+      ],
+      "evidence": [
+        {
+          "id": "ev-pop-1",
+          "entity_id": "grave-poparazzi-2023",
+          "source_name": "TechCrunch Post-Mortem",
+          "source_type": "Reputable Tech News",
+          "url": "https://techcrunch.com/2023/07/03/poparazzi-the-anti-selfie-photo-sharing-app-is-shutting-down/",
+          "timestamp": "2023-07-03",
+          "evidence_type": "REPUTABLE_REPORT",
+          "reliability": "VERY_HIGH",
+          "weight": 50,
+          "extracted_claim": "Poparazzi, the photo-sharing app that banned selfies and raised a $20 million Series A led by Benchmark, has officially shut down on June 30, 2023.",
+          "is_verified": true
+        },
+        {
+          "id": "ev-pop-2",
+          "entity_id": "grave-poparazzi-2023",
+          "source_name": "App Annie / Data.ai Analytics",
+          "source_type": "Market Intelligence",
+          "url": "https://data.ai/apps/ios/app/poparazzi",
+          "timestamp": "2023-06-30",
+          "evidence_type": "ARCHIVE_SNAPSHOT",
+          "reliability": "VERY_HIGH",
+          "weight": 40,
+          "extracted_claim": "App ranking data documents swift collapse from #1 overall to outside top 1,500 lifestyle apps before delisting.",
+          "is_verified": true
+        }
+      ],
+      "archives": [
+        {
+          "id": "arc-pop-1",
+          "entity_id": "grave-poparazzi-2023",
+          "year": 2021,
+          "date_captured": "2021-05-28",
+          "wayback_url": "https://web.archive.org/web/20210528000000*/https://poparazzi.com",
+          "title": "Poparazzi #1 App Store Debut"
+        },
+        {
+          "id": "arc-pop-2",
+          "entity_id": "grave-poparazzi-2023",
+          "year": 2022,
+          "date_captured": "2022-08-10",
+          "wayback_url": "https://web.archive.org/web/20220810000000*/https://poparazzi.com",
+          "title": "Poparazzi Android Beta Release"
+        },
+        {
+          "id": "arc-pop-3",
+          "entity_id": "grave-poparazzi-2023",
+          "year": 2023,
+          "date_captured": "2023-07-05",
+          "wayback_url": "https://web.archive.org/web/20230705000000*/https://poparazzi.com",
+          "title": "Poparazzi Final Farewell Notice"
+        }
+      ],
+      "epitaphs": [
+        {
+          "id": "ep-pop-1",
+          "entity_id": "grave-poparazzi-2023",
+          "author_name": "GenZExplorer",
+          "content": "For three weeks in May 2021, it felt like everyone in high school and college had Poparazzi. Then the notifications stopped, and nobody ever opened it again.",
+          "years_used": "2021-2022",
+          "candle_lit": true,
+          "status": "APPROVED",
+          "created_at": "2026-09-30T15:03:13.733Z"
+        }
+      ]
+    },
+    {
+      "id": "grave-amazon-drive-2023",
+      "slug": "amazon-drive",
+      "name": "Amazon Drive (Cloud Drive)",
+      "tagline": "Amazon's personal cloud backup and file storage service.",
+      "description": "Amazon Drive (originally Amazon Cloud Drive) was a cloud file storage and backup service launched by Amazon in 2011. Built on Amazon S3 infrastructure, it offered generous storage plans and seamless integration with Kindle Fire tablets and Fire TV devices. In July 2022, Amazon announced it was deprecating general file storage to focus exclusively on photo and video storage through Amazon Photos. On December 31, 2023, Amazon officially powered down Amazon Drive, deleting all non-photo files.",
+      "category": "Web technology",
+      "status": "CONFIRMED_DEAD",
+      "status_reason": "Permanently shut down on December 31, 2023 as Amazon pivoted to Amazon Photos.",
+      "founded_year": 2011,
+      "death_year": 2023,
+      "death_date": "December 31, 2023",
+      "lifespan": "2011 — 2023",
+      "cause_of_death_summary": "Amazon retired personal file storage to consolidate cloud resources around Amazon Photos.",
+      "cause_category": "Strategic Pivot",
+      "parent_company": "Amazon.com, Inc.",
+      "logo_url": "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=200&auto=format&fit=crop&q=80",
+      "hero_image_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200&auto=format&fit=crop&q=80",
+      "primary_domain": "amazon.com/clouddrive",
+      "popularity_peak": "Tens of millions of Prime members utilized Cloud Drive for automated desktop and mobile file backups.",
+      "peak_users": "Tens of Millions of Users",
+      "country": "United States",
+      "confidence_score": 99,
+      "candle_count": 2310,
+      "is_verified": true,
+      "verified_at": "2026-09-30T15:03:13.733Z",
+      "created_at": "2026-09-30T15:03:13.733Z",
+      "updated_at": "2026-09-30T15:03:13.733Z",
+      "last_known_state": {
+        "website": {
+          "status_code": 301,
+          "state_desc": "Amazon Drive URL forwards to Amazon Photos homepage.",
+          "final_url": "https://www.amazon.com/photos"
+        },
+        "app": {
+          "store_status": "Delisted",
+          "state_desc": "Desktop sync client delisted and disabled."
+        },
+        "api": {
+          "endpoint_status": "410 Gone",
+          "state_desc": "Drive file upload REST APIs decommissioned."
+        },
+        "community": {
+          "platform": "Amazon Customer Service",
+          "state_desc": "Users instructed that non-photo files have been purged."
+        },
+        "domain": {
+          "ownership": "Amazon Retained",
+          "state_desc": "Managed by Amazon."
+        }
+      },
+      "final_moments": "On December 31, 2023, Amazon Drive ceased all read/write operations. Files not classified as photos or videos were purged from customer storage buckets, completing an 18-month wind-down phase.",
+      "timeline": [
+        {
+          "id": "t-amzd-1",
+          "entity_id": "grave-amazon-drive-2023",
+          "year": 2011,
+          "date_str": "March 2011",
+          "title": "Amazon Cloud Drive Launched",
+          "description": "Amazon enters consumer cloud storage with 5GB free storage and Cloud Player music integration.",
+          "event_type": "LAUNCH",
+          "order_index": 1
+        },
+        {
+          "id": "t-amzd-2",
+          "entity_id": "grave-amazon-drive-2023",
+          "year": 2015,
+          "date_str": "March 2015",
+          "title": "Unlimited Storage Tier Debut",
+          "description": "Amazon shakes the cloud storage industry by introducing $60/year unlimited storage for all file types.",
+          "event_type": "MILESTONE",
+          "order_index": 2
+        },
+        {
+          "id": "t-amzd-3",
+          "entity_id": "grave-amazon-drive-2023",
+          "year": 2022,
+          "date_str": "July 2022",
+          "title": "Deprecation Notice Issued",
+          "description": "Amazon warns users that Amazon Drive will be retired at the end of 2023 in favor of Amazon Photos.",
+          "event_type": "SHUTDOWN_ANNOUNCED",
+          "order_index": 3
+        },
+        {
+          "id": "t-amzd-4",
+          "entity_id": "grave-amazon-drive-2023",
+          "year": 2023,
+          "date_str": "December 31, 2023",
+          "title": "Permanent Service Termination",
+          "description": "Amazon Drive officially shuts down, ending 12 years of general file storage.",
+          "event_type": "DISCONTINUED",
+          "order_index": 4
+        }
+      ],
+      "evidence": [
+        {
+          "id": "ev-amzd-1",
+          "entity_id": "grave-amazon-drive-2023",
+          "source_name": "Amazon Official Deprecation Advisory",
+          "source_type": "Official Support Documentation",
+          "url": "https://www.amazon.com/gp/help/customer/display.html?nodeId=G5CLNCOEE2K33FX8",
+          "timestamp": "2022-07-29",
+          "evidence_type": "OFFICIAL_ANNOUNCEMENT",
+          "reliability": "VERY_HIGH",
+          "weight": 50,
+          "extracted_claim": "Amazon Drive will be officially shut down on December 31, 2023. We encourage customers to use Amazon Photos to access their photos and videos.",
+          "is_verified": true
+        },
+        {
+          "id": "ev-amzd-2",
+          "entity_id": "grave-amazon-drive-2023",
+          "source_name": "PCMag Tech Reporting",
+          "source_type": "Reputable News",
+          "url": "https://www.pcmag.com/news/amazon-drive-is-shutting-down-at-the-end-of-2023",
+          "timestamp": "2022-07-29",
+          "evidence_type": "REPUTABLE_REPORT",
+          "reliability": "VERY_HIGH",
+          "weight": 45,
+          "extracted_claim": "Amazon is shutting down its cloud storage service Amazon Drive on Dec 31, 2023.",
+          "is_verified": true
+        }
+      ],
+      "archives": [
+        {
+          "id": "arc-amzd-1",
+          "entity_id": "grave-amazon-drive-2023",
+          "year": 2011,
+          "date_captured": "2011-04-01",
+          "wayback_url": "https://web.archive.org/web/20110401000000*/https://www.amazon.com/clouddrive",
+          "title": "Amazon Cloud Drive Initial Debut"
+        },
+        {
+          "id": "arc-amzd-2",
+          "entity_id": "grave-amazon-drive-2023",
+          "year": 2017,
+          "date_captured": "2017-02-14",
+          "wayback_url": "https://web.archive.org/web/20170214000000*/https://www.amazon.com/clouddrive",
+          "title": "Amazon Drive Desktop Sync Interface"
+        },
+        {
+          "id": "arc-amzd-3",
+          "entity_id": "grave-amazon-drive-2023",
+          "year": 2023,
+          "date_captured": "2023-12-15",
+          "wayback_url": "https://web.archive.org/web/20231215000000*/https://www.amazon.com/clouddrive",
+          "title": "Amazon Drive Final Wind-Down Banner"
+        }
+      ],
+      "epitaphs": [
+        {
+          "id": "ep-amzd-1",
+          "entity_id": "grave-amazon-drive-2023",
+          "author_name": "SysAdminCloud",
+          "content": "When they offered unlimited storage for $60/year, it was the best deal in cloud history. Goodbye Amazon Drive.",
+          "years_used": "2011-2023",
+          "candle_lit": true,
+          "status": "APPROVED",
+          "created_at": "2026-09-30T15:03:13.733Z"
+        }
+      ]
+    },
+    {
+      "id": "grave-vs-app-center-2025",
+      "slug": "visual-studio-app-center",
+      "name": "Visual Studio App Center",
+      "tagline": "Microsoft's integrated mobile DevOps, build pipeline, crash reporting, and distribution suite.",
+      "description": "Visual Studio App Center was Microsoft's cloud DevOps and mobile app lifecycle management suite launched in 2017, formed from the consolidation of HockeyApp and Xamarin Test Cloud. Supporting iOS, Android, React Native, Flutter, and macOS apps, App Center allowed mobile developers to automate builds, distribute beta releases, gather crash logs, and execute tests across thousands of real physical devices. In March 2024, Microsoft announced the permanent retirement of Visual Studio App Center on March 31, 2025, directing developers to Azure DevOps and GitHub Actions.",
+      "category": "Developer tools",
+      "status": "AT_RISK",
+      "status_reason": "Officially sunsetting; Microsoft scheduled permanent shutdown for March 31, 2025.",
+      "founded_year": 2017,
+      "death_year": 2025,
+      "death_date": "March 31, 2025",
+      "lifespan": "2017 — 2025",
+      "cause_of_death_summary": "Microsoft consolidated developer tooling around GitHub Actions and Azure DevOps, phasing out dedicated mobile CI/CD.",
+      "cause_category": "Strategic Pivot",
+      "parent_company": "Microsoft Corporation",
+      "logo_url": "https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?w=200&auto=format&fit=crop&q=80",
+      "hero_image_url": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200&auto=format&fit=crop&q=80",
+      "primary_domain": "appcenter.ms",
+      "popularity_peak": "Standard mobile CI/CD pipeline powering hundreds of thousands of iOS and Android production apps.",
+      "peak_users": "Hundreds of Thousands of Dev Teams",
+      "country": "United States",
+      "confidence_score": 99,
+      "candle_count": 2640,
+      "is_verified": true,
+      "verified_at": "2026-09-30T15:03:13.733Z",
+      "created_at": "2026-09-30T15:03:13.733Z",
+      "updated_at": "2026-09-30T15:03:13.733Z",
+      "last_known_state": {
+        "website": {
+          "status_code": 200,
+          "state_desc": "App Center console active with prominent retirement countdown banner.",
+          "final_url": "https://appcenter.ms"
+        },
+        "app": {
+          "store_status": "Active Web",
+          "state_desc": "New customer onboarding disabled."
+        },
+        "api": {
+          "endpoint_status": "200 OK",
+          "state_desc": "APIs functioning ahead of scheduled March 31, 2025 shutoff."
+        },
+        "community": {
+          "platform": "GitHub Discussions",
+          "state_desc": "Mobile developers coordinating migrations to GitHub Actions and fastlane."
+        },
+        "domain": {
+          "ownership": "Microsoft Corporation",
+          "state_desc": "Registered and operated by Microsoft."
+        }
+      },
+      "final_moments": "In March 2024, Microsoft issued an email notice to all registered organizations: 'Visual Studio App Center is scheduled for retirement on March 31, 2025. After this date, all services will be shut off and data will be permanently deleted.'",
+      "timeline": [
+        {
+          "id": "t-appc-1",
+          "entity_id": "grave-vs-app-center-2025",
+          "year": 2017,
+          "date_str": "November 2017",
+          "title": "App Center Launches",
+          "description": "Microsoft unveils Visual Studio App Center at Connect(); 2017, merging HockeyApp and Xamarin Test Cloud.",
+          "event_type": "LAUNCH",
+          "order_index": 1
+        },
+        {
+          "id": "t-appc-2",
+          "entity_id": "grave-vs-app-center-2025",
+          "year": 2019,
+          "date_str": "November 2019",
+          "title": "HockeyApp Official Retirement",
+          "description": "Legacy HockeyApp is fully retired, cementing App Center as Microsoft's sole mobile DevOps portal.",
+          "event_type": "MILESTONE",
+          "order_index": 2
+        },
+        {
+          "id": "t-appc-3",
+          "entity_id": "grave-vs-app-center-2025",
+          "year": 2024,
+          "date_str": "March 14, 2024",
+          "title": "Retirement Announcement",
+          "description": "Microsoft announces App Center will be retired on March 31, 2025 with no direct in-place replacement.",
+          "event_type": "SHUTDOWN_ANNOUNCED",
+          "order_index": 3
+        },
+        {
+          "id": "t-appc-4",
+          "entity_id": "grave-vs-app-center-2025",
+          "year": 2025,
+          "date_str": "March 31, 2025",
+          "title": "Scheduled Cloud Shutdown",
+          "description": "Build, Test, Distribute, and Analytics endpoints terminate permanently.",
+          "event_type": "DISCONTINUED",
+          "order_index": 4
+        }
+      ],
+      "evidence": [
+        {
+          "id": "ev-appc-1",
+          "entity_id": "grave-vs-app-center-2025",
+          "source_name": "Microsoft Learn Official Documentation",
+          "source_type": "Official Support Documentation",
+          "url": "https://learn.microsoft.com/en-us/appcenter/retirement",
+          "timestamp": "2024-03-14",
+          "evidence_type": "OFFICIAL_ANNOUNCEMENT",
+          "reliability": "VERY_HIGH",
+          "weight": 50,
+          "extracted_claim": "Visual Studio App Center is scheduled for retirement on March 31, 2025. After that date, you will no longer be able to access the App Center website or APIs.",
+          "is_verified": true
+        },
+        {
+          "id": "ev-appc-2",
+          "entity_id": "grave-vs-app-center-2025",
+          "source_name": "InfoQ Software Architecture Coverage",
+          "source_type": "Reputable Tech Journalism",
+          "url": "https://www.infoq.com/news/2024/03/visual-studio-app-center-retired/",
+          "timestamp": "2024-03-18",
+          "evidence_type": "REPUTABLE_REPORT",
+          "reliability": "VERY_HIGH",
+          "weight": 45,
+          "extracted_claim": "Microsoft announces the retirement of Visual Studio App Center, setting a March 31, 2025 end-of-life date.",
+          "is_verified": true
+        }
+      ],
+      "archives": [
+        {
+          "id": "arc-appc-1",
+          "entity_id": "grave-vs-app-center-2025",
+          "year": 2017,
+          "date_captured": "2017-12-01",
+          "wayback_url": "https://web.archive.org/web/20171201000000*/https://appcenter.ms",
+          "title": "Visual Studio App Center Debut"
+        },
+        {
+          "id": "arc-appc-2",
+          "entity_id": "grave-vs-app-center-2025",
+          "year": 2021,
+          "date_captured": "2021-06-18",
+          "wayback_url": "https://web.archive.org/web/20210618000000*/https://appcenter.ms",
+          "title": "App Center Enterprise Distribution Portal"
+        },
+        {
+          "id": "arc-appc-3",
+          "entity_id": "grave-vs-app-center-2025",
+          "year": 2024,
+          "date_captured": "2024-04-10",
+          "wayback_url": "https://web.archive.org/web/20240410000000*/https://appcenter.ms",
+          "title": "App Center Retirement Banner"
+        }
+      ],
+      "epitaphs": [
+        {
+          "id": "ep-appc-1",
+          "entity_id": "grave-vs-app-center-2025",
+          "author_name": "MobileLead",
+          "content": "From HockeyApp to App Center, this was the easiest way to distribute ad-hoc iOS builds to testers without wrestling with Apple TestFlight. You will be missed.",
+          "years_used": "2017-2025",
+          "candle_lit": true,
+          "status": "APPROVED",
+          "created_at": "2026-09-30T15:03:13.733Z"
+        }
+      ]
     }
   ],
   "submissions": [
@@ -13130,5 +15223,5 @@
       "created_at": "2024-06-26T15:00:00Z"
     }
   ],
-  "last_updated": "2026-09-30T14:53:58.909Z"
+  "last_updated": "2026-09-30T15:03:13.733Z"
 }
