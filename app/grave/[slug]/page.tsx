@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
 import { graveyardDb } from '@/lib/db';
 import { MemorialClient } from './MemorialClient';
+import { getContemporaryAndAffinityRecommendations } from '@/lib/recommendation/affinityEngine';
 
 interface PageProps {
   params: { slug: string };
@@ -45,17 +46,29 @@ export default function MemorialPage({ params }: PageProps) {
     notFound();
   }
 
-  // Fetch related entities
+  // Fetch curated related entities first, supplemented by Semantic Archival Affinity Engine
+  const allEntities = graveyardDb.getAllEntities();
   const relatedSlugs = entity.related_slugs || [];
-  let relatedEntities = relatedSlugs
+  const curatedEntities = relatedSlugs
     .map(slug => graveyardDb.getEntityBySlug(slug))
     .filter((e): e is NonNullable<typeof e> => e !== null);
 
-  if (relatedEntities.length === 0) {
-    // Fallback: pick entities in same category
-    relatedEntities = graveyardDb.getAllEntities({ category: entity.category })
-      .filter(e => e.slug !== entity.slug)
-      .slice(0, 3);
+  const algorithmicRecommendations = getContemporaryAndAffinityRecommendations(
+    entity,
+    allEntities,
+    4
+  );
+
+  // Combine curated and algorithmic without duplicates
+  const seenIds = new Set<string>([entity.id]);
+  const relatedEntities: typeof allEntities = [];
+
+  for (const item of [...curatedEntities, ...algorithmicRecommendations]) {
+    if (!seenIds.has(item.id)) {
+      seenIds.add(item.id);
+      relatedEntities.push(item);
+    }
+    if (relatedEntities.length >= 3) break;
   }
 
   return (

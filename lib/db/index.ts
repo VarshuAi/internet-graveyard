@@ -10,6 +10,7 @@ import {
   GraveCategory 
 } from '@/types/graveyard';
 import { ALL_SEED_ENTITIES } from '@/data/seed-entities-batch2';
+import { rankEntitiesByQuery } from '@/lib/search/searchEngine';
 
 interface GraveyardDatabaseData {
   entities: GraveEntity[];
@@ -164,10 +165,10 @@ class GraveyardStore {
     }
 
     return {
-      total_archived: 12483 + entities.length, // Base historical archive estimate + live records
-      confirmed_dead: 3291 + confirmedDead,
-      abandoned: 5827 + abandoned,
-      zombie_services: 1204 + zombie,
+      total_archived: entities.length,
+      confirmed_dead: confirmedDead,
+      abandoned: abandoned,
+      zombie_services: zombie,
       at_risk: atRisk,
       offline: offline,
       total_candles_lit: totalCandles,
@@ -208,31 +209,20 @@ class GraveyardStore {
     }
 
     if (params?.search) {
-      const q = params.search.toLowerCase().trim();
-      result = result.filter(e => {
-        return (
-          e.name.toLowerCase().includes(q) ||
-          e.slug.toLowerCase().includes(q) ||
-          e.primary_domain.toLowerCase().includes(q) ||
-          e.tagline.toLowerCase().includes(q) ||
-          e.description.toLowerCase().includes(q) ||
-          e.cause_of_death_summary.toLowerCase().includes(q) ||
-          e.category.toLowerCase().includes(q)
-        );
-      });
-    }
-
-    if (params?.sort === 'recently_buried') {
-      result.sort((a, b) => (b.death_year || 2024) - (a.death_year || 2024));
-    } else if (params?.sort === 'candles') {
-      result.sort((a, b) => b.candle_count - a.candle_count);
-    } else if (params?.sort === 'name') {
-      result.sort((a, b) => a.name.localeCompare(b.name));
-    } else if (params?.sort === 'oldest') {
-      result.sort((a, b) => a.founded_year - b.founded_year);
+      result = rankEntitiesByQuery(result, params.search);
     } else {
-      // Default: prioritize recently buried / interesting
-      result.sort((a, b) => (b.death_year || 2024) - (a.death_year || 2024));
+      if (params?.sort === 'recently_buried') {
+        result.sort((a, b) => (b.death_year || 2024) - (a.death_year || 2024));
+      } else if (params?.sort === 'candles') {
+        result.sort((a, b) => b.candle_count - a.candle_count);
+      } else if (params?.sort === 'name') {
+        result.sort((a, b) => a.name.localeCompare(b.name));
+      } else if (params?.sort === 'oldest') {
+        result.sort((a, b) => a.founded_year - b.founded_year);
+      } else {
+        // Default: prioritize recently buried / interesting
+        result.sort((a, b) => (b.death_year || 2024) - (a.death_year || 2024));
+      }
     }
 
     return result;

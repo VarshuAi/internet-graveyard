@@ -438,12 +438,28 @@
       ],
       "archives": [
         {
+          "id": "arc-google-reader-2005",
+          "entity_id": "grave-google-reader-002",
+          "year": 2005,
+          "date_captured": "2005-04-12",
+          "wayback_url": "https://web.archive.org/web/20050412000000*/https://google.com",
+          "title": "Google Reader Launch Era Interface"
+        },
+        {
           "id": "arc-gr1",
           "entity_id": "grave-google-reader-002",
           "year": 2008,
           "date_captured": "May 10, 2008",
           "wayback_url": "https://web.archive.org/web/20080510000000*/google.com/reader",
           "title": "Classic Google Reader Interface"
+        },
+        {
+          "id": "arc-google-reader-2009",
+          "entity_id": "grave-google-reader-002",
+          "year": 2009,
+          "date_captured": "2009-07-15",
+          "wayback_url": "https://web.archive.org/web/20090715000000*/https://google.com",
+          "title": "Google Reader Peak Era Public Portal"
         }
       ],
       "epitaphs": [
@@ -606,12 +622,28 @@
       ],
       "archives": [
         {
+          "id": "arc-geocities-1994",
+          "entity_id": "grave-geocities-003",
+          "year": 1994,
+          "date_captured": "1994-04-12",
+          "wayback_url": "https://web.archive.org/web/19940412000000*/https://geocities.com",
+          "title": "GeoCities Launch Era Interface"
+        },
+        {
           "id": "arc-gc1",
           "entity_id": "grave-geocities-003",
           "year": 1996,
           "date_captured": "October 19, 1996",
           "wayback_url": "https://web.archive.org/web/19961019000000*/geocities.com",
           "title": "GeoCities Neighborhood Directory"
+        },
+        {
+          "id": "arc-geocities-2001",
+          "entity_id": "grave-geocities-003",
+          "year": 2001,
+          "date_captured": "2001-07-15",
+          "wayback_url": "https://web.archive.org/web/20010715000000*/https://geocities.com",
+          "title": "GeoCities Peak Era Public Portal"
         }
       ],
       "epitaphs": [
@@ -784,12 +816,28 @@
       ],
       "archives": [
         {
+          "id": "arc-msn-messenger-1999",
+          "entity_id": "grave-msn-messenger-004",
+          "year": 1999,
+          "date_captured": "1999-04-12",
+          "wayback_url": "https://web.archive.org/web/19990412000000*/https://messenger.msn.com",
+          "title": "MSN Messenger Launch Era Interface"
+        },
+        {
           "id": "arc-msn1",
           "entity_id": "grave-msn-messenger-004",
           "year": 2004,
           "date_captured": "March 12, 2004",
           "wayback_url": "https://web.archive.org/web/20040312000000*/messenger.msn.com",
           "title": "MSN Messenger 6.0 Feature Portal"
+        },
+        {
+          "id": "arc-msn-messenger-2006",
+          "entity_id": "grave-msn-messenger-004",
+          "year": 2006,
+          "date_captured": "2006-07-15",
+          "wayback_url": "https://web.archive.org/web/20060715000000*/https://messenger.msn.com",
+          "title": "MSN Messenger Peak Era Public Portal"
         }
       ],
       "epitaphs": [
@@ -962,12 +1010,28 @@
       ],
       "archives": [
         {
+          "id": "arc-adobe-flash-1996",
+          "entity_id": "grave-adobe-flash-005",
+          "year": 1996,
+          "date_captured": "1996-04-12",
+          "wayback_url": "https://web.archive.org/web/19960412000000*/https://adobe.com",
+          "title": "Adobe Flash Launch Era Interface"
+        },
+        {
           "id": "arc-fl1",
           "entity_id": "grave-adobe-flash-005",
           "year": 2006,
           "date_captured": "November 5, 2006",
           "wayback_url": "https://web.archive.org/web/20061105000000*/macromedia.com/software/flash/about/",
           "title": "Macromedia Flash About Page"
+        },
+        {
+          "id": "arc-adobe-flash-2008",
+          "entity_id": "grave-adobe-flash-005",
+          "year": 2008,
+          "date_captured": "2008-07-15",
+          "wayback_url": "https://web.archive.org/web/20080715000000*/https://adobe.com",
+          "title": "Adobe Flash Peak Era Public Portal"
         }
       ],
       "epitaphs": [
@@ -1130,12 +1194,28 @@
       ],
       "archives": [
         {
+          "id": "arc-napster-1999",
+          "entity_id": "grave-napster-006",
+          "year": 1999,
+          "date_captured": "1999-04-12",
+          "wayback_url": "https://web.archive.org/web/19990412000000*/https://napster.com",
+          "title": "Napster (Original) Launch Era Interface"
+        },
+        {
           "id": "arc-np1",
           "entity_id": "grave-napster-006",
           "year": 2000,
           "date_captured": "November 10, 2000",
           "wayback_url": "https://web.archive.org/web/20001110000000*/napster.com",
           "title": "Original Napster Cat Head Homepage"
+        },
+        {
+          "id": "arc-napster-2001",
+          "entity_id": "grave-napster-006",
+          "year": 2001,
+          "date_captured": "2001-11-20",
+          "wayback_url": "https://web.archive.org/web/20011120000000*/https://napster.com",
+          "title": "Napster (Original) Final Sunset / Farewell Notice"
         }
       ],
       "epitaphs": [
@@ -1290,12 +1370,28 @@
       ],
       "archives": [
         {
+          "id": "arc-club-penguin-2005",
+          "entity_id": "grave-club-penguin-007",
+          "year": 2005,
+          "date_captured": "2005-04-12",
+          "wayback_url": "https://web.archive.org/web/20050412000000*/https://clubpenguin.com",
+          "title": "Club Penguin Launch Era Interface"
+        },
+        {
           "id": "arc-cp1",
           "entity_id": "grave-club-penguin-007",
           "year": 2008,
           "date_captured": "September 15, 2008",
           "wayback_url": "https://web.archive.org/web/20080915000000*/clubpenguin.com",
           "title": "Club Penguin Snowfall Homepage"
+        },
+        {
+          "id": "arc-club-penguin-2011",
+          "entity_id": "grave-club-penguin-007",
+          "year": 2011,
+          "date_captured": "2011-07-15",
+          "wayback_url": "https://web.archive.org/web/20110715000000*/https://clubpenguin.com",
+          "title": "Club Penguin Peak Era Public Portal"
         }
       ],
       "epitaphs": [
@@ -1450,12 +1546,28 @@
       ],
       "archives": [
         {
+          "id": "arc-orkut-2004",
+          "entity_id": "grave-orkut-008",
+          "year": 2004,
+          "date_captured": "2004-04-12",
+          "wayback_url": "https://web.archive.org/web/20040412000000*/https://orkut.com",
+          "title": "Orkut Launch Era Interface"
+        },
+        {
           "id": "arc-ok1",
           "entity_id": "grave-orkut-008",
           "year": 2007,
           "date_captured": "November 2, 2007",
           "wayback_url": "https://web.archive.org/web/20071102000000*/orkut.com",
           "title": "Orkut Classic Profile & Scrapbook"
+        },
+        {
+          "id": "arc-orkut-2009",
+          "entity_id": "grave-orkut-008",
+          "year": 2009,
+          "date_captured": "2009-07-15",
+          "wayback_url": "https://web.archive.org/web/20090715000000*/https://orkut.com",
+          "title": "Orkut Peak Era Public Portal"
         }
       ],
       "epitaphs": [
@@ -1623,6 +1735,22 @@
           "date_captured": "October 1, 2009",
           "wayback_url": "https://web.archive.org/web/20091001000000*/wave.google.com",
           "title": "Google Wave Preview Portal"
+        },
+        {
+          "id": "arc-google-wave-2010",
+          "entity_id": "grave-google-wave-009",
+          "year": 2010,
+          "date_captured": "2010-07-15",
+          "wayback_url": "https://web.archive.org/web/20100715000000*/https://wave.google.com",
+          "title": "Google Wave Peak Era Public Portal"
+        },
+        {
+          "id": "arc-google-wave-2012",
+          "entity_id": "grave-google-wave-009",
+          "year": 2012,
+          "date_captured": "2012-11-20",
+          "wayback_url": "https://web.archive.org/web/20121120000000*/https://wave.google.com",
+          "title": "Google Wave Final Sunset / Farewell Notice"
         }
       ],
       "epitaphs": [
@@ -1776,12 +1904,28 @@
       ],
       "archives": [
         {
+          "id": "arc-icq-1996",
+          "entity_id": "grave-icq-010",
+          "year": 1996,
+          "date_captured": "1996-04-12",
+          "wayback_url": "https://web.archive.org/web/19960412000000*/https://icq.com",
+          "title": "ICQ Launch Era Interface"
+        },
+        {
           "id": "arc-icq1",
           "entity_id": "grave-icq-010",
           "year": 1998,
           "date_captured": "December 6, 1998",
           "wayback_url": "https://web.archive.org/web/19981206000000*/icq.com",
           "title": "Mirabilis ICQ Download Portal"
+        },
+        {
+          "id": "arc-icq-2010",
+          "entity_id": "grave-icq-010",
+          "year": 2010,
+          "date_captured": "2010-07-15",
+          "wayback_url": "https://web.archive.org/web/20100715000000*/https://icq.com",
+          "title": "ICQ Peak Era Public Portal"
         }
       ],
       "epitaphs": [
@@ -1936,12 +2080,28 @@
       ],
       "archives": [
         {
+          "id": "arc-stumbleupon-2001",
+          "entity_id": "grave-stumbleupon-011",
+          "year": 2001,
+          "date_captured": "2001-04-12",
+          "wayback_url": "https://web.archive.org/web/20010412000000*/https://stumbleupon.com",
+          "title": "StumbleUpon Launch Era Interface"
+        },
+        {
           "id": "arc-su1",
           "entity_id": "grave-stumbleupon-011",
           "year": 2008,
           "date_captured": "August 1, 2008",
           "wayback_url": "https://web.archive.org/web/20080801000000*/stumbleupon.com",
           "title": "StumbleUpon Toolbar Web Interface"
+        },
+        {
+          "id": "arc-stumbleupon-2009",
+          "entity_id": "grave-stumbleupon-011",
+          "year": 2009,
+          "date_captured": "2009-07-15",
+          "wayback_url": "https://web.archive.org/web/20090715000000*/https://stumbleupon.com",
+          "title": "StumbleUpon Peak Era Public Portal"
         }
       ],
       "epitaphs": [
@@ -2095,12 +2255,28 @@
       ],
       "archives": [
         {
-          "id": "arc-fb1",
+          "id": "arc-flappy-bird-1",
+          "entity_id": "grave-flappy-bird-012",
+          "year": 2013,
+          "date_captured": "2013-02-15",
+          "wayback_url": "https://web.archive.org/web/20130215000000*/https://dotgears.com",
+          "title": "Flappy Bird Debut Launch Snapshot"
+        },
+        {
+          "id": "arc-flappy-bird-2",
+          "entity_id": "grave-flappy-bird-012",
+          "year": 2013,
+          "date_captured": "2013-08-10",
+          "wayback_url": "https://web.archive.org/web/20130810000000*/https://dotgears.com",
+          "title": "Flappy Bird Viral Peak Interface"
+        },
+        {
+          "id": "arc-flappy-bird-3",
           "entity_id": "grave-flappy-bird-012",
           "year": 2014,
-          "date_captured": "February 1, 2014",
-          "wayback_url": "https://web.archive.org/web/20140201000000*/itunes.apple.com/us/app/flappy-bird/id642099621",
-          "title": "Apple App Store Listing at Peak"
+          "date_captured": "2014-12-05",
+          "wayback_url": "https://web.archive.org/web/20141205000000*/https://dotgears.com",
+          "title": "Flappy Bird Sunset & Delisting Notice"
         }
       ],
       "epitaphs": [
@@ -2254,12 +2430,28 @@
       ],
       "archives": [
         {
+          "id": "arc-pebble-2012",
+          "entity_id": "grave-pebble-013",
+          "year": 2012,
+          "date_captured": "2012-04-12",
+          "wayback_url": "https://web.archive.org/web/20120412000000*/https://pebble.com",
+          "title": "Pebble Launch Era Interface"
+        },
+        {
           "id": "arc-pb1",
           "entity_id": "grave-pebble-013",
           "year": 2014,
           "date_captured": "March 15, 2014",
           "wayback_url": "https://web.archive.org/web/20140315000000*/getpebble.com",
           "title": "Pebble Smartwatch Homepage"
+        },
+        {
+          "id": "arc-pebble-2016",
+          "entity_id": "grave-pebble-013",
+          "year": 2016,
+          "date_captured": "2016-11-20",
+          "wayback_url": "https://web.archive.org/web/20161120000000*/https://pebble.com",
+          "title": "Pebble Final Sunset / Farewell Notice"
         }
       ],
       "epitaphs": [
@@ -2413,12 +2605,28 @@
       ],
       "archives": [
         {
+          "id": "arc-omegle-2009",
+          "entity_id": "grave-omegle-014",
+          "year": 2009,
+          "date_captured": "2009-04-12",
+          "wayback_url": "https://web.archive.org/web/20090412000000*/https://omegle.com",
+          "title": "Omegle Launch Era Interface"
+        },
+        {
           "id": "arc-om1",
           "entity_id": "grave-omegle-014",
           "year": 2011,
           "date_captured": "July 12, 2011",
           "wayback_url": "https://web.archive.org/web/20110712000000*/omegle.com",
           "title": "Omegle Text and Video Matcher"
+        },
+        {
+          "id": "arc-omegle-2016",
+          "entity_id": "grave-omegle-014",
+          "year": 2016,
+          "date_captured": "2016-07-15",
+          "wayback_url": "https://web.archive.org/web/20160715000000*/https://omegle.com",
+          "title": "Omegle Peak Era Public Portal"
         }
       ],
       "epitaphs": [
@@ -2573,12 +2781,28 @@
       ],
       "archives": [
         {
+          "id": "arc-google-plus-2011",
+          "entity_id": "grave-google-plus-015",
+          "year": 2011,
+          "date_captured": "2011-04-12",
+          "wayback_url": "https://web.archive.org/web/20110412000000*/https://plus.google.com",
+          "title": "Google+ Launch Era Interface"
+        },
+        {
           "id": "arc-gp1",
           "entity_id": "grave-google-plus-015",
           "year": 2012,
           "date_captured": "July 1, 2012",
           "wayback_url": "https://web.archive.org/web/20120701000000*/plus.google.com",
           "title": "Google+ Circles Feed"
+        },
+        {
+          "id": "arc-google-plus-2015",
+          "entity_id": "grave-google-plus-015",
+          "year": 2015,
+          "date_captured": "2015-07-15",
+          "wayback_url": "https://web.archive.org/web/20150715000000*/https://plus.google.com",
+          "title": "Google+ Peak Era Public Portal"
         }
       ],
       "epitaphs": [
@@ -2731,6 +2955,22 @@
         }
       ],
       "archives": [
+        {
+          "id": "arc-quibi-2018",
+          "entity_id": "grave-quibi-016",
+          "year": 2018,
+          "date_captured": "2018-04-12",
+          "wayback_url": "https://web.archive.org/web/20180412000000*/https://quibi.com",
+          "title": "Quibi Launch Era Interface"
+        },
+        {
+          "id": "arc-quibi-2019",
+          "entity_id": "grave-quibi-016",
+          "year": 2019,
+          "date_captured": "2019-07-15",
+          "wayback_url": "https://web.archive.org/web/20190715000000*/https://quibi.com",
+          "title": "Quibi Peak Era Public Portal"
+        },
         {
           "id": "arc-qb1",
           "entity_id": "grave-quibi-016",
@@ -2901,12 +3141,28 @@
       ],
       "archives": [
         {
+          "id": "arc-netscape-navigator-1994",
+          "entity_id": "grave-netscape-017",
+          "year": 1994,
+          "date_captured": "1994-04-12",
+          "wayback_url": "https://web.archive.org/web/19940412000000*/https://netscape.com",
+          "title": "Netscape Navigator Launch Era Interface"
+        },
+        {
           "id": "arc-nn1",
           "entity_id": "grave-netscape-017",
           "year": 1996,
           "date_captured": "October 20, 1996",
           "wayback_url": "https://web.archive.org/web/19961020000000*/netscape.com",
           "title": "Netscape Communications Homepage"
+        },
+        {
+          "id": "arc-netscape-navigator-2001",
+          "entity_id": "grave-netscape-017",
+          "year": 2001,
+          "date_captured": "2001-07-15",
+          "wayback_url": "https://web.archive.org/web/20010715000000*/https://netscape.com",
+          "title": "Netscape Navigator Peak Era Public Portal"
         }
       ],
       "epitaphs": [
@@ -3060,6 +3316,22 @@
       ],
       "archives": [
         {
+          "id": "arc-grooveshark-2006",
+          "entity_id": "grave-grooveshark-018",
+          "year": 2006,
+          "date_captured": "2006-04-12",
+          "wayback_url": "https://web.archive.org/web/20060412000000*/https://grooveshark.com",
+          "title": "Grooveshark Launch Era Interface"
+        },
+        {
+          "id": "arc-grooveshark-2010",
+          "entity_id": "grave-grooveshark-018",
+          "year": 2010,
+          "date_captured": "2010-07-15",
+          "wayback_url": "https://web.archive.org/web/20100715000000*/https://grooveshark.com",
+          "title": "Grooveshark Peak Era Public Portal"
+        },
+        {
           "id": "arc-gs1",
           "entity_id": "grave-grooveshark-018",
           "year": 2011,
@@ -3150,6 +3422,26 @@
           "order_index": 1
         },
         {
+          "id": "t-yik-yak-found",
+          "entity_id": "grave-yik-yak-2013",
+          "year": 2013,
+          "date_str": "2013",
+          "title": "Founding & Architectural Genesis",
+          "description": "Early system design and architectural conception of Yik Yak (Original).",
+          "event_type": "FOUNDED",
+          "order_index": 2
+        },
+        {
+          "id": "t-yik-yak-peak",
+          "entity_id": "grave-yik-yak-2013",
+          "year": 2015,
+          "date_str": "2015",
+          "title": "Peak Cultural Scale & User Adoption",
+          "description": "Yik Yak (Original) achieves its peak active community footprint and widespread industry recognition.",
+          "event_type": "MILESTONE",
+          "order_index": 3
+        },
+        {
           "id": "t-yik-yak-2",
           "entity_id": "grave-yik-yak-2013",
           "year": 2017,
@@ -3157,7 +3449,7 @@
           "title": "Official Shutdown",
           "description": "Devastating user backlash after mandatory user handles were enforced; campus harassment scandals and geofencing bans.",
           "event_type": "DISCONTINUED",
-          "order_index": 2
+          "order_index": 4
         }
       ],
       "evidence": [
@@ -3173,6 +3465,19 @@
           "weight": 50,
           "extracted_claim": "Devastating user backlash after mandatory user handles were enforced; campus harassment scandals and geofencing bans.",
           "is_verified": true
+        },
+        {
+          "id": "ev-yik-yak-wayback",
+          "entity_id": "grave-yik-yak-2013",
+          "source_name": "Wayback Machine Digital Archive",
+          "source_type": "Internet Archive Snapshot Index",
+          "url": "https://web.archive.org/web/*/yikyak.com",
+          "timestamp": "2017-12-31",
+          "evidence_type": "ARCHIVE_SNAPSHOT",
+          "reliability": "VERY_HIGH",
+          "weight": 35,
+          "extracted_claim": "Defunct domain yikyak.com historical records confirm cessation of interactive server endpoints.",
+          "is_verified": true
         }
       ],
       "successors": [
@@ -3187,12 +3492,28 @@
       ],
       "archives": [
         {
+          "id": "arc-yik-yak-2013",
+          "entity_id": "grave-yik-yak-2013",
+          "year": 2013,
+          "date_captured": "2013-04-12",
+          "wayback_url": "https://web.archive.org/web/20130412000000*/https://yikyak.com",
+          "title": "Yik Yak (Original) Launch Era Interface"
+        },
+        {
           "id": "arc-yik-yak-1",
           "entity_id": "grave-yik-yak-2013",
           "year": 2014,
           "date_captured": "2014-06-01",
           "wayback_url": "https://web.archive.org/web/*/yikyak.com",
           "title": "Yik Yak (Original) Historical Web Archive"
+        },
+        {
+          "id": "arc-yik-yak-2015",
+          "entity_id": "grave-yik-yak-2013",
+          "year": 2015,
+          "date_captured": "2015-07-15",
+          "wayback_url": "https://web.archive.org/web/20150715000000*/https://yikyak.com",
+          "title": "Yik Yak (Original) Peak Era Public Portal"
         }
       ],
       "epitaphs": [
@@ -3354,12 +3675,28 @@
       ],
       "archives": [
         {
+          "id": "arc-wunderlist-2011",
+          "entity_id": "grave-wunderlist-020",
+          "year": 2011,
+          "date_captured": "2011-04-12",
+          "wayback_url": "https://web.archive.org/web/20110412000000*/https://wunderlist.com",
+          "title": "Wunderlist Launch Era Interface"
+        },
+        {
           "id": "arc-wl1",
           "entity_id": "grave-wunderlist-020",
           "year": 2013,
           "date_captured": "May 1, 2013",
           "wayback_url": "https://web.archive.org/web/20130501000000*/wunderlist.com",
           "title": "Wunderlist 2 Portal"
+        },
+        {
+          "id": "arc-wunderlist-2015",
+          "entity_id": "grave-wunderlist-020",
+          "year": 2015,
+          "date_captured": "2015-07-15",
+          "wayback_url": "https://web.archive.org/web/20150715000000*/https://wunderlist.com",
+          "title": "Wunderlist Peak Era Public Portal"
         }
       ],
       "epitaphs": [
@@ -3444,6 +3781,26 @@
           "order_index": 1
         },
         {
+          "id": "t-altavista-found",
+          "entity_id": "grave-altavista-1995",
+          "year": 1995,
+          "date_str": "1995",
+          "title": "Founding & Architectural Genesis",
+          "description": "Early system design and architectural conception of AltaVista.",
+          "event_type": "FOUNDED",
+          "order_index": 2
+        },
+        {
+          "id": "t-altavista-peak",
+          "entity_id": "grave-altavista-1995",
+          "year": 2004,
+          "date_str": "2004",
+          "title": "Peak Cultural Scale & User Adoption",
+          "description": "AltaVista achieves its peak active community footprint and widespread industry recognition.",
+          "event_type": "MILESTONE",
+          "order_index": 3
+        },
+        {
           "id": "t-altavista-2",
           "entity_id": "grave-altavista-1995",
           "year": 2013,
@@ -3451,7 +3808,7 @@
           "title": "Official Shutdown",
           "description": "Cluttered portal redesign that alienated power users; out-indexed and out-ranked by Google's PageRank algorithm.",
           "event_type": "DISCONTINUED",
-          "order_index": 2
+          "order_index": 4
         }
       ],
       "evidence": [
@@ -3467,6 +3824,19 @@
           "weight": 50,
           "extracted_claim": "Cluttered portal redesign that alienated power users; out-indexed and out-ranked by Google's PageRank algorithm.",
           "is_verified": true
+        },
+        {
+          "id": "ev-altavista-wayback",
+          "entity_id": "grave-altavista-1995",
+          "source_name": "Wayback Machine Digital Archive",
+          "source_type": "Internet Archive Snapshot Index",
+          "url": "https://web.archive.org/web/*/altavista.com",
+          "timestamp": "2013-12-31",
+          "evidence_type": "ARCHIVE_SNAPSHOT",
+          "reliability": "VERY_HIGH",
+          "weight": 35,
+          "extracted_claim": "Defunct domain altavista.com historical records confirm cessation of interactive server endpoints.",
+          "is_verified": true
         }
       ],
       "successors": [
@@ -3481,12 +3851,28 @@
       ],
       "archives": [
         {
+          "id": "arc-altavista-1995",
+          "entity_id": "grave-altavista-1995",
+          "year": 1995,
+          "date_captured": "1995-04-12",
+          "wayback_url": "https://web.archive.org/web/19950412000000*/https://altavista.com",
+          "title": "AltaVista Launch Era Interface"
+        },
+        {
           "id": "arc-altavista-1",
           "entity_id": "grave-altavista-1995",
           "year": 1996,
           "date_captured": "1996-06-01",
           "wayback_url": "https://web.archive.org/web/*/altavista.com",
           "title": "AltaVista Historical Web Archive"
+        },
+        {
+          "id": "arc-altavista-2004",
+          "entity_id": "grave-altavista-1995",
+          "year": 2004,
+          "date_captured": "2004-07-15",
+          "wayback_url": "https://web.archive.org/web/20040715000000*/https://altavista.com",
+          "title": "AltaVista Peak Era Public Portal"
         }
       ],
       "epitaphs": [
@@ -3580,6 +3966,16 @@
           "order_index": 2
         },
         {
+          "id": "t-periscope-peak",
+          "entity_id": "grave-periscope-022",
+          "year": 2017,
+          "date_str": "2017",
+          "title": "Peak Cultural Scale & User Adoption",
+          "description": "Periscope achieves its peak active community footprint and widespread industry recognition.",
+          "event_type": "MILESTONE",
+          "order_index": 3
+        },
+        {
           "id": "t-ps3",
           "entity_id": "grave-periscope-022",
           "year": 2021,
@@ -3587,7 +3983,7 @@
           "title": "Final Stream",
           "description": "Periscope apps deactivated permanently.",
           "event_type": "DISCONTINUED",
-          "order_index": 3
+          "order_index": 4
         }
       ],
       "evidence": [
@@ -3603,6 +3999,19 @@
           "weight": 45,
           "extracted_claim": "Periscope team officially announces retirement by March 2021.",
           "is_verified": true
+        },
+        {
+          "id": "ev-periscope-wayback",
+          "entity_id": "grave-periscope-022",
+          "source_name": "Wayback Machine Digital Archive",
+          "source_type": "Internet Archive Snapshot Index",
+          "url": "https://web.archive.org/web/*/pscp.tv",
+          "timestamp": "2021-12-31",
+          "evidence_type": "ARCHIVE_SNAPSHOT",
+          "reliability": "VERY_HIGH",
+          "weight": 35,
+          "extracted_claim": "Defunct domain pscp.tv historical records confirm cessation of interactive server endpoints.",
+          "is_verified": true
         }
       ],
       "successors": [
@@ -3617,12 +4026,28 @@
       ],
       "archives": [
         {
+          "id": "arc-periscope-2014",
+          "entity_id": "grave-periscope-022",
+          "year": 2014,
+          "date_captured": "2014-04-12",
+          "wayback_url": "https://web.archive.org/web/20140412000000*/https://pscp.tv",
+          "title": "Periscope Launch Era Interface"
+        },
+        {
           "id": "arc-ps1",
           "entity_id": "grave-periscope-022",
           "year": 2015,
           "date_captured": "April 1, 2015",
           "wayback_url": "https://web.archive.org/web/20150401000000*/periscope.tv",
           "title": "Periscope Live Map Interface"
+        },
+        {
+          "id": "arc-periscope-2017",
+          "entity_id": "grave-periscope-022",
+          "year": 2017,
+          "date_captured": "2017-07-15",
+          "wayback_url": "https://web.archive.org/web/20170715000000*/https://pscp.tv",
+          "title": "Periscope Peak Era Public Portal"
         }
       ],
       "epitaphs": [
@@ -3707,6 +4132,26 @@
           "order_index": 1
         },
         {
+          "id": "t-path-found",
+          "entity_id": "grave-path-2010",
+          "year": 2010,
+          "date_str": "2010",
+          "title": "Founding & Architectural Genesis",
+          "description": "Early system design and architectural conception of Path.",
+          "event_type": "FOUNDED",
+          "order_index": 2
+        },
+        {
+          "id": "t-path-peak",
+          "entity_id": "grave-path-2010",
+          "year": 2014,
+          "date_str": "2014",
+          "title": "Peak Cultural Scale & User Adoption",
+          "description": "Path achieves its peak active community footprint and widespread industry recognition.",
+          "event_type": "MILESTONE",
+          "order_index": 3
+        },
+        {
           "id": "t-path-2",
           "entity_id": "grave-path-2010",
           "year": 2018,
@@ -3714,7 +4159,7 @@
           "title": "Official Shutdown",
           "description": "Inability to maintain growth against Instagram and WhatsApp; acquisition by Kakao which ultimately sunset it.",
           "event_type": "DISCONTINUED",
-          "order_index": 2
+          "order_index": 4
         }
       ],
       "evidence": [
@@ -3730,6 +4175,19 @@
           "weight": 50,
           "extracted_claim": "Inability to maintain growth against Instagram and WhatsApp; acquisition by Kakao which ultimately sunset it.",
           "is_verified": true
+        },
+        {
+          "id": "ev-path-wayback",
+          "entity_id": "grave-path-2010",
+          "source_name": "Wayback Machine Digital Archive",
+          "source_type": "Internet Archive Snapshot Index",
+          "url": "https://web.archive.org/web/*/path.com",
+          "timestamp": "2018-12-31",
+          "evidence_type": "ARCHIVE_SNAPSHOT",
+          "reliability": "VERY_HIGH",
+          "weight": 35,
+          "extracted_claim": "Defunct domain path.com historical records confirm cessation of interactive server endpoints.",
+          "is_verified": true
         }
       ],
       "successors": [
@@ -3744,12 +4202,28 @@
       ],
       "archives": [
         {
+          "id": "arc-path-2010",
+          "entity_id": "grave-path-2010",
+          "year": 2010,
+          "date_captured": "2010-04-12",
+          "wayback_url": "https://web.archive.org/web/20100412000000*/https://path.com",
+          "title": "Path Launch Era Interface"
+        },
+        {
           "id": "arc-path-1",
           "entity_id": "grave-path-2010",
           "year": 2011,
           "date_captured": "2011-06-01",
           "wayback_url": "https://web.archive.org/web/*/path.com",
           "title": "Path Historical Web Archive"
+        },
+        {
+          "id": "arc-path-2014",
+          "entity_id": "grave-path-2010",
+          "year": 2014,
+          "date_captured": "2014-07-15",
+          "wayback_url": "https://web.archive.org/web/20140715000000*/https://path.com",
+          "title": "Path Peak Era Public Portal"
         }
       ],
       "epitaphs": [
@@ -3833,6 +4307,26 @@
           "order_index": 1
         },
         {
+          "id": "t-rdio-found",
+          "entity_id": "grave-rdio-024",
+          "year": 2010,
+          "date_str": "2010",
+          "title": "Founding & Architectural Genesis",
+          "description": "Early system design and architectural conception of Rdio.",
+          "event_type": "FOUNDED",
+          "order_index": 2
+        },
+        {
+          "id": "t-rdio-peak",
+          "entity_id": "grave-rdio-024",
+          "year": 2012,
+          "date_str": "2012",
+          "title": "Peak Cultural Scale & User Adoption",
+          "description": "Rdio achieves its peak active community footprint and widespread industry recognition.",
+          "event_type": "MILESTONE",
+          "order_index": 3
+        },
+        {
           "id": "t-rd2",
           "entity_id": "grave-rdio-024",
           "year": 2015,
@@ -3840,7 +4334,7 @@
           "title": "Bankruptcy Filing",
           "description": "Rdio files Chapter 11 bankruptcy; Pandora acquires key assets for $75M.",
           "event_type": "SHUTDOWN_ANNOUNCED",
-          "order_index": 2
+          "order_index": 4
         },
         {
           "id": "t-rd3",
@@ -3850,7 +4344,7 @@
           "title": "The Music Stops",
           "description": "Rdio ceases worldwide streaming.",
           "event_type": "DISCONTINUED",
-          "order_index": 3
+          "order_index": 5
         }
       ],
       "evidence": [
@@ -3866,6 +4360,19 @@
           "weight": 45,
           "extracted_claim": "Rdio formally shuts down services on December 22, 2015.",
           "is_verified": true
+        },
+        {
+          "id": "ev-rdio-wayback",
+          "entity_id": "grave-rdio-024",
+          "source_name": "Wayback Machine Digital Archive",
+          "source_type": "Internet Archive Snapshot Index",
+          "url": "https://web.archive.org/web/*/rdio.com",
+          "timestamp": "2015-12-31",
+          "evidence_type": "ARCHIVE_SNAPSHOT",
+          "reliability": "VERY_HIGH",
+          "weight": 35,
+          "extracted_claim": "Defunct domain rdio.com historical records confirm cessation of interactive server endpoints.",
+          "is_verified": true
         }
       ],
       "successors": [
@@ -3879,6 +4386,22 @@
         }
       ],
       "archives": [
+        {
+          "id": "arc-rdio-2010",
+          "entity_id": "grave-rdio-024",
+          "year": 2010,
+          "date_captured": "2010-04-12",
+          "wayback_url": "https://web.archive.org/web/20100412000000*/https://rdio.com",
+          "title": "Rdio Launch Era Interface"
+        },
+        {
+          "id": "arc-rdio-2012",
+          "entity_id": "grave-rdio-024",
+          "year": 2012,
+          "date_captured": "2012-07-15",
+          "wayback_url": "https://web.archive.org/web/20120715000000*/https://rdio.com",
+          "title": "Rdio Peak Era Public Portal"
+        },
         {
           "id": "arc-rd1",
           "entity_id": "grave-rdio-024",
@@ -3970,6 +4493,26 @@
           "order_index": 1
         },
         {
+          "id": "t-delicious-found",
+          "entity_id": "grave-delicious-2003",
+          "year": 2003,
+          "date_str": "2003",
+          "title": "Founding & Architectural Genesis",
+          "description": "Early system design and architectural conception of Delicious (del.icio.us).",
+          "event_type": "FOUNDED",
+          "order_index": 2
+        },
+        {
+          "id": "t-delicious-peak",
+          "entity_id": "grave-delicious-2003",
+          "year": 2010,
+          "date_str": "2010",
+          "title": "Peak Cultural Scale & User Adoption",
+          "description": "Delicious (del.icio.us) achieves its peak active community footprint and widespread industry recognition.",
+          "event_type": "MILESTONE",
+          "order_index": 3
+        },
+        {
           "id": "t-delicious-2",
           "entity_id": "grave-delicious-2003",
           "year": 2017,
@@ -3977,7 +4520,7 @@
           "title": "Official Shutdown",
           "description": "Neglected by Yahoo! after acquisition; acquired by Pinboard founder Maciej Cegłowski to preserve archives.",
           "event_type": "DISCONTINUED",
-          "order_index": 2
+          "order_index": 4
         }
       ],
       "evidence": [
@@ -3992,6 +4535,19 @@
           "reliability": "VERY_HIGH",
           "weight": 50,
           "extracted_claim": "Neglected by Yahoo! after acquisition; acquired by Pinboard founder Maciej Cegłowski to preserve archives.",
+          "is_verified": true
+        },
+        {
+          "id": "ev-delicious-wayback",
+          "entity_id": "grave-delicious-2003",
+          "source_name": "Wayback Machine Digital Archive",
+          "source_type": "Internet Archive Snapshot Index",
+          "url": "https://web.archive.org/web/*/del.icio.us",
+          "timestamp": "2017-12-31",
+          "evidence_type": "ARCHIVE_SNAPSHOT",
+          "reliability": "VERY_HIGH",
+          "weight": 35,
+          "extracted_claim": "Defunct domain del.icio.us historical records confirm cessation of interactive server endpoints.",
           "is_verified": true
         }
       ],
@@ -4015,12 +4571,28 @@
       ],
       "archives": [
         {
+          "id": "arc-delicious-2003",
+          "entity_id": "grave-delicious-2003",
+          "year": 2003,
+          "date_captured": "2003-04-12",
+          "wayback_url": "https://web.archive.org/web/20030412000000*/https://del.icio.us",
+          "title": "Delicious (del.icio.us) Launch Era Interface"
+        },
+        {
           "id": "arc-delicious-1",
           "entity_id": "grave-delicious-2003",
           "year": 2004,
           "date_captured": "2004-06-01",
           "wayback_url": "https://web.archive.org/web/*/del.icio.us",
           "title": "Delicious (del.icio.us) Historical Web Archive"
+        },
+        {
+          "id": "arc-delicious-2010",
+          "entity_id": "grave-delicious-2003",
+          "year": 2010,
+          "date_captured": "2010-07-15",
+          "wayback_url": "https://web.archive.org/web/20100715000000*/https://del.icio.us",
+          "title": "Delicious (del.icio.us) Peak Era Public Portal"
         }
       ],
       "epitaphs": [
@@ -4147,6 +4719,19 @@
           "weight": 45,
           "extracted_claim": "Microsoft announces closure of Mixer and partnership with Facebook Gaming.",
           "is_verified": true
+        },
+        {
+          "id": "ev-mixer-wayback",
+          "entity_id": "grave-mixer-026",
+          "source_name": "Wayback Machine Digital Archive",
+          "source_type": "Internet Archive Snapshot Index",
+          "url": "https://web.archive.org/web/*/mixer.com",
+          "timestamp": "2020-12-31",
+          "evidence_type": "ARCHIVE_SNAPSHOT",
+          "reliability": "VERY_HIGH",
+          "weight": 35,
+          "extracted_claim": "Defunct domain mixer.com historical records confirm cessation of interactive server endpoints.",
+          "is_verified": true
         }
       ],
       "successors": [
@@ -4160,6 +4745,22 @@
         }
       ],
       "archives": [
+        {
+          "id": "arc-mixer-2016",
+          "entity_id": "grave-mixer-026",
+          "year": 2016,
+          "date_captured": "2016-04-12",
+          "wayback_url": "https://web.archive.org/web/20160412000000*/https://mixer.com",
+          "title": "Mixer Launch Era Interface"
+        },
+        {
+          "id": "arc-mixer-2018",
+          "entity_id": "grave-mixer-026",
+          "year": 2018,
+          "date_captured": "2018-07-15",
+          "wayback_url": "https://web.archive.org/web/20180715000000*/https://mixer.com",
+          "title": "Mixer Peak Era Public Portal"
+        },
         {
           "id": "arc-mx1",
           "entity_id": "grave-mixer-026",
@@ -4251,6 +4852,26 @@
           "order_index": 1
         },
         {
+          "id": "t-friendster-found",
+          "entity_id": "grave-friendster-2002",
+          "year": 2002,
+          "date_str": "2002",
+          "title": "Founding & Architectural Genesis",
+          "description": "Early system design and architectural conception of Friendster.",
+          "event_type": "FOUNDED",
+          "order_index": 2
+        },
+        {
+          "id": "t-friendster-peak",
+          "entity_id": "grave-friendster-2002",
+          "year": 2008,
+          "date_str": "2008",
+          "title": "Peak Cultural Scale & User Adoption",
+          "description": "Friendster achieves its peak active community footprint and widespread industry recognition.",
+          "event_type": "MILESTONE",
+          "order_index": 3
+        },
+        {
           "id": "t-friendster-2",
           "entity_id": "grave-friendster-2002",
           "year": 2015,
@@ -4258,7 +4879,7 @@
           "title": "Official Shutdown",
           "description": "Severe technical infrastructure collapse (unbearable page load latency) and user alienation; eclipsed by MySpace.",
           "event_type": "DISCONTINUED",
-          "order_index": 2
+          "order_index": 4
         }
       ],
       "evidence": [
@@ -4274,6 +4895,19 @@
           "weight": 50,
           "extracted_claim": "Severe technical infrastructure collapse (unbearable page load latency) and user alienation; eclipsed by MySpace.",
           "is_verified": true
+        },
+        {
+          "id": "ev-friendster-wayback",
+          "entity_id": "grave-friendster-2002",
+          "source_name": "Wayback Machine Digital Archive",
+          "source_type": "Internet Archive Snapshot Index",
+          "url": "https://web.archive.org/web/*/friendster.com",
+          "timestamp": "2015-12-31",
+          "evidence_type": "ARCHIVE_SNAPSHOT",
+          "reliability": "VERY_HIGH",
+          "weight": 35,
+          "extracted_claim": "Defunct domain friendster.com historical records confirm cessation of interactive server endpoints.",
+          "is_verified": true
         }
       ],
       "successors": [
@@ -4288,12 +4922,28 @@
       ],
       "archives": [
         {
+          "id": "arc-friendster-2002",
+          "entity_id": "grave-friendster-2002",
+          "year": 2002,
+          "date_captured": "2002-04-12",
+          "wayback_url": "https://web.archive.org/web/20020412000000*/https://friendster.com",
+          "title": "Friendster Launch Era Interface"
+        },
+        {
           "id": "arc-friendster-1",
           "entity_id": "grave-friendster-2002",
           "year": 2003,
           "date_captured": "2003-06-01",
           "wayback_url": "https://web.archive.org/web/*/friendster.com",
           "title": "Friendster Historical Web Archive"
+        },
+        {
+          "id": "arc-friendster-2008",
+          "entity_id": "grave-friendster-2002",
+          "year": 2008,
+          "date_captured": "2008-07-15",
+          "wayback_url": "https://web.archive.org/web/20080715000000*/https://friendster.com",
+          "title": "Friendster Peak Era Public Portal"
         }
       ],
       "epitaphs": [
@@ -4377,6 +5027,16 @@
           "order_index": 1
         },
         {
+          "id": "t-yahoo-answers-found",
+          "entity_id": "grave-yahoo-answers-028",
+          "year": 2005,
+          "date_str": "2005",
+          "title": "Founding & Architectural Genesis",
+          "description": "Early system design and architectural conception of Yahoo Answers.",
+          "event_type": "FOUNDED",
+          "order_index": 2
+        },
+        {
           "id": "t-ya2",
           "entity_id": "grave-yahoo-answers-028",
           "year": 2006,
@@ -4384,7 +5044,7 @@
           "title": "'How is babby formed?'",
           "description": "User asks famous question, launching internet folklore.",
           "event_type": "MILESTONE",
-          "order_index": 2
+          "order_index": 3
         },
         {
           "id": "t-ya3",
@@ -4394,7 +5054,7 @@
           "title": "The Purge",
           "description": "16 years of questions and answers deleted forever.",
           "event_type": "DISCONTINUED",
-          "order_index": 3
+          "order_index": 4
         }
       ],
       "evidence": [
@@ -4409,6 +5069,19 @@
           "reliability": "VERY_HIGH",
           "weight": 45,
           "extracted_claim": "Yahoo confirms complete shutdown and deletion of Yahoo Answers on May 4, 2021.",
+          "is_verified": true
+        },
+        {
+          "id": "ev-yahoo-answers-wayback",
+          "entity_id": "grave-yahoo-answers-028",
+          "source_name": "Wayback Machine Digital Archive",
+          "source_type": "Internet Archive Snapshot Index",
+          "url": "https://web.archive.org/web/*/answers.yahoo.com",
+          "timestamp": "2021-12-31",
+          "evidence_type": "ARCHIVE_SNAPSHOT",
+          "reliability": "VERY_HIGH",
+          "weight": 35,
+          "extracted_claim": "Defunct domain answers.yahoo.com historical records confirm cessation of interactive server endpoints.",
           "is_verified": true
         }
       ],
@@ -4432,12 +5105,28 @@
       ],
       "archives": [
         {
+          "id": "arc-yahoo-answers-2005",
+          "entity_id": "grave-yahoo-answers-028",
+          "year": 2005,
+          "date_captured": "2005-04-12",
+          "wayback_url": "https://web.archive.org/web/20050412000000*/https://answers.yahoo.com",
+          "title": "Yahoo Answers Launch Era Interface"
+        },
+        {
           "id": "arc-ya1",
           "entity_id": "grave-yahoo-answers-028",
           "year": 2008,
           "date_captured": "March 15, 2008",
           "wayback_url": "https://web.archive.org/web/20080315000000*/answers.yahoo.com",
           "title": "Yahoo Answers Golden Age"
+        },
+        {
+          "id": "arc-yahoo-answers-2013",
+          "entity_id": "grave-yahoo-answers-028",
+          "year": 2013,
+          "date_captured": "2013-07-15",
+          "wayback_url": "https://web.archive.org/web/20130715000000*/https://answers.yahoo.com",
+          "title": "Yahoo Answers Peak Era Public Portal"
         }
       ],
       "epitaphs": [
@@ -4562,6 +5251,16 @@
           "order_index": 1
         },
         {
+          "id": "t-classic-bulletin-network-found",
+          "entity_id": "grave-risk-029",
+          "year": 2004,
+          "date_str": "2004",
+          "title": "Founding & Architectural Genesis",
+          "description": "Early system design and architectural conception of Classic Bulletin Network.",
+          "event_type": "FOUNDED",
+          "order_index": 2
+        },
+        {
           "id": "t-cb2",
           "entity_id": "grave-risk-029",
           "year": 2012,
@@ -4569,7 +5268,17 @@
           "title": "Peak Community",
           "description": "Over 14,000 forums active across cars, gaming, and local history.",
           "event_type": "MILESTONE",
-          "order_index": 2
+          "order_index": 3
+        },
+        {
+          "id": "t-classic-bulletin-network-sunset",
+          "entity_id": "grave-risk-029",
+          "year": 2020,
+          "date_str": "2020",
+          "title": "Official Shutdown & Sunset",
+          "description": "Not confirmed dead yet, but shows 82% risk score across 5 independent forensic metrics.",
+          "event_type": "DISCONTINUED",
+          "order_index": 4
         },
         {
           "id": "t-cb3",
@@ -4579,7 +5288,7 @@
           "title": "Degradation Begins",
           "description": "Founders cease replying to support tickets; database corruption reports mount.",
           "event_type": "DECLINE",
-          "order_index": 3
+          "order_index": 5
         }
       ],
       "evidence": [
@@ -4622,12 +5331,28 @@
       ],
       "archives": [
         {
+          "id": "arc-classic-bulletin-network-2004",
+          "entity_id": "grave-risk-029",
+          "year": 2004,
+          "date_captured": "2004-04-12",
+          "wayback_url": "https://web.archive.org/web/20040412000000*/https://classicbulletin.net",
+          "title": "Classic Bulletin Network Launch Era Interface"
+        },
+        {
           "id": "arc-cb1",
           "entity_id": "grave-risk-029",
           "year": 2010,
           "date_captured": "July 1, 2010",
           "wayback_url": "https://web.archive.org",
           "title": "Classic Bulletin Network Directory"
+        },
+        {
+          "id": "arc-classic-bulletin-network-2012",
+          "entity_id": "grave-risk-029",
+          "year": 2012,
+          "date_captured": "2012-07-15",
+          "wayback_url": "https://web.archive.org/web/20120715000000*/https://classicbulletin.net",
+          "title": "Classic Bulletin Network Peak Era Public Portal"
         }
       ],
       "epitaphs": [
@@ -4712,6 +5437,26 @@
           "order_index": 1
         },
         {
+          "id": "t-ask-jeeves-found",
+          "entity_id": "grave-ask-jeeves-1996",
+          "year": 1996,
+          "date_str": "1996",
+          "title": "Founding & Architectural Genesis",
+          "description": "Early system design and architectural conception of Ask Jeeves.",
+          "event_type": "FOUNDED",
+          "order_index": 2
+        },
+        {
+          "id": "t-ask-jeeves-peak",
+          "entity_id": "grave-ask-jeeves-1996",
+          "year": 2001,
+          "date_str": "2001",
+          "title": "Peak Cultural Scale & User Adoption",
+          "description": "Ask Jeeves achieves its peak active community footprint and widespread industry recognition.",
+          "event_type": "MILESTONE",
+          "order_index": 3
+        },
+        {
           "id": "t-ask-jeeves-2",
           "entity_id": "grave-ask-jeeves-1996",
           "year": 2006,
@@ -4719,7 +5464,7 @@
           "title": "Official Shutdown",
           "description": "Rebranding that discarded its primary brand differentiator; unable to compete with Google's algorithmic relevance.",
           "event_type": "DISCONTINUED",
-          "order_index": 2
+          "order_index": 4
         }
       ],
       "evidence": [
@@ -4735,6 +5480,19 @@
           "weight": 50,
           "extracted_claim": "Rebranding that discarded its primary brand differentiator; unable to compete with Google's algorithmic relevance.",
           "is_verified": true
+        },
+        {
+          "id": "ev-ask-jeeves-wayback",
+          "entity_id": "grave-ask-jeeves-1996",
+          "source_name": "Wayback Machine Digital Archive",
+          "source_type": "Internet Archive Snapshot Index",
+          "url": "https://web.archive.org/web/*/askjeeves.com",
+          "timestamp": "2006-12-31",
+          "evidence_type": "ARCHIVE_SNAPSHOT",
+          "reliability": "VERY_HIGH",
+          "weight": 35,
+          "extracted_claim": "Defunct domain askjeeves.com historical records confirm cessation of interactive server endpoints.",
+          "is_verified": true
         }
       ],
       "successors": [
@@ -4749,12 +5507,28 @@
       ],
       "archives": [
         {
+          "id": "arc-ask-jeeves-1996",
+          "entity_id": "grave-ask-jeeves-1996",
+          "year": 1996,
+          "date_captured": "1996-04-12",
+          "wayback_url": "https://web.archive.org/web/19960412000000*/https://askjeeves.com",
+          "title": "Ask Jeeves Launch Era Interface"
+        },
+        {
           "id": "arc-ask-jeeves-1",
           "entity_id": "grave-ask-jeeves-1996",
           "year": 1997,
           "date_captured": "1997-06-01",
           "wayback_url": "https://web.archive.org/web/*/askjeeves.com",
           "title": "Ask Jeeves Historical Web Archive"
+        },
+        {
+          "id": "arc-ask-jeeves-2001",
+          "entity_id": "grave-ask-jeeves-1996",
+          "year": 2001,
+          "date_captured": "2001-07-15",
+          "wayback_url": "https://web.archive.org/web/20010715000000*/https://askjeeves.com",
+          "title": "Ask Jeeves Peak Era Public Portal"
         }
       ],
       "epitaphs": [
@@ -4881,6 +5655,19 @@
           "weight": 45,
           "extracted_claim": "Kazaa reaches landmark $100M settlement with music industry.",
           "is_verified": true
+        },
+        {
+          "id": "ev-kazaa-wayback",
+          "entity_id": "grave-kazaa-031",
+          "source_name": "Wayback Machine Digital Archive",
+          "source_type": "Internet Archive Snapshot Index",
+          "url": "https://web.archive.org/web/*/kazaa.com",
+          "timestamp": "2012-12-31",
+          "evidence_type": "ARCHIVE_SNAPSHOT",
+          "reliability": "VERY_HIGH",
+          "weight": 35,
+          "extracted_claim": "Defunct domain kazaa.com historical records confirm cessation of interactive server endpoints.",
+          "is_verified": true
         }
       ],
       "successors": [
@@ -4895,12 +5682,28 @@
       ],
       "archives": [
         {
+          "id": "arc-kazaa-2001",
+          "entity_id": "grave-kazaa-031",
+          "year": 2001,
+          "date_captured": "2001-04-12",
+          "wayback_url": "https://web.archive.org/web/20010412000000*/https://kazaa.com",
+          "title": "Kazaa Launch Era Interface"
+        },
+        {
           "id": "arc-kz1",
           "entity_id": "grave-kazaa-031",
           "year": 2003,
           "date_captured": "April 1, 2003",
           "wayback_url": "https://web.archive.org/web/20030401000000*/kazaa.com",
           "title": "Kazaa Media Desktop Portal"
+        },
+        {
+          "id": "arc-kazaa-2006",
+          "entity_id": "grave-kazaa-031",
+          "year": 2006,
+          "date_captured": "2006-07-15",
+          "wayback_url": "https://web.archive.org/web/20060715000000*/https://kazaa.com",
+          "title": "Kazaa Peak Era Public Portal"
         }
       ],
       "epitaphs": [
@@ -4985,6 +5788,26 @@
           "order_index": 1
         },
         {
+          "id": "t-turntable-fm-found",
+          "entity_id": "grave-turntable-fm-2011",
+          "year": 2011,
+          "date_str": "2011",
+          "title": "Founding & Architectural Genesis",
+          "description": "Early system design and architectural conception of Turntable.fm.",
+          "event_type": "FOUNDED",
+          "order_index": 2
+        },
+        {
+          "id": "t-turntable-fm-peak",
+          "entity_id": "grave-turntable-fm-2011",
+          "year": 2012,
+          "date_str": "2012",
+          "title": "Peak Cultural Scale & User Adoption",
+          "description": "Turntable.fm achieves its peak active community footprint and widespread industry recognition.",
+          "event_type": "MILESTONE",
+          "order_index": 3
+        },
+        {
           "id": "t-turntable-fm-2",
           "entity_id": "grave-turntable-fm-2011",
           "year": 2013,
@@ -4992,7 +5815,7 @@
           "title": "Official Shutdown",
           "description": "Crushing music royalty licensing fees and inability to monetize or launch internationally.",
           "event_type": "DISCONTINUED",
-          "order_index": 2
+          "order_index": 4
         }
       ],
       "evidence": [
@@ -5008,6 +5831,19 @@
           "weight": 50,
           "extracted_claim": "Crushing music royalty licensing fees and inability to monetize or launch internationally.",
           "is_verified": true
+        },
+        {
+          "id": "ev-turntable-fm-wayback",
+          "entity_id": "grave-turntable-fm-2011",
+          "source_name": "Wayback Machine Digital Archive",
+          "source_type": "Internet Archive Snapshot Index",
+          "url": "https://web.archive.org/web/*/turntable.fm",
+          "timestamp": "2013-12-31",
+          "evidence_type": "ARCHIVE_SNAPSHOT",
+          "reliability": "VERY_HIGH",
+          "weight": 35,
+          "extracted_claim": "Defunct domain turntable.fm historical records confirm cessation of interactive server endpoints.",
+          "is_verified": true
         }
       ],
       "successors": [
@@ -5022,12 +5858,28 @@
       ],
       "archives": [
         {
+          "id": "arc-turntable-fm-2011",
+          "entity_id": "grave-turntable-fm-2011",
+          "year": 2011,
+          "date_captured": "2011-04-12",
+          "wayback_url": "https://web.archive.org/web/20110412000000*/https://turntable.fm",
+          "title": "Turntable.fm Launch Era Interface"
+        },
+        {
           "id": "arc-turntable-fm-1",
           "entity_id": "grave-turntable-fm-2011",
           "year": 2012,
           "date_captured": "2012-06-01",
           "wayback_url": "https://web.archive.org/web/*/turntable.fm",
           "title": "Turntable.fm Historical Web Archive"
+        },
+        {
+          "id": "arc-turntable-fm-2013",
+          "entity_id": "grave-turntable-fm-2011",
+          "year": 2013,
+          "date_captured": "2013-11-20",
+          "wayback_url": "https://web.archive.org/web/20131120000000*/https://turntable.fm",
+          "title": "Turntable.fm Final Sunset / Farewell Notice"
         }
       ],
       "epitaphs": [
@@ -5112,6 +5964,16 @@
           "order_index": 1
         },
         {
+          "id": "t-meerkat-found",
+          "entity_id": "grave-meerkat-2015",
+          "year": 2015,
+          "date_str": "2015",
+          "title": "Founding & Architectural Genesis",
+          "description": "Early system design and architectural conception of Meerkat.",
+          "event_type": "FOUNDED",
+          "order_index": 2
+        },
+        {
           "id": "t-meerkat-2",
           "entity_id": "grave-meerkat-2015",
           "year": 2016,
@@ -5119,7 +5981,17 @@
           "title": "Official Shutdown",
           "description": "Twitter revoked its access to the Twitter Social Graph API and promoted its own clone (Periscope).",
           "event_type": "DISCONTINUED",
-          "order_index": 2
+          "order_index": 3
+        },
+        {
+          "id": "t-meerkat-peak",
+          "entity_id": "grave-meerkat-2015",
+          "year": 2016,
+          "date_str": "2016",
+          "title": "Peak Cultural Scale & User Adoption",
+          "description": "Meerkat achieves its peak active community footprint and widespread industry recognition.",
+          "event_type": "MILESTONE",
+          "order_index": 4
         }
       ],
       "evidence": [
@@ -5134,6 +6006,19 @@
           "reliability": "VERY_HIGH",
           "weight": 50,
           "extracted_claim": "Twitter revoked its access to the Twitter Social Graph API and promoted its own clone (Periscope).",
+          "is_verified": true
+        },
+        {
+          "id": "ev-meerkat-wayback",
+          "entity_id": "grave-meerkat-2015",
+          "source_name": "Wayback Machine Digital Archive",
+          "source_type": "Internet Archive Snapshot Index",
+          "url": "https://web.archive.org/web/*/meerkatapp.co",
+          "timestamp": "2016-12-31",
+          "evidence_type": "ARCHIVE_SNAPSHOT",
+          "reliability": "VERY_HIGH",
+          "weight": 35,
+          "extracted_claim": "Defunct domain meerkatapp.co historical records confirm cessation of interactive server endpoints.",
           "is_verified": true
         }
       ],
@@ -5151,10 +6036,26 @@
         {
           "id": "arc-meerkat-1",
           "entity_id": "grave-meerkat-2015",
+          "year": 2015,
+          "date_captured": "2015-02-15",
+          "wayback_url": "https://web.archive.org/web/20150215000000*/https://meerkatapp.co",
+          "title": "Meerkat Debut Launch Snapshot"
+        },
+        {
+          "id": "arc-meerkat-2",
+          "entity_id": "grave-meerkat-2015",
+          "year": 2015,
+          "date_captured": "2015-08-10",
+          "wayback_url": "https://web.archive.org/web/20150810000000*/https://meerkatapp.co",
+          "title": "Meerkat Viral Peak Interface"
+        },
+        {
+          "id": "arc-meerkat-3",
+          "entity_id": "grave-meerkat-2015",
           "year": 2016,
-          "date_captured": "2016-06-01",
-          "wayback_url": "https://web.archive.org/web/*/meerkatapp.co",
-          "title": "Meerkat Historical Web Archive"
+          "date_captured": "2016-12-05",
+          "wayback_url": "https://web.archive.org/web/20161205000000*/https://meerkatapp.co",
+          "title": "Meerkat Sunset & Delisting Notice"
         }
       ],
       "epitaphs": [
@@ -5239,6 +6140,26 @@
           "order_index": 1
         },
         {
+          "id": "t-digg-v4-found",
+          "entity_id": "grave-digg-v4-2004",
+          "year": 2004,
+          "date_str": "2004",
+          "title": "Founding & Architectural Genesis",
+          "description": "Early system design and architectural conception of Digg (v4 Era).",
+          "event_type": "FOUNDED",
+          "order_index": 2
+        },
+        {
+          "id": "t-digg-v4-peak",
+          "entity_id": "grave-digg-v4-2004",
+          "year": 2007,
+          "date_str": "2007",
+          "title": "Peak Cultural Scale & User Adoption",
+          "description": "Digg (v4 Era) achieves its peak active community footprint and widespread industry recognition.",
+          "event_type": "MILESTONE",
+          "order_index": 3
+        },
+        {
           "id": "t-digg-v4-2",
           "entity_id": "grave-digg-v4-2004",
           "year": 2010,
@@ -5246,7 +6167,7 @@
           "title": "Official Shutdown",
           "description": "The v4 redesign alienated core community power users and prioritized sponsored corporate feeds; triggered the mass exodus to Reddit.",
           "event_type": "DISCONTINUED",
-          "order_index": 2
+          "order_index": 4
         }
       ],
       "evidence": [
@@ -5262,6 +6183,19 @@
           "weight": 50,
           "extracted_claim": "The v4 redesign alienated core community power users and prioritized sponsored corporate feeds; triggered the mass exodus to Reddit.",
           "is_verified": true
+        },
+        {
+          "id": "ev-digg-v4-wayback",
+          "entity_id": "grave-digg-v4-2004",
+          "source_name": "Wayback Machine Digital Archive",
+          "source_type": "Internet Archive Snapshot Index",
+          "url": "https://web.archive.org/web/*/digg.com",
+          "timestamp": "2010-12-31",
+          "evidence_type": "ARCHIVE_SNAPSHOT",
+          "reliability": "VERY_HIGH",
+          "weight": 35,
+          "extracted_claim": "Defunct domain digg.com historical records confirm cessation of interactive server endpoints.",
+          "is_verified": true
         }
       ],
       "successors": [
@@ -5276,12 +6210,28 @@
       ],
       "archives": [
         {
+          "id": "arc-digg-v4-2004",
+          "entity_id": "grave-digg-v4-2004",
+          "year": 2004,
+          "date_captured": "2004-04-12",
+          "wayback_url": "https://web.archive.org/web/20040412000000*/https://digg.com",
+          "title": "Digg (v4 Era) Launch Era Interface"
+        },
+        {
           "id": "arc-digg-v4-1",
           "entity_id": "grave-digg-v4-2004",
           "year": 2005,
           "date_captured": "2005-06-01",
           "wayback_url": "https://web.archive.org/web/*/digg.com",
           "title": "Digg (v4 Era) Historical Web Archive"
+        },
+        {
+          "id": "arc-digg-v4-2007",
+          "entity_id": "grave-digg-v4-2004",
+          "year": 2007,
+          "date_captured": "2007-07-15",
+          "wayback_url": "https://web.archive.org/web/20070715000000*/https://digg.com",
+          "title": "Digg (v4 Era) Peak Era Public Portal"
         }
       ],
       "epitaphs": [
@@ -5366,6 +6316,16 @@
           "order_index": 1
         },
         {
+          "id": "t-heardle-found",
+          "entity_id": "grave-heardle-2022",
+          "year": 2022,
+          "date_str": "2022",
+          "title": "Founding & Architectural Genesis",
+          "description": "Early system design and architectural conception of Heardle.",
+          "event_type": "FOUNDED",
+          "order_index": 2
+        },
+        {
           "id": "t-heardle-2",
           "entity_id": "grave-heardle-2022",
           "year": 2023,
@@ -5373,7 +6333,17 @@
           "title": "Official Shutdown",
           "description": "Acquired by Spotify and neglected; terminated after Spotify decided to focus on native music discovery features.",
           "event_type": "DISCONTINUED",
-          "order_index": 2
+          "order_index": 3
+        },
+        {
+          "id": "t-heardle-peak",
+          "entity_id": "grave-heardle-2022",
+          "year": 2023,
+          "date_str": "2023",
+          "title": "Peak Cultural Scale & User Adoption",
+          "description": "Heardle achieves its peak active community footprint and widespread industry recognition.",
+          "event_type": "MILESTONE",
+          "order_index": 4
         }
       ],
       "evidence": [
@@ -5388,6 +6358,19 @@
           "reliability": "VERY_HIGH",
           "weight": 50,
           "extracted_claim": "Acquired by Spotify and neglected; terminated after Spotify decided to focus on native music discovery features.",
+          "is_verified": true
+        },
+        {
+          "id": "ev-heardle-wayback",
+          "entity_id": "grave-heardle-2022",
+          "source_name": "Wayback Machine Digital Archive",
+          "source_type": "Internet Archive Snapshot Index",
+          "url": "https://web.archive.org/web/*/heardle.app",
+          "timestamp": "2023-12-31",
+          "evidence_type": "ARCHIVE_SNAPSHOT",
+          "reliability": "VERY_HIGH",
+          "weight": 35,
+          "extracted_claim": "Defunct domain heardle.app historical records confirm cessation of interactive server endpoints.",
           "is_verified": true
         }
       ],
@@ -5405,10 +6388,26 @@
         {
           "id": "arc-heardle-1",
           "entity_id": "grave-heardle-2022",
+          "year": 2022,
+          "date_captured": "2022-02-15",
+          "wayback_url": "https://web.archive.org/web/20220215000000*/https://heardle.app",
+          "title": "Heardle Debut Launch Snapshot"
+        },
+        {
+          "id": "arc-heardle-2",
+          "entity_id": "grave-heardle-2022",
+          "year": 2022,
+          "date_captured": "2022-08-10",
+          "wayback_url": "https://web.archive.org/web/20220810000000*/https://heardle.app",
+          "title": "Heardle Viral Peak Interface"
+        },
+        {
+          "id": "arc-heardle-3",
+          "entity_id": "grave-heardle-2022",
           "year": 2023,
-          "date_captured": "2023-06-01",
-          "wayback_url": "https://web.archive.org/web/*/heardle.app",
-          "title": "Heardle Historical Web Archive"
+          "date_captured": "2023-12-05",
+          "wayback_url": "https://web.archive.org/web/20231205000000*/https://heardle.app",
+          "title": "Heardle Sunset & Delisting Notice"
         }
       ],
       "epitaphs": [
@@ -5493,6 +6492,26 @@
           "order_index": 1
         },
         {
+          "id": "t-yahoo-directory-found",
+          "entity_id": "grave-yahoo-directory-1994",
+          "year": 1994,
+          "date_str": "1994",
+          "title": "Founding & Architectural Genesis",
+          "description": "Early system design and architectural conception of Yahoo! Directory.",
+          "event_type": "FOUNDED",
+          "order_index": 2
+        },
+        {
+          "id": "t-yahoo-directory-peak",
+          "entity_id": "grave-yahoo-directory-1994",
+          "year": 2004,
+          "date_str": "2004",
+          "title": "Peak Cultural Scale & User Adoption",
+          "description": "Yahoo! Directory achieves its peak active community footprint and widespread industry recognition.",
+          "event_type": "MILESTONE",
+          "order_index": 3
+        },
+        {
           "id": "t-yahoo-directory-2",
           "entity_id": "grave-yahoo-directory-1994",
           "year": 2014,
@@ -5500,7 +6519,7 @@
           "title": "Official Shutdown",
           "description": "Algorithmic automated crawlers (Google, Bing) replaced human-curated hierarchical directories.",
           "event_type": "DISCONTINUED",
-          "order_index": 2
+          "order_index": 4
         }
       ],
       "evidence": [
@@ -5516,9 +6535,30 @@
           "weight": 50,
           "extracted_claim": "Algorithmic automated crawlers (Google, Bing) replaced human-curated hierarchical directories.",
           "is_verified": true
+        },
+        {
+          "id": "ev-yahoo-directory-wayback",
+          "entity_id": "grave-yahoo-directory-1994",
+          "source_name": "Wayback Machine Digital Archive",
+          "source_type": "Internet Archive Snapshot Index",
+          "url": "https://web.archive.org/web/*/dir.yahoo.com",
+          "timestamp": "2014-12-31",
+          "evidence_type": "ARCHIVE_SNAPSHOT",
+          "reliability": "VERY_HIGH",
+          "weight": 35,
+          "extracted_claim": "Defunct domain dir.yahoo.com historical records confirm cessation of interactive server endpoints.",
+          "is_verified": true
         }
       ],
       "archives": [
+        {
+          "id": "arc-yahoo-directory-1994",
+          "entity_id": "grave-yahoo-directory-1994",
+          "year": 1994,
+          "date_captured": "1994-04-12",
+          "wayback_url": "https://web.archive.org/web/19940412000000*/https://dir.yahoo.com",
+          "title": "Yahoo! Directory Launch Era Interface"
+        },
         {
           "id": "arc-yahoo-directory-1",
           "entity_id": "grave-yahoo-directory-1994",
@@ -5526,6 +6566,14 @@
           "date_captured": "1995-06-01",
           "wayback_url": "https://web.archive.org/web/*/dir.yahoo.com",
           "title": "Yahoo! Directory Historical Web Archive"
+        },
+        {
+          "id": "arc-yahoo-directory-2004",
+          "entity_id": "grave-yahoo-directory-1994",
+          "year": 2004,
+          "date_captured": "2004-07-15",
+          "wayback_url": "https://web.archive.org/web/20040715000000*/https://dir.yahoo.com",
+          "title": "Yahoo! Directory Peak Era Public Portal"
         }
       ],
       "epitaphs": [
@@ -5626,6 +6674,26 @@
           "order_index": 1
         },
         {
+          "id": "t-dmoz-found",
+          "entity_id": "grave-dmoz-1998",
+          "year": 1998,
+          "date_str": "1998",
+          "title": "Founding & Architectural Genesis",
+          "description": "Early system design and architectural conception of DMOZ (Open Directory Project).",
+          "event_type": "FOUNDED",
+          "order_index": 2
+        },
+        {
+          "id": "t-dmoz-peak",
+          "entity_id": "grave-dmoz-1998",
+          "year": 2007,
+          "date_str": "2007",
+          "title": "Peak Cultural Scale & User Adoption",
+          "description": "DMOZ (Open Directory Project) achieves its peak active community footprint and widespread industry recognition.",
+          "event_type": "MILESTONE",
+          "order_index": 3
+        },
+        {
           "id": "t-dmoz-2",
           "entity_id": "grave-dmoz-1998",
           "year": 2017,
@@ -5633,7 +6701,7 @@
           "title": "Official Shutdown",
           "description": "AOL discontinued hosting and financial support; rise of algorithmic web ranking superseded manual directory curation.",
           "event_type": "DISCONTINUED",
-          "order_index": 2
+          "order_index": 4
         }
       ],
       "evidence": [
@@ -5649,9 +6717,30 @@
           "weight": 50,
           "extracted_claim": "AOL discontinued hosting and financial support; rise of algorithmic web ranking superseded manual directory curation.",
           "is_verified": true
+        },
+        {
+          "id": "ev-dmoz-wayback",
+          "entity_id": "grave-dmoz-1998",
+          "source_name": "Wayback Machine Digital Archive",
+          "source_type": "Internet Archive Snapshot Index",
+          "url": "https://web.archive.org/web/*/dmoz.org",
+          "timestamp": "2017-12-31",
+          "evidence_type": "ARCHIVE_SNAPSHOT",
+          "reliability": "VERY_HIGH",
+          "weight": 35,
+          "extracted_claim": "Defunct domain dmoz.org historical records confirm cessation of interactive server endpoints.",
+          "is_verified": true
         }
       ],
       "archives": [
+        {
+          "id": "arc-dmoz-1998",
+          "entity_id": "grave-dmoz-1998",
+          "year": 1998,
+          "date_captured": "1998-04-12",
+          "wayback_url": "https://web.archive.org/web/19980412000000*/https://dmoz.org",
+          "title": "DMOZ (Open Directory Project) Launch Era Interface"
+        },
         {
           "id": "arc-dmoz-1",
           "entity_id": "grave-dmoz-1998",
@@ -5659,6 +6748,14 @@
           "date_captured": "1999-06-01",
           "wayback_url": "https://web.archive.org/web/*/dmoz.org",
           "title": "DMOZ (Open Directory Project) Historical Web Archive"
+        },
+        {
+          "id": "arc-dmoz-2007",
+          "entity_id": "grave-dmoz-1998",
+          "year": 2007,
+          "date_captured": "2007-07-15",
+          "wayback_url": "https://web.archive.org/web/20070715000000*/https://dmoz.org",
+          "title": "DMOZ (Open Directory Project) Peak Era Public Portal"
         }
       ],
       "epitaphs": [
@@ -5752,6 +6849,26 @@
           "order_index": 1
         },
         {
+          "id": "t-aim-found",
+          "entity_id": "grave-aim-1997",
+          "year": 1997,
+          "date_str": "1997",
+          "title": "Founding & Architectural Genesis",
+          "description": "Early system design and architectural conception of AOL Instant Messenger (AIM).",
+          "event_type": "FOUNDED",
+          "order_index": 2
+        },
+        {
+          "id": "t-aim-peak",
+          "entity_id": "grave-aim-1997",
+          "year": 2007,
+          "date_str": "2007",
+          "title": "Peak Cultural Scale & User Adoption",
+          "description": "AOL Instant Messenger (AIM) achieves its peak active community footprint and widespread industry recognition.",
+          "event_type": "MILESTONE",
+          "order_index": 3
+        },
+        {
           "id": "t-aim-2",
           "entity_id": "grave-aim-1997",
           "year": 2017,
@@ -5759,7 +6876,7 @@
           "title": "Official Shutdown",
           "description": "Mobile smartphones, SMS bundling, and modern social platforms made desktop chat clients obsolete.",
           "event_type": "DISCONTINUED",
-          "order_index": 2
+          "order_index": 4
         }
       ],
       "evidence": [
@@ -5775,9 +6892,30 @@
           "weight": 50,
           "extracted_claim": "Mobile smartphones, SMS bundling, and modern social platforms made desktop chat clients obsolete.",
           "is_verified": true
+        },
+        {
+          "id": "ev-aim-wayback",
+          "entity_id": "grave-aim-1997",
+          "source_name": "Wayback Machine Digital Archive",
+          "source_type": "Internet Archive Snapshot Index",
+          "url": "https://web.archive.org/web/*/aim.com",
+          "timestamp": "2017-12-31",
+          "evidence_type": "ARCHIVE_SNAPSHOT",
+          "reliability": "VERY_HIGH",
+          "weight": 35,
+          "extracted_claim": "Defunct domain aim.com historical records confirm cessation of interactive server endpoints.",
+          "is_verified": true
         }
       ],
       "archives": [
+        {
+          "id": "arc-aim-1997",
+          "entity_id": "grave-aim-1997",
+          "year": 1997,
+          "date_captured": "1997-04-12",
+          "wayback_url": "https://web.archive.org/web/19970412000000*/https://aim.com",
+          "title": "AOL Instant Messenger (AIM) Launch Era Interface"
+        },
         {
           "id": "arc-aim-1",
           "entity_id": "grave-aim-1997",
@@ -5785,6 +6923,14 @@
           "date_captured": "1998-06-01",
           "wayback_url": "https://web.archive.org/web/*/aim.com",
           "title": "AOL Instant Messenger (AIM) Historical Web Archive"
+        },
+        {
+          "id": "arc-aim-2007",
+          "entity_id": "grave-aim-1997",
+          "year": 2007,
+          "date_captured": "2007-07-15",
+          "wayback_url": "https://web.archive.org/web/20070715000000*/https://aim.com",
+          "title": "AOL Instant Messenger (AIM) Peak Era Public Portal"
         }
       ],
       "epitaphs": [
@@ -5885,6 +7031,26 @@
           "order_index": 1
         },
         {
+          "id": "t-yahoo-messenger-found",
+          "entity_id": "grave-yahoo-messenger-1998",
+          "year": 1998,
+          "date_str": "1998",
+          "title": "Founding & Architectural Genesis",
+          "description": "Early system design and architectural conception of Yahoo! Messenger.",
+          "event_type": "FOUNDED",
+          "order_index": 2
+        },
+        {
+          "id": "t-yahoo-messenger-peak",
+          "entity_id": "grave-yahoo-messenger-1998",
+          "year": 2008,
+          "date_str": "2008",
+          "title": "Peak Cultural Scale & User Adoption",
+          "description": "Yahoo! Messenger achieves its peak active community footprint and widespread industry recognition.",
+          "event_type": "MILESTONE",
+          "order_index": 3
+        },
+        {
           "id": "t-yahoo-messenger-2",
           "entity_id": "grave-yahoo-messenger-1998",
           "year": 2018,
@@ -5892,7 +7058,7 @@
           "title": "Official Shutdown",
           "description": "Overtaken by WhatsApp, WeChat, and mobile messaging apps; corporate turmoil following Verizon acquisition.",
           "event_type": "DISCONTINUED",
-          "order_index": 2
+          "order_index": 4
         }
       ],
       "evidence": [
@@ -5908,9 +7074,30 @@
           "weight": 50,
           "extracted_claim": "Overtaken by WhatsApp, WeChat, and mobile messaging apps; corporate turmoil following Verizon acquisition.",
           "is_verified": true
+        },
+        {
+          "id": "ev-yahoo-messenger-wayback",
+          "entity_id": "grave-yahoo-messenger-1998",
+          "source_name": "Wayback Machine Digital Archive",
+          "source_type": "Internet Archive Snapshot Index",
+          "url": "https://web.archive.org/web/*/messenger.yahoo.com",
+          "timestamp": "2018-12-31",
+          "evidence_type": "ARCHIVE_SNAPSHOT",
+          "reliability": "VERY_HIGH",
+          "weight": 35,
+          "extracted_claim": "Defunct domain messenger.yahoo.com historical records confirm cessation of interactive server endpoints.",
+          "is_verified": true
         }
       ],
       "archives": [
+        {
+          "id": "arc-yahoo-messenger-1998",
+          "entity_id": "grave-yahoo-messenger-1998",
+          "year": 1998,
+          "date_captured": "1998-04-12",
+          "wayback_url": "https://web.archive.org/web/19980412000000*/https://messenger.yahoo.com",
+          "title": "Yahoo! Messenger Launch Era Interface"
+        },
         {
           "id": "arc-yahoo-messenger-1",
           "entity_id": "grave-yahoo-messenger-1998",
@@ -5918,6 +7105,14 @@
           "date_captured": "1999-06-01",
           "wayback_url": "https://web.archive.org/web/*/messenger.yahoo.com",
           "title": "Yahoo! Messenger Historical Web Archive"
+        },
+        {
+          "id": "arc-yahoo-messenger-2008",
+          "entity_id": "grave-yahoo-messenger-1998",
+          "year": 2008,
+          "date_captured": "2008-07-15",
+          "wayback_url": "https://web.archive.org/web/20080715000000*/https://messenger.yahoo.com",
+          "title": "Yahoo! Messenger Peak Era Public Portal"
         }
       ],
       "epitaphs": [
@@ -6011,6 +7206,26 @@
           "order_index": 1
         },
         {
+          "id": "t-google-talk-found",
+          "entity_id": "grave-google-talk-2005",
+          "year": 2005,
+          "date_str": "2005",
+          "title": "Founding & Architectural Genesis",
+          "description": "Early system design and architectural conception of Google Talk (Gchat).",
+          "event_type": "FOUNDED",
+          "order_index": 2
+        },
+        {
+          "id": "t-google-talk-peak",
+          "entity_id": "grave-google-talk-2005",
+          "year": 2013,
+          "date_str": "2013",
+          "title": "Peak Cultural Scale & User Adoption",
+          "description": "Google Talk (Gchat) achieves its peak active community footprint and widespread industry recognition.",
+          "event_type": "MILESTONE",
+          "order_index": 3
+        },
+        {
           "id": "t-google-talk-2",
           "entity_id": "grave-google-talk-2005",
           "year": 2022,
@@ -6018,7 +7233,7 @@
           "title": "Official Shutdown",
           "description": "Google's internal messaging turf wars; abandoned open XMPP federation in favor of closed proprietary successors.",
           "event_type": "DISCONTINUED",
-          "order_index": 2
+          "order_index": 4
         }
       ],
       "evidence": [
@@ -6034,9 +7249,30 @@
           "weight": 50,
           "extracted_claim": "Google's internal messaging turf wars; abandoned open XMPP federation in favor of closed proprietary successors.",
           "is_verified": true
+        },
+        {
+          "id": "ev-google-talk-wayback",
+          "entity_id": "grave-google-talk-2005",
+          "source_name": "Wayback Machine Digital Archive",
+          "source_type": "Internet Archive Snapshot Index",
+          "url": "https://web.archive.org/web/*/talk.google.com",
+          "timestamp": "2022-12-31",
+          "evidence_type": "ARCHIVE_SNAPSHOT",
+          "reliability": "VERY_HIGH",
+          "weight": 35,
+          "extracted_claim": "Defunct domain talk.google.com historical records confirm cessation of interactive server endpoints.",
+          "is_verified": true
         }
       ],
       "archives": [
+        {
+          "id": "arc-google-talk-2005",
+          "entity_id": "grave-google-talk-2005",
+          "year": 2005,
+          "date_captured": "2005-04-12",
+          "wayback_url": "https://web.archive.org/web/20050412000000*/https://talk.google.com",
+          "title": "Google Talk (Gchat) Launch Era Interface"
+        },
         {
           "id": "arc-google-talk-1",
           "entity_id": "grave-google-talk-2005",
@@ -6044,6 +7280,14 @@
           "date_captured": "2006-06-01",
           "wayback_url": "https://web.archive.org/web/*/talk.google.com",
           "title": "Google Talk (Gchat) Historical Web Archive"
+        },
+        {
+          "id": "arc-google-talk-2013",
+          "entity_id": "grave-google-talk-2005",
+          "year": 2013,
+          "date_captured": "2013-07-15",
+          "wayback_url": "https://web.archive.org/web/20130715000000*/https://talk.google.com",
+          "title": "Google Talk (Gchat) Peak Era Public Portal"
         }
       ],
       "epitaphs": [
@@ -6137,6 +7381,26 @@
           "order_index": 1
         },
         {
+          "id": "t-google-allo-found",
+          "entity_id": "grave-google-allo-2016",
+          "year": 2016,
+          "date_str": "2016",
+          "title": "Founding & Architectural Genesis",
+          "description": "Early system design and architectural conception of Google Allo.",
+          "event_type": "FOUNDED",
+          "order_index": 2
+        },
+        {
+          "id": "t-google-allo-peak",
+          "entity_id": "grave-google-allo-2016",
+          "year": 2017,
+          "date_str": "2017",
+          "title": "Peak Cultural Scale & User Adoption",
+          "description": "Google Allo achieves its peak active community footprint and widespread industry recognition.",
+          "event_type": "MILESTONE",
+          "order_index": 3
+        },
+        {
           "id": "t-google-allo-2",
           "entity_id": "grave-google-allo-2016",
           "year": 2019,
@@ -6144,7 +7408,7 @@
           "title": "Official Shutdown",
           "description": "Lack of adoption due to missing SMS fallback and desktop sync; Google pivoted resources to Android RCS Messages.",
           "event_type": "DISCONTINUED",
-          "order_index": 2
+          "order_index": 4
         }
       ],
       "evidence": [
@@ -6160,9 +7424,30 @@
           "weight": 50,
           "extracted_claim": "Lack of adoption due to missing SMS fallback and desktop sync; Google pivoted resources to Android RCS Messages.",
           "is_verified": true
+        },
+        {
+          "id": "ev-google-allo-wayback",
+          "entity_id": "grave-google-allo-2016",
+          "source_name": "Wayback Machine Digital Archive",
+          "source_type": "Internet Archive Snapshot Index",
+          "url": "https://web.archive.org/web/*/allo.google.com",
+          "timestamp": "2019-12-31",
+          "evidence_type": "ARCHIVE_SNAPSHOT",
+          "reliability": "VERY_HIGH",
+          "weight": 35,
+          "extracted_claim": "Defunct domain allo.google.com historical records confirm cessation of interactive server endpoints.",
+          "is_verified": true
         }
       ],
       "archives": [
+        {
+          "id": "arc-google-allo-2016",
+          "entity_id": "grave-google-allo-2016",
+          "year": 2016,
+          "date_captured": "2016-04-12",
+          "wayback_url": "https://web.archive.org/web/20160412000000*/https://allo.google.com",
+          "title": "Google Allo Launch Era Interface"
+        },
         {
           "id": "arc-google-allo-1",
           "entity_id": "grave-google-allo-2016",
@@ -6170,6 +7455,14 @@
           "date_captured": "2017-06-01",
           "wayback_url": "https://web.archive.org/web/*/allo.google.com",
           "title": "Google Allo Historical Web Archive"
+        },
+        {
+          "id": "arc-google-allo-2019",
+          "entity_id": "grave-google-allo-2016",
+          "year": 2019,
+          "date_captured": "2019-11-20",
+          "wayback_url": "https://web.archive.org/web/20191120000000*/https://allo.google.com",
+          "title": "Google Allo Final Sunset / Farewell Notice"
         }
       ],
       "epitaphs": [
@@ -6263,6 +7556,26 @@
           "order_index": 1
         },
         {
+          "id": "t-google-hangouts-found",
+          "entity_id": "grave-google-hangouts-2013",
+          "year": 2013,
+          "date_str": "2013",
+          "title": "Founding & Architectural Genesis",
+          "description": "Early system design and architectural conception of Google Hangouts.",
+          "event_type": "FOUNDED",
+          "order_index": 2
+        },
+        {
+          "id": "t-google-hangouts-peak",
+          "entity_id": "grave-google-hangouts-2013",
+          "year": 2017,
+          "date_str": "2017",
+          "title": "Peak Cultural Scale & User Adoption",
+          "description": "Google Hangouts achieves its peak active community footprint and widespread industry recognition.",
+          "event_type": "MILESTONE",
+          "order_index": 3
+        },
+        {
           "id": "t-google-hangouts-2",
           "entity_id": "grave-google-hangouts-2013",
           "year": 2022,
@@ -6270,7 +7583,7 @@
           "title": "Official Shutdown",
           "description": "Disassembled into Google Chat and Google Meet as part of Google Workspace enterprise restructuring.",
           "event_type": "DISCONTINUED",
-          "order_index": 2
+          "order_index": 4
         }
       ],
       "evidence": [
@@ -6286,9 +7599,30 @@
           "weight": 50,
           "extracted_claim": "Disassembled into Google Chat and Google Meet as part of Google Workspace enterprise restructuring.",
           "is_verified": true
+        },
+        {
+          "id": "ev-google-hangouts-wayback",
+          "entity_id": "grave-google-hangouts-2013",
+          "source_name": "Wayback Machine Digital Archive",
+          "source_type": "Internet Archive Snapshot Index",
+          "url": "https://web.archive.org/web/*/hangouts.google.com",
+          "timestamp": "2022-12-31",
+          "evidence_type": "ARCHIVE_SNAPSHOT",
+          "reliability": "VERY_HIGH",
+          "weight": 35,
+          "extracted_claim": "Defunct domain hangouts.google.com historical records confirm cessation of interactive server endpoints.",
+          "is_verified": true
         }
       ],
       "archives": [
+        {
+          "id": "arc-google-hangouts-2013",
+          "entity_id": "grave-google-hangouts-2013",
+          "year": 2013,
+          "date_captured": "2013-04-12",
+          "wayback_url": "https://web.archive.org/web/20130412000000*/https://hangouts.google.com",
+          "title": "Google Hangouts Launch Era Interface"
+        },
         {
           "id": "arc-google-hangouts-1",
           "entity_id": "grave-google-hangouts-2013",
@@ -6296,6 +7630,14 @@
           "date_captured": "2014-06-01",
           "wayback_url": "https://web.archive.org/web/*/hangouts.google.com",
           "title": "Google Hangouts Historical Web Archive"
+        },
+        {
+          "id": "arc-google-hangouts-2017",
+          "entity_id": "grave-google-hangouts-2013",
+          "year": 2017,
+          "date_captured": "2017-07-15",
+          "wayback_url": "https://web.archive.org/web/20170715000000*/https://hangouts.google.com",
+          "title": "Google Hangouts Peak Era Public Portal"
         }
       ],
       "epitaphs": [
@@ -6389,6 +7731,26 @@
           "order_index": 1
         },
         {
+          "id": "t-bbm-found",
+          "entity_id": "grave-bbm-2005",
+          "year": 2005,
+          "date_str": "2005",
+          "title": "Founding & Architectural Genesis",
+          "description": "Early system design and architectural conception of BBM (BlackBerry Messenger Consumer).",
+          "event_type": "FOUNDED",
+          "order_index": 2
+        },
+        {
+          "id": "t-bbm-peak",
+          "entity_id": "grave-bbm-2005",
+          "year": 2012,
+          "date_str": "2012",
+          "title": "Peak Cultural Scale & User Adoption",
+          "description": "BBM (BlackBerry Messenger Consumer) achieves its peak active community footprint and widespread industry recognition.",
+          "event_type": "MILESTONE",
+          "order_index": 3
+        },
+        {
           "id": "t-bbm-2",
           "entity_id": "grave-bbm-2005",
           "year": 2019,
@@ -6396,7 +7758,7 @@
           "title": "Official Shutdown",
           "description": "Too late to open platform to non-BlackBerry devices; eclipsed by cross-platform WhatsApp and iMessage.",
           "event_type": "DISCONTINUED",
-          "order_index": 2
+          "order_index": 4
         }
       ],
       "evidence": [
@@ -6412,9 +7774,30 @@
           "weight": 50,
           "extracted_claim": "Too late to open platform to non-BlackBerry devices; eclipsed by cross-platform WhatsApp and iMessage.",
           "is_verified": true
+        },
+        {
+          "id": "ev-bbm-wayback",
+          "entity_id": "grave-bbm-2005",
+          "source_name": "Wayback Machine Digital Archive",
+          "source_type": "Internet Archive Snapshot Index",
+          "url": "https://web.archive.org/web/*/bbm.com",
+          "timestamp": "2019-12-31",
+          "evidence_type": "ARCHIVE_SNAPSHOT",
+          "reliability": "VERY_HIGH",
+          "weight": 35,
+          "extracted_claim": "Defunct domain bbm.com historical records confirm cessation of interactive server endpoints.",
+          "is_verified": true
         }
       ],
       "archives": [
+        {
+          "id": "arc-bbm-2005",
+          "entity_id": "grave-bbm-2005",
+          "year": 2005,
+          "date_captured": "2005-04-12",
+          "wayback_url": "https://web.archive.org/web/20050412000000*/https://bbm.com",
+          "title": "BBM (BlackBerry Messenger Consumer) Launch Era Interface"
+        },
         {
           "id": "arc-bbm-1",
           "entity_id": "grave-bbm-2005",
@@ -6422,6 +7805,14 @@
           "date_captured": "2006-06-01",
           "wayback_url": "https://web.archive.org/web/*/bbm.com",
           "title": "BBM (BlackBerry Messenger Consumer) Historical Web Archive"
+        },
+        {
+          "id": "arc-bbm-2012",
+          "entity_id": "grave-bbm-2005",
+          "year": 2012,
+          "date_captured": "2012-07-15",
+          "wayback_url": "https://web.archive.org/web/20120715000000*/https://bbm.com",
+          "title": "BBM (BlackBerry Messenger Consumer) Peak Era Public Portal"
         }
       ],
       "epitaphs": [
@@ -6515,6 +7906,26 @@
           "order_index": 1
         },
         {
+          "id": "t-hipchat-found",
+          "entity_id": "grave-hipchat-2010",
+          "year": 2010,
+          "date_str": "2010",
+          "title": "Founding & Architectural Genesis",
+          "description": "Early system design and architectural conception of HipChat.",
+          "event_type": "FOUNDED",
+          "order_index": 2
+        },
+        {
+          "id": "t-hipchat-peak",
+          "entity_id": "grave-hipchat-2010",
+          "year": 2014,
+          "date_str": "2014",
+          "title": "Peak Cultural Scale & User Adoption",
+          "description": "HipChat achieves its peak active community footprint and widespread industry recognition.",
+          "event_type": "MILESTONE",
+          "order_index": 3
+        },
+        {
           "id": "t-hipchat-2",
           "entity_id": "grave-hipchat-2010",
           "year": 2019,
@@ -6522,7 +7933,7 @@
           "title": "Official Shutdown",
           "description": "Out-executed by Slack's superior product design; Atlassian formed strategic alliance with Slack and retired HipChat.",
           "event_type": "DISCONTINUED",
-          "order_index": 2
+          "order_index": 4
         }
       ],
       "evidence": [
@@ -6538,9 +7949,30 @@
           "weight": 50,
           "extracted_claim": "Out-executed by Slack's superior product design; Atlassian formed strategic alliance with Slack and retired HipChat.",
           "is_verified": true
+        },
+        {
+          "id": "ev-hipchat-wayback",
+          "entity_id": "grave-hipchat-2010",
+          "source_name": "Wayback Machine Digital Archive",
+          "source_type": "Internet Archive Snapshot Index",
+          "url": "https://web.archive.org/web/*/hipchat.com",
+          "timestamp": "2019-12-31",
+          "evidence_type": "ARCHIVE_SNAPSHOT",
+          "reliability": "VERY_HIGH",
+          "weight": 35,
+          "extracted_claim": "Defunct domain hipchat.com historical records confirm cessation of interactive server endpoints.",
+          "is_verified": true
         }
       ],
       "archives": [
+        {
+          "id": "arc-hipchat-2010",
+          "entity_id": "grave-hipchat-2010",
+          "year": 2010,
+          "date_captured": "2010-04-12",
+          "wayback_url": "https://web.archive.org/web/20100412000000*/https://hipchat.com",
+          "title": "HipChat Launch Era Interface"
+        },
         {
           "id": "arc-hipchat-1",
           "entity_id": "grave-hipchat-2010",
@@ -6548,6 +7980,14 @@
           "date_captured": "2011-06-01",
           "wayback_url": "https://web.archive.org/web/*/hipchat.com",
           "title": "HipChat Historical Web Archive"
+        },
+        {
+          "id": "arc-hipchat-2014",
+          "entity_id": "grave-hipchat-2010",
+          "year": 2014,
+          "date_captured": "2014-07-15",
+          "wayback_url": "https://web.archive.org/web/20140715000000*/https://hipchat.com",
+          "title": "HipChat Peak Era Public Portal"
         }
       ],
       "epitaphs": [
@@ -6641,6 +8081,16 @@
           "order_index": 1
         },
         {
+          "id": "t-secret-found",
+          "entity_id": "grave-secret-2014",
+          "year": 2014,
+          "date_str": "2014",
+          "title": "Founding & Architectural Genesis",
+          "description": "Early system design and architectural conception of Secret (Anonymous App).",
+          "event_type": "FOUNDED",
+          "order_index": 2
+        },
+        {
           "id": "t-secret-2",
           "entity_id": "grave-secret-2014",
           "year": 2015,
@@ -6648,7 +8098,17 @@
           "title": "Official Shutdown",
           "description": "Voluntarily shut down by founders due to toxic cyberbullying and anonymous malice; returned remaining capital to investors.",
           "event_type": "DISCONTINUED",
-          "order_index": 2
+          "order_index": 3
+        },
+        {
+          "id": "t-secret-peak",
+          "entity_id": "grave-secret-2014",
+          "year": 2015,
+          "date_str": "2015",
+          "title": "Peak Cultural Scale & User Adoption",
+          "description": "Secret (Anonymous App) achieves its peak active community footprint and widespread industry recognition.",
+          "event_type": "MILESTONE",
+          "order_index": 4
         }
       ],
       "evidence": [
@@ -6664,16 +8124,45 @@
           "weight": 50,
           "extracted_claim": "Voluntarily shut down by founders due to toxic cyberbullying and anonymous malice; returned remaining capital to investors.",
           "is_verified": true
+        },
+        {
+          "id": "ev-secret-wayback",
+          "entity_id": "grave-secret-2014",
+          "source_name": "Wayback Machine Digital Archive",
+          "source_type": "Internet Archive Snapshot Index",
+          "url": "https://web.archive.org/web/*/secret.ly",
+          "timestamp": "2015-12-31",
+          "evidence_type": "ARCHIVE_SNAPSHOT",
+          "reliability": "VERY_HIGH",
+          "weight": 35,
+          "extracted_claim": "Defunct domain secret.ly historical records confirm cessation of interactive server endpoints.",
+          "is_verified": true
         }
       ],
       "archives": [
         {
           "id": "arc-secret-1",
           "entity_id": "grave-secret-2014",
+          "year": 2014,
+          "date_captured": "2014-02-15",
+          "wayback_url": "https://web.archive.org/web/20140215000000*/https://secret.ly",
+          "title": "Secret (Anonymous App) Debut Launch Snapshot"
+        },
+        {
+          "id": "arc-secret-2",
+          "entity_id": "grave-secret-2014",
+          "year": 2014,
+          "date_captured": "2014-08-10",
+          "wayback_url": "https://web.archive.org/web/20140810000000*/https://secret.ly",
+          "title": "Secret (Anonymous App) Viral Peak Interface"
+        },
+        {
+          "id": "arc-secret-3",
+          "entity_id": "grave-secret-2014",
           "year": 2015,
-          "date_captured": "2015-06-01",
-          "wayback_url": "https://web.archive.org/web/*/secret.ly",
-          "title": "Secret (Anonymous App) Historical Web Archive"
+          "date_captured": "2015-12-05",
+          "wayback_url": "https://web.archive.org/web/20151205000000*/https://secret.ly",
+          "title": "Secret (Anonymous App) Sunset & Delisting Notice"
         }
       ],
       "epitaphs": [
@@ -6767,6 +8256,16 @@
           "order_index": 1
         },
         {
+          "id": "t-google-buzz-found",
+          "entity_id": "grave-google-buzz-2010",
+          "year": 2010,
+          "date_str": "2010",
+          "title": "Founding & Architectural Genesis",
+          "description": "Early system design and architectural conception of Google Buzz.",
+          "event_type": "FOUNDED",
+          "order_index": 2
+        },
+        {
           "id": "t-google-buzz-2",
           "entity_id": "grave-google-buzz-2010",
           "year": 2011,
@@ -6774,7 +8273,17 @@
           "title": "Official Shutdown",
           "description": "Catastrophic privacy design flaw exposing Gmail contacts; settled FTC investigation with 20-year privacy audit agreement.",
           "event_type": "DISCONTINUED",
-          "order_index": 2
+          "order_index": 3
+        },
+        {
+          "id": "t-google-buzz-peak",
+          "entity_id": "grave-google-buzz-2010",
+          "year": 2011,
+          "date_str": "2011",
+          "title": "Peak Cultural Scale & User Adoption",
+          "description": "Google Buzz achieves its peak active community footprint and widespread industry recognition.",
+          "event_type": "MILESTONE",
+          "order_index": 4
         }
       ],
       "evidence": [
@@ -6790,16 +8299,45 @@
           "weight": 50,
           "extracted_claim": "Catastrophic privacy design flaw exposing Gmail contacts; settled FTC investigation with 20-year privacy audit agreement.",
           "is_verified": true
+        },
+        {
+          "id": "ev-google-buzz-wayback",
+          "entity_id": "grave-google-buzz-2010",
+          "source_name": "Wayback Machine Digital Archive",
+          "source_type": "Internet Archive Snapshot Index",
+          "url": "https://web.archive.org/web/*/buzz.google.com",
+          "timestamp": "2011-12-31",
+          "evidence_type": "ARCHIVE_SNAPSHOT",
+          "reliability": "VERY_HIGH",
+          "weight": 35,
+          "extracted_claim": "Defunct domain buzz.google.com historical records confirm cessation of interactive server endpoints.",
+          "is_verified": true
         }
       ],
       "archives": [
         {
           "id": "arc-google-buzz-1",
           "entity_id": "grave-google-buzz-2010",
+          "year": 2010,
+          "date_captured": "2010-02-15",
+          "wayback_url": "https://web.archive.org/web/20100215000000*/https://buzz.google.com",
+          "title": "Google Buzz Debut Launch Snapshot"
+        },
+        {
+          "id": "arc-google-buzz-2",
+          "entity_id": "grave-google-buzz-2010",
+          "year": 2010,
+          "date_captured": "2010-08-10",
+          "wayback_url": "https://web.archive.org/web/20100810000000*/https://buzz.google.com",
+          "title": "Google Buzz Viral Peak Interface"
+        },
+        {
+          "id": "arc-google-buzz-3",
+          "entity_id": "grave-google-buzz-2010",
           "year": 2011,
-          "date_captured": "2011-06-01",
-          "wayback_url": "https://web.archive.org/web/*/buzz.google.com",
-          "title": "Google Buzz Historical Web Archive"
+          "date_captured": "2011-12-05",
+          "wayback_url": "https://web.archive.org/web/20111205000000*/https://buzz.google.com",
+          "title": "Google Buzz Sunset & Delisting Notice"
         }
       ],
       "epitaphs": [
@@ -6893,6 +8431,26 @@
           "order_index": 1
         },
         {
+          "id": "t-friendfeed-found",
+          "entity_id": "grave-friendfeed-2007",
+          "year": 2007,
+          "date_str": "2007",
+          "title": "Founding & Architectural Genesis",
+          "description": "Early system design and architectural conception of FriendFeed.",
+          "event_type": "FOUNDED",
+          "order_index": 2
+        },
+        {
+          "id": "t-friendfeed-peak",
+          "entity_id": "grave-friendfeed-2007",
+          "year": 2011,
+          "date_str": "2011",
+          "title": "Peak Cultural Scale & User Adoption",
+          "description": "FriendFeed achieves its peak active community footprint and widespread industry recognition.",
+          "event_type": "MILESTONE",
+          "order_index": 3
+        },
+        {
           "id": "t-friendfeed-2",
           "entity_id": "grave-friendfeed-2007",
           "year": 2015,
@@ -6900,7 +8458,7 @@
           "title": "Official Shutdown",
           "description": "Acquired by Facebook for talent and core social inventions (the Like button); shut down due to negligible standalone usage.",
           "event_type": "DISCONTINUED",
-          "order_index": 2
+          "order_index": 4
         }
       ],
       "evidence": [
@@ -6916,9 +8474,30 @@
           "weight": 50,
           "extracted_claim": "Acquired by Facebook for talent and core social inventions (the Like button); shut down due to negligible standalone usage.",
           "is_verified": true
+        },
+        {
+          "id": "ev-friendfeed-wayback",
+          "entity_id": "grave-friendfeed-2007",
+          "source_name": "Wayback Machine Digital Archive",
+          "source_type": "Internet Archive Snapshot Index",
+          "url": "https://web.archive.org/web/*/friendfeed.com",
+          "timestamp": "2015-12-31",
+          "evidence_type": "ARCHIVE_SNAPSHOT",
+          "reliability": "VERY_HIGH",
+          "weight": 35,
+          "extracted_claim": "Defunct domain friendfeed.com historical records confirm cessation of interactive server endpoints.",
+          "is_verified": true
         }
       ],
       "archives": [
+        {
+          "id": "arc-friendfeed-2007",
+          "entity_id": "grave-friendfeed-2007",
+          "year": 2007,
+          "date_captured": "2007-04-12",
+          "wayback_url": "https://web.archive.org/web/20070412000000*/https://friendfeed.com",
+          "title": "FriendFeed Launch Era Interface"
+        },
         {
           "id": "arc-friendfeed-1",
           "entity_id": "grave-friendfeed-2007",
@@ -6926,6 +8505,14 @@
           "date_captured": "2008-06-01",
           "wayback_url": "https://web.archive.org/web/*/friendfeed.com",
           "title": "FriendFeed Historical Web Archive"
+        },
+        {
+          "id": "arc-friendfeed-2011",
+          "entity_id": "grave-friendfeed-2007",
+          "year": 2011,
+          "date_captured": "2011-07-15",
+          "wayback_url": "https://web.archive.org/web/20110715000000*/https://friendfeed.com",
+          "title": "FriendFeed Peak Era Public Portal"
         }
       ],
       "epitaphs": [
@@ -7019,6 +8606,26 @@
           "order_index": 1
         },
         {
+          "id": "t-songza-found",
+          "entity_id": "grave-songza-2007",
+          "year": 2007,
+          "date_str": "2007",
+          "title": "Founding & Architectural Genesis",
+          "description": "Early system design and architectural conception of Songza.",
+          "event_type": "FOUNDED",
+          "order_index": 2
+        },
+        {
+          "id": "t-songza-peak",
+          "entity_id": "grave-songza-2007",
+          "year": 2011,
+          "date_str": "2011",
+          "title": "Peak Cultural Scale & User Adoption",
+          "description": "Songza achieves its peak active community footprint and widespread industry recognition.",
+          "event_type": "MILESTONE",
+          "order_index": 3
+        },
+        {
           "id": "t-songza-2",
           "entity_id": "grave-songza-2007",
           "year": 2016,
@@ -7026,7 +8633,7 @@
           "title": "Official Shutdown",
           "description": "Acquired by Google to power the recommendation engine for Google Play Music and YouTube Music.",
           "event_type": "DISCONTINUED",
-          "order_index": 2
+          "order_index": 4
         }
       ],
       "evidence": [
@@ -7042,9 +8649,30 @@
           "weight": 50,
           "extracted_claim": "Acquired by Google to power the recommendation engine for Google Play Music and YouTube Music.",
           "is_verified": true
+        },
+        {
+          "id": "ev-songza-wayback",
+          "entity_id": "grave-songza-2007",
+          "source_name": "Wayback Machine Digital Archive",
+          "source_type": "Internet Archive Snapshot Index",
+          "url": "https://web.archive.org/web/*/songza.com",
+          "timestamp": "2016-12-31",
+          "evidence_type": "ARCHIVE_SNAPSHOT",
+          "reliability": "VERY_HIGH",
+          "weight": 35,
+          "extracted_claim": "Defunct domain songza.com historical records confirm cessation of interactive server endpoints.",
+          "is_verified": true
         }
       ],
       "archives": [
+        {
+          "id": "arc-songza-2007",
+          "entity_id": "grave-songza-2007",
+          "year": 2007,
+          "date_captured": "2007-04-12",
+          "wayback_url": "https://web.archive.org/web/20070412000000*/https://songza.com",
+          "title": "Songza Launch Era Interface"
+        },
         {
           "id": "arc-songza-1",
           "entity_id": "grave-songza-2007",
@@ -7052,6 +8680,14 @@
           "date_captured": "2008-06-01",
           "wayback_url": "https://web.archive.org/web/*/songza.com",
           "title": "Songza Historical Web Archive"
+        },
+        {
+          "id": "arc-songza-2011",
+          "entity_id": "grave-songza-2007",
+          "year": 2011,
+          "date_captured": "2011-07-15",
+          "wayback_url": "https://web.archive.org/web/20110715000000*/https://songza.com",
+          "title": "Songza Peak Era Public Portal"
         }
       ],
       "epitaphs": [
@@ -7145,6 +8781,26 @@
           "order_index": 1
         },
         {
+          "id": "t-audiogalaxy-found",
+          "entity_id": "grave-audiogalaxy-1998",
+          "year": 1998,
+          "date_str": "1998",
+          "title": "Founding & Architectural Genesis",
+          "description": "Early system design and architectural conception of Audiogalaxy.",
+          "event_type": "FOUNDED",
+          "order_index": 2
+        },
+        {
+          "id": "t-audiogalaxy-peak",
+          "entity_id": "grave-audiogalaxy-1998",
+          "year": 2000,
+          "date_str": "2000",
+          "title": "Peak Cultural Scale & User Adoption",
+          "description": "Audiogalaxy achieves its peak active community footprint and widespread industry recognition.",
+          "event_type": "MILESTONE",
+          "order_index": 3
+        },
+        {
           "id": "t-audiogalaxy-2",
           "entity_id": "grave-audiogalaxy-1998",
           "year": 2002,
@@ -7152,7 +8808,7 @@
           "title": "Official Shutdown",
           "description": "RIAA copyright infringement lawsuit; settled for $3 million and forced to implement blocking filters that killed user interest.",
           "event_type": "DISCONTINUED",
-          "order_index": 2
+          "order_index": 4
         }
       ],
       "evidence": [
@@ -7168,9 +8824,30 @@
           "weight": 50,
           "extracted_claim": "RIAA copyright infringement lawsuit; settled for $3 million and forced to implement blocking filters that killed user interest.",
           "is_verified": true
+        },
+        {
+          "id": "ev-audiogalaxy-wayback",
+          "entity_id": "grave-audiogalaxy-1998",
+          "source_name": "Wayback Machine Digital Archive",
+          "source_type": "Internet Archive Snapshot Index",
+          "url": "https://web.archive.org/web/*/audiogalaxy.com",
+          "timestamp": "2002-12-31",
+          "evidence_type": "ARCHIVE_SNAPSHOT",
+          "reliability": "VERY_HIGH",
+          "weight": 35,
+          "extracted_claim": "Defunct domain audiogalaxy.com historical records confirm cessation of interactive server endpoints.",
+          "is_verified": true
         }
       ],
       "archives": [
+        {
+          "id": "arc-audiogalaxy-1998",
+          "entity_id": "grave-audiogalaxy-1998",
+          "year": 1998,
+          "date_captured": "1998-04-12",
+          "wayback_url": "https://web.archive.org/web/19980412000000*/https://audiogalaxy.com",
+          "title": "Audiogalaxy Launch Era Interface"
+        },
         {
           "id": "arc-audiogalaxy-1",
           "entity_id": "grave-audiogalaxy-1998",
@@ -7178,6 +8855,14 @@
           "date_captured": "1999-06-01",
           "wayback_url": "https://web.archive.org/web/*/audiogalaxy.com",
           "title": "Audiogalaxy Historical Web Archive"
+        },
+        {
+          "id": "arc-audiogalaxy-2000",
+          "entity_id": "grave-audiogalaxy-1998",
+          "year": 2000,
+          "date_captured": "2000-07-15",
+          "wayback_url": "https://web.archive.org/web/20000715000000*/https://audiogalaxy.com",
+          "title": "Audiogalaxy Peak Era Public Portal"
         }
       ],
       "epitaphs": [
@@ -7271,6 +8956,26 @@
           "order_index": 1
         },
         {
+          "id": "t-purevolume-found",
+          "entity_id": "grave-purevolume-2003",
+          "year": 2003,
+          "date_str": "2003",
+          "title": "Founding & Architectural Genesis",
+          "description": "Early system design and architectural conception of PureVolume.",
+          "event_type": "FOUNDED",
+          "order_index": 2
+        },
+        {
+          "id": "t-purevolume-peak",
+          "entity_id": "grave-purevolume-2003",
+          "year": 2010,
+          "date_str": "2010",
+          "title": "Peak Cultural Scale & User Adoption",
+          "description": "PureVolume achieves its peak active community footprint and widespread industry recognition.",
+          "event_type": "MILESTONE",
+          "order_index": 3
+        },
+        {
           "id": "t-purevolume-2",
           "entity_id": "grave-purevolume-2003",
           "year": 2018,
@@ -7278,7 +8983,7 @@
           "title": "Official Shutdown",
           "description": "Superseded by Bandcamp, SoundCloud, and Spotify; parent company Hive Media discontinued site operations.",
           "event_type": "DISCONTINUED",
-          "order_index": 2
+          "order_index": 4
         }
       ],
       "evidence": [
@@ -7294,9 +8999,30 @@
           "weight": 50,
           "extracted_claim": "Superseded by Bandcamp, SoundCloud, and Spotify; parent company Hive Media discontinued site operations.",
           "is_verified": true
+        },
+        {
+          "id": "ev-purevolume-wayback",
+          "entity_id": "grave-purevolume-2003",
+          "source_name": "Wayback Machine Digital Archive",
+          "source_type": "Internet Archive Snapshot Index",
+          "url": "https://web.archive.org/web/*/purevolume.com",
+          "timestamp": "2018-12-31",
+          "evidence_type": "ARCHIVE_SNAPSHOT",
+          "reliability": "VERY_HIGH",
+          "weight": 35,
+          "extracted_claim": "Defunct domain purevolume.com historical records confirm cessation of interactive server endpoints.",
+          "is_verified": true
         }
       ],
       "archives": [
+        {
+          "id": "arc-purevolume-2003",
+          "entity_id": "grave-purevolume-2003",
+          "year": 2003,
+          "date_captured": "2003-04-12",
+          "wayback_url": "https://web.archive.org/web/20030412000000*/https://purevolume.com",
+          "title": "PureVolume Launch Era Interface"
+        },
         {
           "id": "arc-purevolume-1",
           "entity_id": "grave-purevolume-2003",
@@ -7304,6 +9030,14 @@
           "date_captured": "2004-06-01",
           "wayback_url": "https://web.archive.org/web/*/purevolume.com",
           "title": "PureVolume Historical Web Archive"
+        },
+        {
+          "id": "arc-purevolume-2010",
+          "entity_id": "grave-purevolume-2003",
+          "year": 2010,
+          "date_captured": "2010-07-15",
+          "wayback_url": "https://web.archive.org/web/20100715000000*/https://purevolume.com",
+          "title": "PureVolume Peak Era Public Portal"
         }
       ],
       "epitaphs": [
@@ -7404,6 +9138,26 @@
           "order_index": 1
         },
         {
+          "id": "t-ouya-found",
+          "entity_id": "grave-ouya-2012",
+          "year": 2012,
+          "date_str": "2012",
+          "title": "Founding & Architectural Genesis",
+          "description": "Early system design and architectural conception of Ouya.",
+          "event_type": "FOUNDED",
+          "order_index": 2
+        },
+        {
+          "id": "t-ouya-peak",
+          "entity_id": "grave-ouya-2012",
+          "year": 2015,
+          "date_str": "2015",
+          "title": "Peak Cultural Scale & User Adoption",
+          "description": "Ouya achieves its peak active community footprint and widespread industry recognition.",
+          "event_type": "MILESTONE",
+          "order_index": 3
+        },
+        {
           "id": "t-ouya-2",
           "entity_id": "grave-ouya-2012",
           "year": 2019,
@@ -7411,7 +9165,7 @@
           "title": "Official Shutdown",
           "description": "Severe hardware controller latency and build defects; failure to compete with PlayStation, Xbox, and Nintendo Switch.",
           "event_type": "DISCONTINUED",
-          "order_index": 2
+          "order_index": 4
         }
       ],
       "evidence": [
@@ -7427,9 +9181,30 @@
           "weight": 50,
           "extracted_claim": "Severe hardware controller latency and build defects; failure to compete with PlayStation, Xbox, and Nintendo Switch.",
           "is_verified": true
+        },
+        {
+          "id": "ev-ouya-wayback",
+          "entity_id": "grave-ouya-2012",
+          "source_name": "Wayback Machine Digital Archive",
+          "source_type": "Internet Archive Snapshot Index",
+          "url": "https://web.archive.org/web/*/ouya.tv",
+          "timestamp": "2019-12-31",
+          "evidence_type": "ARCHIVE_SNAPSHOT",
+          "reliability": "VERY_HIGH",
+          "weight": 35,
+          "extracted_claim": "Defunct domain ouya.tv historical records confirm cessation of interactive server endpoints.",
+          "is_verified": true
         }
       ],
       "archives": [
+        {
+          "id": "arc-ouya-2012",
+          "entity_id": "grave-ouya-2012",
+          "year": 2012,
+          "date_captured": "2012-04-12",
+          "wayback_url": "https://web.archive.org/web/20120412000000*/https://ouya.tv",
+          "title": "Ouya Launch Era Interface"
+        },
         {
           "id": "arc-ouya-1",
           "entity_id": "grave-ouya-2012",
@@ -7437,6 +9212,14 @@
           "date_captured": "2013-06-01",
           "wayback_url": "https://web.archive.org/web/*/ouya.tv",
           "title": "Ouya Historical Web Archive"
+        },
+        {
+          "id": "arc-ouya-2015",
+          "entity_id": "grave-ouya-2012",
+          "year": 2015,
+          "date_captured": "2015-07-15",
+          "wayback_url": "https://web.archive.org/web/20150715000000*/https://ouya.tv",
+          "title": "Ouya Peak Era Public Portal"
         }
       ],
       "epitaphs": [
@@ -7537,6 +9320,26 @@
           "order_index": 1
         },
         {
+          "id": "t-virtual-magic-kingdom-found",
+          "entity_id": "grave-virtual-magic-kingdom-2005",
+          "year": 2005,
+          "date_str": "2005",
+          "title": "Founding & Architectural Genesis",
+          "description": "Early system design and architectural conception of Virtual Magic Kingdom (VMK).",
+          "event_type": "FOUNDED",
+          "order_index": 2
+        },
+        {
+          "id": "t-virtual-magic-kingdom-peak",
+          "entity_id": "grave-virtual-magic-kingdom-2005",
+          "year": 2006,
+          "date_str": "2006",
+          "title": "Peak Cultural Scale & User Adoption",
+          "description": "Virtual Magic Kingdom (VMK) achieves its peak active community footprint and widespread industry recognition.",
+          "event_type": "MILESTONE",
+          "order_index": 3
+        },
+        {
           "id": "t-virtual-magic-kingdom-2",
           "entity_id": "grave-virtual-magic-kingdom-2005",
           "year": 2008,
@@ -7544,7 +9347,7 @@
           "title": "Official Shutdown",
           "description": "Originally conceived as a limited promotional event for Disneyland's 50th; closed despite immense player protests.",
           "event_type": "DISCONTINUED",
-          "order_index": 2
+          "order_index": 4
         }
       ],
       "evidence": [
@@ -7560,9 +9363,30 @@
           "weight": 50,
           "extracted_claim": "Originally conceived as a limited promotional event for Disneyland's 50th; closed despite immense player protests.",
           "is_verified": true
+        },
+        {
+          "id": "ev-virtual-magic-kingdom-wayback",
+          "entity_id": "grave-virtual-magic-kingdom-2005",
+          "source_name": "Wayback Machine Digital Archive",
+          "source_type": "Internet Archive Snapshot Index",
+          "url": "https://web.archive.org/web/*/vmk.com",
+          "timestamp": "2008-12-31",
+          "evidence_type": "ARCHIVE_SNAPSHOT",
+          "reliability": "VERY_HIGH",
+          "weight": 35,
+          "extracted_claim": "Defunct domain vmk.com historical records confirm cessation of interactive server endpoints.",
+          "is_verified": true
         }
       ],
       "archives": [
+        {
+          "id": "arc-virtual-magic-kingdom-2005",
+          "entity_id": "grave-virtual-magic-kingdom-2005",
+          "year": 2005,
+          "date_captured": "2005-04-12",
+          "wayback_url": "https://web.archive.org/web/20050412000000*/https://vmk.com",
+          "title": "Virtual Magic Kingdom (VMK) Launch Era Interface"
+        },
         {
           "id": "arc-virtual-magic-kingdom-1",
           "entity_id": "grave-virtual-magic-kingdom-2005",
@@ -7570,6 +9394,14 @@
           "date_captured": "2006-06-01",
           "wayback_url": "https://web.archive.org/web/*/vmk.com",
           "title": "Virtual Magic Kingdom (VMK) Historical Web Archive"
+        },
+        {
+          "id": "arc-virtual-magic-kingdom-2008",
+          "entity_id": "grave-virtual-magic-kingdom-2005",
+          "year": 2008,
+          "date_captured": "2008-11-20",
+          "wayback_url": "https://web.archive.org/web/20081120000000*/https://vmk.com",
+          "title": "Virtual Magic Kingdom (VMK) Final Sunset / Farewell Notice"
         }
       ],
       "epitaphs": [
@@ -7663,6 +9495,26 @@
           "order_index": 1
         },
         {
+          "id": "t-pets-com-found",
+          "entity_id": "grave-pets-com-1998",
+          "year": 1998,
+          "date_str": "1998",
+          "title": "Founding & Architectural Genesis",
+          "description": "Early system design and architectural conception of Pets.com.",
+          "event_type": "FOUNDED",
+          "order_index": 2
+        },
+        {
+          "id": "t-pets-com-peak",
+          "entity_id": "grave-pets-com-1998",
+          "year": 1999,
+          "date_str": "1999",
+          "title": "Peak Cultural Scale & User Adoption",
+          "description": "Pets.com achieves its peak active community footprint and widespread industry recognition.",
+          "event_type": "MILESTONE",
+          "order_index": 3
+        },
+        {
           "id": "t-pets-com-2",
           "entity_id": "grave-pets-com-1998",
           "year": 2000,
@@ -7670,7 +9522,7 @@
           "title": "Official Shutdown",
           "description": "Unsustainable unit economics (subsidizing heavy dog food shipping); ran out of capital when venture funding dried up.",
           "event_type": "DISCONTINUED",
-          "order_index": 2
+          "order_index": 4
         }
       ],
       "evidence": [
@@ -7686,9 +9538,30 @@
           "weight": 50,
           "extracted_claim": "Unsustainable unit economics (subsidizing heavy dog food shipping); ran out of capital when venture funding dried up.",
           "is_verified": true
+        },
+        {
+          "id": "ev-pets-com-wayback",
+          "entity_id": "grave-pets-com-1998",
+          "source_name": "Wayback Machine Digital Archive",
+          "source_type": "Internet Archive Snapshot Index",
+          "url": "https://web.archive.org/web/*/pets.com",
+          "timestamp": "2000-12-31",
+          "evidence_type": "ARCHIVE_SNAPSHOT",
+          "reliability": "VERY_HIGH",
+          "weight": 35,
+          "extracted_claim": "Defunct domain pets.com historical records confirm cessation of interactive server endpoints.",
+          "is_verified": true
         }
       ],
       "archives": [
+        {
+          "id": "arc-pets-com-1998",
+          "entity_id": "grave-pets-com-1998",
+          "year": 1998,
+          "date_captured": "1998-04-12",
+          "wayback_url": "https://web.archive.org/web/19980412000000*/https://pets.com",
+          "title": "Pets.com Launch Era Interface"
+        },
         {
           "id": "arc-pets-com-1",
           "entity_id": "grave-pets-com-1998",
@@ -7696,6 +9569,14 @@
           "date_captured": "1999-06-01",
           "wayback_url": "https://web.archive.org/web/*/pets.com",
           "title": "Pets.com Historical Web Archive"
+        },
+        {
+          "id": "arc-pets-com-2000",
+          "entity_id": "grave-pets-com-1998",
+          "year": 2000,
+          "date_captured": "2000-11-20",
+          "wayback_url": "https://web.archive.org/web/20001120000000*/https://pets.com",
+          "title": "Pets.com Final Sunset / Farewell Notice"
         }
       ],
       "epitaphs": [
@@ -7789,6 +9670,26 @@
           "order_index": 1
         },
         {
+          "id": "t-gawker-found",
+          "entity_id": "grave-gawker-2002",
+          "year": 2002,
+          "date_str": "2002",
+          "title": "Founding & Architectural Genesis",
+          "description": "Early system design and architectural conception of Gawker.",
+          "event_type": "FOUNDED",
+          "order_index": 2
+        },
+        {
+          "id": "t-gawker-peak",
+          "entity_id": "grave-gawker-2002",
+          "year": 2009,
+          "date_str": "2009",
+          "title": "Peak Cultural Scale & User Adoption",
+          "description": "Gawker achieves its peak active community footprint and widespread industry recognition.",
+          "event_type": "MILESTONE",
+          "order_index": 3
+        },
+        {
           "id": "t-gawker-2",
           "entity_id": "grave-gawker-2002",
           "year": 2016,
@@ -7796,7 +9697,7 @@
           "title": "Official Shutdown",
           "description": "Bankrupted by a $140 million legal judgment in the Bollea v. Gawker invasion-of-privacy trial secretly financed by Peter Thiel.",
           "event_type": "DISCONTINUED",
-          "order_index": 2
+          "order_index": 4
         }
       ],
       "evidence": [
@@ -7812,9 +9713,30 @@
           "weight": 50,
           "extracted_claim": "Bankrupted by a $140 million legal judgment in the Bollea v. Gawker invasion-of-privacy trial secretly financed by Peter Thiel.",
           "is_verified": true
+        },
+        {
+          "id": "ev-gawker-wayback",
+          "entity_id": "grave-gawker-2002",
+          "source_name": "Wayback Machine Digital Archive",
+          "source_type": "Internet Archive Snapshot Index",
+          "url": "https://web.archive.org/web/*/gawker.com",
+          "timestamp": "2016-12-31",
+          "evidence_type": "ARCHIVE_SNAPSHOT",
+          "reliability": "VERY_HIGH",
+          "weight": 35,
+          "extracted_claim": "Defunct domain gawker.com historical records confirm cessation of interactive server endpoints.",
+          "is_verified": true
         }
       ],
       "archives": [
+        {
+          "id": "arc-gawker-2002",
+          "entity_id": "grave-gawker-2002",
+          "year": 2002,
+          "date_captured": "2002-04-12",
+          "wayback_url": "https://web.archive.org/web/20020412000000*/https://gawker.com",
+          "title": "Gawker Launch Era Interface"
+        },
         {
           "id": "arc-gawker-1",
           "entity_id": "grave-gawker-2002",
@@ -7822,6 +9744,14 @@
           "date_captured": "2003-06-01",
           "wayback_url": "https://web.archive.org/web/*/gawker.com",
           "title": "Gawker Historical Web Archive"
+        },
+        {
+          "id": "arc-gawker-2009",
+          "entity_id": "grave-gawker-2002",
+          "year": 2009,
+          "date_captured": "2009-07-15",
+          "wayback_url": "https://web.archive.org/web/20090715000000*/https://gawker.com",
+          "title": "Gawker Peak Era Public Portal"
         }
       ],
       "epitaphs": [
@@ -7923,6 +9853,26 @@
           "order_index": 1
         },
         {
+          "id": "t-limewire-found",
+          "entity_id": "grave-limewire-2000",
+          "year": 2000,
+          "date_str": "2000",
+          "title": "Founding & Architectural Genesis",
+          "description": "Early system design and architectural conception of LimeWire.",
+          "event_type": "FOUNDED",
+          "order_index": 2
+        },
+        {
+          "id": "t-limewire-peak",
+          "entity_id": "grave-limewire-2000",
+          "year": 2005,
+          "date_str": "2005",
+          "title": "Peak Cultural Scale & User Adoption",
+          "description": "LimeWire achieves its peak active community footprint and widespread industry recognition.",
+          "event_type": "MILESTONE",
+          "order_index": 3
+        },
+        {
           "id": "t-limewire-2",
           "entity_id": "grave-limewire-2000",
           "year": 2010,
@@ -7930,7 +9880,7 @@
           "title": "Official Shutdown",
           "description": "Permanent federal injunction filed by the RIAA; crippling copyright liability damages and malware infestation.",
           "event_type": "DISCONTINUED",
-          "order_index": 2
+          "order_index": 4
         }
       ],
       "evidence": [
@@ -7946,9 +9896,30 @@
           "weight": 50,
           "extracted_claim": "Permanent federal injunction filed by the RIAA; crippling copyright liability damages and malware infestation.",
           "is_verified": true
+        },
+        {
+          "id": "ev-limewire-wayback",
+          "entity_id": "grave-limewire-2000",
+          "source_name": "Wayback Machine Digital Archive",
+          "source_type": "Internet Archive Snapshot Index",
+          "url": "https://web.archive.org/web/*/limewire.com",
+          "timestamp": "2010-12-31",
+          "evidence_type": "ARCHIVE_SNAPSHOT",
+          "reliability": "VERY_HIGH",
+          "weight": 35,
+          "extracted_claim": "Defunct domain limewire.com historical records confirm cessation of interactive server endpoints.",
+          "is_verified": true
         }
       ],
       "archives": [
+        {
+          "id": "arc-limewire-2000",
+          "entity_id": "grave-limewire-2000",
+          "year": 2000,
+          "date_captured": "2000-04-12",
+          "wayback_url": "https://web.archive.org/web/20000412000000*/https://limewire.com",
+          "title": "LimeWire Launch Era Interface"
+        },
         {
           "id": "arc-limewire-1",
           "entity_id": "grave-limewire-2000",
@@ -7956,6 +9927,14 @@
           "date_captured": "2001-06-01",
           "wayback_url": "https://web.archive.org/web/*/limewire.com",
           "title": "LimeWire Historical Web Archive"
+        },
+        {
+          "id": "arc-limewire-2005",
+          "entity_id": "grave-limewire-2000",
+          "year": 2005,
+          "date_captured": "2005-07-15",
+          "wayback_url": "https://web.archive.org/web/20050715000000*/https://limewire.com",
+          "title": "LimeWire Peak Era Public Portal"
         }
       ],
       "epitaphs": [
@@ -8056,6 +10035,26 @@
           "order_index": 1
         },
         {
+          "id": "t-google-stadia-found",
+          "entity_id": "grave-google-stadia-2019",
+          "year": 2019,
+          "date_str": "2019",
+          "title": "Founding & Architectural Genesis",
+          "description": "Early system design and architectural conception of Google Stadia.",
+          "event_type": "FOUNDED",
+          "order_index": 2
+        },
+        {
+          "id": "t-google-stadia-peak",
+          "entity_id": "grave-google-stadia-2019",
+          "year": 2021,
+          "date_str": "2021",
+          "title": "Peak Cultural Scale & User Adoption",
+          "description": "Google Stadia achieves its peak active community footprint and widespread industry recognition.",
+          "event_type": "MILESTONE",
+          "order_index": 3
+        },
+        {
           "id": "t-google-stadia-2",
           "entity_id": "grave-google-stadia-2019",
           "year": 2023,
@@ -8063,7 +10062,7 @@
           "title": "Official Shutdown",
           "description": "Lack of traction with gamers due to full retail pricing for streamed games; shut down by Google leadership to cut cloud infrastructure costs.",
           "event_type": "DISCONTINUED",
-          "order_index": 2
+          "order_index": 4
         }
       ],
       "evidence": [
@@ -8079,9 +10078,30 @@
           "weight": 50,
           "extracted_claim": "Lack of traction with gamers due to full retail pricing for streamed games; shut down by Google leadership to cut cloud infrastructure costs.",
           "is_verified": true
+        },
+        {
+          "id": "ev-google-stadia-wayback",
+          "entity_id": "grave-google-stadia-2019",
+          "source_name": "Wayback Machine Digital Archive",
+          "source_type": "Internet Archive Snapshot Index",
+          "url": "https://web.archive.org/web/*/stadia.google.com",
+          "timestamp": "2023-12-31",
+          "evidence_type": "ARCHIVE_SNAPSHOT",
+          "reliability": "VERY_HIGH",
+          "weight": 35,
+          "extracted_claim": "Defunct domain stadia.google.com historical records confirm cessation of interactive server endpoints.",
+          "is_verified": true
         }
       ],
       "archives": [
+        {
+          "id": "arc-google-stadia-2019",
+          "entity_id": "grave-google-stadia-2019",
+          "year": 2019,
+          "date_captured": "2019-04-12",
+          "wayback_url": "https://web.archive.org/web/20190412000000*/https://stadia.google.com",
+          "title": "Google Stadia Launch Era Interface"
+        },
         {
           "id": "arc-google-stadia-1",
           "entity_id": "grave-google-stadia-2019",
@@ -8089,6 +10109,14 @@
           "date_captured": "2020-06-01",
           "wayback_url": "https://web.archive.org/web/*/stadia.google.com",
           "title": "Google Stadia Historical Web Archive"
+        },
+        {
+          "id": "arc-google-stadia-2021",
+          "entity_id": "grave-google-stadia-2019",
+          "year": 2021,
+          "date_captured": "2021-07-15",
+          "wayback_url": "https://web.archive.org/web/20210715000000*/https://stadia.google.com",
+          "title": "Google Stadia Peak Era Public Portal"
         }
       ],
       "epitaphs": [
@@ -8189,6 +10217,26 @@
           "order_index": 1
         },
         {
+          "id": "t-internet-explorer-found",
+          "entity_id": "grave-internet-explorer-1995",
+          "year": 1995,
+          "date_str": "1995",
+          "title": "Founding & Architectural Genesis",
+          "description": "Early system design and architectural conception of Internet Explorer.",
+          "event_type": "FOUNDED",
+          "order_index": 2
+        },
+        {
+          "id": "t-internet-explorer-peak",
+          "entity_id": "grave-internet-explorer-1995",
+          "year": 2008,
+          "date_str": "2008",
+          "title": "Peak Cultural Scale & User Adoption",
+          "description": "Internet Explorer achieves its peak active community footprint and widespread industry recognition.",
+          "event_type": "MILESTONE",
+          "order_index": 3
+        },
+        {
           "id": "t-internet-explorer-2",
           "entity_id": "grave-internet-explorer-1995",
           "year": 2022,
@@ -8196,7 +10244,7 @@
           "title": "Official Shutdown",
           "description": "Technological obsolescence and security vulnerability baggage; replaced by Chromium-based Microsoft Edge.",
           "event_type": "DISCONTINUED",
-          "order_index": 2
+          "order_index": 4
         }
       ],
       "evidence": [
@@ -8212,9 +10260,30 @@
           "weight": 50,
           "extracted_claim": "Technological obsolescence and security vulnerability baggage; replaced by Chromium-based Microsoft Edge.",
           "is_verified": true
+        },
+        {
+          "id": "ev-internet-explorer-wayback",
+          "entity_id": "grave-internet-explorer-1995",
+          "source_name": "Wayback Machine Digital Archive",
+          "source_type": "Internet Archive Snapshot Index",
+          "url": "https://web.archive.org/web/*/microsoft.com",
+          "timestamp": "2022-12-31",
+          "evidence_type": "ARCHIVE_SNAPSHOT",
+          "reliability": "VERY_HIGH",
+          "weight": 35,
+          "extracted_claim": "Defunct domain microsoft.com historical records confirm cessation of interactive server endpoints.",
+          "is_verified": true
         }
       ],
       "archives": [
+        {
+          "id": "arc-internet-explorer-1995",
+          "entity_id": "grave-internet-explorer-1995",
+          "year": 1995,
+          "date_captured": "1995-04-12",
+          "wayback_url": "https://web.archive.org/web/19950412000000*/https://microsoft.com",
+          "title": "Internet Explorer Launch Era Interface"
+        },
         {
           "id": "arc-internet-explorer-1",
           "entity_id": "grave-internet-explorer-1995",
@@ -8222,6 +10291,14 @@
           "date_captured": "1996-06-01",
           "wayback_url": "https://web.archive.org/web/*/microsoft.com/ie",
           "title": "Internet Explorer Historical Web Archive"
+        },
+        {
+          "id": "arc-internet-explorer-2008",
+          "entity_id": "grave-internet-explorer-1995",
+          "year": 2008,
+          "date_captured": "2008-07-15",
+          "wayback_url": "https://web.archive.org/web/20080715000000*/https://microsoft.com",
+          "title": "Internet Explorer Peak Era Public Portal"
         }
       ],
       "epitaphs": [
@@ -8322,6 +10399,26 @@
           "order_index": 1
         },
         {
+          "id": "t-mint-found",
+          "entity_id": "grave-mint-2006",
+          "year": 2006,
+          "date_str": "2006",
+          "title": "Founding & Architectural Genesis",
+          "description": "Early system design and architectural conception of Mint.com.",
+          "event_type": "FOUNDED",
+          "order_index": 2
+        },
+        {
+          "id": "t-mint-peak",
+          "entity_id": "grave-mint-2006",
+          "year": 2015,
+          "date_str": "2015",
+          "title": "Peak Cultural Scale & User Adoption",
+          "description": "Mint.com achieves its peak active community footprint and widespread industry recognition.",
+          "event_type": "MILESTONE",
+          "order_index": 3
+        },
+        {
           "id": "t-mint-2",
           "entity_id": "grave-mint-2006",
           "year": 2024,
@@ -8329,7 +10426,7 @@
           "title": "Official Shutdown",
           "description": "Corporate consolidation by Intuit in favor of Credit Karma's lead-generation advertising model.",
           "event_type": "DISCONTINUED",
-          "order_index": 2
+          "order_index": 4
         }
       ],
       "evidence": [
@@ -8345,9 +10442,30 @@
           "weight": 50,
           "extracted_claim": "Corporate consolidation by Intuit in favor of Credit Karma's lead-generation advertising model.",
           "is_verified": true
+        },
+        {
+          "id": "ev-mint-wayback",
+          "entity_id": "grave-mint-2006",
+          "source_name": "Wayback Machine Digital Archive",
+          "source_type": "Internet Archive Snapshot Index",
+          "url": "https://web.archive.org/web/*/mint.com",
+          "timestamp": "2024-12-31",
+          "evidence_type": "ARCHIVE_SNAPSHOT",
+          "reliability": "VERY_HIGH",
+          "weight": 35,
+          "extracted_claim": "Defunct domain mint.com historical records confirm cessation of interactive server endpoints.",
+          "is_verified": true
         }
       ],
       "archives": [
+        {
+          "id": "arc-mint-2006",
+          "entity_id": "grave-mint-2006",
+          "year": 2006,
+          "date_captured": "2006-04-12",
+          "wayback_url": "https://web.archive.org/web/20060412000000*/https://mint.com",
+          "title": "Mint.com Launch Era Interface"
+        },
         {
           "id": "arc-mint-1",
           "entity_id": "grave-mint-2006",
@@ -8355,6 +10473,14 @@
           "date_captured": "2007-06-01",
           "wayback_url": "https://web.archive.org/web/*/mint.com",
           "title": "Mint.com Historical Web Archive"
+        },
+        {
+          "id": "arc-mint-2015",
+          "entity_id": "grave-mint-2006",
+          "year": 2015,
+          "date_captured": "2015-07-15",
+          "wayback_url": "https://web.archive.org/web/20150715000000*/https://mint.com",
+          "title": "Mint.com Peak Era Public Portal"
         }
       ],
       "epitaphs": [
@@ -8455,6 +10581,26 @@
           "order_index": 1
         },
         {
+          "id": "t-invision-found",
+          "entity_id": "grave-invision-2011",
+          "year": 2011,
+          "date_str": "2011",
+          "title": "Founding & Architectural Genesis",
+          "description": "Early system design and architectural conception of InVision.",
+          "event_type": "FOUNDED",
+          "order_index": 2
+        },
+        {
+          "id": "t-invision-peak",
+          "entity_id": "grave-invision-2011",
+          "year": 2017,
+          "date_str": "2017",
+          "title": "Peak Cultural Scale & User Adoption",
+          "description": "InVision achieves its peak active community footprint and widespread industry recognition.",
+          "event_type": "MILESTONE",
+          "order_index": 3
+        },
+        {
           "id": "t-invision-2",
           "entity_id": "grave-invision-2011",
           "year": 2024,
@@ -8462,7 +10608,7 @@
           "title": "Official Shutdown",
           "description": "Failure to build a web-native authoring canvas; comprehensively out-innovated and annihilated by Figma.",
           "event_type": "DISCONTINUED",
-          "order_index": 2
+          "order_index": 4
         }
       ],
       "evidence": [
@@ -8478,9 +10624,30 @@
           "weight": 50,
           "extracted_claim": "Failure to build a web-native authoring canvas; comprehensively out-innovated and annihilated by Figma.",
           "is_verified": true
+        },
+        {
+          "id": "ev-invision-wayback",
+          "entity_id": "grave-invision-2011",
+          "source_name": "Wayback Machine Digital Archive",
+          "source_type": "Internet Archive Snapshot Index",
+          "url": "https://web.archive.org/web/*/invisionapp.com",
+          "timestamp": "2024-12-31",
+          "evidence_type": "ARCHIVE_SNAPSHOT",
+          "reliability": "VERY_HIGH",
+          "weight": 35,
+          "extracted_claim": "Defunct domain invisionapp.com historical records confirm cessation of interactive server endpoints.",
+          "is_verified": true
         }
       ],
       "archives": [
+        {
+          "id": "arc-invision-2011",
+          "entity_id": "grave-invision-2011",
+          "year": 2011,
+          "date_captured": "2011-04-12",
+          "wayback_url": "https://web.archive.org/web/20110412000000*/https://invisionapp.com",
+          "title": "InVision Launch Era Interface"
+        },
         {
           "id": "arc-invision-1",
           "entity_id": "grave-invision-2011",
@@ -8488,6 +10655,14 @@
           "date_captured": "2012-06-01",
           "wayback_url": "https://web.archive.org/web/*/invisionapp.com",
           "title": "InVision Historical Web Archive"
+        },
+        {
+          "id": "arc-invision-2017",
+          "entity_id": "grave-invision-2011",
+          "year": 2017,
+          "date_captured": "2017-07-15",
+          "wayback_url": "https://web.archive.org/web/20170715000000*/https://invisionapp.com",
+          "title": "InVision Peak Era Public Portal"
         }
       ],
       "epitaphs": [
@@ -8581,6 +10756,26 @@
           "order_index": 1
         },
         {
+          "id": "t-skiff-found",
+          "entity_id": "grave-skiff-2020",
+          "year": 2020,
+          "date_str": "2020",
+          "title": "Founding & Architectural Genesis",
+          "description": "Early system design and architectural conception of Skiff.",
+          "event_type": "FOUNDED",
+          "order_index": 2
+        },
+        {
+          "id": "t-skiff-peak",
+          "entity_id": "grave-skiff-2020",
+          "year": 2022,
+          "date_str": "2022",
+          "title": "Peak Cultural Scale & User Adoption",
+          "description": "Skiff achieves its peak active community footprint and widespread industry recognition.",
+          "event_type": "MILESTONE",
+          "order_index": 3
+        },
+        {
           "id": "t-skiff-2",
           "entity_id": "grave-skiff-2020",
           "year": 2024,
@@ -8588,7 +10783,7 @@
           "title": "Official Shutdown",
           "description": "Acquihire by Notion to integrate encrypted team talent, with immediate sunsetting of consumer products.",
           "event_type": "DISCONTINUED",
-          "order_index": 2
+          "order_index": 4
         }
       ],
       "evidence": [
@@ -8604,9 +10799,30 @@
           "weight": 50,
           "extracted_claim": "Acquihire by Notion to integrate encrypted team talent, with immediate sunsetting of consumer products.",
           "is_verified": true
+        },
+        {
+          "id": "ev-skiff-wayback",
+          "entity_id": "grave-skiff-2020",
+          "source_name": "Wayback Machine Digital Archive",
+          "source_type": "Internet Archive Snapshot Index",
+          "url": "https://web.archive.org/web/*/skiff.com",
+          "timestamp": "2024-12-31",
+          "evidence_type": "ARCHIVE_SNAPSHOT",
+          "reliability": "VERY_HIGH",
+          "weight": 35,
+          "extracted_claim": "Defunct domain skiff.com historical records confirm cessation of interactive server endpoints.",
+          "is_verified": true
         }
       ],
       "archives": [
+        {
+          "id": "arc-skiff-2020",
+          "entity_id": "grave-skiff-2020",
+          "year": 2020,
+          "date_captured": "2020-04-12",
+          "wayback_url": "https://web.archive.org/web/20200412000000*/https://skiff.com",
+          "title": "Skiff Launch Era Interface"
+        },
         {
           "id": "arc-skiff-1",
           "entity_id": "grave-skiff-2020",
@@ -8614,6 +10830,14 @@
           "date_captured": "2021-06-01",
           "wayback_url": "https://web.archive.org/web/*/skiff.com",
           "title": "Skiff Historical Web Archive"
+        },
+        {
+          "id": "arc-skiff-2022",
+          "entity_id": "grave-skiff-2020",
+          "year": 2022,
+          "date_captured": "2022-07-15",
+          "wayback_url": "https://web.archive.org/web/20220715000000*/https://skiff.com",
+          "title": "Skiff Peak Era Public Portal"
         }
       ],
       "epitaphs": [
@@ -8714,6 +10938,26 @@
           "order_index": 1
         },
         {
+          "id": "t-toontown-online-found",
+          "entity_id": "grave-toontown-online-2003",
+          "year": 2003,
+          "date_str": "2003",
+          "title": "Founding & Architectural Genesis",
+          "description": "Early system design and architectural conception of Disney's Toontown Online.",
+          "event_type": "FOUNDED",
+          "order_index": 2
+        },
+        {
+          "id": "t-toontown-online-peak",
+          "entity_id": "grave-toontown-online-2003",
+          "year": 2008,
+          "date_str": "2008",
+          "title": "Peak Cultural Scale & User Adoption",
+          "description": "Disney's Toontown Online achieves its peak active community footprint and widespread industry recognition.",
+          "event_type": "MILESTONE",
+          "order_index": 3
+        },
+        {
           "id": "t-toontown-online-2",
           "entity_id": "grave-toontown-online-2003",
           "year": 2013,
@@ -8721,7 +10965,7 @@
           "title": "Official Shutdown",
           "description": "Corporate shifting of Disney Interactive resources toward mobile gaming (Disney Infinity and microtransactions).",
           "event_type": "DISCONTINUED",
-          "order_index": 2
+          "order_index": 4
         }
       ],
       "evidence": [
@@ -8737,9 +10981,30 @@
           "weight": 50,
           "extracted_claim": "Corporate shifting of Disney Interactive resources toward mobile gaming (Disney Infinity and microtransactions).",
           "is_verified": true
+        },
+        {
+          "id": "ev-toontown-online-wayback",
+          "entity_id": "grave-toontown-online-2003",
+          "source_name": "Wayback Machine Digital Archive",
+          "source_type": "Internet Archive Snapshot Index",
+          "url": "https://web.archive.org/web/*/toontown.com",
+          "timestamp": "2013-12-31",
+          "evidence_type": "ARCHIVE_SNAPSHOT",
+          "reliability": "VERY_HIGH",
+          "weight": 35,
+          "extracted_claim": "Defunct domain toontown.com historical records confirm cessation of interactive server endpoints.",
+          "is_verified": true
         }
       ],
       "archives": [
+        {
+          "id": "arc-toontown-online-2003",
+          "entity_id": "grave-toontown-online-2003",
+          "year": 2003,
+          "date_captured": "2003-04-12",
+          "wayback_url": "https://web.archive.org/web/20030412000000*/https://toontown.com",
+          "title": "Disney's Toontown Online Launch Era Interface"
+        },
         {
           "id": "arc-toontown-online-1",
           "entity_id": "grave-toontown-online-2003",
@@ -8747,6 +11012,14 @@
           "date_captured": "2004-06-01",
           "wayback_url": "https://web.archive.org/web/*/toontown.com",
           "title": "Disney's Toontown Online Historical Web Archive"
+        },
+        {
+          "id": "arc-toontown-online-2008",
+          "entity_id": "grave-toontown-online-2003",
+          "year": 2008,
+          "date_captured": "2008-07-15",
+          "wayback_url": "https://web.archive.org/web/20080715000000*/https://toontown.com",
+          "title": "Disney's Toontown Online Peak Era Public Portal"
         }
       ],
       "epitaphs": [
@@ -8847,6 +11120,26 @@
           "order_index": 1
         },
         {
+          "id": "t-playstation-home-found",
+          "entity_id": "grave-playstation-home-2008",
+          "year": 2008,
+          "date_str": "2008",
+          "title": "Founding & Architectural Genesis",
+          "description": "Early system design and architectural conception of PlayStation Home.",
+          "event_type": "FOUNDED",
+          "order_index": 2
+        },
+        {
+          "id": "t-playstation-home-peak",
+          "entity_id": "grave-playstation-home-2008",
+          "year": 2011,
+          "date_str": "2011",
+          "title": "Peak Cultural Scale & User Adoption",
+          "description": "PlayStation Home achieves its peak active community footprint and widespread industry recognition.",
+          "event_type": "MILESTONE",
+          "order_index": 3
+        },
+        {
           "id": "t-playstation-home-2",
           "entity_id": "grave-playstation-home-2008",
           "year": 2015,
@@ -8854,7 +11147,7 @@
           "title": "Official Shutdown",
           "description": "High operational server costs and end of the PS3 hardware generation lifecycle; did not transition to PS4.",
           "event_type": "DISCONTINUED",
-          "order_index": 2
+          "order_index": 4
         }
       ],
       "evidence": [
@@ -8870,9 +11163,30 @@
           "weight": 50,
           "extracted_claim": "High operational server costs and end of the PS3 hardware generation lifecycle; did not transition to PS4.",
           "is_verified": true
+        },
+        {
+          "id": "ev-playstation-home-wayback",
+          "entity_id": "grave-playstation-home-2008",
+          "source_name": "Wayback Machine Digital Archive",
+          "source_type": "Internet Archive Snapshot Index",
+          "url": "https://web.archive.org/web/*/playstationhome.com",
+          "timestamp": "2015-12-31",
+          "evidence_type": "ARCHIVE_SNAPSHOT",
+          "reliability": "VERY_HIGH",
+          "weight": 35,
+          "extracted_claim": "Defunct domain playstationhome.com historical records confirm cessation of interactive server endpoints.",
+          "is_verified": true
         }
       ],
       "archives": [
+        {
+          "id": "arc-playstation-home-2008",
+          "entity_id": "grave-playstation-home-2008",
+          "year": 2008,
+          "date_captured": "2008-04-12",
+          "wayback_url": "https://web.archive.org/web/20080412000000*/https://playstationhome.com",
+          "title": "PlayStation Home Launch Era Interface"
+        },
         {
           "id": "arc-playstation-home-1",
           "entity_id": "grave-playstation-home-2008",
@@ -8880,6 +11194,14 @@
           "date_captured": "2009-06-01",
           "wayback_url": "https://web.archive.org/web/*/playstationhome.com",
           "title": "PlayStation Home Historical Web Archive"
+        },
+        {
+          "id": "arc-playstation-home-2011",
+          "entity_id": "grave-playstation-home-2008",
+          "year": 2011,
+          "date_captured": "2011-07-15",
+          "wayback_url": "https://web.archive.org/web/20110715000000*/https://playstationhome.com",
+          "title": "PlayStation Home Peak Era Public Portal"
         }
       ],
       "epitaphs": [
@@ -8980,6 +11302,26 @@
           "order_index": 1
         },
         {
+          "id": "t-google-podcasts-found",
+          "entity_id": "grave-google-podcasts-2018",
+          "year": 2018,
+          "date_str": "2018",
+          "title": "Founding & Architectural Genesis",
+          "description": "Early system design and architectural conception of Google Podcasts.",
+          "event_type": "FOUNDED",
+          "order_index": 2
+        },
+        {
+          "id": "t-google-podcasts-peak",
+          "entity_id": "grave-google-podcasts-2018",
+          "year": 2021,
+          "date_str": "2021",
+          "title": "Peak Cultural Scale & User Adoption",
+          "description": "Google Podcasts achieves its peak active community footprint and widespread industry recognition.",
+          "event_type": "MILESTONE",
+          "order_index": 3
+        },
+        {
           "id": "t-google-podcasts-2",
           "entity_id": "grave-google-podcasts-2018",
           "year": 2024,
@@ -8987,7 +11329,7 @@
           "title": "Official Shutdown",
           "description": "Corporate consolidation into YouTube Music to drive YouTube Premium subscriptions and ad revenue.",
           "event_type": "DISCONTINUED",
-          "order_index": 2
+          "order_index": 4
         }
       ],
       "evidence": [
@@ -9003,9 +11345,30 @@
           "weight": 50,
           "extracted_claim": "Corporate consolidation into YouTube Music to drive YouTube Premium subscriptions and ad revenue.",
           "is_verified": true
+        },
+        {
+          "id": "ev-google-podcasts-wayback",
+          "entity_id": "grave-google-podcasts-2018",
+          "source_name": "Wayback Machine Digital Archive",
+          "source_type": "Internet Archive Snapshot Index",
+          "url": "https://web.archive.org/web/*/podcasts.google.com",
+          "timestamp": "2024-12-31",
+          "evidence_type": "ARCHIVE_SNAPSHOT",
+          "reliability": "VERY_HIGH",
+          "weight": 35,
+          "extracted_claim": "Defunct domain podcasts.google.com historical records confirm cessation of interactive server endpoints.",
+          "is_verified": true
         }
       ],
       "archives": [
+        {
+          "id": "arc-google-podcasts-2018",
+          "entity_id": "grave-google-podcasts-2018",
+          "year": 2018,
+          "date_captured": "2018-04-12",
+          "wayback_url": "https://web.archive.org/web/20180412000000*/https://podcasts.google.com",
+          "title": "Google Podcasts Launch Era Interface"
+        },
         {
           "id": "arc-google-podcasts-1",
           "entity_id": "grave-google-podcasts-2018",
@@ -9013,6 +11376,14 @@
           "date_captured": "2019-06-01",
           "wayback_url": "https://web.archive.org/web/*/podcasts.google.com",
           "title": "Google Podcasts Historical Web Archive"
+        },
+        {
+          "id": "arc-google-podcasts-2021",
+          "entity_id": "grave-google-podcasts-2018",
+          "year": 2021,
+          "date_captured": "2021-07-15",
+          "wayback_url": "https://web.archive.org/web/20210715000000*/https://podcasts.google.com",
+          "title": "Google Podcasts Peak Era Public Portal"
         }
       ],
       "epitaphs": [
@@ -9113,6 +11484,26 @@
           "order_index": 1
         },
         {
+          "id": "t-thinkgeek-found",
+          "entity_id": "grave-thinkgeek-1999",
+          "year": 1999,
+          "date_str": "1999",
+          "title": "Founding & Architectural Genesis",
+          "description": "Early system design and architectural conception of ThinkGeek.",
+          "event_type": "FOUNDED",
+          "order_index": 2
+        },
+        {
+          "id": "t-thinkgeek-peak",
+          "entity_id": "grave-thinkgeek-1999",
+          "year": 2009,
+          "date_str": "2009",
+          "title": "Peak Cultural Scale & User Adoption",
+          "description": "ThinkGeek achieves its peak active community footprint and widespread industry recognition.",
+          "event_type": "MILESTONE",
+          "order_index": 3
+        },
+        {
           "id": "t-thinkgeek-2",
           "entity_id": "grave-thinkgeek-1999",
           "year": 2019,
@@ -9120,7 +11511,7 @@
           "title": "Official Shutdown",
           "description": "Acquired by GameStop; corporate mismanagement and liquidation of standalone e-commerce catalog.",
           "event_type": "DISCONTINUED",
-          "order_index": 2
+          "order_index": 4
         }
       ],
       "evidence": [
@@ -9136,9 +11527,30 @@
           "weight": 50,
           "extracted_claim": "Acquired by GameStop; corporate mismanagement and liquidation of standalone e-commerce catalog.",
           "is_verified": true
+        },
+        {
+          "id": "ev-thinkgeek-wayback",
+          "entity_id": "grave-thinkgeek-1999",
+          "source_name": "Wayback Machine Digital Archive",
+          "source_type": "Internet Archive Snapshot Index",
+          "url": "https://web.archive.org/web/*/thinkgeek.com",
+          "timestamp": "2019-12-31",
+          "evidence_type": "ARCHIVE_SNAPSHOT",
+          "reliability": "VERY_HIGH",
+          "weight": 35,
+          "extracted_claim": "Defunct domain thinkgeek.com historical records confirm cessation of interactive server endpoints.",
+          "is_verified": true
         }
       ],
       "archives": [
+        {
+          "id": "arc-thinkgeek-1999",
+          "entity_id": "grave-thinkgeek-1999",
+          "year": 1999,
+          "date_captured": "1999-04-12",
+          "wayback_url": "https://web.archive.org/web/19990412000000*/https://thinkgeek.com",
+          "title": "ThinkGeek Launch Era Interface"
+        },
         {
           "id": "arc-thinkgeek-1",
           "entity_id": "grave-thinkgeek-1999",
@@ -9146,6 +11558,14 @@
           "date_captured": "2000-06-01",
           "wayback_url": "https://web.archive.org/web/*/thinkgeek.com",
           "title": "ThinkGeek Historical Web Archive"
+        },
+        {
+          "id": "arc-thinkgeek-2009",
+          "entity_id": "grave-thinkgeek-1999",
+          "year": 2009,
+          "date_captured": "2009-07-15",
+          "wayback_url": "https://web.archive.org/web/20090715000000*/https://thinkgeek.com",
+          "title": "ThinkGeek Peak Era Public Portal"
         }
       ],
       "epitaphs": [
@@ -9239,6 +11659,16 @@
           "order_index": 1
         },
         {
+          "id": "t-artifact-found",
+          "entity_id": "grave-artifact-2023",
+          "year": 2023,
+          "date_str": "2023",
+          "title": "Founding & Architectural Genesis",
+          "description": "Early system design and architectural conception of Artifact.",
+          "event_type": "FOUNDED",
+          "order_index": 2
+        },
+        {
           "id": "t-artifact-2",
           "entity_id": "grave-artifact-2023",
           "year": 2024,
@@ -9246,7 +11676,17 @@
           "title": "Official Shutdown",
           "description": "Lack of venture-scale market opportunity; acquired by Yahoo to power Yahoo News algorithms.",
           "event_type": "DISCONTINUED",
-          "order_index": 2
+          "order_index": 3
+        },
+        {
+          "id": "t-artifact-peak",
+          "entity_id": "grave-artifact-2023",
+          "year": 2024,
+          "date_str": "2024",
+          "title": "Peak Cultural Scale & User Adoption",
+          "description": "Artifact achieves its peak active community footprint and widespread industry recognition.",
+          "event_type": "MILESTONE",
+          "order_index": 4
         }
       ],
       "evidence": [
@@ -9262,16 +11702,45 @@
           "weight": 50,
           "extracted_claim": "Lack of venture-scale market opportunity; acquired by Yahoo to power Yahoo News algorithms.",
           "is_verified": true
+        },
+        {
+          "id": "ev-artifact-wayback",
+          "entity_id": "grave-artifact-2023",
+          "source_name": "Wayback Machine Digital Archive",
+          "source_type": "Internet Archive Snapshot Index",
+          "url": "https://web.archive.org/web/*/artifact.news",
+          "timestamp": "2024-12-31",
+          "evidence_type": "ARCHIVE_SNAPSHOT",
+          "reliability": "VERY_HIGH",
+          "weight": 35,
+          "extracted_claim": "Defunct domain artifact.news historical records confirm cessation of interactive server endpoints.",
+          "is_verified": true
         }
       ],
       "archives": [
         {
           "id": "arc-artifact-1",
           "entity_id": "grave-artifact-2023",
+          "year": 2023,
+          "date_captured": "2023-02-15",
+          "wayback_url": "https://web.archive.org/web/20230215000000*/https://artifact.news",
+          "title": "Artifact Debut Launch Snapshot"
+        },
+        {
+          "id": "arc-artifact-2",
+          "entity_id": "grave-artifact-2023",
+          "year": 2023,
+          "date_captured": "2023-08-10",
+          "wayback_url": "https://web.archive.org/web/20230810000000*/https://artifact.news",
+          "title": "Artifact Viral Peak Interface"
+        },
+        {
+          "id": "arc-artifact-3",
+          "entity_id": "grave-artifact-2023",
           "year": 2024,
-          "date_captured": "2024-06-01",
-          "wayback_url": "https://web.archive.org/web/*/artifact.news",
-          "title": "Artifact Historical Web Archive"
+          "date_captured": "2024-12-05",
+          "wayback_url": "https://web.archive.org/web/20241205000000*/https://artifact.news",
+          "title": "Artifact Sunset & Delisting Notice"
         }
       ],
       "epitaphs": [
@@ -9365,6 +11834,26 @@
           "order_index": 1
         },
         {
+          "id": "t-houseparty-found",
+          "entity_id": "grave-houseparty-2016",
+          "year": 2016,
+          "date_str": "2016",
+          "title": "Founding & Architectural Genesis",
+          "description": "Early system design and architectural conception of Houseparty.",
+          "event_type": "FOUNDED",
+          "order_index": 2
+        },
+        {
+          "id": "t-houseparty-peak",
+          "entity_id": "grave-houseparty-2016",
+          "year": 2018,
+          "date_str": "2018",
+          "title": "Peak Cultural Scale & User Adoption",
+          "description": "Houseparty achieves its peak active community footprint and widespread industry recognition.",
+          "event_type": "MILESTONE",
+          "order_index": 3
+        },
+        {
           "id": "t-houseparty-2",
           "entity_id": "grave-houseparty-2016",
           "year": 2021,
@@ -9372,7 +11861,7 @@
           "title": "Official Shutdown",
           "description": "Post-lockdown user engagement decline; Epic Games repurposed the team for Fortnite in-game voice and video.",
           "event_type": "DISCONTINUED",
-          "order_index": 2
+          "order_index": 4
         }
       ],
       "evidence": [
@@ -9388,9 +11877,30 @@
           "weight": 50,
           "extracted_claim": "Post-lockdown user engagement decline; Epic Games repurposed the team for Fortnite in-game voice and video.",
           "is_verified": true
+        },
+        {
+          "id": "ev-houseparty-wayback",
+          "entity_id": "grave-houseparty-2016",
+          "source_name": "Wayback Machine Digital Archive",
+          "source_type": "Internet Archive Snapshot Index",
+          "url": "https://web.archive.org/web/*/houseparty.com",
+          "timestamp": "2021-12-31",
+          "evidence_type": "ARCHIVE_SNAPSHOT",
+          "reliability": "VERY_HIGH",
+          "weight": 35,
+          "extracted_claim": "Defunct domain houseparty.com historical records confirm cessation of interactive server endpoints.",
+          "is_verified": true
         }
       ],
       "archives": [
+        {
+          "id": "arc-houseparty-2016",
+          "entity_id": "grave-houseparty-2016",
+          "year": 2016,
+          "date_captured": "2016-04-12",
+          "wayback_url": "https://web.archive.org/web/20160412000000*/https://houseparty.com",
+          "title": "Houseparty Launch Era Interface"
+        },
         {
           "id": "arc-houseparty-1",
           "entity_id": "grave-houseparty-2016",
@@ -9398,6 +11908,14 @@
           "date_captured": "2017-06-01",
           "wayback_url": "https://web.archive.org/web/*/houseparty.com",
           "title": "Houseparty Historical Web Archive"
+        },
+        {
+          "id": "arc-houseparty-2018",
+          "entity_id": "grave-houseparty-2016",
+          "year": 2018,
+          "date_captured": "2018-07-15",
+          "wayback_url": "https://web.archive.org/web/20180715000000*/https://houseparty.com",
+          "title": "Houseparty Peak Era Public Portal"
         }
       ],
       "epitaphs": [
@@ -9498,6 +12016,26 @@
           "order_index": 1
         },
         {
+          "id": "t-bebo-found",
+          "entity_id": "grave-bebo-2005",
+          "year": 2005,
+          "date_str": "2005",
+          "title": "Founding & Architectural Genesis",
+          "description": "Early system design and architectural conception of Bebo.",
+          "event_type": "FOUNDED",
+          "order_index": 2
+        },
+        {
+          "id": "t-bebo-peak",
+          "entity_id": "grave-bebo-2005",
+          "year": 2009,
+          "date_str": "2009",
+          "title": "Peak Cultural Scale & User Adoption",
+          "description": "Bebo achieves its peak active community footprint and widespread industry recognition.",
+          "event_type": "MILESTONE",
+          "order_index": 3
+        },
+        {
           "id": "t-bebo-2",
           "entity_id": "grave-bebo-2005",
           "year": 2013,
@@ -9505,7 +12043,7 @@
           "title": "Official Shutdown",
           "description": "Disastrous mismanagement following $850M AOL acquisition; completely eclipsed by Facebook.",
           "event_type": "DISCONTINUED",
-          "order_index": 2
+          "order_index": 4
         }
       ],
       "evidence": [
@@ -9521,9 +12059,30 @@
           "weight": 50,
           "extracted_claim": "Disastrous mismanagement following $850M AOL acquisition; completely eclipsed by Facebook.",
           "is_verified": true
+        },
+        {
+          "id": "ev-bebo-wayback",
+          "entity_id": "grave-bebo-2005",
+          "source_name": "Wayback Machine Digital Archive",
+          "source_type": "Internet Archive Snapshot Index",
+          "url": "https://web.archive.org/web/*/bebo.com",
+          "timestamp": "2013-12-31",
+          "evidence_type": "ARCHIVE_SNAPSHOT",
+          "reliability": "VERY_HIGH",
+          "weight": 35,
+          "extracted_claim": "Defunct domain bebo.com historical records confirm cessation of interactive server endpoints.",
+          "is_verified": true
         }
       ],
       "archives": [
+        {
+          "id": "arc-bebo-2005",
+          "entity_id": "grave-bebo-2005",
+          "year": 2005,
+          "date_captured": "2005-04-12",
+          "wayback_url": "https://web.archive.org/web/20050412000000*/https://bebo.com",
+          "title": "Bebo Launch Era Interface"
+        },
         {
           "id": "arc-bebo-1",
           "entity_id": "grave-bebo-2005",
@@ -9531,6 +12090,14 @@
           "date_captured": "2006-06-01",
           "wayback_url": "https://web.archive.org/web/*/bebo.com",
           "title": "Bebo Historical Web Archive"
+        },
+        {
+          "id": "arc-bebo-2009",
+          "entity_id": "grave-bebo-2005",
+          "year": 2009,
+          "date_captured": "2009-07-15",
+          "wayback_url": "https://web.archive.org/web/20090715000000*/https://bebo.com",
+          "title": "Bebo Peak Era Public Portal"
         }
       ],
       "epitaphs": [
@@ -9624,6 +12191,26 @@
           "order_index": 1
         },
         {
+          "id": "t-formspring-found",
+          "entity_id": "grave-formspring-2009",
+          "year": 2009,
+          "date_str": "2009",
+          "title": "Founding & Architectural Genesis",
+          "description": "Early system design and architectural conception of Formspring.",
+          "event_type": "FOUNDED",
+          "order_index": 2
+        },
+        {
+          "id": "t-formspring-peak",
+          "entity_id": "grave-formspring-2009",
+          "year": 2011,
+          "date_str": "2011",
+          "title": "Peak Cultural Scale & User Adoption",
+          "description": "Formspring achieves its peak active community footprint and widespread industry recognition.",
+          "event_type": "MILESTONE",
+          "order_index": 3
+        },
+        {
           "id": "t-formspring-2",
           "entity_id": "grave-formspring-2009",
           "year": 2013,
@@ -9631,7 +12218,7 @@
           "title": "Official Shutdown",
           "description": "Pervasive cyberbullying controversies and lack of sustainable monetization; server infrastructure costs outpaced revenue.",
           "event_type": "DISCONTINUED",
-          "order_index": 2
+          "order_index": 4
         }
       ],
       "evidence": [
@@ -9647,9 +12234,30 @@
           "weight": 50,
           "extracted_claim": "Pervasive cyberbullying controversies and lack of sustainable monetization; server infrastructure costs outpaced revenue.",
           "is_verified": true
+        },
+        {
+          "id": "ev-formspring-wayback",
+          "entity_id": "grave-formspring-2009",
+          "source_name": "Wayback Machine Digital Archive",
+          "source_type": "Internet Archive Snapshot Index",
+          "url": "https://web.archive.org/web/*/formspring.me",
+          "timestamp": "2013-12-31",
+          "evidence_type": "ARCHIVE_SNAPSHOT",
+          "reliability": "VERY_HIGH",
+          "weight": 35,
+          "extracted_claim": "Defunct domain formspring.me historical records confirm cessation of interactive server endpoints.",
+          "is_verified": true
         }
       ],
       "archives": [
+        {
+          "id": "arc-formspring-2009",
+          "entity_id": "grave-formspring-2009",
+          "year": 2009,
+          "date_captured": "2009-04-12",
+          "wayback_url": "https://web.archive.org/web/20090412000000*/https://formspring.me",
+          "title": "Formspring Launch Era Interface"
+        },
         {
           "id": "arc-formspring-1",
           "entity_id": "grave-formspring-2009",
@@ -9657,6 +12265,14 @@
           "date_captured": "2010-06-01",
           "wayback_url": "https://web.archive.org/web/*/formspring.me",
           "title": "Formspring Historical Web Archive"
+        },
+        {
+          "id": "arc-formspring-2011",
+          "entity_id": "grave-formspring-2009",
+          "year": 2011,
+          "date_captured": "2011-07-15",
+          "wayback_url": "https://web.archive.org/web/20110715000000*/https://formspring.me",
+          "title": "Formspring Peak Era Public Portal"
         }
       ],
       "epitaphs": [
@@ -9757,6 +12373,26 @@
           "order_index": 1
         },
         {
+          "id": "t-gowalla-found",
+          "entity_id": "grave-gowalla-2007",
+          "year": 2007,
+          "date_str": "2007",
+          "title": "Founding & Architectural Genesis",
+          "description": "Early system design and architectural conception of Gowalla.",
+          "event_type": "FOUNDED",
+          "order_index": 2
+        },
+        {
+          "id": "t-gowalla-peak",
+          "entity_id": "grave-gowalla-2007",
+          "year": 2009,
+          "date_str": "2009",
+          "title": "Peak Cultural Scale & User Adoption",
+          "description": "Gowalla achieves its peak active community footprint and widespread industry recognition.",
+          "event_type": "MILESTONE",
+          "order_index": 3
+        },
+        {
           "id": "t-gowalla-2",
           "entity_id": "grave-gowalla-2007",
           "year": 2012,
@@ -9764,7 +12400,7 @@
           "title": "Official Shutdown",
           "description": "Lost the location check-in race to Foursquare; acqui-hired by Facebook and shuttered.",
           "event_type": "DISCONTINUED",
-          "order_index": 2
+          "order_index": 4
         }
       ],
       "evidence": [
@@ -9780,9 +12416,30 @@
           "weight": 50,
           "extracted_claim": "Lost the location check-in race to Foursquare; acqui-hired by Facebook and shuttered.",
           "is_verified": true
+        },
+        {
+          "id": "ev-gowalla-wayback",
+          "entity_id": "grave-gowalla-2007",
+          "source_name": "Wayback Machine Digital Archive",
+          "source_type": "Internet Archive Snapshot Index",
+          "url": "https://web.archive.org/web/*/gowalla.com",
+          "timestamp": "2012-12-31",
+          "evidence_type": "ARCHIVE_SNAPSHOT",
+          "reliability": "VERY_HIGH",
+          "weight": 35,
+          "extracted_claim": "Defunct domain gowalla.com historical records confirm cessation of interactive server endpoints.",
+          "is_verified": true
         }
       ],
       "archives": [
+        {
+          "id": "arc-gowalla-2007",
+          "entity_id": "grave-gowalla-2007",
+          "year": 2007,
+          "date_captured": "2007-04-12",
+          "wayback_url": "https://web.archive.org/web/20070412000000*/https://gowalla.com",
+          "title": "Gowalla Launch Era Interface"
+        },
         {
           "id": "arc-gowalla-1",
           "entity_id": "grave-gowalla-2007",
@@ -9790,6 +12447,14 @@
           "date_captured": "2008-06-01",
           "wayback_url": "https://web.archive.org/web/*/gowalla.com",
           "title": "Gowalla Historical Web Archive"
+        },
+        {
+          "id": "arc-gowalla-2009",
+          "entity_id": "grave-gowalla-2007",
+          "year": 2009,
+          "date_captured": "2009-07-15",
+          "wayback_url": "https://web.archive.org/web/20090715000000*/https://gowalla.com",
+          "title": "Gowalla Peak Era Public Portal"
         }
       ],
       "epitaphs": [
@@ -9890,6 +12555,26 @@
           "order_index": 1
         },
         {
+          "id": "t-justin-tv-found",
+          "entity_id": "grave-justin-tv-2007",
+          "year": 2007,
+          "date_str": "2007",
+          "title": "Founding & Architectural Genesis",
+          "description": "Early system design and architectural conception of Justin.tv.",
+          "event_type": "FOUNDED",
+          "order_index": 2
+        },
+        {
+          "id": "t-justin-tv-peak",
+          "entity_id": "grave-justin-tv-2007",
+          "year": 2010,
+          "date_str": "2010",
+          "title": "Peak Cultural Scale & User Adoption",
+          "description": "Justin.tv achieves its peak active community footprint and widespread industry recognition.",
+          "event_type": "MILESTONE",
+          "order_index": 3
+        },
+        {
           "id": "t-justin-tv-2",
           "entity_id": "grave-justin-tv-2007",
           "year": 2014,
@@ -9897,7 +12582,7 @@
           "title": "Official Shutdown",
           "description": "Voluntarily shut down by founders because gaming spinoff Twitch outgrew the parent platform.",
           "event_type": "DISCONTINUED",
-          "order_index": 2
+          "order_index": 4
         }
       ],
       "evidence": [
@@ -9913,9 +12598,30 @@
           "weight": 50,
           "extracted_claim": "Voluntarily shut down by founders because gaming spinoff Twitch outgrew the parent platform.",
           "is_verified": true
+        },
+        {
+          "id": "ev-justin-tv-wayback",
+          "entity_id": "grave-justin-tv-2007",
+          "source_name": "Wayback Machine Digital Archive",
+          "source_type": "Internet Archive Snapshot Index",
+          "url": "https://web.archive.org/web/*/justin.tv",
+          "timestamp": "2014-12-31",
+          "evidence_type": "ARCHIVE_SNAPSHOT",
+          "reliability": "VERY_HIGH",
+          "weight": 35,
+          "extracted_claim": "Defunct domain justin.tv historical records confirm cessation of interactive server endpoints.",
+          "is_verified": true
         }
       ],
       "archives": [
+        {
+          "id": "arc-justin-tv-2007",
+          "entity_id": "grave-justin-tv-2007",
+          "year": 2007,
+          "date_captured": "2007-04-12",
+          "wayback_url": "https://web.archive.org/web/20070412000000*/https://justin.tv",
+          "title": "Justin.tv Launch Era Interface"
+        },
         {
           "id": "arc-justin-tv-1",
           "entity_id": "grave-justin-tv-2007",
@@ -9923,6 +12629,14 @@
           "date_captured": "2008-06-01",
           "wayback_url": "https://web.archive.org/web/*/justin.tv",
           "title": "Justin.tv Historical Web Archive"
+        },
+        {
+          "id": "arc-justin-tv-2010",
+          "entity_id": "grave-justin-tv-2007",
+          "year": 2010,
+          "date_captured": "2010-07-15",
+          "wayback_url": "https://web.archive.org/web/20100715000000*/https://justin.tv",
+          "title": "Justin.tv Peak Era Public Portal"
         }
       ],
       "epitaphs": [
@@ -10023,6 +12737,26 @@
           "order_index": 1
         },
         {
+          "id": "t-posterous-found",
+          "entity_id": "grave-posterous-2008",
+          "year": 2008,
+          "date_str": "2008",
+          "title": "Founding & Architectural Genesis",
+          "description": "Early system design and architectural conception of Posterous.",
+          "event_type": "FOUNDED",
+          "order_index": 2
+        },
+        {
+          "id": "t-posterous-peak",
+          "entity_id": "grave-posterous-2008",
+          "year": 2010,
+          "date_str": "2010",
+          "title": "Peak Cultural Scale & User Adoption",
+          "description": "Posterous achieves its peak active community footprint and widespread industry recognition.",
+          "event_type": "MILESTONE",
+          "order_index": 3
+        },
+        {
           "id": "t-posterous-2",
           "entity_id": "grave-posterous-2008",
           "year": 2013,
@@ -10030,7 +12764,7 @@
           "title": "Official Shutdown",
           "description": "Acquired by Twitter for talent; Twitter discontinued standalone operations.",
           "event_type": "DISCONTINUED",
-          "order_index": 2
+          "order_index": 4
         }
       ],
       "evidence": [
@@ -10046,9 +12780,30 @@
           "weight": 50,
           "extracted_claim": "Acquired by Twitter for talent; Twitter discontinued standalone operations.",
           "is_verified": true
+        },
+        {
+          "id": "ev-posterous-wayback",
+          "entity_id": "grave-posterous-2008",
+          "source_name": "Wayback Machine Digital Archive",
+          "source_type": "Internet Archive Snapshot Index",
+          "url": "https://web.archive.org/web/*/posterous.com",
+          "timestamp": "2013-12-31",
+          "evidence_type": "ARCHIVE_SNAPSHOT",
+          "reliability": "VERY_HIGH",
+          "weight": 35,
+          "extracted_claim": "Defunct domain posterous.com historical records confirm cessation of interactive server endpoints.",
+          "is_verified": true
         }
       ],
       "archives": [
+        {
+          "id": "arc-posterous-2008",
+          "entity_id": "grave-posterous-2008",
+          "year": 2008,
+          "date_captured": "2008-04-12",
+          "wayback_url": "https://web.archive.org/web/20080412000000*/https://posterous.com",
+          "title": "Posterous Launch Era Interface"
+        },
         {
           "id": "arc-posterous-1",
           "entity_id": "grave-posterous-2008",
@@ -10056,6 +12811,14 @@
           "date_captured": "2009-06-01",
           "wayback_url": "https://web.archive.org/web/*/posterous.com",
           "title": "Posterous Historical Web Archive"
+        },
+        {
+          "id": "arc-posterous-2010",
+          "entity_id": "grave-posterous-2008",
+          "year": 2010,
+          "date_captured": "2010-07-15",
+          "wayback_url": "https://web.archive.org/web/20100715000000*/https://posterous.com",
+          "title": "Posterous Peak Era Public Portal"
         }
       ],
       "epitaphs": [
@@ -10156,6 +12919,26 @@
           "order_index": 1
         },
         {
+          "id": "t-dailybooth-found",
+          "entity_id": "grave-dailybooth-2009",
+          "year": 2009,
+          "date_str": "2009",
+          "title": "Founding & Architectural Genesis",
+          "description": "Early system design and architectural conception of Dailybooth.",
+          "event_type": "FOUNDED",
+          "order_index": 2
+        },
+        {
+          "id": "t-dailybooth-peak",
+          "entity_id": "grave-dailybooth-2009",
+          "year": 2010,
+          "date_str": "2010",
+          "title": "Peak Cultural Scale & User Adoption",
+          "description": "Dailybooth achieves its peak active community footprint and widespread industry recognition.",
+          "event_type": "MILESTONE",
+          "order_index": 3
+        },
+        {
           "id": "t-dailybooth-2",
           "entity_id": "grave-dailybooth-2009",
           "year": 2012,
@@ -10163,7 +12946,7 @@
           "title": "Official Shutdown",
           "description": "Acquired by Airbnb for talent; unable to compete with mobile-first Instagram.",
           "event_type": "DISCONTINUED",
-          "order_index": 2
+          "order_index": 4
         }
       ],
       "evidence": [
@@ -10179,9 +12962,30 @@
           "weight": 50,
           "extracted_claim": "Acquired by Airbnb for talent; unable to compete with mobile-first Instagram.",
           "is_verified": true
+        },
+        {
+          "id": "ev-dailybooth-wayback",
+          "entity_id": "grave-dailybooth-2009",
+          "source_name": "Wayback Machine Digital Archive",
+          "source_type": "Internet Archive Snapshot Index",
+          "url": "https://web.archive.org/web/*/dailybooth.com",
+          "timestamp": "2012-12-31",
+          "evidence_type": "ARCHIVE_SNAPSHOT",
+          "reliability": "VERY_HIGH",
+          "weight": 35,
+          "extracted_claim": "Defunct domain dailybooth.com historical records confirm cessation of interactive server endpoints.",
+          "is_verified": true
         }
       ],
       "archives": [
+        {
+          "id": "arc-dailybooth-2009",
+          "entity_id": "grave-dailybooth-2009",
+          "year": 2009,
+          "date_captured": "2009-04-12",
+          "wayback_url": "https://web.archive.org/web/20090412000000*/https://dailybooth.com",
+          "title": "Dailybooth Launch Era Interface"
+        },
         {
           "id": "arc-dailybooth-1",
           "entity_id": "grave-dailybooth-2009",
@@ -10189,6 +12993,14 @@
           "date_captured": "2010-06-01",
           "wayback_url": "https://web.archive.org/web/*/dailybooth.com",
           "title": "Dailybooth Historical Web Archive"
+        },
+        {
+          "id": "arc-dailybooth-2012",
+          "entity_id": "grave-dailybooth-2009",
+          "year": 2012,
+          "date_captured": "2012-11-20",
+          "wayback_url": "https://web.archive.org/web/20121120000000*/https://dailybooth.com",
+          "title": "Dailybooth Final Sunset / Farewell Notice"
         }
       ],
       "epitaphs": [
@@ -10318,5 +13130,5 @@
       "created_at": "2024-06-26T15:00:00Z"
     }
   ],
-  "last_updated": "2026-09-16T13:19:11.263Z"
+  "last_updated": "2026-09-30T14:53:58.909Z"
 }

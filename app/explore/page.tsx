@@ -19,6 +19,7 @@ import {
   ArrowRight
 } from 'lucide-react';
 import { ALL_SEED_ENTITIES } from '@/data/seed-entities-batch2';
+import { rankEntitiesByQuery } from '@/lib/search/searchEngine';
 
 const STATUS_OPTIONS: (GraveStatus | 'ALL')[] = [
   'ALL',
@@ -104,23 +105,9 @@ function ExploreContent() {
       }
     }
 
-    // Direct text search across all rich fields
+    // Ranked fuzzy relevance search across all fields
     if (q.length > 0) {
-      list = list.filter(e => {
-        return (
-          e.name.toLowerCase().includes(q) ||
-          e.slug.toLowerCase().includes(q) ||
-          e.primary_domain.toLowerCase().includes(q) ||
-          e.tagline.toLowerCase().includes(q) ||
-          e.description.toLowerCase().includes(q) ||
-          (e.parent_company && e.parent_company.toLowerCase().includes(q)) ||
-          e.cause_of_death_summary.toLowerCase().includes(q) ||
-          e.cause_category.toLowerCase().includes(q) ||
-          e.category.toLowerCase().includes(q) ||
-          (e.country && e.country.toLowerCase().includes(q)) ||
-          (e.status_reason && e.status_reason.toLowerCase().includes(q))
-        );
-      });
+      list = rankEntitiesByQuery(list, q);
     }
 
     // Historical Era filter

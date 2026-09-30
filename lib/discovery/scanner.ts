@@ -10,6 +10,9 @@ export interface HealthScanResult {
   latency_ms: number;
   server_header: string | null;
   wayback_url: string;
+  final_url?: string;
+  redirected?: boolean;
+  parking_detected?: boolean;
   shutdown_phrases_detected: string[];
   signals_detected: {
     label: string;
@@ -38,12 +41,65 @@ const SHUTDOWN_PATTERNS = [
   /end\s+of\s+life/i,
   /saying\s+goodbye/i,
   /ceased\s+operations/i,
-  /permanently\s+closed/i
+  /permanently\s+closed/i,
+  /has\s+wound\s+down/i,
+  /winding\s+down\s+operations/i,
+  /thank\s+you\s+for\s+an\s+incredible\s+journey/i
 ];
 
+const PARKING_PATTERNS = [
+  /buy\s+this\s+domain/i,
+  /this\s+domain\s+(is\s+)?(for\s+sale|may\s+be\s+for\s+sale)/i,
+  /domain\s+is\s+parked/i,
+  /parked\s+free\s+courtesy\s+of/i,
+  /hugedomains\.com/i,
+  /dan\.com/i,
+  /sedo\.com/i,
+  /afternic\.com/i,
+  /godaddy\.com\/domainsearch/i,
+  /inquire\s+about\s+this\s+domain/i,
+  /make\s+an\s+offer\s+on\s+this\s+domain/i,
+  /domainmarket\.com/i,
+  /parkingcrew\.net/i,
+  /bodis\.com/i
+];
+
+const SUNSET_REDIRECT_TARGETS = [
+  /support\.google\.com/i,
+  /google\.com\/(.*\/)?shutdown/i,
+  /help\.twitter\.com/i,
+  /support\.microsoft\.com/i,
+  /archive\.org/i,
+  /wikipedia\.org/i,
+  /sunset/i,
+  /discontinued/i,
+  /eol/i
+];
+
+async function executeProbe(url: string, timeoutMs: number = 6000) {
+  const controller = new AbortController();
+  const timeoutId = setTimeout(() => controller.abort(), timeoutMs);
+
+  try {
+    const res = await fetch(url, {
+      method: 'GET',
+      headers: {
+        'User-Agent': 'InternetGraveyard-ArchaeologyBot/2.0 (+https://graveyard.archive; archaeological health monitor)'
+      },
+      signal: controller.signal,
+      redirect: 'follow'
+    });
+    return { res, error: null };
+  } catch (err: any) {
+    return { res: null, error: err };
+  } finally {
+    clearTimeout(timeoutId);
+  }
+}
+
 export async function probeDomainHealth(domainOrUrl: string): Promise<HealthScanResult> {
-  const cleanInput = domainOrUrl.trim().replace(/^https?:\/\//i, '').replace(/\/.*$/, '');
-  const targetUrl = `https://${cleanInput}`;
+  const cleanInput = domainOrUrl.trim().replace(/^https?:\/\//i, '').replace(/\/.*$/, '').toLowerCase();
+  const httpsUrl = `https://${cleanInput}`;
   const timestamp = new Date().toISOString();
   const startTime = Date.now();
 
@@ -51,68 +107,126 @@ export async function probeDomainHealth(domainOrUrl: string): Promise<HealthScan
   let dnsResolved = false;
   let sslValid = false;
   let serverHeader: string | null = null;
+  let finalUrl: string | undefined = undefined;
+  let redirected = false;
+  let parkingDetected = false;
   const detectedPhrases: string[] = [];
   const signals: { label: string; points: number; description: string }[] = [];
   const generatedEvidence: Omit<EvidenceItem, 'id' | 'entity_id'>[] = [];
 
-  try {
-    const controller = new AbortController();
-    const timeoutId = setTimeout(() => controller.abort(), 6000);
+  // Attempt HTTPS probe first
+  let { res: response, error: probeError } = await executeProbe(httpsUrl, 6000);
 
-    const response = await fetch(targetUrl, {
-      method: 'GET',
-      headers: {
-        'User-Agent': 'InternetGraveyard-ArchaeologyBot/1.0 (+https://graveyard.archive; archaeological health monitor)'
-      },
-      signal: controller.signal,
-      redirect: 'follow'
-    });
-    clearTimeout(timeoutId);
+  // If HTTPS probe fails due to SSL or refused connection, fallback to HTTP port 80
+  let usedHttpFallback = false;
+  if (!response && probeError) {
+    const errText = `${probeError?.cause?.message || ''} ${probeError?.message || ''}`.toLowerCase();
+    const isSslOrRefused = errText.includes('cert') || errText.includes('ssl') || errText.includes('econnrefused');
+    if (isSslOrRefused) {
+      sslValid = false;
+      const httpUrl = `http://${cleanInput}`;
+      const httpAttempt = await executeProbe(httpUrl, 5000);
+      if (httpAttempt.res) {
+        response = httpAttempt.res;
+        probeError = null;
+        usedHttpFallback = true;
+        signals.push({
+          label: 'Insecure Protocol Degradation (SSL Failed, HTTP Responded)',
+          points: 20,
+          description: 'HTTPS TLS handshake failed or expired; domain only responds via unencrypted HTTP port 80.'
+        });
+      }
+    }
+  }
 
+  if (response) {
     httpStatus = response.status;
     dnsResolved = true;
-    sslValid = true;
+    if (!usedHttpFallback) {
+      sslValid = true;
+    }
     serverHeader = response.headers.get('server') || response.headers.get('x-powered-by') || null;
+    finalUrl = response.url;
+
+    // Detect redirect intent
+    try {
+      const parsedOriginal = new URL(httpsUrl);
+      const parsedFinal = new URL(response.url);
+      if (parsedOriginal.hostname.replace(/^www\./, '') !== parsedFinal.hostname.replace(/^www\./, '')) {
+        redirected = true;
+
+        // Check if redirected to known sunset / corporate support destination
+        const isSunsetRedirect = SUNSET_REDIRECT_TARGETS.some(p => p.test(response.url));
+        if (isSunsetRedirect) {
+          signals.push({
+            label: 'Redirected to Defunct / Sunset Support Hub',
+            points: 40,
+            description: `Traffic permanently routed from original host to sunset documentation hub: ${response.url}`
+          });
+          generatedEvidence.push({
+            source_name: 'HTTP Redirect Inspector',
+            source_type: 'Live Probe',
+            url: httpsUrl,
+            timestamp,
+            evidence_type: 'REDIRECT_CAPTURE',
+            reliability: 'VERY_HIGH',
+            weight: 35,
+            extracted_claim: `Domain redirects directly to official decommissioning hub at ${response.url}`,
+            is_verified: true
+          });
+        } else {
+          signals.push({
+            label: 'Cross-Domain Canonical Redirection',
+            points: 15,
+            description: `Domain automatically forwards visitors to third-party domain ${parsedFinal.hostname}.`
+          });
+        }
+      }
+    } catch {
+      // URL parsing fallback
+    }
 
     if (response.status === 404 || response.status === 410) {
       signals.push({
         label: `HTTP Status Code ${response.status} (Not Found/Gone)`,
-        points: 20,
+        points: 25,
         description: `Endpoint returned explicit HTTP ${response.status}, indicating decommissioning of active application routes.`
       });
       generatedEvidence.push({
         source_name: 'Automated HTTP Probe',
         source_type: 'Live Probe',
-        url: targetUrl,
+        url: httpsUrl,
         timestamp,
         evidence_type: 'HTTP_PROBE',
         reliability: 'HIGH',
-        weight: 20,
-        extracted_claim: `Automated probe received HTTP ${response.status} Gone/Not Found from ${targetUrl}`,
+        weight: 25,
+        extracted_claim: `Automated probe received HTTP ${response.status} Gone/Not Found from ${httpsUrl}`,
         is_verified: true
       });
     } else if (response.status >= 500) {
       signals.push({
         label: `HTTP Server Error ${response.status}`,
-        points: 15,
+        points: 20,
         description: `Origin servers returned persistent 5xx gateway/internal server failure.`
       });
       generatedEvidence.push({
         source_name: 'Automated Gateway Probe',
         source_type: 'Live Probe',
-        url: targetUrl,
+        url: httpsUrl,
         timestamp,
         evidence_type: 'HTTP_PROBE',
         reliability: 'MEDIUM',
-        weight: 15,
+        weight: 20,
         extracted_claim: `Origin server returned error code ${response.status}`,
         is_verified: true
       });
     }
 
-    // Inspect body text for shutdown declarations (up to first 50KB)
+    // Inspect body text for shutdown declarations or domain parking
     try {
       const text = await response.text();
+
+      // Check shutdown declarations
       for (const pattern of SHUTDOWN_PATTERNS) {
         if (pattern.test(text)) {
           const matchStr = text.match(pattern)?.[0] || 'shutdown phrase';
@@ -120,20 +234,45 @@ export async function probeDomainHealth(domainOrUrl: string): Promise<HealthScan
         }
       }
 
+      // Check parking & squatter patterns
+      for (const pattern of PARKING_PATTERNS) {
+        if (pattern.test(text)) {
+          parkingDetected = true;
+          const matchStr = text.match(pattern)?.[0] || 'domain parking';
+          signals.push({
+            label: 'Domain Squatting / Parking Brokerage Page',
+            points: 35,
+            description: `Domain no longer serves legitimate software. Detected domain resale banner: "${matchStr}".`
+          });
+          generatedEvidence.push({
+            source_name: 'Domain Squatting / Brokerage Inspector',
+            source_type: 'Onsite Text Inspection',
+            url: httpsUrl,
+            timestamp,
+            evidence_type: 'SHUTDOWN_PAGE',
+            reliability: 'VERY_HIGH',
+            weight: 35,
+            extracted_claim: `Domain resolved to domain broker/squatter parking page matching "${matchStr}". Original service abandoned.`,
+            is_verified: true
+          });
+          break;
+        }
+      }
+
       if (detectedPhrases.length > 0) {
         signals.push({
           label: 'Definitive Shutdown Language Onsite',
-          points: 30,
+          points: 35,
           description: `Detected phrases on homepage: "${detectedPhrases.slice(0, 3).join('", "')}".`
         });
         generatedEvidence.push({
           source_name: 'Homepage Content Scanner',
           source_type: 'Onsite Text Inspection',
-          url: targetUrl,
+          url: httpsUrl,
           timestamp,
           evidence_type: 'SHUTDOWN_PAGE',
           reliability: 'VERY_HIGH',
-          weight: 30,
+          weight: 35,
           extracted_claim: `Found explicit shutdown language: "${detectedPhrases.slice(0, 2).join(', ')}" on homepage body.`,
           is_verified: true
         });
@@ -142,33 +281,33 @@ export async function probeDomainHealth(domainOrUrl: string): Promise<HealthScan
       // Body reading aborted or non-text
     }
 
-  } catch (err: any) {
-    const causeCode = err?.cause?.code || err?.code || '';
-    const causeMsg = `${err?.cause?.message || ''} ${err?.message || ''}`.toLowerCase();
+  } else if (probeError) {
+    const causeCode = probeError?.cause?.code || probeError?.code || '';
+    const causeMsg = `${probeError?.cause?.message || ''} ${probeError?.message || ''}`.toLowerCase();
     const isDnsFailure = causeCode === 'ENOTFOUND' || causeMsg.includes('enotfound') || causeMsg.includes('getaddrinfo') || causeMsg.includes('fetch failed');
 
-    if (err.name === 'AbortError') {
+    if (probeError.name === 'AbortError') {
       signals.push({
         label: 'Gateway Timeout / Unresponsive Host',
-        points: 20,
+        points: 25,
         description: 'Server failed to establish TCP/TLS handshake within 6,000ms.'
       });
     } else if (isDnsFailure) {
       dnsResolved = false;
       signals.push({
         label: 'DNS Resolution Failure (NXDOMAIN / Unresolved Host)',
-        points: 35,
+        points: 40,
         description: 'No active DNS A/AAAA records found on public nameservers.'
       });
       generatedEvidence.push({
         source_name: 'DNS Resolution Probe',
         source_type: 'DNS Query',
-        url: targetUrl,
+        url: httpsUrl,
         timestamp,
         evidence_type: 'DNS_FAILURE',
-        reliability: 'HIGH',
-        weight: 35,
-        extracted_claim: `DNS resolution failed with NXDOMAIN; root records unassigned or removed.`,
+        reliability: 'VERY_HIGH',
+        weight: 40,
+        extracted_claim: `DNS resolution failed with NXDOMAIN; root records unassigned or removed from public zone.`,
         is_verified: true
       });
     } else if (causeMsg.includes('cert') || causeMsg.includes('ssl') || causeCode === 'CERT_HAS_EXPIRED') {
@@ -176,41 +315,47 @@ export async function probeDomainHealth(domainOrUrl: string): Promise<HealthScan
       dnsResolved = true;
       signals.push({
         label: 'SSL / TLS Certificate Expired or Invalid',
-        points: 20,
+        points: 25,
         description: 'Cryptographic certificate has expired or mismatched Common Name.'
       });
     } else {
       signals.push({
         label: 'Network Connection Refused',
-        points: 20,
-        description: `Host refused connection: ${err.message || 'Unknown network error'}`
+        points: 25,
+        description: `Host actively refused connection: ${probeError.message || 'Unknown network error'}`
       });
     }
   }
 
   // Calculate normalized confidence score (capped at 100)
   const rawScore = signals.reduce((sum, s) => sum + s.points, 0);
-  const confidenceScore = Math.min(100, Math.max(10, rawScore + (detectedPhrases.length > 0 ? 30 : 0)));
+  const confidenceScore = Math.min(100, Math.max(10, rawScore));
 
   // Determine archaeological status recommendation
   let recommendedStatus: GraveStatus = 'ACTIVE';
   let statusExplanation = 'Domain is actively responding with valid DNS and normal HTTP status.';
 
-  if (detectedPhrases.length > 0 && confidenceScore >= 60) {
+  if (parkingDetected) {
+    recommendedStatus = 'ZOMBIE';
+    statusExplanation = 'Domain has lapsed into parking brokerage / squatter control. Original service has been abandoned.';
+  } else if (detectedPhrases.length > 0 && confidenceScore >= 55) {
     recommendedStatus = 'CONFIRMED_DEAD';
-    statusExplanation = 'Domain displays explicit shutdown language and confirmed decommissioning.';
+    statusExplanation = 'Domain displays explicit shutdown declarations and verified decommissioning.';
   } else if (!dnsResolved) {
     recommendedStatus = 'OFFLINE';
     statusExplanation = 'Domain has dropped out of public DNS routing (NXDOMAIN). Host records are completely unassigned or removed.';
   } else if (httpStatus === 404 || httpStatus === 410) {
     recommendedStatus = 'CONFIRMED_DEAD';
     statusExplanation = `Endpoint returned explicit HTTP ${httpStatus} (Not Found/Gone), indicating decommissioning of active application routes.`;
+  } else if (redirected && signals.some(s => s.label.includes('Defunct / Sunset Support Hub'))) {
+    recommendedStatus = 'CONFIRMED_DEAD';
+    statusExplanation = `Domain routes directly into corporate retirement or obsolescence support documentation.`;
+  } else if (redirected) {
+    recommendedStatus = 'ZOMBIE';
+    statusExplanation = `Domain forwards visitors to an alternate destination (${finalUrl || 'remote host'}), service no longer operating standalone.`;
   } else if (confidenceScore >= 40) {
     recommendedStatus = 'AT_RISK';
     statusExplanation = 'Multiple anomalous degradation signals detected (server timeouts, certificate or route failures).';
-  } else if (httpStatus === 301 || httpStatus === 302) {
-    recommendedStatus = 'ZOMBIE';
-    statusExplanation = 'Domain responds with redirect away from original service, possibly acquired or parked.';
   } else if (httpStatus && httpStatus >= 200 && httpStatus < 400) {
     recommendedStatus = 'ACTIVE';
     statusExplanation = `Domain is actively responding with HTTP ${httpStatus} and valid DNS resolution.`;
@@ -220,7 +365,7 @@ export async function probeDomainHealth(domainOrUrl: string): Promise<HealthScan
   const waybackUrl = `https://web.archive.org/web/*/${cleanInput}`;
 
   return {
-    target: targetUrl,
+    target: httpsUrl,
     domain: cleanInput,
     timestamp,
     http_status: httpStatus,
@@ -229,6 +374,9 @@ export async function probeDomainHealth(domainOrUrl: string): Promise<HealthScan
     latency_ms: latencyMs,
     server_header: serverHeader,
     wayback_url: waybackUrl,
+    final_url: finalUrl,
+    redirected,
+    parking_detected: parkingDetected,
     shutdown_phrases_detected: detectedPhrases,
     signals_detected: signals,
     confidence_score: confidenceScore,
