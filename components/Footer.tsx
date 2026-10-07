@@ -42,6 +42,11 @@ export const Footer: React.FC = () => {
                 </Link>
               </li>
               <li>
+                <Link href="/export" className="text-cyan-400 font-medium hover:text-cyan-300 transition-colors">
+                  Open Data Hub (/export)
+                </Link>
+              </li>
+              <li>
                 <Link href="/timeline" className="text-zinc-300 hover:text-white transition-colors">
                   Decade Timeline (1990 — Present)
                 </Link>

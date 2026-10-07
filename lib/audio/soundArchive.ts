@@ -653,6 +653,185 @@ class RelicAudioSynthesizer {
       clearTimeout(timer);
     };
   }
+
+  private ambientNodes: { stop: () => void } | null = null;
+  private isAmbientOn: boolean = false;
+
+  public playMemorialChime(onEnd?: () => void): void {
+    if (typeof window === 'undefined') return;
+    try {
+      const ctx = this.getContext();
+      const now = ctx.currentTime;
+
+      // Solfeggio 528Hz crystal singing bowl fundamental + overtone harmonics
+      const freqs = [528, 1056, 1584, 2112];
+      const gains = [0.22, 0.10, 0.04, 0.015];
+
+      freqs.forEach((freq, idx) => {
+        const osc = ctx.createOscillator();
+        const gain = ctx.createGain();
+
+        osc.type = 'sine';
+        osc.frequency.setValueAtTime(freq, now);
+        osc.frequency.linearRampToValueAtTime(freq + (idx * 0.3), now + 3.5);
+
+        gain.gain.setValueAtTime(0.001, now);
+        gain.gain.linearRampToValueAtTime(gains[idx], now + 0.05);
+        gain.gain.exponentialRampToValueAtTime(0.0001, now + 3.8);
+
+        osc.connect(gain);
+        gain.connect(ctx.destination);
+
+        osc.start(now);
+        osc.stop(now + 3.9);
+      });
+
+      if (onEnd) {
+        setTimeout(onEnd, 3800);
+      }
+    } catch {
+      if (onEnd) onEnd();
+    }
+  }
+
+  public playKeyClick(): void {
+    if (typeof window === 'undefined') return;
+    try {
+      const ctx = this.getContext();
+      const now = ctx.currentTime;
+      const osc = ctx.createOscillator();
+      const gain = ctx.createGain();
+      const filter = ctx.createBiquadFilter();
+
+      osc.type = 'square';
+      osc.frequency.setValueAtTime(1800 + Math.random() * 400, now);
+      osc.frequency.exponentialRampToValueAtTime(200, now + 0.025);
+
+      filter.type = 'bandpass';
+      filter.frequency.setValueAtTime(2200, now);
+      filter.Q.setValueAtTime(3.0, now);
+
+      gain.gain.setValueAtTime(0.03, now);
+      gain.gain.exponentialRampToValueAtTime(0.0001, now + 0.028);
+
+      osc.connect(filter);
+      filter.connect(gain);
+      gain.connect(ctx.destination);
+
+      osc.start(now);
+      osc.stop(now + 0.03);
+    } catch {}
+  }
+
+  public playTerminalPowerOn(): void {
+    if (typeof window === 'undefined') return;
+    try {
+      const ctx = this.getContext();
+      const now = ctx.currentTime;
+
+      // 1. High-frequency flyback coil whine
+      const coilOsc = ctx.createOscillator();
+      const coilGain = ctx.createGain();
+      coilOsc.type = 'sine';
+      coilOsc.frequency.setValueAtTime(12500, now);
+      coilGain.gain.setValueAtTime(0.0001, now);
+      coilGain.gain.linearRampToValueAtTime(0.012, now + 0.4);
+      coilGain.gain.exponentialRampToValueAtTime(0.0001, now + 1.2);
+      coilOsc.connect(coilGain);
+      coilGain.connect(ctx.destination);
+      coilOsc.start(now);
+      coilOsc.stop(now + 1.3);
+
+      // 2. Deep degauss thud
+      const thudOsc = ctx.createOscillator();
+      const thudGain = ctx.createGain();
+      thudOsc.type = 'triangle';
+      thudOsc.frequency.setValueAtTime(80, now + 0.05);
+      thudOsc.frequency.exponentialRampToValueAtTime(35, now + 0.6);
+      thudGain.gain.setValueAtTime(0.001, now);
+      thudGain.gain.linearRampToValueAtTime(0.18, now + 0.08);
+      thudGain.gain.exponentialRampToValueAtTime(0.0001, now + 0.7);
+      thudOsc.connect(thudGain);
+      thudGain.connect(ctx.destination);
+      thudOsc.start(now + 0.05);
+      thudOsc.stop(now + 0.75);
+    } catch {}
+  }
+
+  public startAmbientNecropolis(): void {
+    if (typeof window === 'undefined' || this.isAmbientOn) return;
+    try {
+      const ctx = this.getContext();
+      const bufferSize = ctx.sampleRate * 2;
+      const noiseBuffer = ctx.createBuffer(1, bufferSize, ctx.sampleRate);
+      const output = noiseBuffer.getChannelData(0);
+      let b0 = 0, b1 = 0, b2 = 0, b3 = 0, b4 = 0, b5 = 0, b6 = 0;
+      for (let i = 0; i < bufferSize; i++) {
+        const white = Math.random() * 2 - 1;
+        b0 = 0.99886 * b0 + white * 0.0555179;
+        b1 = 0.99332 * b1 + white * 0.0750759;
+        b2 = 0.96900 * b2 + white * 0.1538520;
+        b3 = 0.86650 * b3 + white * 0.3104856;
+        b4 = 0.55000 * b4 + white * 0.5329522;
+        b5 = -0.7616 * b5 - white * 0.0168980;
+        output[i] = (b0 + b1 + b2 + b3 + b4 + b5 + b6 + white * 0.5362) * 0.04;
+        b6 = white * 0.115926;
+      }
+
+      const whiteNoise = ctx.createBufferSource();
+      whiteNoise.buffer = noiseBuffer;
+      whiteNoise.loop = true;
+
+      const filter = ctx.createBiquadFilter();
+      filter.type = 'lowpass';
+      filter.frequency.setValueAtTime(320, ctx.currentTime);
+
+      const gain = ctx.createGain();
+      gain.gain.setValueAtTime(0.001, ctx.currentTime);
+      gain.gain.linearRampToValueAtTime(0.035, ctx.currentTime + 2.0);
+
+      whiteNoise.connect(filter);
+      filter.connect(gain);
+      gain.connect(ctx.destination);
+
+      whiteNoise.start(ctx.currentTime);
+      this.isAmbientOn = true;
+
+      this.ambientNodes = {
+        stop: () => {
+          try {
+            gain.gain.linearRampToValueAtTime(0.0001, ctx.currentTime + 1.0);
+            setTimeout(() => {
+              try { whiteNoise.stop(); } catch {}
+            }, 1050);
+          } catch {}
+          this.isAmbientOn = false;
+        }
+      };
+    } catch {}
+  }
+
+  public stopAmbientNecropolis(): void {
+    if (this.ambientNodes) {
+      this.ambientNodes.stop();
+      this.ambientNodes = null;
+    }
+    this.isAmbientOn = false;
+  }
+
+  public toggleAmbientNecropolis(): boolean {
+    if (this.isAmbientOn) {
+      this.stopAmbientNecropolis();
+      return false;
+    } else {
+      this.startAmbientNecropolis();
+      return true;
+    }
+  }
+
+  public isAmbientActive(): boolean {
+    return this.isAmbientOn;
+  }
 }
 
 export const relicAudio = new RelicAudioSynthesizer();

@@ -13,9 +13,12 @@ import {
   ShieldCheck, 
   Skull,
   Award,
-  ExternalLink
+  ExternalLink,
+  Download,
+  Loader2
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { downloadCertificatePNG } from '@/lib/export/certificateExporter';
 
 interface DeathCertificateModalProps {
   entity: GraveEntity;
@@ -29,6 +32,32 @@ export const DeathCertificateModal: React.FC<DeathCertificateModalProps> = ({
   onClose
 }) => {
   const [copied, setCopied] = useState(false);
+  const [exportingBaroque, setExportingBaroque] = useState(false);
+  const [exportingClassified, setExportingClassified] = useState(false);
+
+  const handleDownloadBaroque = async () => {
+    if (exportingBaroque) return;
+    setExportingBaroque(true);
+    try {
+      await downloadCertificatePNG(entity, 'baroque');
+    } catch (e) {
+      console.error(e);
+    } finally {
+      setExportingBaroque(false);
+    }
+  };
+
+  const handleDownloadClassified = async () => {
+    if (exportingClassified) return;
+    setExportingClassified(true);
+    try {
+      await downloadCertificatePNG(entity, 'classified');
+    } catch (e) {
+      console.error(e);
+    } finally {
+      setExportingClassified(false);
+    }
+  };
 
   if (!isOpen) return null;
 
@@ -80,20 +109,41 @@ export const DeathCertificateModal: React.FC<DeathCertificateModalProps> = ({
       <div className="relative w-full max-w-3xl my-8 rounded-2xl bg-zinc-950 border-2 border-amber-500/40 shadow-[0_0_60px_rgba(245,158,11,0.15)] overflow-hidden z-10 text-zinc-100 flex flex-col font-sans print:border-none print:shadow-none print:bg-white print:text-black">
         
         {/* Top Control Bar (Hidden on Print) */}
-        <div className="flex items-center justify-between px-6 py-3.5 bg-zinc-900/90 border-b border-white/10 print:hidden">
+        <div className="flex flex-wrap items-center justify-between gap-3 px-6 py-3.5 bg-zinc-900/95 border-b border-white/10 print:hidden">
           <div className="flex items-center gap-2 text-xs font-mono font-semibold text-amber-400">
             <FileText className="w-4 h-4" />
-            <span>OFFICIAL CORONER INQUEST RECORD</span>
+            <span className="hidden sm:inline">OFFICIAL CORONER INQUEST RECORD</span>
+            <span className="sm:hidden">CORONER RECORD</span>
           </div>
 
-          <div className="flex items-center gap-2">
+          <div className="flex flex-wrap items-center gap-2">
+            <button
+              onClick={handleDownloadBaroque}
+              disabled={exportingBaroque}
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-amber-500/20 hover:bg-amber-500/30 text-xs font-mono text-amber-300 hover:text-amber-200 transition-colors cursor-pointer border border-amber-500/40"
+              title="Download Baroque Death Certificate PNG (2400x1600)"
+            >
+              {exportingBaroque ? <Loader2 className="w-3.5 h-3.5 animate-spin" /> : <Download className="w-3.5 h-3.5" />}
+              <span>Certificate PNG</span>
+            </button>
+
+            <button
+              onClick={handleDownloadClassified}
+              disabled={exportingClassified}
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-red-950/40 hover:bg-red-900/50 text-xs font-mono text-red-300 hover:text-red-200 transition-colors cursor-pointer border border-red-500/40"
+              title="Download Classified Autopsy Dossier PNG (2400x1600)"
+            >
+              {exportingClassified ? <Loader2 className="w-3.5 h-3.5 animate-spin" /> : <Download className="w-3.5 h-3.5" />}
+              <span>Dossier PNG</span>
+            </button>
+
             <button
               onClick={handlePrint}
               className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-zinc-800 hover:bg-zinc-700 text-xs font-mono text-zinc-200 hover:text-white transition-colors cursor-pointer border border-white/10"
               title="Print Certificate"
             >
               <Printer className="w-3.5 h-3.5" />
-              <span>Print / PDF</span>
+              <span className="hidden md:inline">Print / PDF</span>
             </button>
 
             <button
@@ -102,21 +152,21 @@ export const DeathCertificateModal: React.FC<DeathCertificateModalProps> = ({
               title="Copy link"
             >
               {copied ? <Check className="w-3.5 h-3.5 text-emerald-400" /> : <Copy className="w-3.5 h-3.5" />}
-              <span>{copied ? 'Copied' : 'Copy'}</span>
+              <span className="hidden md:inline">{copied ? 'Copied' : 'Copy'}</span>
             </button>
 
             <button
               onClick={handleShareX}
-              className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-red-900/40 hover:bg-red-800/60 text-xs font-mono text-red-300 hover:text-white transition-colors cursor-pointer border border-red-500/30"
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-zinc-800 hover:bg-zinc-700 text-xs font-mono text-zinc-300 hover:text-white transition-colors cursor-pointer border border-white/10"
               title="Share on X"
             >
               <Share2 className="w-3.5 h-3.5" />
-              <span>Share on X</span>
+              <span className="hidden md:inline">Share</span>
             </button>
 
             <button
               onClick={onClose}
-              className="p-1.5 rounded-lg bg-zinc-800/80 hover:bg-zinc-700 text-zinc-400 hover:text-white transition-colors cursor-pointer ml-2"
+              className="p-1.5 rounded-lg bg-zinc-800/80 hover:bg-zinc-700 text-zinc-400 hover:text-white transition-colors cursor-pointer ml-1"
               title="Close Certificate"
             >
               <X className="w-5 h-5" />

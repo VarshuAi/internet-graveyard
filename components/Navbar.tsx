@@ -20,7 +20,8 @@ import {
   Volume2,
   Scale,
   Landmark,
-  Newspaper
+  Newspaper,
+  ArrowDownToLine
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
@@ -51,7 +52,13 @@ export const Navbar: React.FC = () => {
         <div className="flex items-center gap-4">
           <span className="tracking-wider text-zinc-400">"The internet forgets. We archive what disappeared."</span>
           <span className="text-white/20">|</span>
-          <span className="text-zinc-300 font-semibold">EST. 2024 DIGITAL ARCHAEOLOGY</span>
+          <Link 
+            href="/export" 
+            className="text-amber-400 hover:text-amber-300 font-bold flex items-center gap-1.5 transition-colors"
+          >
+            <ArrowDownToLine className="w-3.5 h-3.5" />
+            <span>OPEN DATA HUB (CSV/JSON)</span>
+          </Link>
         </div>
       </div>
 

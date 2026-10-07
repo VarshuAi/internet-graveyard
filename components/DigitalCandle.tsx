@@ -2,8 +2,9 @@
 
 import React, { useState } from 'react';
 import confetti from 'canvas-confetti';
-import { Flame, Sparkles, Heart } from 'lucide-react';
+import { Flame, Sparkles, Heart, Volume2 } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { relicAudio } from '@/lib/audio/soundArchive';
 
 interface DigitalCandleProps {
   slug: string;
@@ -30,6 +31,11 @@ export const DigitalCandle: React.FC<DigitalCandleProps> = ({
       // Optimistic update
       setCount(prev => prev + 1);
       setIsLit(true);
+
+      // Procedural 528Hz crystal singing bowl memorial chime
+      try {
+        relicAudio.playMemorialChime();
+      } catch {}
 
       // Trigger subtle golden/amber particle effect
       confetti({

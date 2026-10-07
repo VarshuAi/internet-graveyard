@@ -12,6 +12,7 @@ import { DeathCertificateModal } from '@/components/DeathCertificateModal';
 import { AudioRelicPlayer } from '@/components/AudioRelicPlayer';
 import { WaybackTimeMachine } from '@/components/WaybackTimeMachine';
 import { EntityLogo } from '@/components/EntityLogo';
+import { DigitalGhostTerminal } from '@/components/DigitalGhostTerminal';
 import { 
   Globe, 
   Calendar, 
@@ -214,6 +215,9 @@ export const MemorialClient: React.FC<MemorialClientProps> = ({
 
             {/* ACOUSTIC RELIC PLAYER (IF AVAILABLE) */}
             <AudioRelicPlayer entitySlug={entity.slug} />
+
+            {/* AI DIGITAL GHOST COMMUNICATOR */}
+            <DigitalGhostTerminal entity={entity} />
 
             {/* CAUSE OF DEATH */}
             <section className="space-y-3">

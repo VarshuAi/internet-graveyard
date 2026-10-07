@@ -17,9 +17,12 @@ import {
   Globe,
   Compass,
   Landmark,
-  Layers
+  Layers,
+  LayoutGrid,
+  Box
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { NecropolisCanvas } from '@/components/NecropolisCanvas';
 
 interface CemeteryPlot {
   id: string;
@@ -98,6 +101,7 @@ const CEMETERY_PLOTS: CemeteryPlot[] = [
 ];
 
 export default function GroundsPage() {
+  const [viewMode, setViewMode] = useState<'isometric' | 'grid'>('isometric');
   const [activePlotId, setActivePlotId] = useState<string>('all');
   const [searchQuery, setSearchQuery] = useState('');
   const [candleCounts, setCandleCounts] = useState<{ [slug: string]: number }>(() => {
@@ -181,18 +185,48 @@ export default function GroundsPage() {
               </p>
             </div>
 
-            {/* Grounds Telemetry Stats */}
-            <div className="flex items-center gap-6 text-xs font-mono bg-zinc-950/90 p-4 rounded-2xl border border-white/10 shrink-0">
-              <div className="space-y-0.5">
-                <div className="text-zinc-500 uppercase">Documented Plots</div>
-                <div className="text-xl font-bold text-white">{ALL_SEED_ENTITIES.length} Graves</div>
+            {/* Grounds Telemetry Stats & View Switcher */}
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+              <div className="flex items-center gap-1.5 p-1.5 rounded-2xl bg-zinc-950 border border-white/10 shrink-0">
+                <button
+                  onClick={() => setViewMode('isometric')}
+                  className={cn(
+                    "flex items-center gap-2 px-3.5 py-2 rounded-xl text-xs font-mono font-bold transition-all cursor-pointer",
+                    viewMode === 'isometric'
+                      ? "bg-amber-500 text-black shadow-[0_0_15px_rgba(245,158,11,0.3)]"
+                      : "text-zinc-400 hover:text-white"
+                  )}
+                >
+                  <Box className="w-3.5 h-3.5" />
+                  <span>3D Necropolis</span>
+                </button>
+
+                <button
+                  onClick={() => setViewMode('grid')}
+                  className={cn(
+                    "flex items-center gap-2 px-3.5 py-2 rounded-xl text-xs font-mono font-bold transition-all cursor-pointer",
+                    viewMode === 'grid'
+                      ? "bg-zinc-800 text-white border border-white/20 shadow-sm"
+                      : "text-zinc-400 hover:text-white"
+                  )}
+                >
+                  <LayoutGrid className="w-3.5 h-3.5" />
+                  <span>2D Grid</span>
+                </button>
               </div>
-              <div className="w-px h-8 bg-white/10" />
-              <div className="space-y-0.5">
-                <div className="text-zinc-500 uppercase">Burning Candles</div>
-                <div className="text-xl font-bold text-amber-400 flex items-center gap-1.5">
-                  <Flame className="w-4 h-4 text-amber-400 animate-pulse" />
-                  <span>{totalCandlesOnGrounds.toLocaleString()}</span>
+
+              <div className="flex items-center gap-6 text-xs font-mono bg-zinc-950/90 p-4 rounded-2xl border border-white/10 shrink-0">
+                <div className="space-y-0.5">
+                  <div className="text-zinc-500 uppercase">Plots</div>
+                  <div className="text-xl font-bold text-white">{ALL_SEED_ENTITIES.length}</div>
+                </div>
+                <div className="w-px h-8 bg-white/10" />
+                <div className="space-y-0.5">
+                  <div className="text-zinc-500 uppercase">Candles</div>
+                  <div className="text-xl font-bold text-amber-400 flex items-center gap-1.5">
+                    <Flame className="w-4 h-4 text-amber-400 animate-pulse" />
+                    <span>{totalCandlesOnGrounds.toLocaleString()}</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -246,10 +280,24 @@ export default function GroundsPage() {
           </div>
         </div>
 
-        {/* The Field of Tombstones Grid */}
+        {/* 3D Isometric Necropolis Canvas View */}
+        {viewMode === 'isometric' && (
+          <div className="space-y-3">
+            <div className="flex items-center justify-between text-xs font-mono text-zinc-400 px-1">
+              <span className="flex items-center gap-2">
+                <Box className="w-3.5 h-3.5 text-amber-400" />
+                <span>60 FPS ISOMETRIC CARTOGRAPHY ENGINE</span>
+              </span>
+              <span>CLICK TO DISCOVER ENTITY RECORD</span>
+            </div>
+            <NecropolisCanvas entities={ALL_SEED_ENTITIES} />
+          </div>
+        )}
+
+        {/* The Field of Tombstones Grid (Rendered in Grid mode or supplementary in Isometric) */}
         <div className="space-y-4">
           <div className="flex items-center justify-between text-xs font-mono text-zinc-400 px-1">
-            <span>SHOWING {displayedEntities.length} CONSECRATED PLOTS</span>
+            <span>SHOWING {displayedEntities.length} CONSECRATED PLOTS ({viewMode === 'isometric' ? 'EXPLORER LIST' : 'PRIMARY GRID'})</span>
             <span>CLICK TOMBSTONE TO ENTER MEMORIAL</span>
           </div>
 

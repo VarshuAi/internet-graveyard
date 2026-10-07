@@ -19,6 +19,7 @@ import {
   Check
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { RetroBrowserFrame } from '@/components/RetroBrowserFrame';
 
 interface WaybackTimeMachineProps {
   entity: GraveEntity;
@@ -104,60 +105,29 @@ export const WaybackTimeMachine: React.FC<WaybackTimeMachineProps> = ({ entity }
         })}
       </div>
 
-      {/* Simulated Retro Browser Window Chassis */}
-      <div className="rounded-xl border border-white/15 bg-zinc-950 overflow-hidden shadow-2xl space-y-0">
-        
-        {/* Browser Top Navigation Bar */}
-        <div className="flex items-center justify-between px-3.5 py-2 bg-zinc-900 border-b border-white/10 text-xs font-mono gap-3">
-          <div className="flex items-center gap-1.5">
-            <span className="w-2.5 h-2.5 rounded-full bg-red-500/80 inline-block" />
-            <span className="w-2.5 h-2.5 rounded-full bg-amber-500/80 inline-block" />
-            <span className="w-2.5 h-2.5 rounded-full bg-emerald-500/80 inline-block" />
-          </div>
-
-          {/* Address Bar */}
-          <div className="flex-1 max-w-xl mx-auto px-3 py-1 rounded-lg bg-zinc-950 border border-white/10 text-zinc-300 flex items-center justify-between text-[11px] truncate">
-            <span className="truncate text-zinc-400">
-              web.archive.org/web/{currentSnap.year}0101.../{domain}
-            </span>
-            <span className="px-1.5 py-0.5 rounded bg-emerald-950 text-emerald-400 border border-emerald-500/30 text-[9px] font-bold shrink-0 ml-2">
-              HTTP 200
-            </span>
-          </div>
-
-          <div className="flex items-center gap-1 text-zinc-400">
-            <button
-              onClick={() => setActiveIndex(prev => Math.max(0, prev - 1))}
-              disabled={activeIndex === 0}
-              className="p-1 hover:text-white disabled:opacity-30 cursor-pointer"
-              title="Previous snapshot"
-            >
-              <ChevronLeft className="w-3.5 h-3.5" />
-            </button>
-            <button
-              onClick={() => setActiveIndex(prev => Math.min(defaultSnapshots.length - 1, prev + 1))}
-              disabled={activeIndex === defaultSnapshots.length - 1}
-              className="p-1 hover:text-white disabled:opacity-30 cursor-pointer"
-              title="Next snapshot"
-            >
-              <ChevronRight className="w-3.5 h-3.5" />
-            </button>
-          </div>
-        </div>
-
+      {/* Interactive Retro Browser Viewport Chassis */}
+      <RetroBrowserFrame
+        url={`https://web.archive.org/web/${currentSnap.year}0101.../${domain}`}
+        title={`${entity.name} - ${currentSnap.title}`}
+        year={currentSnap.year}
+        canPrev={activeIndex > 0}
+        canNext={activeIndex < defaultSnapshots.length - 1}
+        onNavigatePrev={() => setActiveIndex(prev => Math.max(0, prev - 1))}
+        onNavigateNext={() => setActiveIndex(prev => Math.min(defaultSnapshots.length - 1, prev + 1))}
+      >
         {/* Snapshot Viewport Card */}
-        <div className="p-5 sm:p-6 space-y-4 bg-gradient-to-b from-zinc-950 to-zinc-900/60">
+        <div className="p-5 sm:p-7 space-y-4 bg-gradient-to-b from-zinc-950 via-zinc-900/80 to-zinc-950 text-zinc-100">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-            <div className="space-y-1">
-              <div className="text-xs font-mono uppercase text-amber-400/90 font-bold flex items-center gap-1.5">
+            <div className="space-y-1.5">
+              <div className="text-xs font-mono uppercase text-amber-400 font-bold flex items-center gap-1.5">
                 <Globe className="w-3.5 h-3.5" />
                 <span>Captured: {currentSnap.date_captured} ({currentSnap.year})</span>
               </div>
-              <h4 className="text-lg font-bold text-white">
+              <h4 className="text-xl font-bold text-white tracking-tight">
                 {currentSnap.title}
               </h4>
-              <p className="text-xs text-zinc-400 font-sans">
-                Archival state verified via the Wayback Machine crawler for domain <strong className="text-zinc-200">{domain}</strong>.
+              <p className="text-xs sm:text-sm text-zinc-300 font-sans leading-relaxed max-w-xl">
+                Archival state preserved verbatim by the Wayback Machine crawler for domain <strong className="text-amber-300 font-mono">{domain}</strong>.
               </p>
             </div>
 
@@ -165,15 +135,15 @@ export const WaybackTimeMachine: React.FC<WaybackTimeMachineProps> = ({ entity }
               href={currentSnap.wayback_url}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-amber-600 hover:bg-amber-500 text-black font-mono font-bold text-xs transition-all shadow-[0_0_15px_rgba(245,158,11,0.3)] shrink-0"
+              className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-amber-500 hover:bg-amber-400 text-black font-mono font-bold text-xs transition-all shadow-[0_0_20px_rgba(245,158,11,0.3)] shrink-0 cursor-pointer"
             >
-              <span>Explore on Archive.org</span>
-              <ArrowUpRight className="w-3.5 h-3.5" />
+              <span>Launch Snapshot on Archive.org</span>
+              <ArrowUpRight className="w-4 h-4" />
             </a>
           </div>
 
           {/* Quick Year Slider indicator */}
-          <div className="pt-3 border-t border-white/10 flex items-center justify-between text-xs font-mono text-zinc-400">
+          <div className="pt-4 border-t border-white/10 flex items-center justify-between text-xs font-mono text-zinc-400">
             <span>Snapshot #{activeIndex + 1} of {defaultSnapshots.length}</span>
             <a
               href={`https://web.archive.org/web/*/${domain}`}
@@ -181,13 +151,12 @@ export const WaybackTimeMachine: React.FC<WaybackTimeMachineProps> = ({ entity }
               rel="noopener noreferrer"
               className="text-amber-400 hover:underline flex items-center gap-1"
             >
-              <span>View complete calendar timeline</span>
+              <span>View full calendar timeline ({entity.lifespan})</span>
               <ExternalLink className="w-3 h-3" />
             </a>
           </div>
         </div>
-
-      </div>
+      </RetroBrowserFrame>
     </section>
   );
 };
