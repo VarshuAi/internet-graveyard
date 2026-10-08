@@ -63,15 +63,21 @@ export const GraveCard: React.FC<GraveCardProps> = ({ entity, className }) => {
         {/* 4. Demise & Buried information */}
         <div className="pt-3 border-t border-white/10 space-y-2 text-xs font-sans mt-auto">
           <div className="flex items-center justify-between">
-            <span className="uppercase text-xs font-bold text-zinc-400 tracking-wider shrink-0">Demise:</span>
-            <span className="text-zinc-200 font-medium truncate max-w-[65%] text-right" title={entity.cause_category}>
-              {entity.cause_category}
+            <span className="uppercase text-xs font-bold text-zinc-400 tracking-wider shrink-0">
+              {entity.status === 'ACTIVE' ? 'Status:' : 'Demise:'}
+            </span>
+            <span className="text-zinc-200 font-medium truncate max-w-[65%] text-right" title={entity.status === 'ACTIVE' ? 'Active Production' : entity.cause_category}>
+              {entity.status === 'ACTIVE' ? 'Operational' : entity.cause_category}
             </span>
           </div>
           <div className="flex items-center justify-between">
-            <span className="uppercase text-xs font-bold text-zinc-400 tracking-wider shrink-0">Buried:</span>
-            <span className="text-zinc-300 font-mono">
-              {entity.death_date || (entity.death_year ? `${entity.death_year}` : 'Defunct')}
+            <span className="uppercase text-xs font-bold text-zinc-400 tracking-wider shrink-0">
+              {entity.status === 'ACTIVE' ? 'Monitored:' : 'Buried:'}
+            </span>
+            <span className={cn("font-mono", entity.status === 'ACTIVE' ? "text-emerald-400 font-semibold" : "text-zinc-300")}>
+              {entity.status === 'ACTIVE' 
+                ? 'Active Registry' 
+                : (entity.death_date || (entity.death_year ? `${entity.death_year}` : 'Defunct'))}
             </span>
           </div>
         </div>
@@ -92,9 +98,12 @@ export const GraveCard: React.FC<GraveCardProps> = ({ entity, className }) => {
 
         <Link
           href={`/grave/${entity.slug}`}
-          className="flex items-center gap-1.5 text-red-400 hover:text-red-300 font-bold group/btn transition-colors shrink-0"
+          className={cn(
+            "flex items-center gap-1.5 font-bold group/btn transition-colors shrink-0",
+            entity.status === 'ACTIVE' ? "text-emerald-400 hover:text-emerald-300" : "text-red-400 hover:text-red-300"
+          )}
         >
-          <span>View Memorial</span>
+          <span>{entity.status === 'ACTIVE' ? 'View Record' : 'View Memorial'}</span>
           <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform shrink-0" />
         </Link>
       </div>

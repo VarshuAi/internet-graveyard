@@ -112,6 +112,12 @@ export default function GroundsPage() {
     return counts;
   });
   const [litSlugs, setLitSlugs] = useState<Set<string>>(new Set());
+  const [visibleCount, setVisibleCount] = useState<number>(32);
+
+  // Reset pagination when active plot or search changes
+  React.useEffect(() => {
+    setVisibleCount(32);
+  }, [activePlotId, searchQuery]);
 
   const activePlot = useMemo(() => {
     return CEMETERY_PLOTS.find(p => p.id === activePlotId) || CEMETERY_PLOTS[0];
@@ -302,7 +308,7 @@ export default function GroundsPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            {displayedEntities.map((entity) => {
+            {displayedEntities.slice(0, visibleCount).map((entity) => {
               const count = candleCounts[entity.slug] || entity.candle_count || 120;
               const isLit = litSlugs.has(entity.slug);
 
@@ -376,6 +382,28 @@ export default function GroundsPage() {
               );
             })}
           </div>
+
+          {displayedEntities.length > visibleCount && (
+            <div className="pt-8 pb-4 flex flex-col items-center justify-center space-y-4">
+              <div className="text-xs font-mono text-zinc-400">
+                Displaying <span className="text-white font-bold">{Math.min(visibleCount, displayedEntities.length)}</span> of <span className="text-white font-bold">{displayedEntities.length}</span> consecrated plots
+              </div>
+              <div className="flex flex-wrap items-center justify-center gap-3">
+                <button
+                  onClick={() => setVisibleCount(prev => prev + 32)}
+                  className="px-8 py-3.5 rounded-xl bg-red-600 hover:bg-red-500 text-white font-bold text-sm shadow-lg transition-all duration-200 cursor-pointer hover:scale-[1.02] active:scale-[0.98]"
+                >
+                  Load Next 32 Plots ({displayedEntities.length - visibleCount} remaining)
+                </button>
+                <button
+                  onClick={() => setVisibleCount(displayedEntities.length)}
+                  className="px-5 py-3.5 rounded-xl bg-zinc-900 hover:bg-zinc-800 text-zinc-300 hover:text-white font-medium text-xs border border-white/10 transition-colors cursor-pointer"
+                >
+                  Show All ({displayedEntities.length})
+                </button>
+              </div>
+            </div>
+          )}
 
           {displayedEntities.length === 0 && (
             <div className="text-center py-16 p-8 rounded-2xl bg-zinc-900/60 border border-white/10 space-y-3">

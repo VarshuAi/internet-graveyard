@@ -58,13 +58,16 @@ export const NecropolisCanvas: React.FC<NecropolisCanvasProps> = ({
   // Camera coordinates (world offset)
   const cameraRef = useRef({ x: 0, y: 0, isDragging: false, dragStartX: 0, dragStartY: 0 });
 
-  // Map 85 entities onto an isometric grid organized by historical district
+  // Map landmark entities onto an isometric grid organized by historical district
   const plotNodes: PlotNode[] = useMemo(() => {
-    // Sort chronologically by founded_year
-    const sorted = [...entities].sort((a, b) => (a.founded_year || 2000) - (b.founded_year || 2000));
+    // Select landmarks for optimal 60fps isometric canvas rendering
+    const landmarks = entities.length > 96
+      ? [...entities].sort((a, b) => (b.candle_count || 0) - (a.candle_count || 0)).slice(0, 96)
+      : entities;
+    const sorted = [...landmarks].sort((a, b) => (a.founded_year || 2000) - (b.founded_year || 2000));
     
-    // Grid configuration: 4 clusters along isometric axes
-    const colsPerRow = 7;
+    // Grid configuration: 8 clusters along isometric axes
+    const colsPerRow = 8;
     return sorted.map((entity, idx) => {
       const year = entity.death_year || 2020;
       let district: PlotNode['district'] = 'web2';

@@ -71,6 +71,12 @@ function ExploreContent() {
   const [yearFrom, setYearFrom] = useState<string>('');
   const [yearTo, setYearTo] = useState<string>('');
   const [sortBy, setSortBy] = useState<'recent' | 'candles' | 'name' | 'oldest'>('recent');
+  const [visibleCount, setVisibleCount] = useState<number>(32);
+
+  // Reset pagination when any filter changes
+  useEffect(() => {
+    setVisibleCount(32);
+  }, [searchQuery, selectedStatus, selectedCategory, selectedCause, selectedEra, yearFrom, yearTo, sortBy]);
 
   useEffect(() => {
     if (searchParams.get('q')) setSearchQuery(searchParams.get('q')!);
@@ -401,11 +407,35 @@ function ExploreContent() {
           )}
         </div>
       ) : (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
-          {filteredEntities.map((entity) => (
-            <GraveCard key={entity.id} entity={entity} />
-          ))}
-        </div>
+        <>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
+            {filteredEntities.slice(0, visibleCount).map((entity) => (
+              <GraveCard key={entity.id} entity={entity} />
+            ))}
+          </div>
+
+          {filteredEntities.length > visibleCount && (
+            <div className="pt-8 pb-12 flex flex-col items-center justify-center space-y-4">
+              <div className="text-xs font-mono text-zinc-400">
+                Displaying <span className="text-white font-bold">{Math.min(visibleCount, filteredEntities.length)}</span> of <span className="text-white font-bold">{filteredEntities.length}</span> archived records
+              </div>
+              <div className="flex flex-wrap items-center justify-center gap-3">
+                <button
+                  onClick={() => setVisibleCount(prev => prev + 32)}
+                  className="px-8 py-3.5 rounded-xl bg-red-600 hover:bg-red-500 text-white font-bold text-sm shadow-lg transition-all duration-200 cursor-pointer hover:scale-[1.02] active:scale-[0.98]"
+                >
+                  Load Next 32 Records ({filteredEntities.length - visibleCount} remaining)
+                </button>
+                <button
+                  onClick={() => setVisibleCount(filteredEntities.length)}
+                  className="px-5 py-3.5 rounded-xl bg-zinc-900 hover:bg-zinc-800 text-zinc-300 hover:text-white font-medium text-xs border border-white/10 transition-colors cursor-pointer"
+                >
+                  Show All ({filteredEntities.length})
+                </button>
+              </div>
+            </div>
+          )}
+        </>
       )}
     </div>
   );
