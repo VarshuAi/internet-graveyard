@@ -182,7 +182,7 @@ export default function GroundsPage() {
                 <span>INTERACTIVE CARTOGRAPHY • CEMETERY GROUNDS</span>
               </div>
 
-              <h1 className="text-3xl sm:text-5xl font-black text-white tracking-tight">
+              <h1 className="text-3xl sm:text-5xl font-serif font-black text-white tracking-tight drop-shadow-md">
                 The Digital Cemetery Map
               </h1>
 

@@ -29,7 +29,7 @@ export default function DyingNowPage() {
           <AlertTriangle className="w-4 h-4 animate-pulse text-amber-400" />
           <span>Multi-Signal Forensic Radar</span>
         </div>
-        <h1 className="text-4xl sm:text-6xl font-black text-white uppercase tracking-tight">
+        <h1 className="text-4xl sm:text-6xl font-serif font-black text-white uppercase tracking-tight drop-shadow-md">
           Dying Now — At Risk Ecosystem
         </h1>
         <p className="text-base sm:text-lg text-zinc-300 font-sans max-w-3xl leading-relaxed">

@@ -37,6 +37,21 @@ const config = {
           dead: "#ef4444",
           offline: "#6b7280",
           zombie: "#a855f7",
+        },
+        crt: {
+          green: "#22c55e",
+          phosphor: "#39ff14",
+          amber: "#f59e0b",
+          cyan: "#06b6d4",
+          dim: "#052e16",
+        },
+        win95: {
+          bg: "#c0c0c0",
+          light: "#ffffff",
+          dark: "#808080",
+          darkest: "#000000",
+          navy: "#000080",
+          activeTitle: "linear-gradient(90deg, #000080, #1084d0)",
         }
       },
       fontFamily: {
@@ -44,15 +59,25 @@ const config = {
         mono: ["var(--font-jetbrains-mono)", "monospace"],
         serif: ["var(--font-cinzel)", "Georgia", "serif"],
       },
+      boxShadow: {
+        "bevel-outset": "inset 1px 1px 0px rgba(255,255,255,0.25), inset -1px -1px 0px rgba(0,0,0,0.7)",
+        "bevel-inset": "inset 1px 1px 0px rgba(0,0,0,0.8), inset -1px -1px 0px rgba(255,255,255,0.15)",
+        "crt-glow": "0 0 15px rgba(34, 197, 94, 0.45)",
+        "amber-glow": "0 0 15px rgba(245, 158, 11, 0.45)",
+        "crimson-glow": "0 0 20px rgba(239, 68, 68, 0.45)",
+        "zombie-glow": "0 0 20px rgba(168, 85, 247, 0.45)",
+      },
       backgroundImage: {
         "radial-fog": "radial-gradient(circle at 50% 10%, rgba(30, 36, 56, 0.45) 0%, rgba(7, 8, 11, 0.95) 70%)",
         "grave-glow": "radial-gradient(circle at 50% 0%, rgba(239, 68, 68, 0.12) 0%, transparent 60%)",
         "archive-grid": "linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px), linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px)",
+        "crt-scanlines": "linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.4) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.04), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.04))",
       },
       animation: {
         "pulse-slow": "pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite",
         "scanline": "scanline 8s linear infinite",
         "flicker": "flicker 3s infinite",
+        "cursor-blink": "blink 1s step-start infinite",
       },
       keyframes: {
         scanline: {
@@ -64,6 +89,10 @@ const config = {
           "50%": { opacity: "0.85" },
           "70%": { opacity: "0.95" },
           "85%": { opacity: "0.75" },
+        },
+        blink: {
+          "0%, 100%": { opacity: "1" },
+          "50%": { opacity: "0" },
         }
       }
     },

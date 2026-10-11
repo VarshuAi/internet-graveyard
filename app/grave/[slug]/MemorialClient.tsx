@@ -33,6 +33,7 @@ import {
   FileText
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { soundFx } from '@/lib/audio/soundFx';
 
 interface MemorialClientProps {
   entity: GraveEntity;
@@ -119,7 +120,7 @@ export const MemorialClient: React.FC<MemorialClientProps> = ({
               {/* Identity & Lifespan */}
               <div className="space-y-2 min-w-0 flex-1">
                 <div className="flex items-center gap-4 flex-wrap">
-                  <h1 className="text-3xl sm:text-5xl font-sans font-black text-white tracking-tight">
+                  <h1 className="text-3xl sm:text-5xl font-serif font-black text-white tracking-tight drop-shadow-md">
                     {entity.name}
                   </h1>
                   <div className="shrink-0">
@@ -128,9 +129,9 @@ export const MemorialClient: React.FC<MemorialClientProps> = ({
                 </div>
 
                 <div className="flex items-center gap-2.5 text-sm sm:text-base font-sans text-zinc-300 flex-wrap">
-                  <span className="text-white font-bold">{entity.lifespan}</span>
+                  <span className="text-white font-bold font-mono">{entity.lifespan}</span>
                   <span className="text-zinc-500">•</span>
-                  <span className="text-zinc-300 uppercase tracking-wider font-semibold">{entity.category}</span>
+                  <span className="text-zinc-300 uppercase tracking-wider font-semibold font-mono text-xs">{entity.category}</span>
                   {entity.country && (
                     <>
                       <span className="text-zinc-500">•</span>
@@ -140,7 +141,7 @@ export const MemorialClient: React.FC<MemorialClientProps> = ({
                 </div>
 
                 <div className="text-xs sm:text-sm font-mono text-zinc-300 flex items-center gap-2 flex-wrap">
-                  <Globe className="w-4 h-4 text-zinc-400 shrink-0" />
+                  <Globe className="w-4 h-4 text-emerald-400 shrink-0" />
                   <span className="text-zinc-200 font-semibold">{entity.primary_domain}</span>
                   {entity.parent_company && (
                     <span className="text-zinc-400 font-sans">(Parent: {entity.parent_company})</span>
@@ -149,11 +150,23 @@ export const MemorialClient: React.FC<MemorialClientProps> = ({
               </div>
             </div>
 
-            {/* Actions: Tribute Candle, Certificate & Share */}
+            {/* Actions: Tribute Candle, Death Knell Bell, Certificate & Share */}
             <div className="flex flex-col sm:flex-row items-center gap-3 w-full md:w-auto self-stretch md:self-center justify-end shrink-0 flex-wrap">
+              {/* Funeral Bell Button */}
+              <button
+                onClick={() => {
+                  soundFx.playBell();
+                }}
+                className="flex items-center gap-2 px-3.5 py-2.5 rounded-2xl bg-zinc-850 hover:bg-zinc-800 border border-white/20 hover:border-amber-500/50 text-amber-300 text-xs sm:text-sm font-mono font-bold transition-all shadow-md group cursor-pointer shrink-0"
+                title="Toll the Sacred Funeral Death Knell (Cathedral Bell Chime)"
+              >
+                <span className="text-base group-hover:scale-125 transition-transform">🔔</span>
+                <span>Toll Bell</span>
+              </button>
+
               <button
                 onClick={() => setShowCertificateModal(true)}
-                className="flex items-center gap-2 px-4 py-3 rounded-2xl bg-amber-950/40 hover:bg-amber-900/60 border border-amber-500/40 text-amber-300 hover:text-amber-200 text-xs sm:text-sm font-mono font-bold transition-all shadow-[0_0_15px_rgba(245,158,11,0.15)] cursor-pointer shrink-0"
+                className="flex items-center gap-2 px-4 py-2.5 rounded-2xl bg-amber-950/40 hover:bg-amber-900/60 border border-amber-500/40 text-amber-300 hover:text-amber-200 text-xs sm:text-sm font-mono font-bold transition-all shadow-[0_0_15px_rgba(245,158,11,0.15)] cursor-pointer shrink-0"
                 title="View Official Coroner Death Certificate"
               >
                 <FileText className="w-4 h-4 text-amber-400" />
@@ -167,7 +180,7 @@ export const MemorialClient: React.FC<MemorialClientProps> = ({
               />
               <button
                 onClick={handleShare}
-                className="p-3.5 rounded-2xl bg-zinc-850 hover:bg-zinc-800 border border-white/15 text-zinc-200 hover:text-white transition-colors cursor-pointer shadow-md shrink-0"
+                className="p-3 rounded-2xl bg-zinc-850 hover:bg-zinc-800 border border-white/15 text-zinc-200 hover:text-white transition-colors cursor-pointer shadow-md shrink-0"
                 title="Share Memorial"
               >
                 <Share2 className="w-5 h-5" />

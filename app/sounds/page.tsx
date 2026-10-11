@@ -60,7 +60,7 @@ export default function SoundVaultPage() {
               <span>DIGITAL ARCHAEOLOGY • SOUND VAULT</span>
             </div>
 
-            <h1 className="text-3xl sm:text-5xl font-sans font-black text-white tracking-tight">
+            <h1 className="text-3xl sm:text-5xl font-serif font-black text-white tracking-tight drop-shadow-md">
               Sounds of the Dead Web
             </h1>
 

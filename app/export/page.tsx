@@ -121,7 +121,7 @@ export default function ExportPage() {
                 <span>OPEN ARCHAEOLOGICAL RESEARCH HUB</span>
               </div>
 
-              <h1 className="text-3xl sm:text-5xl font-black text-white tracking-tight">
+              <h1 className="text-3xl sm:text-5xl font-serif font-black text-white tracking-tight drop-shadow-md">
                 Digital Archaeology Data Ledger
               </h1>
 

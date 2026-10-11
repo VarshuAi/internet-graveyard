@@ -71,7 +71,7 @@ export default function TimelinePage() {
           <Clock className="w-4 h-4" />
           <span>Archaeological Epochs</span>
         </div>
-        <h1 className="text-4xl sm:text-6xl font-black text-white uppercase tracking-tight">
+        <h1 className="text-4xl sm:text-6xl font-serif font-black text-white uppercase tracking-tight drop-shadow-md">
           Internet Timeline
         </h1>
         <p className="text-base sm:text-lg text-zinc-300 font-sans leading-relaxed">

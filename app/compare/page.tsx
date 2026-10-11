@@ -49,7 +49,7 @@ export default function ComparePage() {
               <span>FORENSIC COMPARISON • HEAD-TO-HEAD AUTOPSY</span>
             </div>
 
-            <h1 className="text-3xl sm:text-5xl font-sans font-black text-white tracking-tight">
+            <h1 className="text-3xl sm:text-5xl font-serif font-black text-white tracking-tight drop-shadow-md">
               Why Did One Die and One Survive?
             </h1>
 

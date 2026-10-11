@@ -25,6 +25,7 @@ import {
 } from 'lucide-react';
 import { StatusBadge } from '@/components/StatusBadge';
 import { GraveStatus } from '@/types/graveyard';
+import { soundFx } from '@/lib/audio/soundFx';
 
 interface ScanResult {
   target: string;
@@ -85,6 +86,7 @@ function LookupContent() {
     const cleaned = targetToProbe.trim();
     if (!cleaned) return;
 
+    soundFx.playModemBeep();
     setLoading(true);
     setErrorMsg('');
     setScanResult(null);
@@ -106,6 +108,7 @@ function LookupContent() {
       clearInterval(interval);
 
       if (res.ok && data.scan) {
+        soundFx.playTelemetry();
         setScanResult(data.scan);
         setMatchedEntity(data.matched_entity || null);
       } else {
@@ -143,11 +146,11 @@ function LookupContent() {
       {/* Header */}
       <div className="text-center space-y-5 max-w-3xl mx-auto">
         <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-red-950/60 border border-red-500/40 text-red-300 text-xs sm:text-sm font-mono font-semibold tracking-wider uppercase shadow-md">
-          <Radio className="w-4 h-4 animate-pulse" />
+          <Radio className="w-4 h-4 animate-pulse text-emerald-400" />
           <span>Real-Time Internet Archaeology Prober</span>
         </div>
 
-        <h1 className="text-4xl sm:text-6xl font-sans font-black text-white uppercase tracking-tight drop-shadow-sm">
+        <h1 className="text-4xl sm:text-6xl font-serif font-black text-white uppercase tracking-tight drop-shadow-md">
           Check Any Website Vital Signs
         </h1>
 

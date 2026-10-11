@@ -17,6 +17,7 @@ import {
   Flame
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { soundFx } from '@/lib/audio/soundFx';
 
 interface NecropolisCanvasProps {
   entities: GraveEntity[];
@@ -459,9 +460,58 @@ export const NecropolisCanvas: React.FC<NecropolisCanvasProps> = ({
         </div>
       </div>
 
-      {/* 4. Controls Tip */}
-      <div className="absolute bottom-4 right-4 px-3 py-1 rounded-full bg-black/70 border border-white/10 text-[11px] font-mono text-zinc-400 pointer-events-none hidden sm:block">
-        Drag to Pan • Scroll to Zoom • Click Tomb to Visit
+      {/* 4. Interactive Minimap Radar HUD */}
+      <div className="absolute bottom-4 right-4 p-2 rounded-xl bg-zinc-950/90 border border-white/20 shadow-2xl backdrop-blur-md pointer-events-auto flex flex-col items-center gap-1.5 font-mono text-[10px]">
+        <div className="flex items-center justify-between w-full text-zinc-400 font-bold px-1 text-[9px] uppercase">
+          <span className="flex items-center gap-1 text-emerald-400">
+            <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping" />
+            <span>RADAR HUD</span>
+          </span>
+          <span>{Math.round(zoom * 100)}% ZOOM</span>
+        </div>
+        
+        {/* Radar Map Canvas Preview */}
+        <div 
+          onClick={(e) => {
+            const rect = e.currentTarget.getBoundingClientRect();
+            const clickX = e.clientX - rect.left;
+            const clickY = e.clientY - rect.top;
+            // Map click to camera space
+            const targetX = (clickX - 60) * 12;
+            const targetY = (clickY - 45) * 12;
+            cameraRef.current.x = -targetX;
+            cameraRef.current.y = -targetY;
+            soundFx.playClick(900);
+          }}
+          className="w-32 h-24 rounded-lg bg-zinc-900 border border-white/10 relative overflow-hidden cursor-crosshair group shadow-inner"
+          title="Click Minimap to center camera on district"
+        >
+          {/* Radar Grid Lines */}
+          <div className="absolute inset-0 bg-archive-grid opacity-30" />
+          <div className="absolute top-1/2 left-0 right-0 h-[1px] bg-white/10" />
+          <div className="absolute left-1/2 top-0 bottom-0 w-[1px] bg-white/10" />
+          
+          {/* 4 District Center Marks */}
+          <div className="absolute top-3 left-3 w-2 h-2 rounded-full bg-amber-400 shadow-[0_0_6px_rgba(245,158,11,0.8)]" title="Dot-Com (1995-2002)" />
+          <div className="absolute top-3 right-3 w-2 h-2 rounded-full bg-sky-400 shadow-[0_0_6px_rgba(56,189,248,0.8)]" title="Web 2.0 (2003-2011)" />
+          <div className="absolute bottom-3 left-3 w-2 h-2 rounded-full bg-purple-400 shadow-[0_0_6px_rgba(168,85,247,0.8)]" title="Mobile (2012-2020)" />
+          <div className="absolute bottom-3 right-3 w-2 h-2 rounded-full bg-red-400 shadow-[0_0_6px_rgba(239,68,68,0.8)]" title="Modern (2021-2026)" />
+
+          {/* Camera Viewport Indicator Box */}
+          <div 
+            className="absolute border border-emerald-400/80 bg-emerald-400/10 rounded-sm pointer-events-none transition-all duration-75"
+            style={{
+              width: `${Math.max(16, 36 / zoom)}px`,
+              height: `${Math.max(12, 28 / zoom)}px`,
+              left: `${Math.min(96, Math.max(0, 60 - (cameraRef.current.x / 14)))}px`,
+              top: `${Math.min(68, Math.max(0, 42 - (cameraRef.current.y / 14)))}px`
+            }}
+          />
+        </div>
+
+        <div className="text-zinc-500 text-[9px] tracking-wider">
+          Click Minimap to Relocate
+        </div>
       </div>
 
       {/* 5. Hover Tooltip Preview Card */}

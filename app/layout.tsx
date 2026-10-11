@@ -1,8 +1,9 @@
 import type { Metadata } from 'next';
-import { Inter, JetBrains_Mono } from 'next/font/google';
+import { Inter, JetBrains_Mono, Cinzel } from 'next/font/google';
 import './globals.css';
 import { Navbar } from '@/components/Navbar';
 import { Footer } from '@/components/Footer';
+import { CommandPalette } from '@/components/CommandPalette';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -14,6 +15,13 @@ const jetbrainsMono = JetBrains_Mono({
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-jetbrains-mono',
+});
+
+const cinzel = Cinzel({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-cinzel',
+  weight: ['400', '600', '700', '800', '900'],
 });
 
 export const metadata: Metadata = {
@@ -44,8 +52,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`dark scroll-smooth ${inter.variable} ${jetbrainsMono.variable}`}>
+    <html 
+      lang="en" 
+      className={`dark scroll-smooth ${inter.variable} ${jetbrainsMono.variable} ${cinzel.variable}`}
+    >
       <body className="bg-graveyard-900 text-zinc-100 font-sans min-h-screen flex flex-col antialiased selection:bg-red-500/30 selection:text-white bg-archival-grid">
+        <CommandPalette />
         <Navbar />
         <main className="flex-1 w-full flex flex-col">
           {children}
