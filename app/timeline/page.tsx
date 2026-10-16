@@ -67,8 +67,8 @@ export default function TimelinePage() {
     <div className="w-full max-w-6xl mx-auto px-4 sm:px-6 py-12 space-y-12 font-sans">
       {/* Header */}
       <div className="text-center max-w-3xl mx-auto space-y-4">
-        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-red-950/40 border border-red-500/30 text-red-400 text-xs font-mono font-bold tracking-wider uppercase">
-          <Clock className="w-4 h-4" />
+        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-red-950/40 border border-red-500/30 text-red-400 text-xs font-mono font-bold tracking-wider uppercase shrink-0">
+          <Clock className="w-4 h-4 shrink-0" />
           <span>Archaeological Epochs</span>
         </div>
         <h1 className="text-4xl sm:text-6xl font-serif font-black text-white uppercase tracking-tight drop-shadow-md">
@@ -184,7 +184,7 @@ export default function TimelinePage() {
                                 {entity.cause_category}
                               </span>
                               <span className="flex items-center gap-1 text-red-400 font-bold group-hover:translate-x-1 transition-transform shrink-0">
-                                Memorial <ChevronRight className="w-4 h-4" />
+                                Memorial <ChevronRight className="w-4 h-4 shrink-0" />
                               </span>
                             </div>
                           </Link>

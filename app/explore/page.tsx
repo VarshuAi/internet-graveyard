@@ -385,7 +385,7 @@ function ExploreContent() {
         </div>
       ) : viewMode === 'grid' ? (
         /* 1. MONUMENT GRID VIEW */
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 items-stretch">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 items-stretch">
           {filteredEntities.slice(0, visibleCount).map((entity) => (
             <GraveCard 
               key={entity.id} 
@@ -398,7 +398,7 @@ function ExploreContent() {
         /* 2. ARCHIVAL LEDGER VIEW (Dense Research Table) */
         <div className="rounded-2xl bg-zinc-950 border border-white/10 overflow-hidden shadow-xl font-mono text-xs">
           <div className="overflow-x-auto">
-            <table className="w-full text-left divide-y divide-white/10">
+            <table className="w-full text-left divide-y divide-white/10 min-w-[760px]">
               <thead className="bg-zinc-900 text-[11px] text-zinc-400 uppercase tracking-wider select-none">
                 <tr>
                   <th className="px-4 py-3">Platform</th>

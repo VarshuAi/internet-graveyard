@@ -92,17 +92,17 @@ export default function HomePage() {
           <div className="pt-2 max-w-3xl mx-auto w-full">
             <form action="/explore" method="GET" className="relative w-full group">
               <div className="relative rounded-2xl bg-zinc-950/90 border-2 border-white/20 group-focus-within:border-emerald-500/80 group-focus-within:ring-4 group-focus-within:ring-emerald-500/20 transition-all shadow-2xl overflow-hidden">
-                <div className="flex items-center h-16 px-4">
-                  <span className="text-emerald-400 font-mono font-bold text-lg mr-3 select-none">&gt;</span>
+                <div className="flex items-center h-14 sm:h-16 px-3 sm:px-4">
+                  <span className="text-emerald-400 font-mono font-bold text-base sm:text-lg mr-2 sm:mr-3 select-none shrink-0">&gt;</span>
                   <input
                     type="text"
                     name="q"
                     placeholder="Search 1,027 relics, causes of death, eras, or enter a URL..."
-                    className="w-full bg-transparent text-white placeholder-zinc-500 font-sans text-base sm:text-lg focus:outline-none"
+                    className="w-full bg-transparent text-white placeholder-zinc-500 font-sans text-sm sm:text-base md:text-lg focus:outline-none min-w-0"
                   />
                   <button
                     type="submit"
-                    className="ml-3 px-6 py-2.5 rounded-xl bg-red-600 hover:bg-red-500 text-white font-sans text-sm font-bold transition-all shadow-md cursor-pointer shrink-0"
+                    className="ml-2 sm:ml-3 px-4 sm:px-6 py-2 sm:py-2.5 rounded-xl bg-red-600 hover:bg-red-500 text-white font-sans text-xs sm:text-sm font-bold transition-all shadow-md cursor-pointer shrink-0"
                   >
                     Exhume
                   </button>
@@ -134,7 +134,7 @@ export default function HomePage() {
             <div className="pt-3">
               <Link
                 href="/lookup"
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-zinc-900/90 hover:bg-zinc-850 border border-white/15 hover:border-emerald-500/50 text-zinc-300 hover:text-white text-xs sm:text-sm font-mono transition-all group shadow-md"
+                className="inline-flex items-center gap-2 px-3.5 sm:px-4 py-2 rounded-xl sm:rounded-full bg-zinc-900/90 hover:bg-zinc-850 border border-white/15 hover:border-emerald-500/50 text-zinc-300 hover:text-white text-xs sm:text-sm font-mono transition-all group shadow-md text-left leading-snug"
               >
                 <Activity className="w-4 h-4 text-emerald-400 group-hover:animate-pulse shrink-0" />
                 <span>Test any live or dead domain: <strong className="text-white underline decoration-emerald-500/80">Launch Vital Signs Forensic Lab &rarr;</strong></span>
@@ -143,10 +143,10 @@ export default function HomePage() {
           </div>
 
           {/* Quick Action Buttons */}
-          <div className="pt-2 flex flex-wrap items-center justify-center gap-3 font-sans text-xs sm:text-sm font-bold">
+          <div className="pt-2 flex flex-wrap items-center justify-center gap-2.5 sm:gap-3 font-sans text-xs sm:text-sm font-bold">
             <Link
               href="/lookup"
-              className="inline-flex items-center justify-center h-11 px-5 rounded-xl bg-red-950/60 hover:bg-red-900/70 text-red-300 hover:text-white border border-red-500/50 transition-all shadow-md gap-2"
+              className="inline-flex items-center justify-center h-10 sm:h-11 px-4 sm:px-5 rounded-xl bg-red-950/60 hover:bg-red-900/70 text-red-300 hover:text-white border border-red-500/50 transition-all shadow-md gap-2 shrink-0"
             >
               <Activity className="w-4 h-4 text-red-400 animate-pulse shrink-0" />
               <span>Vital Signs Lab</span>
@@ -154,7 +154,7 @@ export default function HomePage() {
 
             <Link
               href="/explore"
-              className="inline-flex items-center justify-center h-11 px-5 rounded-xl bg-white/12 hover:bg-white/18 text-white border border-white/20 transition-all shadow-md gap-2"
+              className="inline-flex items-center justify-center h-10 sm:h-11 px-4 sm:px-5 rounded-xl bg-white/12 hover:bg-white/18 text-white border border-white/20 transition-all shadow-md gap-2 shrink-0"
             >
               <Compass className="w-4 h-4 text-emerald-400 shrink-0" />
               <span>Explore 1,027 Graves</span>
@@ -162,7 +162,7 @@ export default function HomePage() {
 
             <Link
               href="/grounds"
-              className="inline-flex items-center justify-center h-11 px-5 rounded-xl bg-zinc-850 hover:bg-zinc-800 text-zinc-200 hover:text-white border border-white/15 transition-all shadow-md gap-2"
+              className="inline-flex items-center justify-center h-10 sm:h-11 px-4 sm:px-5 rounded-xl bg-zinc-850 hover:bg-zinc-800 text-zinc-200 hover:text-white border border-white/15 transition-all shadow-md gap-2 shrink-0"
             >
               <Landmark className="w-4 h-4 text-amber-400 shrink-0" />
               <span>3D Necropolis Grounds</span>
@@ -170,7 +170,7 @@ export default function HomePage() {
 
             <Link
               href="/random"
-              className="inline-flex items-center justify-center h-11 px-5 rounded-xl bg-zinc-850 hover:bg-zinc-800 text-zinc-200 hover:text-white border border-white/15 transition-all shadow-md gap-2"
+              className="inline-flex items-center justify-center h-10 sm:h-11 px-4 sm:px-5 rounded-xl bg-zinc-850 hover:bg-zinc-800 text-zinc-200 hover:text-white border border-white/15 transition-all shadow-md gap-2 shrink-0"
             >
               <Shuffle className="w-4 h-4 text-purple-400 shrink-0" />
               <span>Random Memorial</span>
@@ -190,7 +190,7 @@ export default function HomePage() {
 
           <div className="p-4 sm:p-5 rounded-xl bg-zinc-950/95 border border-red-500/30 shadow-xl flex flex-col justify-between">
             <span className="text-xs text-red-400 font-semibold uppercase tracking-wider flex items-center gap-1.5">
-              <Skull className="w-3.5 h-3.5" />
+              <Skull className="w-3.5 h-3.5 shrink-0" />
               <span>FALLEN SITES</span>
             </span>
             <div className="text-3xl sm:text-4xl font-black text-red-400 mt-1">547</div>
@@ -199,7 +199,7 @@ export default function HomePage() {
 
           <div className="p-4 sm:p-5 rounded-xl bg-zinc-950/95 border border-emerald-500/30 shadow-xl flex flex-col justify-between">
             <span className="text-xs text-emerald-400 font-semibold uppercase tracking-wider flex items-center gap-1.5">
-              <Activity className="w-3.5 h-3.5" />
+              <Activity className="w-3.5 h-3.5 shrink-0" />
               <span>LIVING WATCH</span>
             </span>
             <div className="text-3xl sm:text-4xl font-black text-emerald-400 mt-1">434</div>
@@ -208,7 +208,7 @@ export default function HomePage() {
 
           <div className="p-4 sm:p-5 rounded-xl bg-zinc-950/95 border border-purple-500/30 shadow-xl flex flex-col justify-between">
             <span className="text-xs text-purple-400 font-semibold uppercase tracking-wider flex items-center gap-1.5">
-              <Zap className="w-3.5 h-3.5" />
+              <Zap className="w-3.5 h-3.5 shrink-0" />
               <span>ZOMBIE DOMAINS</span>
             </span>
             <div className="text-3xl sm:text-4xl font-black text-purple-400 mt-1">36</div>
@@ -261,18 +261,18 @@ export default function HomePage() {
                 </div>
               </div>
 
-              <div className="flex flex-col sm:flex-row items-center gap-3 shrink-0 w-full lg:w-auto">
-                <div className="flex items-center gap-2 px-4 py-3 rounded-xl bg-zinc-900 border border-white/10 text-amber-400 font-mono text-xs">
+              <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 shrink-0 w-full lg:w-auto">
+                <div className="flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-zinc-900 border border-white/10 text-amber-400 font-mono text-xs w-full sm:w-auto shrink-0">
                   <Flame className="w-4 h-4 shrink-0" />
                   <span className="font-bold">{spotlightEntity.candle_count || 320}</span>
                   <span className="text-zinc-400">Memorial Candles Lit</span>
                 </div>
                 <Link
                   href={`/grave/${spotlightEntity.slug}`}
-                  className="w-full sm:w-auto px-6 py-3 rounded-xl bg-red-600 hover:bg-red-500 text-white font-sans text-sm font-bold flex items-center justify-center gap-2 transition-all shadow-lg"
+                  className="w-full sm:w-auto px-6 py-3 rounded-xl bg-red-600 hover:bg-red-500 text-white font-sans text-sm font-bold flex items-center justify-center gap-2 transition-all shadow-lg shrink-0"
                 >
                   <span>Pay Respects & Inspect Dossier</span>
-                  <ArrowRight className="w-4 h-4" />
+                  <ArrowRight className="w-4 h-4 shrink-0" />
                 </Link>
               </div>
             </div>
@@ -344,7 +344,7 @@ export default function HomePage() {
                   <span className={`px-2 py-0.5 rounded ${epoch.accent} font-bold text-[10px]`}>
                     {epoch.era}
                   </span>
-                  <ArrowRight className="w-3.5 h-3.5 text-zinc-500 group-hover:text-white group-hover:translate-x-1 transition-all" />
+                  <ArrowRight className="w-3.5 h-3.5 text-zinc-500 group-hover:text-white group-hover:translate-x-1 transition-all shrink-0" />
                 </div>
                 <h3 className="text-base font-bold text-white group-hover:text-red-400 transition-colors">
                   {epoch.title}
@@ -578,7 +578,7 @@ export default function HomePage() {
                   className="pt-3 border-t border-white/10 flex items-center justify-between text-xs text-amber-400 hover:text-amber-300 font-bold font-sans transition-colors mt-auto shrink-0"
                 >
                   <span>Inspect Risk Dossier</span>
-                  <ArrowRight className="w-3.5 h-3.5" />
+                  <ArrowRight className="w-3.5 h-3.5 shrink-0" />
                 </Link>
               </div>
             ))}

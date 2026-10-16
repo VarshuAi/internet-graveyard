@@ -66,7 +66,7 @@ export default function GazettePage() {
         
         {/* Newspaper Broadsheet Masthead */}
         <div className="text-center space-y-4 border-b-4 border-double border-white/20 pb-8">
-          <div className="flex items-center justify-between text-xs font-mono uppercase text-zinc-400 border-b border-white/10 pb-2">
+          <div className="flex items-center justify-between text-[10px] sm:text-xs font-mono uppercase text-zinc-400 border-b border-white/10 pb-2 flex-wrap gap-1">
             <span>Vol. XLIV • Historical Edition</span>
             <span>The Daily Chronicle of Defunct Cyberspace</span>
             <span>Price: One Memory</span>
@@ -80,7 +80,7 @@ export default function GazettePage() {
             "All that was uploaded shall eventually be deleted. We print the permanent record of the final editions."
           </p>
 
-          <div className="flex items-center justify-center gap-6 text-xs font-mono text-amber-400/90 pt-1">
+          <div className="flex items-center justify-center gap-3 sm:gap-6 text-[10px] sm:text-xs font-mono text-amber-400/90 pt-1 flex-wrap">
             <span>OFFICIAL ARCHIVE ALMANAC</span>
             <span>•</span>
             <span>ANNIVERSARIES OF SILENCE</span>
@@ -98,7 +98,7 @@ export default function GazettePage() {
                 key={m}
                 onClick={() => setSelectedMonth(m)}
                 className={cn(
-                  "px-3 py-1.5 rounded-lg text-xs font-mono transition-all cursor-pointer whitespace-nowrap",
+                  "px-3 py-1.5 rounded-lg text-xs font-mono transition-all cursor-pointer whitespace-nowrap shrink-0",
                   selectedMonth === m
                     ? "bg-amber-600 text-black font-bold shadow-sm"
                     : "text-zinc-400 hover:text-white hover:bg-zinc-800"
@@ -111,7 +111,7 @@ export default function GazettePage() {
 
           {/* Search Box */}
           <div className="relative w-full sm:w-60 shrink-0">
-            <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-zinc-500" />
+            <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-zinc-500 shrink-0" />
             <input
               type="text"
               placeholder="Search historical dispatch..."
@@ -124,13 +124,13 @@ export default function GazettePage() {
 
         {/* Front Page Lead Story */}
         {leadStory && (
-          <div className="p-8 sm:p-10 rounded-3xl bg-zinc-900/90 border-2 border-amber-500/30 space-y-6 shadow-2xl relative overflow-hidden">
+          <div className="p-6 sm:p-10 rounded-3xl bg-zinc-900/90 border-2 border-amber-500/30 space-y-6 shadow-2xl relative overflow-hidden">
             <div className="flex items-center justify-between border-b border-white/10 pb-4 flex-wrap gap-2">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-950/60 border border-red-500/40 text-red-400 text-xs font-mono font-bold">
-                <Skull className="w-3.5 h-3.5" />
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-950/60 border border-red-500/40 text-red-400 text-xs font-mono font-bold shrink-0">
+                <Skull className="w-3.5 h-3.5 shrink-0" />
                 <span>LEAD DISPATCH • {leadStory.eventType}</span>
               </div>
-              <span className="text-xs font-mono text-amber-400 font-bold">
+              <span className="text-xs font-mono text-amber-400 font-bold whitespace-nowrap">
                 {leadStory.monthName} {leadStory.day}, {leadStory.year}
               </span>
             </div>
@@ -161,10 +161,10 @@ export default function GazettePage() {
 
               <Link
                 href={`/grave/${leadStory.entitySlug}`}
-                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-amber-600 hover:bg-amber-500 text-black font-mono font-bold text-xs transition-all shadow-[0_0_15px_rgba(245,158,11,0.3)] group"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl bg-amber-600 hover:bg-amber-500 text-black font-mono font-bold text-xs transition-all shadow-[0_0_15px_rgba(245,158,11,0.3)] group shrink-0"
               >
                 <span>Read Full {leadStory.entityName} Autopsy</span>
-                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform shrink-0" />
               </Link>
             </div>
           </div>

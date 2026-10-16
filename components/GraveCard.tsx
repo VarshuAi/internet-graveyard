@@ -52,8 +52,8 @@ export const GraveCard: React.FC<GraveCardProps> = ({
       )}
     >
       {/* Retro Netscape Top Chrome Bezel */}
-      <div className="bg-gradient-to-r from-zinc-900 via-zinc-850 to-zinc-900 px-3.5 py-1.5 border-b border-white/10 flex items-center justify-between text-[11px] font-mono">
-        <div className="flex items-center gap-1.5 min-w-0">
+      <div className="bg-gradient-to-r from-zinc-900 via-zinc-850 to-zinc-900 px-3 sm:px-3.5 py-1.5 border-b border-white/10 flex items-center justify-between gap-2 text-[11px] font-mono">
+        <div className="flex items-center gap-1.5 min-w-0 flex-1">
           <span 
             className={cn(
               "w-2 h-2 rounded-full shrink-0",
@@ -133,20 +133,20 @@ export const GraveCard: React.FC<GraveCardProps> = ({
       </div>
 
       {/* Footer action bar */}
-      <div className="px-4 py-2.5 bg-zinc-900 border-t border-white/10 flex items-center justify-between text-xs font-sans mt-auto">
+      <div className="px-3.5 sm:px-4 py-2.5 bg-zinc-900 border-t border-white/10 flex items-center justify-between text-xs font-sans mt-auto gap-2">
         {/* Interactive Candle Light Action Button */}
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2 sm:gap-3 shrink-0">
           <button
             onClick={handleLightCandle}
             title="Light a memorial candle"
             className={cn(
-              "flex items-center gap-1.5 px-2 py-1 rounded text-xs font-mono font-bold transition-all",
+              "flex items-center gap-1.5 px-2 py-1 rounded text-xs font-mono font-bold transition-all shrink-0",
               litRecently 
                 ? "bg-amber-500/30 text-amber-300 scale-105" 
                 : "text-amber-400/90 hover:text-amber-300 hover:bg-amber-950/40"
             )}
           >
-            <Flame className={cn("w-3.5 h-3.5 transition-transform", litRecently && "animate-bounce text-amber-300")} />
+            <Flame className={cn("w-3.5 h-3.5 shrink-0 transition-transform", litRecently && "animate-bounce text-amber-300")} />
             <span>{candles}</span>
           </button>
 
@@ -159,9 +159,9 @@ export const GraveCard: React.FC<GraveCardProps> = ({
                 onQuickInspect(entity);
               }}
               title="Quick inspect autopsy dossier"
-              className="text-zinc-400 hover:text-white p-1 rounded hover:bg-white/10 transition-colors"
+              className="text-zinc-400 hover:text-white p-1 rounded hover:bg-white/10 transition-colors shrink-0 flex items-center justify-center"
             >
-              <Eye className="w-3.5 h-3.5" />
+              <Eye className="w-3.5 h-3.5 shrink-0" />
             </button>
           )}
         </div>

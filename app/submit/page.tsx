@@ -84,8 +84,8 @@ function SubmitGraveForm() {
     <div className="w-full max-w-3xl mx-auto px-4 sm:px-6 py-12 space-y-10 font-sans">
       {/* Header */}
       <div className="space-y-4 border-b border-white/10 pb-8 text-center sm:text-left">
-        <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-red-950/40 border border-red-500/30 text-red-400 text-xs font-mono font-bold tracking-wider uppercase">
-          <Compass className="w-4 h-4" />
+        <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-red-950/40 border border-red-500/30 text-red-400 text-xs font-mono font-bold tracking-wider uppercase shrink-0">
+          <Compass className="w-4 h-4 shrink-0" />
           <span>Community Archaeology Guild</span>
         </div>
         <h1 className="text-4xl sm:text-6xl font-black text-white uppercase tracking-tight">
@@ -251,9 +251,9 @@ function SubmitGraveForm() {
           <button
             type="submit"
             disabled={loading}
-            className="w-full py-4 rounded-xl bg-red-600 hover:bg-red-500 disabled:opacity-50 text-white font-bold text-base tracking-wider uppercase transition-colors shadow-lg hover:shadow-red-600/30 flex items-center justify-center gap-3 cursor-pointer"
+            className="w-full py-4 rounded-xl bg-red-600 hover:bg-red-500 disabled:opacity-50 text-white font-bold text-base tracking-wider uppercase transition-colors shadow-lg hover:shadow-red-600/30 flex items-center justify-center gap-3 cursor-pointer shrink-0"
           >
-            <Send className="w-5 h-5" />
+            <Send className="w-5 h-5 shrink-0" />
             <span>{loading ? 'Submitting to Queue...' : 'Submit for Investigation'}</span>
           </button>
         </form>

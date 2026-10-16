@@ -358,24 +358,24 @@ export default function GroundsPage() {
                     <button
                       onClick={(e) => handleLightCandle(entity.slug, e)}
                       className={cn(
-                        "flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-mono font-bold transition-all cursor-pointer border",
+                        "flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-mono font-bold transition-all cursor-pointer border shrink-0",
                         isLit
                           ? "bg-amber-950/60 border-amber-500/60 text-amber-300 shadow-[0_0_12px_rgba(245,158,11,0.3)]"
                           : "bg-zinc-900 border-white/10 text-zinc-400 hover:text-amber-300 hover:border-amber-500/30"
                       )}
                       title="Kindle memorial candle on this grave"
                     >
-                      <Flame className={cn("w-3.5 h-3.5", isLit ? "text-amber-400 fill-amber-400 animate-pulse" : "text-zinc-500")} />
+                      <Flame className={cn("w-3.5 h-3.5 shrink-0", isLit ? "text-amber-400 fill-amber-400 animate-pulse" : "text-zinc-500")} />
                       <span>{count}</span>
                     </button>
 
                     {/* Visit Grave Link */}
                     <Link
                       href={`/grave/${entity.slug}`}
-                      className="inline-flex items-center gap-1 text-xs font-mono font-bold text-zinc-300 hover:text-white transition-colors group-hover:translate-x-0.5"
+                      className="inline-flex items-center gap-1 text-xs font-mono font-bold text-zinc-300 hover:text-white transition-colors group-hover:translate-x-0.5 shrink-0"
                     >
                       <span>Enter Tomb</span>
-                      <ArrowRight className="w-3.5 h-3.5 text-red-400" />
+                      <ArrowRight className="w-3.5 h-3.5 text-red-400 shrink-0" />
                     </Link>
                   </div>
                 </div>

@@ -25,8 +25,8 @@ export default function DyingNowPage() {
     <div className="w-full max-w-5xl mx-auto px-4 sm:px-6 py-12 space-y-12 font-sans">
       {/* Header */}
       <div className="space-y-4 border-b border-amber-500/30 pb-8">
-        <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-amber-500/15 border border-amber-500/30 text-amber-300 text-xs font-mono font-bold tracking-wider uppercase">
-          <AlertTriangle className="w-4 h-4 animate-pulse text-amber-400" />
+        <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-amber-500/15 border border-amber-500/30 text-amber-300 text-xs font-mono font-bold tracking-wider uppercase shrink-0">
+          <AlertTriangle className="w-4 h-4 animate-pulse text-amber-400 shrink-0" />
           <span>Multi-Signal Forensic Radar</span>
         </div>
         <h1 className="text-4xl sm:text-6xl font-serif font-black text-white uppercase tracking-tight drop-shadow-md">
@@ -40,7 +40,7 @@ export default function DyingNowPage() {
       {/* Methodological Transparency Callout */}
       <div className="p-6 rounded-2xl bg-zinc-900/90 border-2 border-amber-500/30 flex items-start gap-4">
         <div className="p-3 rounded-xl bg-amber-500/15 text-amber-400 shrink-0">
-          <ShieldAlert className="w-6 h-6" />
+          <ShieldAlert className="w-6 h-6 shrink-0" />
         </div>
         <div className="space-y-1.5 text-zinc-200">
           <div className="font-bold text-white text-base uppercase tracking-wider font-mono">
@@ -55,7 +55,7 @@ export default function DyingNowPage() {
       {/* Signal Weightings Reference */}
       <div className="p-6 rounded-2xl bg-zinc-900/70 border border-white/10 space-y-4 font-sans">
         <h3 className="font-bold uppercase tracking-wider text-zinc-200 text-sm font-mono flex items-center gap-2">
-          <Activity className="w-4 h-4 text-amber-400" />
+          <Activity className="w-4 h-4 text-amber-400 shrink-0" />
           <span>Automated Signal Scoring Breakdown:</span>
         </h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 pt-1">
@@ -170,16 +170,16 @@ export default function DyingNowPage() {
               </div>
 
               {/* Action footer */}
-              <div className="pt-4 border-t border-white/10 flex items-center justify-between">
+              <div className="pt-4 border-t border-white/10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
                 <span className="text-xs sm:text-sm text-zinc-300 font-sans">
                   Status: Ongoing Archaeological Surveillance
                 </span>
                 <Link
                   href={`/grave/${entity.slug}`}
-                  className="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-amber-500/20 hover:bg-amber-500/30 border border-amber-500/40 text-amber-200 font-bold text-sm transition-colors shadow-md"
+                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl bg-amber-500/20 hover:bg-amber-500/30 border border-amber-500/40 text-amber-200 font-bold text-sm transition-colors shadow-md shrink-0"
                 >
                   <span>View Full Risk Dossier</span>
-                  <ArrowRight className="w-4 h-4" />
+                  <ArrowRight className="w-4 h-4 shrink-0" />
                 </Link>
               </div>
             </div>

@@ -55,8 +55,8 @@ export default function SoundVaultPage() {
           <div className="absolute top-0 right-0 w-96 h-96 bg-emerald-600/10 rounded-full blur-3xl pointer-events-none -z-10" />
 
           <div className="space-y-4 max-w-3xl">
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-950/60 border border-emerald-500/30 text-emerald-400 text-xs font-mono font-bold tracking-wider">
-              <Headphones className="w-4 h-4" />
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-950/60 border border-emerald-500/30 text-emerald-400 text-xs font-mono font-bold tracking-wider shrink-0">
+              <Headphones className="w-4 h-4 shrink-0" />
               <span>DIGITAL ARCHAEOLOGY • SOUND VAULT</span>
             </div>
 
@@ -70,7 +70,7 @@ export default function SoundVaultPage() {
 
             <div className="flex flex-wrap items-center gap-4 pt-2 text-xs font-mono text-zinc-400">
               <span className="flex items-center gap-1.5">
-                <Radio className="w-3.5 h-3.5 text-emerald-400" />
+                <Radio className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
                 <span>{SOUND_RELICS.length} Authenticated Relics Preserved</span>
               </span>
               <span>•</span>
@@ -81,16 +81,16 @@ export default function SoundVaultPage() {
           {/* Master Control Bar */}
           <div className="mt-8 pt-6 border-t border-white/10 flex items-center justify-between flex-wrap gap-4">
             <div className="text-xs font-mono text-zinc-400 flex items-center gap-2">
-              <Info className="w-4 h-4 text-zinc-500" />
+              <Info className="w-4 h-4 text-zinc-500 shrink-0" />
               <span>Tip: Click any artifact below to synthesize its acoustic waveform in real-time.</span>
             </div>
 
             {playingId && (
               <button
                 onClick={handleStopAll}
-                className="flex items-center gap-2 px-4 py-2 rounded-xl bg-red-950/60 hover:bg-red-900/80 border border-red-500/40 text-red-200 text-xs font-mono font-bold transition-all cursor-pointer shadow-lg"
+                className="flex items-center gap-2 px-4 py-2 rounded-xl bg-red-950/60 hover:bg-red-900/80 border border-red-500/40 text-red-200 text-xs font-mono font-bold transition-all cursor-pointer shadow-lg shrink-0"
               >
-                <Square className="w-3.5 h-3.5 fill-current" />
+                <Square className="w-3.5 h-3.5 fill-current shrink-0" />
                 <span>Silence Active Playback</span>
               </button>
             )}
@@ -164,7 +164,7 @@ export default function SoundVaultPage() {
                     <button
                       onClick={() => handlePlay(relic)}
                       className={cn(
-                        "flex items-center gap-2 px-4 py-2.5 rounded-xl font-mono text-xs font-bold transition-all shadow-md cursor-pointer",
+                        "flex items-center gap-2 px-4 py-2.5 rounded-xl font-mono text-xs font-bold transition-all shadow-md cursor-pointer shrink-0",
                         isPlaying
                           ? "bg-red-600 hover:bg-red-500 text-white"
                           : "bg-emerald-600 hover:bg-emerald-500 text-white shadow-[0_0_15px_rgba(16,185,129,0.25)]"
@@ -172,12 +172,12 @@ export default function SoundVaultPage() {
                     >
                       {isPlaying ? (
                         <>
-                          <Square className="w-3.5 h-3.5 fill-current" />
+                          <Square className="w-3.5 h-3.5 fill-current shrink-0" />
                           <span>Stop</span>
                         </>
                       ) : (
                         <>
-                          <Play className="w-3.5 h-3.5 fill-current" />
+                          <Play className="w-3.5 h-3.5 fill-current shrink-0" />
                           <span>Play Relic</span>
                         </>
                       )}
@@ -189,10 +189,10 @@ export default function SoundVaultPage() {
                     <div className="pt-2 border-t border-white/5 flex justify-end">
                       <Link
                         href={`/grave/${relic.entitySlug}`}
-                        className="inline-flex items-center gap-1.5 text-xs font-mono text-zinc-400 hover:text-emerald-400 transition-colors group/link"
+                        className="inline-flex items-center gap-1.5 text-xs font-mono text-zinc-400 hover:text-emerald-400 transition-colors group/link shrink-0"
                       >
                         <span>Visit {relic.platform} Memorial</span>
-                        <ArrowRight className="w-3 h-3 group-hover/link:translate-x-1 transition-transform" />
+                        <ArrowRight className="w-3 h-3 group-hover/link:translate-x-1 transition-transform shrink-0" />
                       </Link>
                     </div>
                   )}

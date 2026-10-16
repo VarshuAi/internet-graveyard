@@ -183,9 +183,9 @@ export default function ExportPage() {
               <button
                 onClick={handleDownloadJSON}
                 disabled={isDownloadingJson}
-                className="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-amber-500 hover:bg-amber-400 text-black font-mono font-bold text-xs sm:text-sm transition-all shadow-[0_0_15px_rgba(245,158,11,0.25)] cursor-pointer"
+                className="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-amber-500 hover:bg-amber-400 text-black font-mono font-bold text-xs sm:text-sm transition-all shadow-[0_0_15px_rgba(245,158,11,0.25)] cursor-pointer shrink-0"
               >
-                <ArrowDownToLine className="w-4 h-4" />
+                <ArrowDownToLine className="w-4 h-4 shrink-0" />
                 <span>Download JSON Dataset</span>
               </button>
             </div>
@@ -194,8 +194,8 @@ export default function ExportPage() {
           {/* Card 2: RFC-4180 CSV */}
           <div className="rounded-2xl bg-zinc-900/90 border border-white/10 p-6 flex flex-col justify-between space-y-6 hover:border-cyan-500/40 transition-colors shadow-lg">
             <div className="space-y-3">
-              <div className="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400">
-                <FileText className="w-6 h-6" />
+              <div className="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 shrink-0">
+                <FileText className="w-6 h-6 shrink-0" />
               </div>
               <h3 className="text-xl font-bold text-white">Forensic CSV Ledger</h3>
               <p className="text-xs sm:text-sm text-zinc-400 font-sans leading-relaxed">
@@ -211,9 +211,9 @@ export default function ExportPage() {
               <a
                 href="/api/export/csv"
                 download="internet-graveyard-forensic-dataset.csv"
-                className="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-black font-mono font-bold text-xs sm:text-sm transition-all shadow-[0_0_15px_rgba(6,182,212,0.25)] cursor-pointer"
+                className="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-black font-mono font-bold text-xs sm:text-sm transition-all shadow-[0_0_15px_rgba(6,182,212,0.25)] cursor-pointer shrink-0"
               >
-                <ArrowDownToLine className="w-4 h-4" />
+                <ArrowDownToLine className="w-4 h-4 shrink-0" />
                 <span>Download Forensic CSV</span>
               </a>
             </div>

@@ -227,17 +227,19 @@ export const CommandPalette: React.FC = () => {
                       : "hover:bg-white/5 text-zinc-300"
                   )}
                 >
-                  <div className="flex items-center gap-3 min-w-0">
-                    <EntityLogo entity={entity} size="sm" />
-                    <div className="min-w-0">
-                      <div className="flex items-center gap-2">
+                  <div className="flex items-center gap-2.5 sm:gap-3 min-w-0 flex-1">
+                    <EntityLogo entity={entity} size="sm" className="shrink-0" />
+                    <div className="min-w-0 flex-1">
+                      <div className="flex items-center gap-1.5 sm:gap-2 flex-wrap">
                         <span className="font-bold text-sm tracking-tight text-white group-hover:text-red-400 truncate">
                           {entity.name}
                         </span>
-                        <span className="text-[11px] font-mono text-zinc-400">
+                        <span className="text-[11px] font-mono text-zinc-400 whitespace-nowrap">
                           ({entity.lifespan})
                         </span>
-                        <StatusBadge status={entity.status} size="sm" />
+                        <div className="shrink-0">
+                          <StatusBadge status={entity.status} size="sm" />
+                        </div>
                       </div>
                       <p className="text-xs text-zinc-400 truncate font-sans mt-0.5 max-w-md">
                         {entity.tagline || entity.cause_of_death_summary}

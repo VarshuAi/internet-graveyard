@@ -180,29 +180,31 @@ function LookupContent() {
       {/* Primary Input Box */}
       <div className="max-w-3xl mx-auto">
         <form onSubmit={handleSubmit} className="relative group">
-          <div className="relative flex items-center">
-            <input
-              type="text"
-              value={inputUrl}
-              onChange={(e) => setInputUrl(e.target.value)}
-              placeholder="Enter domain or URL (e.g. vine.co, myspace.com)..."
-              disabled={loading}
-              className="w-full h-18 pl-16 pr-48 rounded-2xl bg-zinc-900/95 border-2 border-white/15 text-white placeholder-zinc-400 font-sans text-base sm:text-lg focus:outline-none focus:border-red-500 focus:ring-4 focus:ring-red-500/20 shadow-2xl transition-all"
-            />
-            <Activity className="absolute left-5 top-1/2 -translate-y-1/2 w-6 h-6 text-zinc-400 group-focus-within:text-red-400 transition-colors" />
+          <div className="relative flex flex-col sm:flex-row items-stretch sm:items-center gap-2 sm:gap-0">
+            <div className="relative flex-1">
+              <input
+                type="text"
+                value={inputUrl}
+                onChange={(e) => setInputUrl(e.target.value)}
+                placeholder="Enter domain or URL (e.g. vine.co, myspace.com)..."
+                disabled={loading}
+                className="w-full h-14 sm:h-18 pl-12 sm:pl-16 pr-4 sm:pr-48 rounded-2xl bg-zinc-900/95 border-2 border-white/15 text-white placeholder-zinc-400 font-sans text-sm sm:text-lg focus:outline-none focus:border-red-500 focus:ring-4 focus:ring-red-500/20 shadow-2xl transition-all"
+              />
+              <Activity className="absolute left-4 sm:left-5 top-1/2 -translate-y-1/2 w-5 h-5 sm:w-6 sm:h-6 text-zinc-400 group-focus-within:text-red-400 transition-colors shrink-0" />
+            </div>
             <button
               type="submit"
               disabled={loading || !inputUrl.trim()}
-              className="absolute right-3 top-1/2 -translate-y-1/2 px-6 py-3.5 rounded-xl bg-red-600 hover:bg-red-500 disabled:opacity-50 disabled:pointer-events-none text-white font-sans text-sm sm:text-base font-bold transition-all shadow-lg flex items-center gap-2.5 cursor-pointer shrink-0"
+              className="sm:absolute sm:right-3 sm:top-1/2 sm:-translate-y-1/2 w-full sm:w-auto px-5 sm:px-6 py-3 sm:py-3.5 rounded-xl bg-red-600 hover:bg-red-500 disabled:opacity-50 disabled:pointer-events-none text-white font-sans text-sm sm:text-base font-bold transition-all shadow-lg flex items-center justify-center gap-2.5 cursor-pointer shrink-0"
             >
               {loading ? (
                 <>
-                  <RefreshCw className="w-5 h-5 animate-spin shrink-0" />
+                  <RefreshCw className="w-4 h-4 sm:w-5 sm:h-5 animate-spin shrink-0" />
                   <span>Probing...</span>
                 </>
               ) : (
                 <>
-                  <Radio className="w-5 h-5 shrink-0" />
+                  <Radio className="w-4 h-4 sm:w-5 sm:h-5 shrink-0" />
                   <span>Probe Signs</span>
                 </>
               )}

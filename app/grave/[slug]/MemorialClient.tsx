@@ -151,25 +151,25 @@ export const MemorialClient: React.FC<MemorialClientProps> = ({
             </div>
 
             {/* Actions: Tribute Candle, Death Knell Bell, Certificate & Share */}
-            <div className="flex flex-col sm:flex-row items-center gap-3 w-full md:w-auto self-stretch md:self-center justify-end shrink-0 flex-wrap">
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5 sm:gap-3 w-full md:w-auto self-stretch md:self-center justify-end shrink-0 flex-wrap">
               {/* Funeral Bell Button */}
               <button
                 onClick={() => {
                   soundFx.playBell();
                 }}
-                className="flex items-center gap-2 px-3.5 py-2.5 rounded-2xl bg-zinc-850 hover:bg-zinc-800 border border-white/20 hover:border-amber-500/50 text-amber-300 text-xs sm:text-sm font-mono font-bold transition-all shadow-md group cursor-pointer shrink-0"
+                className="flex items-center justify-center gap-2 px-3.5 py-2.5 rounded-2xl bg-zinc-850 hover:bg-zinc-800 border border-white/20 hover:border-amber-500/50 text-amber-300 text-xs sm:text-sm font-mono font-bold transition-all shadow-md group cursor-pointer shrink-0"
                 title="Toll the Sacred Funeral Death Knell (Cathedral Bell Chime)"
               >
-                <span className="text-base group-hover:scale-125 transition-transform">🔔</span>
+                <span className="text-base group-hover:scale-125 transition-transform shrink-0">🔔</span>
                 <span>Toll Bell</span>
               </button>
 
               <button
                 onClick={() => setShowCertificateModal(true)}
-                className="flex items-center gap-2 px-4 py-2.5 rounded-2xl bg-amber-950/40 hover:bg-amber-900/60 border border-amber-500/40 text-amber-300 hover:text-amber-200 text-xs sm:text-sm font-mono font-bold transition-all shadow-[0_0_15px_rgba(245,158,11,0.15)] cursor-pointer shrink-0"
+                className="flex items-center justify-center gap-2 px-4 py-2.5 rounded-2xl bg-amber-950/40 hover:bg-amber-900/60 border border-amber-500/40 text-amber-300 hover:text-amber-200 text-xs sm:text-sm font-mono font-bold transition-all shadow-[0_0_15px_rgba(245,158,11,0.15)] cursor-pointer shrink-0"
                 title="View Official Coroner Death Certificate"
               >
-                <FileText className="w-4 h-4 text-amber-400" />
+                <FileText className="w-4 h-4 text-amber-400 shrink-0" />
                 <span className="hidden sm:inline">Death Certificate</span>
                 <span className="sm:hidden">Certificate</span>
               </button>
@@ -180,10 +180,10 @@ export const MemorialClient: React.FC<MemorialClientProps> = ({
               />
               <button
                 onClick={handleShare}
-                className="p-3 rounded-2xl bg-zinc-850 hover:bg-zinc-800 border border-white/15 text-zinc-200 hover:text-white transition-colors cursor-pointer shadow-md shrink-0"
+                className="p-3 rounded-2xl bg-zinc-850 hover:bg-zinc-800 border border-white/15 text-zinc-200 hover:text-white transition-colors cursor-pointer shadow-md shrink-0 flex items-center justify-center"
                 title="Share Memorial"
               >
-                <Share2 className="w-5 h-5" />
+                <Share2 className="w-5 h-5 shrink-0" />
               </button>
             </div>
           </div>

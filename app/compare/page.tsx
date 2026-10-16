@@ -44,8 +44,8 @@ export default function ComparePage() {
           <div className="absolute top-0 right-0 w-96 h-96 bg-red-600/10 rounded-full blur-3xl pointer-events-none -z-10" />
 
           <div className="space-y-4 max-w-3xl">
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-red-950/60 border border-red-500/30 text-red-400 text-xs font-mono font-bold tracking-wider">
-              <Scale className="w-4 h-4" />
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-red-950/60 border border-red-500/30 text-red-400 text-xs font-mono font-bold tracking-wider shrink-0">
+              <Scale className="w-4 h-4 shrink-0" />
               <span>FORENSIC COMPARISON • HEAD-TO-HEAD AUTOPSY</span>
             </div>
 
@@ -60,11 +60,11 @@ export default function ComparePage() {
 
           {/* Mode Switcher */}
           <div className="mt-8 pt-6 border-t border-white/10 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-            <div className="flex items-center gap-2 p-1 rounded-2xl bg-zinc-950 border border-white/10 w-fit">
+            <div className="flex items-center gap-1.5 sm:gap-2 p-1 rounded-2xl bg-zinc-950 border border-white/10 w-full sm:w-fit overflow-x-auto scrollbar-none">
               <button
                 onClick={() => setMode('curated')}
                 className={cn(
-                  "px-4 py-2 rounded-xl text-xs sm:text-sm font-bold font-sans transition-all cursor-pointer",
+                  "px-3.5 sm:px-4 py-2 rounded-xl text-xs sm:text-sm font-bold font-sans transition-all cursor-pointer whitespace-nowrap shrink-0",
                   mode === 'curated'
                     ? "bg-red-600 text-white shadow-md"
                     : "text-zinc-400 hover:text-white"
@@ -75,13 +75,13 @@ export default function ComparePage() {
               <button
                 onClick={() => setMode('custom')}
                 className={cn(
-                  "px-4 py-2 rounded-xl text-xs sm:text-sm font-bold font-sans transition-all cursor-pointer flex items-center gap-1.5",
+                  "px-3.5 sm:px-4 py-2 rounded-xl text-xs sm:text-sm font-bold font-sans transition-all cursor-pointer flex items-center gap-1.5 whitespace-nowrap shrink-0",
                   mode === 'custom'
                     ? "bg-red-600 text-white shadow-md"
                     : "text-zinc-400 hover:text-white"
                 )}
               >
-                <Layers className="w-3.5 h-3.5" />
+                <Layers className="w-3.5 h-3.5 shrink-0" />
                 <span>Custom Dual Inquest ({ALL_SEED_ENTITIES.length} Relics)</span>
               </button>
             </div>

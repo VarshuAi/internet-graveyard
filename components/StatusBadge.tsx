@@ -70,24 +70,24 @@ export const StatusBadge: React.FC<StatusBadgeProps> = ({
   const Icon = config.icon;
 
   const sizeClasses = {
-    sm: 'text-xs px-2.5 py-0.5 gap-1.5 font-mono font-bold tracking-wider',
-    md: 'text-sm px-3 py-1 gap-2 font-mono font-bold tracking-wider',
-    lg: 'text-base px-4 py-1.5 gap-2.5 font-mono font-bold tracking-wider'
+    sm: 'text-[10px] sm:text-xs px-2 sm:px-2.5 py-0.5 gap-1 sm:gap-1.5 font-mono font-bold tracking-wider leading-tight',
+    md: 'text-xs sm:text-sm px-2.5 sm:px-3 py-1 gap-1.5 font-mono font-bold tracking-wider',
+    lg: 'text-sm sm:text-base px-3.5 sm:px-4 py-1.5 gap-2 font-mono font-bold tracking-wider'
   }[size];
 
   return (
     <span
       title={config.description}
       className={cn(
-        'inline-flex items-center rounded-full border font-bold select-none backdrop-blur-sm transition-all shadow-sm',
+        'inline-flex items-center whitespace-nowrap shrink-0 rounded-full border font-bold select-none backdrop-blur-sm transition-all shadow-sm',
         config.color,
         sizeClasses,
         className
       )}
     >
-      <span className={cn('w-2 h-2 rounded-full shrink-0', config.dot)} />
-      {showIcon && <Icon className={cn('shrink-0', size === 'sm' ? 'w-3.5 h-3.5' : size === 'lg' ? 'w-5 h-5' : 'w-4 h-4')} />}
-      <span>{config.label}</span>
+      <span className={cn('rounded-full shrink-0', size === 'sm' ? 'w-1.5 h-1.5' : 'w-2 h-2', config.dot)} />
+      {showIcon && <Icon className={cn('shrink-0', size === 'sm' ? 'w-3 h-3' : size === 'lg' ? 'w-5 h-5' : 'w-4 h-4')} />}
+      <span className="leading-none">{config.label}</span>
     </span>
   );
 };

@@ -69,16 +69,16 @@ export const DigitalCandle: React.FC<DigitalCandleProps> = ({
         onClick={handleLightCandle}
         disabled={loading}
         className={cn(
-          'group relative flex items-center gap-3 px-6 py-3 rounded-full border font-sans font-bold text-sm sm:text-base transition-all duration-300 select-none cursor-pointer shadow-lg',
+          'group relative flex items-center justify-center gap-2 sm:gap-3 px-4 sm:px-6 py-2.5 sm:py-3 rounded-full border font-sans font-bold text-xs sm:text-sm md:text-base transition-all duration-300 select-none cursor-pointer shadow-lg whitespace-nowrap shrink-0',
           isLit 
             ? 'border-amber-500/60 bg-amber-500/20 text-amber-300 shadow-[0_0_25px_rgba(245,158,11,0.35)]' 
             : 'border-white/20 bg-zinc-900/90 hover:border-amber-500/50 hover:bg-zinc-850 text-zinc-100 hover:text-amber-300'
         )}
       >
-        <div className="relative">
+        <div className="relative shrink-0">
           <Flame 
             className={cn(
-              'w-5 h-5 transition-transform duration-300 group-hover:scale-110',
+              'w-4 h-4 sm:w-5 sm:h-5 shrink-0 transition-transform duration-300 group-hover:scale-110',
               isLit ? 'text-amber-400 fill-amber-400 animate-pulse' : 'text-amber-400/80 group-hover:text-amber-400'
             )} 
           />
