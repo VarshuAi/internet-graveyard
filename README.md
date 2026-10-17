@@ -1,7 +1,7 @@
 <div align="center">
 
 # † INTERNET GRAVEYARD
-### *Defunct Web Archaeology & Living Digital Cemetery*
+### *The Definitive Living Cyber-Cemetery & Web Archaeology Registry*
 
 > **"The internet forgets. We archive what disappeared."**
 
@@ -10,10 +10,10 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.6-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 [![Web Audio API](https://img.shields.io/badge/Audio-Procedural_Synthesis-red?style=for-the-badge&logo=webrtc&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API)
+[![Dataset](https://img.shields.io/badge/Relics-1%2C027%2B_Preserved-emerald?style=for-the-badge&logo=database&logoColor=white)](/explore)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
-[![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen.svg?style=for-the-badge)](CONTRIBUTING.md)
 
-[**Explore Live Grounds**](https://internet-graveyard-seven.vercel.app/) • [**Audio Vault**](https://internet-graveyard-seven.vercel.app/sounds) • [**Autopsy Rivals**](https://internet-graveyard-seven.vercel.app/compare) • [**Sunset Gazette**](https://internet-graveyard-seven.vercel.app/gazette) • [**Cemetery Map**](https://internet-graveyard-seven.vercel.app/grounds)
+[**Explore 1,027 Graves**](https://internet-graveyard-seven.vercel.app/explore) • [**Vital Signs Lab**](https://internet-graveyard-seven.vercel.app/lookup) • [**Audio Vault**](https://internet-graveyard-seven.vercel.app/sounds) • [**Autopsy Rivals**](https://internet-graveyard-seven.vercel.app/compare) • [**Sunset Gazette**](https://internet-graveyard-seven.vercel.app/gazette) • [**Cemetery Map**](https://internet-graveyard-seven.vercel.app/grounds) • [**Open Data Hub**](https://internet-graveyard-seven.vercel.app/export)
 
 ---
 
@@ -21,29 +21,34 @@
 
 ## 🪦 Overview
 
-**Internet Graveyard** is an open-source digital archaeology platform and cyber-cemetery dedicated to documenting, researching, and preserving deceased internet platforms, products, and online communities.
+**Internet Graveyard** is a living cyber-cemetery and digital archaeological registry documenting, verifying, and preserving the lifecycle of deceased internet platforms, fallen protocols, and discontinued online communities.
 
-When tech giants pull the plug on beloved platforms, servers go dark, domains expire, and decades of human culture evaporate. **Internet Graveyard** treats defunct web entities with the forensic rigor of archaeological artifacts:
+When tech conglomerates pull the plug on beloved platforms, servers go dark, domains expire, and decades of human digital culture evaporate. **Internet Graveyard** treats defunct web entities with the forensic rigor of archaeological artifacts:
 
-- **70+ authentic, deeply researched digital relics** with forensic autopsies, peak reach stats, timelines, and coroners' verdicts (zero mock data).
-- **Multi-source automated web scraper** querying Wikipedia REST APIs, Hacker News Algolia sunset archives, and Wayback Machine snapshots.
-- **Procedural soundboard engine** reviving dial-up modems, ICQ chirps, and MSN nudges directly in the browser with zero external audio assets.
-- **Historical snapshots** powered by the Internet Archive Wayback Machine.
-- **Head-to-head autopsies** exploring why pioneers fell while their algorithmic successors conquered.
-- **Official Coroner Death Certificates** with printable forensic reports and tamper-proof wax seals.
+- **1,027+ Authentic Indexed Relics:** 547 Confirmed Dead, 434 Active (under living watch), 36 Parked Zombies, and 10 Multi-Signal At-Risk platforms.
+- **Forensic Autopsies:** Verified causes of death, peak reach metrics, corporate parents, official shutdown dates, and coroner verdicts.
+- **Retro-Futuristic CRT & Web 1.0 Heritage UI:** Memorial serif typography (`Cinzel`), phosphor monospace (`JetBrains Mono`), toggleable CRT scanlines overlay, Netscape 4.0 titlebars, and ambient fog lighting.
+- **Zero-Dependency Procedural Audio:** Synthesized dial-up modems, ICQ chirps, MSN nudges, Windows 95 pads, and 528Hz crystal singing bowl memorial candles generated dynamically in Web Audio API.
+- **Official Coroner Death Certificates:** Printable forensic documents with case serials (`MORT-YYYY-SLUG-ID`), primary kill factor classification, and tamper-proof wax seals.
+- **Open Archaeological Data Hub:** Complete JSON dumps, RFC-4180 CSV exports, SHA-256 dataset checksums, and BibTeX academic citations.
 
 ---
 
-## ✨ Archaeological Laboratories & Features
+## 🏛️ Flagship Laboratories & Features
 
-### 📜 1. Official Coroner Death Certificate & Autopsy Exporter
-- Generated on-demand for every buried grave (e.g. Vine, Club Penguin, ICQ, MySpace, Google Reader).
+### 🔍 1. Global Command Palette (`Cmd+K` / `Ctrl+K`)
+- Universal instant launcher accessible across every page via keyboard shortcut or header search.
+- Instant fuzzy query matching against all 1,027+ relics, aliases, causes of death, and historical eras.
+- Full arrow-key keyboard navigation with real-time acoustic click telemetry and responsive status badges.
+
+### 📜 2. Official Coroner Death Certificate (`/grave/[slug]`)
+- Generated on-demand for every buried grave (e.g. Vine, Club Penguin, GeoCities, Netscape, Google Reader).
 - Features official **Bureau of Digital Demise** case serials (e.g. `MORT-2017-VINE-2202`), primary kill factor classification, and fatal forensic notes.
 - Tamper-proof digital wax seal with Chief Digital Pathologist signature line.
-- Instant **"Print / Save PDF"**, direct link copy, and one-click social sharing.
+- Instant **"Print / Save PDF"**, direct link copy, and funeral death knell chime.
 
-### 🔊 2. "Sounds of the Dead Web" (Relic Audio Vault)
-- **100% Procedural Web Audio API Synthesis** — zero external MP3s, zero network latency, zero broken links:
+### 🔊 3. "Sounds of the Dead Web" (Relic Audio Vault (`/sounds`))
+- **100% Procedural Web Audio API Synthesis** — zero external MP3 assets, zero network latency, zero broken links:
   - **AOL 56k Dial-Up:** Complete handshake sequence (DTMF dialing + carrier negotiation + static hiss).
   - **ICQ "Uh-Oh!":** Iconic dual-tone incoming message chirp.
   - **MSN Messenger Nudge:** High-frequency rattle and dual bass punch with viewport earthquake animation.
@@ -52,101 +57,114 @@ When tech giants pull the plug on beloved platforms, servers go dark, domains ex
   - **Club Penguin Dance Club:** Synthesized 8-bit chiptune loop.
   - **AIM Instant Messenger:** Procedural wooden door latches.
 
-### ⚖️ 3. Head-to-Head Archaeological Autopsy Tool (`/compare`)
-- Direct side-by-side forensic comparisons dissecting why pioneers collapsed while successors survived:
+### 💓 4. Vital Signs Domain Prober (`/lookup`)
+- Real-time diagnostic forensic laboratory for testing any live or defunct domain on the internet.
+- Queries public authoritative DNS (A/AAAA records), evaluates TCP/TLS handshakes, inspects HTTP response status codes, detects parked domains, and parses HTML for farewell and obituary declarations.
+
+### ⚖️ 5. Head-to-Head Archaeological Autopsy Tool (`/compare`)
+- Curated and custom side-by-side post-mortems comparing why pioneers collapsed while successors survived:
   - **Vine vs. TikTok:** Creative brevity vs. relentless algorithmic distribution.
   - **MySpace vs. Facebook:** Unrestrained HTML anarchy vs. standardized directory speed.
   - **Napster vs. Spotify:** Unchecked P2P piracy vs. streaming label compromise.
   - **Google Reader vs. Feedly:** Corporate sunsetting vs. agile independent survival.
   - **Club Penguin vs. Roblox:** Curated Flash worlds vs. player-led creator economies.
+- **Custom Dual Inquest:** Compare any two entities side-by-side from the entire 1,027+ catalog.
 
-### ⏳ 4. Wayback Time Machine Retro Browser Frame
-- Embedded on every memorial dossier.
-- Wraps historical snapshots into an authentic vintage browser chassis with window controls, status bar, and HTTP response codes.
-- Chronological jump points: **Launch Day / Birth** ➔ **Golden Era Peak** ➔ **Final Farewell Notice**.
-
-### 🪦 5. Interactive Cemetery Grounds Map (`/grounds`)
-- Categorized architectural crypts:
-  - **The Google Mausoleum** (Reader, Plus, Wave, Stadia, Orkut)
+### 🪦 6. Interactive 3D Cemetery Grounds (`/grounds`)
+- Isometric canvas rendering of the consecrated cyber-cemetery.
+- Themed plots and architectural mausoleums:
+  - **The Google Mausoleum** (Reader, Plus, Wave, Stadia, Orkut, Songza)
   - **The P2P & Pirate Cove** (Napster, LimeWire, Kazaa, Grooveshark, Rdio)
-  - **Social Media Grounds** (Vine, MySpace, Friendster, Path, Secret)
+  - **Web 1.0 & Pioneer Row** (Netscape, AltaVista, Lycos, Ask Jeeves, GeoCities)
+  - **Social Media Grounds** (Vine, MySpace, Friendster, Path, Secret, Yik Yak)
   - **Messaging Valley** (ICQ, AIM, MSN, Yahoo Messenger, Omegle)
-  - **Gaming & Virtual Crypt** (Club Penguin, Adobe Flash, Quibi, Heardle)
+  - **Gaming & Virtual Crypt** (Club Penguin, Adobe Flash, PlayStation Home, Quibi)
+  - **Silicon Hardware & Device Row** (Pebble, Ouya, Essential Phone, Google Glass)
 - Interactive granite gravestones with engraved epitaphs and live memorial candle lighting.
 
-### 🗞️ 6. The Sunset Gazette & Today in Web History (`/gazette`)
-- Daily dynamic headline generator calculating anniversaries of shutdowns, announcements, and acquisitions matching today's calendar date.
-- Historical wire dispatches, famous last words, and month-by-month historical timelines.
+### 🗞️ 7. The Sunset Gazette & Today in Web History (`/gazette`)
+- Daily broadsheet newspaper automatically calculating anniversaries of shutdowns, announcements, and acquisitions matching today's calendar date.
+- Historical wire dispatches, famous last words, and month-by-month archival chronology.
 
-### 💓 7. Vital Signs Domain Prober (`/lookup`)
-- Forensic URL analyzer inspecting live HTTP status codes, server headers, SSL certificates, and detecting shutdown or farewell language patterns.
+### 📊 8. Open Archaeological Data Hub (`/export`)
+- **Full JSON Repository:** Complete object dataset with life timelines, cause-of-death dossiers, archival Wayback coordinates, and metadata.
+- **RFC-4180 Forensic CSV:** Tabular dataset ready for Python Pandas, R, Tableau, or Excel data analysis pipelines.
+- **Cryptographic Integrity Digest:** SHA-256 hash checksums ensuring tamper-evident dataset integrity.
+- **Academic Citation Generator:** Ready-to-copy BibTeX reference for academic papers and digital preservation research.
 
-### 🤖 8. Automated Archival Web Scraper (`lib/discovery`)
-- **Wikipedia Historical Crawler:** Scrapes Wikipedia Category trees and infoboxes for defunct websites, extracting active years, founders, shutdown rationales, and categories.
-- **Hacker News Sunset Radar:** Interrogates Algolia's HN Search API for real-time shutdown announcements, founder farewell letters, and sunset threads.
-- **Wayback Machine Verifier:** Automatically validates historical archive snapshots across critical platform milestones.
-- **Curator Command Center Integration:** Execute scans with live cyber-terminal telemetry from the password-gated `/admin` dashboard.
-- **CLI Excavator:** Run standalone batch scraping jobs directly from your terminal (`npm run scrape`).
-
----
-
-## 🛡️ Archaeology Command Center (`/admin`)
-
-The platform contains an internal Curator Terminal for managing submissions, editing entities, and operating the automated discovery crawler.
-
-### Security Architecture:
-- **Hidden from Navigation:** Removed from public navigation headers and sitemaps.
-- **API Guard (`401 Unauthorized`):** Server-side verification on all `/api/admin` and `/api/scraper` requests via bearer token or encrypted session cookie.
-- **Passkey Gate:** Unauthenticated visitors encounter a cyber-archival lock terminal.
-- **Session Control:** Generates a secure 24-hour HTTP-only cookie with a 1-click **"Lock Terminal"** logout button.
-
-| Configuration | Local Default | Production Environment |
-| :--- | :--- | :--- |
-| **Passkey** | `graveyard-curator-2024` | `process.env.ADMIN_SECRET_KEY` |
-| **Direct URL** | `/admin` | `/admin` |
+### 🤖 9. Autonomous Scraper Daemon & Cron Worker
+- Background pipeline with automated deduplication, Wikipedia category traversal, and Hacker News sunset radar.
+- Executes recurring autonomous health scans via GitHub Actions and Next.js route handlers (`/api/cron`).
 
 ---
 
-## 🏗️ Architecture & Tech Stack
+## 🏗️ Architecture & Directory Structure
 
 ```
 internet-graveyard/
-├── app/                        # Next.js 14 App Router
-│   ├── api/                    # Route handlers (admin, auth, prober, scraper, submissions)
-│   ├── admin/                  # Curator Access Terminal (password-gated)
+├── app/                        # Next.js 14 App Router (29 routes)
+│   ├── api/                    # Route handlers
+│   │   ├── admin/              # Curator auth & administration
+│   │   ├── at-risk/            # At-risk candidate feeds
+│   │   ├── cron/               # Autonomous scraper cron endpoint
+│   │   ├── entities/           # Entity REST API & memorial candle endpoints
+│   │   ├── export/csv/         # RFC-4180 streaming CSV exporter
+│   │   ├── random/             # Random memorial redirector
+│   │   ├── recent/             # Recently buried platform stream
+│   │   ├── scanner/probe/      # Vital Signs live network & DNS prober
+│   │   ├── scraper/            # Automated web crawler endpoints
+│   │   ├── search/             # Multi-field fuzzy search engine
+│   │   ├── submissions/        # Community submission queue
+│   │   └── timeline/           # Epoch & decade timeline feeds
+│   ├── admin/                  # Curator Command Terminal (password-gated)
 │   ├── compare/                # Head-to-Head Autopsy Rivalries
 │   ├── dying-now/              # At-Risk Platform Radar
-│   ├── explore/                # Search & Tag-Based Archaeology Directory
-│   ├── gazette/                # The Sunset Gazette Newspaper
+│   ├── explore/                # Search & Tag-Based Archaeology Directory (Grid & Ledger)
+│   ├── export/                 # Open Archaeological Data Hub (JSON, CSV, BibTeX)
+│   ├── gazette/                # The Sunset Gazette Broadsheet
 │   ├── grave/[slug]/           # Memorial Dossier & Death Certificate
-│   ├── grounds/                # Visual Cemetery Map
-│   ├── lookup/                 # Vital Signs URL Prober
-│   ├── sounds/                 # Sounds of the Dead Web Soundboard
+│   ├── grounds/                # 3D Isometric Cemetery Grounds Canvas
+│   ├── lookup/                 # Vital Signs Domain Prober
+│   ├── random/                 # Random Memorial Excavator
+│   ├── recently-buried/        # Recently Defunct Platforms
+│   ├── sounds/                 # Relic Audio Vault
+│   ├── submit/                 # Community Forensic Submission Form
 │   ├── timeline/               # Decade-by-Decade Web History
-│   └── page.tsx                # Central Hub & Laboratories
+│   ├── layout.tsx              # Root Layout (Cinzel, JetBrains Mono, Scanlines, SoundFx)
+│   └── page.tsx                # Central Hub, Nixie Meters, & Tombstone of the Day
 ├── components/                 # UI & Archaeological Components
-│   ├── AudioRelicPlayer.tsx    # In-Memorial Soundboard Widget
-│   ├── DeathCertificateModal.tsx # Printable Official Autopsy Certificate
-│   ├── Navbar.tsx              # Clean Cyber-Archival Navigation
-│   ├── TodayInHistoryBanner.tsx# Daily Anniversary Dispatch
-│   └── WaybackTimeMachine.tsx  # Retro Browser Snapshot Frame
-├── data/                       # Curated Relic Databases (70+ Authentic Defunct Services)
-│   ├── graveyard.json          # Main JSON Database (CRUD & Ingestion target)
-│   ├── graveyard.ts            # Typed Seed Data & Dynamic DB Bridge
-│   ├── rivalries.ts            # Forensic Head-to-Head Comparisons
-│   └── sounds.ts               # Audio Relics Catalog
+│   ├── CommandPalette.tsx      # Universal Cmd+K fuzzy search modal
+│   ├── DigitalCandle.tsx       # 528Hz crystal singing bowl memorial candle
+│   ├── DeathCertificateModal.tsx # Printable Coroner Autopsy Certificate
+│   ├── EntityLogo.tsx          # Authentic SVG/PNG logo renderer
+│   ├── GraveCard.tsx           # Netscape-style monument card with footer actions
+│   ├── Navbar.tsx              # Retro-futuristic OS titlebar & responsive navigation
+│   ├── NecropolisCanvas.tsx    # Interactive HTML5 3D isometric cemetery canvas
+│   ├── StatusBadge.tsx         # Responsive, non-wrapping lifecycle status badge
+│   ├── TodayInHistoryBanner.tsx# Daily anniversary newspaper dispatch
+│   └── WaybackTimeMachine.tsx  # Vintage browser historical frame
+├── data/                       # Curated Relic Databases (1,027+ Authentic Sites)
+│   ├── graveyard.json          # Main JSON Database (1,027 records)
+│   ├── seed-entities-batch2.ts # Curated TypeScript dataset with full metadata
+│   ├── rivalries.ts            # Forensic head-to-head showdowns
+│   ├── sounds.ts               # Audio relic synthesizer specifications
+│   └── dispatches.ts           # Curated historical news broadsheet entries
 ├── lib/                        # Core Systems
-│   ├── audio/soundArchive.ts   # Web Audio API Procedural Synthesizers
-│   ├── auth/admin.ts           # Curator Security & Token Authorization
-│   ├── discovery/              # Multi-Source Automated Scraper Engine
-│   │   ├── scraperEngine.ts    # Central Orchestrator & Deduplication
-│   │   ├── wikipediaScraper.ts # Wikipedia REST & Infobox Parser
-│   │   ├── hnSunsetCrawler.ts  # Algolia HN Sunset Discovery
-│   │   └── waybackVerifier.ts  # Internet Archive Availability Prober
-│   ├── db/graveyardDb.ts       # JSON Database Engine
-│   └── history/anniversaries.ts# Calendar Date Anniversary Engine
+│   ├── audio/
+│   │   ├── soundArchive.ts     # Vintage soundboard Web Audio synthesis
+│   │   └── soundFx.ts          # Zero-dependency UI click & chime engine
+│   ├── auth/admin.ts           # Curator security & passkey authorization
+│   ├── db/graveyardDb.ts       # In-memory JSON database engine with querying
+│   ├── discovery/              # Multi-source scraper & verifier
+│   │   ├── scraperEngine.ts    # Central orchestrator & deduplicator
+│   │   ├── wikipediaScraper.ts # Wikipedia category & infobox scraper
+│   │   ├── hnSunsetCrawler.ts  # Algolia Hacker News sunset radar
+│   │   └── waybackVerifier.ts  # Internet Archive availability verifier
+│   ├── history/anniversaries.ts# Dynamic calendar anniversary calculator
+│   └── search/searchEngine.ts  # Multi-field scoring and ranking algorithm
 ├── scripts/
-│   └── run-scraper.mjs         # Standalone CLI Archaeological Scraper
+│   ├── run-scraper.mjs         # Standalone CLI archaeological crawler
+│   └── cron-daemon.mjs         # Autonomous background scraper daemon
 └── types/                      # TypeScript Schemas & Enums
 ```
 
@@ -174,9 +192,15 @@ npm install
 ```bash
 npm run dev
 ```
-Open [http://localhost:3000](http://localhost:3000) to explore the graveyard.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-### 4. Run Automated Web Scraper (CLI)
+### 4. Build for Production
+```bash
+npm run build
+npm run start
+```
+
+### 5. Run Automated Web Scraper (CLI)
 ```bash
 # Discover defunct websites from Wikipedia categories
 npm run scrape -- --source=wikipedia --limit=5
@@ -188,11 +212,22 @@ npm run scrape -- --source=hn --limit=5
 npm run scrape -- --source=all --limit=10 --ingest
 ```
 
-### 5. Build for Production
-```bash
-npm run build
-npm run start
-```
+---
+
+## 🛡️ Curator Command Center (`/admin`)
+
+The platform contains an internal Curator Terminal for managing submissions, editing entities, and operating the automated discovery crawler.
+
+### Security Architecture:
+- **Hidden from Navigation:** Removed from public navigation headers and sitemaps.
+- **API Guard (`401 Unauthorized`):** Server-side verification on all `/api/admin` and `/api/scraper` requests via bearer token or encrypted session cookie.
+- **Passkey Gate:** Unauthenticated visitors encounter a cyber-archival lock terminal.
+- **Session Control:** Generates a secure 24-hour HTTP-only cookie with a 1-click **"Lock Terminal"** logout button.
+
+| Configuration | Local Default | Production Environment |
+| :--- | :--- | :--- |
+| **Passkey** | `graveyard-curator-2024` | `process.env.ADMIN_SECRET_KEY` |
+| **Direct URL** | `/admin` | `/admin` |
 
 ---
 
