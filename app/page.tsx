@@ -1,7 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
 import { graveyardDb } from '@/lib/db';
-import { StatCounter } from '@/components/StatCounter';
 import { GraveCard } from '@/components/GraveCard';
 import { StatusBadge } from '@/components/StatusBadge';
 import { EntityLogo } from '@/components/EntityLogo';
@@ -14,19 +13,17 @@ import {
   Compass, 
   ArrowRight, 
   Flame, 
-  ShieldAlert, 
-  Globe, 
-  FileText,
   Activity,
   Landmark,
   Volume2,
   Scale,
   Newspaper,
-  Terminal,
   Zap,
-  Sparkles,
   Archive,
-  Layers
+  Terminal,
+  Layers,
+  ArrowUpRight,
+  ShieldCheck
 } from 'lucide-react';
 
 export const revalidate = 0; // Dynamic server rendering
@@ -48,34 +45,38 @@ export default function HomePage() {
   });
 
   const categories = [
-    { name: 'Social', count: `${categoryCounts['Social'] || 0} Graves`, desc: 'Networks, feeds & graphs', href: '/explore?category=Social' },
-    { name: 'Messaging', count: `${categoryCounts['Messaging'] || 0} Graves`, desc: 'Instant chat, P2P & IRC', href: '/explore?category=Messaging' },
-    { name: 'Gaming', count: `${categoryCounts['Gaming'] || 0} Graves`, desc: 'MMOs, virtual worlds & flash', href: '/explore?category=Gaming' },
-    { name: 'Streaming', count: `${categoryCounts['Streaming'] || 0} Graves`, desc: 'Music, video & audio hubs', href: '/explore?category=Streaming' },
-    { name: 'Search', count: `${categoryCounts['Search'] || 0} Graves`, desc: 'Early crawlers & portals', href: '/explore?category=Search' },
-    { name: 'Developer tools', count: `${categoryCounts['Developer tools'] || 0} Graves`, desc: 'APIs, frameworks & task apps', href: '/explore?category=Developer+tools' },
-    { name: 'Web technology', count: `${categoryCounts['Web technology'] || 0} Graves`, desc: 'Runtimes, protocols & plug-ins', href: '/explore?category=Web+technology' },
-    { name: 'Communities', count: `${categoryCounts['Communities'] || 0} Graves`, desc: 'Forums, Q&As & guestbooks', href: '/explore?category=Communities' },
+    { name: 'Social', count: `${categoryCounts['Social'] || 0} Graves`, desc: 'Networks, feeds, and graph platforms', href: '/explore?category=Social' },
+    { name: 'Messaging', count: `${categoryCounts['Messaging'] || 0} Graves`, desc: 'Instant chat, P2P protocols, and IRC', href: '/explore?category=Messaging' },
+    { name: 'Gaming', count: `${categoryCounts['Gaming'] || 0} Graves`, desc: 'Virtual worlds, MMOs, and flash arcades', href: '/explore?category=Gaming' },
+    { name: 'Streaming', count: `${categoryCounts['Streaming'] || 0} Graves`, desc: 'Music, video, and broadcast networks', href: '/explore?category=Streaming' },
+    { name: 'Search', count: `${categoryCounts['Search'] || 0} Graves`, desc: 'Early web directories and crawlers', href: '/explore?category=Search' },
+    { name: 'Developer tools', count: `${categoryCounts['Developer tools'] || 0} Graves`, desc: 'APIs, runtimes, and developer utilities', href: '/explore?category=Developer+tools' },
+    { name: 'Web technology', count: `${categoryCounts['Web technology'] || 0} Graves`, desc: 'Browser plugins, applets, and specs', href: '/explore?category=Web+technology' },
+    { name: 'Communities', count: `${categoryCounts['Communities'] || 0} Graves`, desc: 'Bulletin boards, forums, and guestbooks', href: '/explore?category=Communities' },
   ];
 
   return (
     <div className="w-full flex flex-col items-center">
-      {/* 1. RETRO-FUTURISTIC CRT HERO SECTION */}
-      <section className="relative w-full py-16 md:py-24 px-4 sm:px-6 flex flex-col items-center text-center overflow-hidden border-b border-white/10 bg-radial-fog scanline-overlay">
-        {/* Subtle Ambient Red Glow */}
-        <div className="absolute top-1/4 w-[36rem] h-[36rem] bg-red-600/15 rounded-full blur-3xl pointer-events-none -z-10" />
+      {/* 1. HERO SECTION WITH AMBIENT RADIAL LIGHTING */}
+      <section className="relative w-full py-16 md:py-24 px-4 sm:px-6 flex flex-col items-center text-center overflow-hidden border-b border-white/[0.08] bg-radial-ambient scanline-overlay">
+        {/* Subtle Ambient Radial Back-Glow */}
+        <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[42rem] h-[28rem] bg-amber-500/[0.06] rounded-full blur-3xl pointer-events-none -z-10" />
 
         <div className="max-w-5xl mx-auto space-y-7">
-          {/* Retro OS Titlebar Window Wrapper for Hero Badge */}
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-zinc-900 border border-white/20 text-emerald-400 text-xs font-mono font-semibold tracking-wider shadow-lg">
-            <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-            <span className="text-zinc-400">[NETSCAPE 4.0 // ARCHIVE_INIT]</span>
-            <span className="text-emerald-300 font-bold">1,027 SITES DIGITALLY PRESERVED</span>
+          {/* Status Badge Tag */}
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-zinc-900/90 border border-white/15 text-xs font-mono font-medium shadow-sm">
+            <span className="relative flex h-2 w-2 shrink-0">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500" />
+            </span>
+            <span className="text-zinc-400">ARCHIVAL FORENSICS</span>
+            <span className="text-zinc-600">•</span>
+            <span className="text-emerald-400 font-bold">1,027 SITES DIGITALLY PRESERVED</span>
           </div>
 
           {/* Hero Monument Title in Memorial Serif (Cinzel) */}
           <div className="space-y-3">
-            <h1 className="text-5xl sm:text-7xl md:text-8xl font-serif font-black tracking-tight text-white uppercase drop-shadow-[0_4px_12px_rgba(0,0,0,0.9)]">
+            <h1 className="text-5xl sm:text-7xl md:text-8xl font-serif font-black tracking-tight text-white uppercase drop-shadow-[0_4px_16px_rgba(0,0,0,0.9)]">
               INTERNET GRAVEYARD
             </h1>
             <p className="text-lg sm:text-2xl text-zinc-300 font-serif max-w-3xl mx-auto italic tracking-wide">
@@ -83,17 +84,17 @@ export default function HomePage() {
             </p>
           </div>
 
-          {/* Core Philosophy */}
+          {/* Philosophy Statement */}
           <p className="text-sm sm:text-base text-zinc-400 font-sans max-w-2xl mx-auto leading-relaxed">
             A living cyber-cemetery & forensic archaeological registry documenting 1,027 websites, protocols, and apps across all digital lifecycle states: from fallen classics to active platforms under observation.
           </p>
 
-          {/* Primary Search Box with Retro Terminal Accent */}
+          {/* Primary Command Search Bar */}
           <div className="pt-2 max-w-3xl mx-auto w-full">
             <form action="/explore" method="GET" className="relative w-full group">
-              <div className="relative rounded-2xl bg-zinc-950/90 border-2 border-white/20 group-focus-within:border-emerald-500/80 group-focus-within:ring-4 group-focus-within:ring-emerald-500/20 transition-all shadow-2xl overflow-hidden">
-                <div className="flex items-center h-14 sm:h-16 px-3 sm:px-4">
-                  <span className="text-emerald-400 font-mono font-bold text-base sm:text-lg mr-2 sm:mr-3 select-none shrink-0">&gt;</span>
+              <div className="relative rounded-2xl bg-zinc-950/90 border-2 border-white/15 group-focus-within:border-emerald-500/80 group-focus-within:ring-4 group-focus-within:ring-emerald-500/20 transition-all shadow-2xl overflow-hidden backdrop-blur-xl">
+                <div className="flex items-center h-14 sm:h-16 px-3.5 sm:px-4">
+                  <Terminal className="w-5 h-5 text-emerald-400 mr-3 shrink-0" />
                   <input
                     type="text"
                     name="q"
@@ -102,7 +103,7 @@ export default function HomePage() {
                   />
                   <button
                     type="submit"
-                    className="ml-2 sm:ml-3 px-4 sm:px-6 py-2 sm:py-2.5 rounded-xl bg-red-600 hover:bg-red-500 text-white font-sans text-xs sm:text-sm font-bold transition-all shadow-md cursor-pointer shrink-0"
+                    className="ml-2 sm:ml-3 px-5 sm:px-6 py-2.5 rounded-xl bg-red-600 hover:bg-red-500 text-white font-sans text-xs sm:text-sm font-bold transition-all shadow-md cursor-pointer shrink-0 focus-visible:ring-2 focus-visible:ring-amber-500/60"
                   >
                     Exhume
                   </button>
@@ -110,7 +111,7 @@ export default function HomePage() {
               </div>
             </form>
 
-            {/* Popular Searches */}
+            {/* Popular Quick Searches */}
             <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-1.5 mt-3 text-xs font-mono text-zinc-400">
               <span className="font-semibold text-zinc-500">Popular Excavations:</span>
               {[
@@ -122,7 +123,7 @@ export default function HomePage() {
                 { name: 'Omegle', slug: 'omegle' },
               ].map((item, idx) => (
                 <span key={item.slug} className="inline-flex items-center gap-2">
-                  <Link href={`/grave/${item.slug}`} className="text-zinc-300 hover:text-white underline decoration-white/20">
+                  <Link href={`/grave/${item.slug}`} className="text-zinc-300 hover:text-white underline decoration-white/20 transition-colors">
                     {item.name}
                   </Link>
                   {idx < 5 && <span className="text-zinc-600">•</span>}
@@ -130,11 +131,11 @@ export default function HomePage() {
               ))}
             </div>
 
-            {/* Live Autopsy Banner */}
+            {/* Live Autopsy Banner Link */}
             <div className="pt-3">
               <Link
                 href="/lookup"
-                className="inline-flex items-center gap-2 px-3.5 sm:px-4 py-2 rounded-xl sm:rounded-full bg-zinc-900/90 hover:bg-zinc-850 border border-white/15 hover:border-emerald-500/50 text-zinc-300 hover:text-white text-xs sm:text-sm font-mono transition-all group shadow-md text-left leading-snug"
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-zinc-900/90 hover:bg-zinc-850 border border-white/15 hover:border-emerald-500/50 text-zinc-300 hover:text-white text-xs sm:text-sm font-mono transition-all group shadow-md text-left leading-snug cursor-pointer focus-visible:ring-2 focus-visible:ring-amber-500/60"
               >
                 <Activity className="w-4 h-4 text-emerald-400 group-hover:animate-pulse shrink-0" />
                 <span>Test any live or dead domain: <strong className="text-white underline decoration-emerald-500/80">Launch Vital Signs Forensic Lab &rarr;</strong></span>
@@ -142,11 +143,11 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* Quick Action Buttons */}
+          {/* Quick Action Chamber Links */}
           <div className="pt-2 flex flex-wrap items-center justify-center gap-2.5 sm:gap-3 font-sans text-xs sm:text-sm font-bold">
             <Link
               href="/lookup"
-              className="inline-flex items-center justify-center h-10 sm:h-11 px-4 sm:px-5 rounded-xl bg-red-950/60 hover:bg-red-900/70 text-red-300 hover:text-white border border-red-500/50 transition-all shadow-md gap-2 shrink-0"
+              className="inline-flex items-center justify-center h-11 px-5 rounded-xl bg-red-950/60 hover:bg-red-900/70 text-red-300 hover:text-white border border-red-500/50 transition-all shadow-md gap-2 shrink-0 cursor-pointer focus-visible:ring-2 focus-visible:ring-amber-500/60"
             >
               <Activity className="w-4 h-4 text-red-400 animate-pulse shrink-0" />
               <span>Vital Signs Lab</span>
@@ -154,7 +155,7 @@ export default function HomePage() {
 
             <Link
               href="/explore"
-              className="inline-flex items-center justify-center h-10 sm:h-11 px-4 sm:px-5 rounded-xl bg-white/12 hover:bg-white/18 text-white border border-white/20 transition-all shadow-md gap-2 shrink-0"
+              className="inline-flex items-center justify-center h-11 px-5 rounded-xl bg-white/12 hover:bg-white/18 text-white border border-white/20 transition-all shadow-md gap-2 shrink-0 cursor-pointer focus-visible:ring-2 focus-visible:ring-amber-500/60"
             >
               <Compass className="w-4 h-4 text-emerald-400 shrink-0" />
               <span>Explore 1,027 Graves</span>
@@ -162,7 +163,7 @@ export default function HomePage() {
 
             <Link
               href="/grounds"
-              className="inline-flex items-center justify-center h-10 sm:h-11 px-4 sm:px-5 rounded-xl bg-zinc-850 hover:bg-zinc-800 text-zinc-200 hover:text-white border border-white/15 transition-all shadow-md gap-2 shrink-0"
+              className="inline-flex items-center justify-center h-11 px-5 rounded-xl bg-zinc-900/90 hover:bg-zinc-850 text-zinc-200 hover:text-white border border-white/15 transition-all shadow-md gap-2 shrink-0 cursor-pointer focus-visible:ring-2 focus-visible:ring-amber-500/60"
             >
               <Landmark className="w-4 h-4 text-amber-400 shrink-0" />
               <span>3D Necropolis Grounds</span>
@@ -170,7 +171,7 @@ export default function HomePage() {
 
             <Link
               href="/random"
-              className="inline-flex items-center justify-center h-10 sm:h-11 px-4 sm:px-5 rounded-xl bg-zinc-850 hover:bg-zinc-800 text-zinc-200 hover:text-white border border-white/15 transition-all shadow-md gap-2 shrink-0"
+              className="inline-flex items-center justify-center h-11 px-5 rounded-xl bg-zinc-900/90 hover:bg-zinc-850 text-zinc-200 hover:text-white border border-white/15 transition-all shadow-md gap-2 shrink-0 cursor-pointer focus-visible:ring-2 focus-visible:ring-amber-500/60"
             >
               <Shuffle className="w-4 h-4 text-purple-400 shrink-0" />
               <span>Random Memorial</span>
@@ -179,39 +180,39 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 2. NIXIE / PHOSPHOR METRIC METERS */}
+      {/* 2. NIXIE / PHOSPHOR TELEMETRY METERS */}
       <section className="w-full max-w-7xl mx-auto px-4 sm:px-6 -mt-7 z-10 font-mono">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 items-stretch">
-          <div className="p-4 sm:p-5 rounded-xl bg-zinc-950/95 border border-white/15 shadow-xl flex flex-col justify-between">
+          <div className="p-4 sm:p-5 rounded-2xl bg-zinc-950/95 border border-white/15 shadow-xl flex flex-col justify-between backdrop-blur-xl">
             <span className="text-xs text-zinc-400 font-semibold uppercase tracking-wider">TOTAL RELICS</span>
-            <div className="text-3xl sm:text-4xl font-black text-white mt-1">1,027</div>
+            <div className="text-3xl sm:text-4xl font-black text-white mt-1 tabular-nums">1,027</div>
             <span className="text-[11px] text-zinc-500 mt-1">Authentic Indexed Sites</span>
           </div>
 
-          <div className="p-4 sm:p-5 rounded-xl bg-zinc-950/95 border border-red-500/30 shadow-xl flex flex-col justify-between">
+          <div className="p-4 sm:p-5 rounded-2xl bg-zinc-950/95 border border-red-500/30 shadow-xl flex flex-col justify-between backdrop-blur-xl">
             <span className="text-xs text-red-400 font-semibold uppercase tracking-wider flex items-center gap-1.5">
               <Skull className="w-3.5 h-3.5 shrink-0" />
               <span>FALLEN SITES</span>
             </span>
-            <div className="text-3xl sm:text-4xl font-black text-red-400 mt-1">547</div>
+            <div className="text-3xl sm:text-4xl font-black text-red-400 mt-1 tabular-nums">547</div>
             <span className="text-[11px] text-zinc-500 mt-1">Confirmed Dead Platforms</span>
           </div>
 
-          <div className="p-4 sm:p-5 rounded-xl bg-zinc-950/95 border border-emerald-500/30 shadow-xl flex flex-col justify-between">
+          <div className="p-4 sm:p-5 rounded-2xl bg-zinc-950/95 border border-emerald-500/30 shadow-xl flex flex-col justify-between backdrop-blur-xl">
             <span className="text-xs text-emerald-400 font-semibold uppercase tracking-wider flex items-center gap-1.5">
               <Activity className="w-3.5 h-3.5 shrink-0" />
               <span>LIVING WATCH</span>
             </span>
-            <div className="text-3xl sm:text-4xl font-black text-emerald-400 mt-1">434</div>
+            <div className="text-3xl sm:text-4xl font-black text-emerald-400 mt-1 tabular-nums">434</div>
             <span className="text-[11px] text-zinc-500 mt-1">Monitored in Active Prod</span>
           </div>
 
-          <div className="p-4 sm:p-5 rounded-xl bg-zinc-950/95 border border-purple-500/30 shadow-xl flex flex-col justify-between">
+          <div className="p-4 sm:p-5 rounded-2xl bg-zinc-950/95 border border-purple-500/30 shadow-xl flex flex-col justify-between backdrop-blur-xl">
             <span className="text-xs text-purple-400 font-semibold uppercase tracking-wider flex items-center gap-1.5">
               <Zap className="w-3.5 h-3.5 shrink-0" />
               <span>ZOMBIE DOMAINS</span>
             </span>
-            <div className="text-3xl sm:text-4xl font-black text-purple-400 mt-1">36</div>
+            <div className="text-3xl sm:text-4xl font-black text-purple-400 mt-1 tabular-nums">36</div>
             <span className="text-[11px] text-zinc-500 mt-1">Parked Relics & Shells</span>
           </div>
         </div>
@@ -223,9 +224,9 @@ export default function HomePage() {
       {/* 3. TOMBSTONE OF THE DAY (HERO ALTAR SPOTLIGHT) */}
       {spotlightEntity && (
         <section className="w-full max-w-7xl mx-auto px-4 sm:px-6 py-10 font-sans">
-          <div className="relative rounded-2xl bg-zinc-950/95 border-2 border-white/15 overflow-hidden shadow-2xl">
-            {/* Retro Netscape Titlebar */}
-            <div className="bg-gradient-to-r from-zinc-900 via-zinc-850 to-zinc-900 px-4 py-2.5 border-b border-white/15 flex items-center justify-between">
+          <div className="relative rounded-2xl bg-zinc-950/95 border-2 border-white/15 overflow-hidden shadow-2xl backdrop-blur-xl">
+            {/* Top Chrome Bezel */}
+            <div className="bg-zinc-900/90 px-4 py-2.5 border-b border-white/15 flex items-center justify-between">
               <div className="flex items-center gap-2">
                 <span className="w-2.5 h-2.5 rounded-full bg-red-500 animate-ping" />
                 <span className="text-xs font-mono font-bold tracking-wider text-red-400 uppercase">
@@ -234,24 +235,24 @@ export default function HomePage() {
               </div>
               <div className="flex items-center gap-2 text-xs font-mono text-zinc-400">
                 <span>INQUEST #{spotlightEntity.id}</span>
-                <span className="px-1.5 py-0.5 rounded bg-zinc-800 text-[10px]">HISTORIC</span>
+                <span className="px-2 py-0.5 rounded-full bg-zinc-800 text-[10px] font-bold">HISTORIC</span>
               </div>
             </div>
 
             <div className="p-6 sm:p-8 flex flex-col lg:flex-row items-center justify-between gap-8">
               <div className="flex items-center gap-6 min-w-0 flex-1">
                 <EntityLogo entity={spotlightEntity} size="xl" className="border-2 border-white/20 shadow-xl shrink-0" />
-                <div className="space-y-2 min-w-0">
+                <div className="space-y-2.5 min-w-0">
                   <div className="flex items-center gap-3 flex-wrap">
                     <h3 className="text-2xl sm:text-4xl font-serif font-black text-white tracking-tight">
                       {spotlightEntity.name}
                     </h3>
                     <StatusBadge status={spotlightEntity.status} size="md" />
                   </div>
-                  <div className="text-xs sm:text-sm font-mono text-zinc-400 flex items-center gap-2">
-                    <span className="text-white font-bold">{spotlightEntity.lifespan}</span>
+                  <div className="text-xs sm:text-sm font-mono text-zinc-400 flex items-center gap-2 flex-wrap">
+                    <span className="text-white font-bold tabular-nums">{spotlightEntity.lifespan}</span>
                     <span>•</span>
-                    <span className="uppercase text-red-400">{spotlightEntity.category}</span>
+                    <span className="uppercase text-red-400 font-semibold">{spotlightEntity.category}</span>
                     <span>•</span>
                     <span className="text-zinc-400 truncate">{spotlightEntity.primary_domain}</span>
                   </div>
@@ -264,12 +265,12 @@ export default function HomePage() {
               <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 shrink-0 w-full lg:w-auto">
                 <div className="flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-zinc-900 border border-white/10 text-amber-400 font-mono text-xs w-full sm:w-auto shrink-0">
                   <Flame className="w-4 h-4 shrink-0" />
-                  <span className="font-bold">{spotlightEntity.candle_count || 320}</span>
-                  <span className="text-zinc-400">Memorial Candles Lit</span>
+                  <span className="font-bold tabular-nums">{spotlightEntity.candle_count || 320}</span>
+                  <span className="text-zinc-400">Memorial Candles</span>
                 </div>
                 <Link
                   href={`/grave/${spotlightEntity.slug}`}
-                  className="w-full sm:w-auto px-6 py-3 rounded-xl bg-red-600 hover:bg-red-500 text-white font-sans text-sm font-bold flex items-center justify-center gap-2 transition-all shadow-lg shrink-0"
+                  className="w-full sm:w-auto px-6 py-3 rounded-xl bg-red-600 hover:bg-red-500 text-white font-sans text-sm font-bold flex items-center justify-center gap-2 transition-all shadow-lg shrink-0 cursor-pointer focus-visible:ring-2 focus-visible:ring-amber-500/60"
                 >
                   <span>Pay Respects & Inspect Dossier</span>
                   <ArrowRight className="w-4 h-4 shrink-0" />
@@ -282,7 +283,7 @@ export default function HomePage() {
 
       {/* 4. THE GREAT EXTINCTION EPOCHS WING */}
       <section className="w-full max-w-7xl mx-auto px-4 sm:px-6 py-12 font-sans space-y-6">
-        <div className="border-b border-white/10 pb-4">
+        <div className="border-b border-white/[0.08] pb-4">
           <div className="flex items-center gap-2 text-xs font-mono font-bold text-red-400 tracking-wider uppercase mb-1">
             <Archive className="w-4 h-4" />
             <span>Digital Extinction Cataclysms</span>
@@ -337,11 +338,11 @@ export default function HomePage() {
             <Link
               key={epoch.title}
               href={epoch.href}
-              className={`p-5 rounded-2xl bg-zinc-950/90 border ${epoch.color} hover:bg-zinc-900 transition-all flex flex-col justify-between space-y-4 group shadow-md hover:-translate-y-1`}
+              className={`p-5 rounded-2xl bg-zinc-950/90 border ${epoch.color} hover:bg-zinc-900 transition-all duration-200 flex flex-col justify-between space-y-4 group shadow-md hover:-translate-y-1 focus-visible:ring-2 focus-visible:ring-amber-500/60`}
             >
               <div className="space-y-3">
                 <div className="flex items-center justify-between text-xs font-mono">
-                  <span className={`px-2 py-0.5 rounded ${epoch.accent} font-bold text-[10px]`}>
+                  <span className={`px-2 py-0.5 rounded-full ${epoch.accent} font-bold text-[10px]`}>
                     {epoch.era}
                   </span>
                   <ArrowRight className="w-3.5 h-3.5 text-zinc-500 group-hover:text-white group-hover:translate-x-1 transition-all shrink-0" />
@@ -353,7 +354,7 @@ export default function HomePage() {
                   {epoch.desc}
                 </p>
               </div>
-              <div className="pt-2 border-t border-white/5 text-[11px] font-mono text-zinc-500">
+              <div className="pt-2 border-t border-white/[0.06] text-[11px] font-mono text-zinc-500">
                 <strong className="text-zinc-400">Relics:</strong> {epoch.relics}
               </div>
             </Link>
@@ -367,7 +368,7 @@ export default function HomePage() {
           {/* 1. Cemetery Map */}
           <Link
             href="/grounds"
-            className="p-6 rounded-2xl bg-zinc-900/90 border border-white/10 hover:border-red-500/50 hover:bg-zinc-850/80 transition-all flex flex-col justify-between space-y-4 group shadow-lg"
+            className="p-6 rounded-2xl bg-zinc-900/90 border border-white/10 hover:border-red-500/50 hover:bg-zinc-850/80 transition-all duration-200 flex flex-col justify-between space-y-4 group shadow-lg focus-visible:ring-2 focus-visible:ring-amber-500/60"
           >
             <div className="space-y-3">
               <div className="w-10 h-10 rounded-xl bg-red-950/60 border border-red-500/40 flex items-center justify-center text-red-400 group-hover:scale-110 transition-transform">
@@ -391,7 +392,7 @@ export default function HomePage() {
           {/* 2. Sound Vault */}
           <Link
             href="/sounds"
-            className="p-6 rounded-2xl bg-zinc-900/90 border border-white/10 hover:border-emerald-500/50 hover:bg-zinc-850/80 transition-all flex flex-col justify-between space-y-4 group shadow-lg"
+            className="p-6 rounded-2xl bg-zinc-900/90 border border-white/10 hover:border-emerald-500/50 hover:bg-zinc-850/80 transition-all duration-200 flex flex-col justify-between space-y-4 group shadow-lg focus-visible:ring-2 focus-visible:ring-amber-500/60"
           >
             <div className="space-y-3">
               <div className="w-10 h-10 rounded-xl bg-emerald-950/60 border border-emerald-500/40 flex items-center justify-center text-emerald-400 group-hover:scale-110 transition-transform">
@@ -415,7 +416,7 @@ export default function HomePage() {
           {/* 3. Autopsy Rivals */}
           <Link
             href="/compare"
-            className="p-6 rounded-2xl bg-zinc-900/90 border border-white/10 hover:border-cyan-500/50 hover:bg-zinc-850/80 transition-all flex flex-col justify-between space-y-4 group shadow-lg"
+            className="p-6 rounded-2xl bg-zinc-900/90 border border-white/10 hover:border-cyan-500/50 hover:bg-zinc-850/80 transition-all duration-200 flex flex-col justify-between space-y-4 group shadow-lg focus-visible:ring-2 focus-visible:ring-amber-500/60"
           >
             <div className="space-y-3">
               <div className="w-10 h-10 rounded-xl bg-cyan-950/60 border border-cyan-500/40 flex items-center justify-center text-cyan-400 group-hover:scale-110 transition-transform">
@@ -439,7 +440,7 @@ export default function HomePage() {
           {/* 4. Sunset Gazette */}
           <Link
             href="/gazette"
-            className="p-6 rounded-2xl bg-zinc-900/90 border border-white/10 hover:border-amber-500/50 hover:bg-zinc-850/80 transition-all flex flex-col justify-between space-y-4 group shadow-lg"
+            className="p-6 rounded-2xl bg-zinc-900/90 border border-white/10 hover:border-amber-500/50 hover:bg-zinc-850/80 transition-all duration-200 flex flex-col justify-between space-y-4 group shadow-lg focus-visible:ring-2 focus-visible:ring-amber-500/60"
           >
             <div className="space-y-3">
               <div className="w-10 h-10 rounded-xl bg-amber-950/60 border border-amber-500/40 flex items-center justify-center text-amber-400 group-hover:scale-110 transition-transform">
@@ -464,7 +465,7 @@ export default function HomePage() {
 
       {/* 6. RECENTLY BURIED SHOWCASE */}
       <section className="w-full max-w-7xl mx-auto px-4 sm:px-6 py-14 space-y-8">
-        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 border-b border-white/10 pb-5">
+        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 border-b border-white/[0.08] pb-5">
           <div>
             <div className="flex items-center gap-2 text-xs font-mono font-bold text-red-400 tracking-wider uppercase mb-1">
               <Skull className="w-4 h-4" />
@@ -480,7 +481,7 @@ export default function HomePage() {
 
           <Link
             href="/explore?status=CONFIRMED_DEAD"
-            className="flex items-center gap-2 text-sm font-sans font-bold text-red-400 hover:text-red-300 transition-colors shrink-0 group"
+            className="flex items-center gap-2 text-sm font-sans font-bold text-red-400 hover:text-red-300 transition-colors shrink-0 group focus-visible:ring-2 focus-visible:ring-amber-500/60 rounded px-1"
           >
             <span>View All 547 Dead Platforms</span>
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -514,7 +515,7 @@ export default function HomePage() {
 
             <Link
               href="/dying-now"
-              className="flex items-center gap-2 text-sm font-sans font-bold text-amber-400 hover:text-amber-300 transition-colors shrink-0 group"
+              className="flex items-center gap-2 text-sm font-sans font-bold text-amber-400 hover:text-amber-300 transition-colors shrink-0 group focus-visible:ring-2 focus-visible:ring-amber-500/60 rounded px-1"
             >
               <span>Explore At-Risk Radar ({stats.at_risk} Active)</span>
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -526,7 +527,7 @@ export default function HomePage() {
             {atRiskEntities.map((entity) => (
               <div
                 key={entity.id}
-                className="p-6 rounded-2xl bg-zinc-950/95 border border-amber-500/30 shadow-xl flex flex-col justify-between h-full space-y-4"
+                className="p-6 rounded-2xl bg-zinc-950/95 border border-amber-500/30 shadow-xl flex flex-col justify-between h-full space-y-4 backdrop-blur-xl"
               >
                 <div className="space-y-3.5">
                   <div className="flex items-center justify-between gap-2 pb-2.5 border-b border-white/8">
@@ -575,7 +576,7 @@ export default function HomePage() {
 
                 <Link
                   href={`/grave/${entity.slug}`}
-                  className="pt-3 border-t border-white/10 flex items-center justify-between text-xs text-amber-400 hover:text-amber-300 font-bold font-sans transition-colors mt-auto shrink-0"
+                  className="pt-3 border-t border-white/10 flex items-center justify-between text-xs text-amber-400 hover:text-amber-300 font-bold font-sans transition-colors mt-auto shrink-0 focus-visible:ring-2 focus-visible:ring-amber-500/60 rounded"
                 >
                   <span>Inspect Risk Dossier</span>
                   <ArrowRight className="w-3.5 h-3.5 shrink-0" />
@@ -588,7 +589,7 @@ export default function HomePage() {
 
       {/* 8. EXPLORE BY ARCHAEOLOGICAL CATEGORY */}
       <section className="w-full max-w-7xl mx-auto px-4 sm:px-6 py-16 space-y-8 font-sans">
-        <div className="border-b border-white/10 pb-4">
+        <div className="border-b border-white/[0.08] pb-4">
           <div className="flex items-center gap-2 text-xs font-mono font-bold text-zinc-400 tracking-wider uppercase mb-1">
             <Compass className="w-4 h-4 text-red-400" />
             <span>Archaeological Taxonomies</span>
@@ -606,7 +607,7 @@ export default function HomePage() {
             <Link
               key={cat.name}
               href={cat.href}
-              className="p-5 rounded-2xl bg-zinc-950/90 border border-white/10 hover:border-red-500/40 hover:bg-zinc-900 transition-all duration-200 group flex flex-col justify-between shadow-md hover:-translate-y-1 h-full min-h-[140px]"
+              className="p-5 rounded-2xl bg-zinc-950/90 border border-white/10 hover:border-red-500/40 hover:bg-zinc-900 transition-all duration-200 group flex flex-col justify-between shadow-md hover:-translate-y-1 h-full min-h-[140px] focus-visible:ring-2 focus-visible:ring-amber-500/60"
             >
               <div className="flex-1 flex flex-col justify-between">
                 <div>
@@ -645,7 +646,7 @@ export default function HomePage() {
           <div className="shrink-0">
             <Link
               href="/submit"
-              className="px-6 py-3.5 rounded-xl bg-red-600 hover:bg-red-500 text-white font-sans font-bold text-xs sm:text-sm tracking-wider uppercase transition-all shadow-xl hover:-translate-y-0.5 inline-block cursor-pointer"
+              className="px-6 py-3.5 rounded-xl bg-red-600 hover:bg-red-500 text-white font-sans font-bold text-xs sm:text-sm tracking-wider uppercase transition-all shadow-xl hover:-translate-y-0.5 inline-block cursor-pointer focus-visible:ring-2 focus-visible:ring-amber-500/60"
             >
               Submit an Entity for Review
             </Link>

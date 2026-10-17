@@ -163,6 +163,7 @@ export const CommandPalette: React.FC = () => {
               setSelectedIndex(0);
             }}
             placeholder="Type platform name, era, URL, or cause of death..."
+            aria-label="Search relics in command palette"
             className="w-full bg-transparent text-white placeholder-zinc-500 text-sm font-mono focus:outline-none"
           />
           {query && (

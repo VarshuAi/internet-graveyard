@@ -134,24 +134,26 @@ export const Footer: React.FC = () => {
         </div>
 
         {/* Bottom bar */}
-        <div className="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs sm:text-sm font-sans text-zinc-400">
+        <div className="pt-8 border-t border-white/[0.08] flex flex-col sm:flex-row items-center justify-between gap-4 text-xs sm:text-sm font-sans text-zinc-400">
           <div>
             © {new Date().getFullYear()} Internet Graveyard. Preserving digital history for future civilisations.
           </div>
-          <div className="flex items-center gap-4 font-mono text-xs text-zinc-400">
+          <div className="flex items-center gap-3 font-mono text-xs text-zinc-400 flex-wrap justify-center">
+            <span className="px-2 py-0.5 rounded bg-zinc-900 border border-white/10 text-[11px] text-zinc-400">
+              <strong className="text-white">⌘K</strong> Quick Search
+            </span>
+            <span>•</span>
             <a
               href="https://archive.org"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-white flex items-center gap-1 transition-colors"
+              className="hover:text-white flex items-center gap-1 transition-colors focus-visible:ring-2 focus-visible:ring-amber-500/60 rounded px-1"
             >
               <span>Internet Archive</span>
               <ExternalLink className="w-3.5 h-3.5" />
             </a>
             <span>•</span>
-            <span>Zero Tracking</span>
-            <span>•</span>
-            <span>Open Archaeology</span>
+            <span className="text-emerald-400 font-medium">Open Archaeology</span>
           </div>
         </div>
       </div>

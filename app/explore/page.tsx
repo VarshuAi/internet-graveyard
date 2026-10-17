@@ -151,6 +151,17 @@ function ExploreContent() {
     return list;
   }, [searchQuery, selectedStatus, selectedCategory, selectedCause, selectedEra, yearFrom, yearTo, sortBy]);
 
+  // Keyboard accessibility for escape key to close quick inspect drawer
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape' && inspectingEntity) {
+        setInspectingEntity(null);
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [inspectingEntity]);
+
   const clearAllFilters = () => {
     soundFx.playClick(600);
     setSearchQuery('');
@@ -167,7 +178,7 @@ function ExploreContent() {
   return (
     <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 py-10 space-y-8 font-sans">
       {/* Header Dossier */}
-      <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-white/10 pb-6">
+      <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-white/[0.08] pb-6">
         <div className="space-y-2">
           <div className="flex items-center gap-2 text-xs font-mono text-zinc-400 tracking-wider uppercase font-bold">
             <Database className="w-4 h-4 text-emerald-400" />
@@ -182,16 +193,17 @@ function ExploreContent() {
         </div>
 
         {/* View Mode Switcher Toggle */}
-        <div className="flex items-center gap-2 p-1 rounded-xl bg-zinc-900 border border-white/10 self-start md:self-auto shrink-0">
+        <div className="flex items-center gap-1.5 p-1 rounded-xl bg-zinc-900 border border-white/10 self-start md:self-auto shrink-0">
           <button
             onClick={() => {
               soundFx.playClick(800);
               setViewMode('grid');
             }}
+            aria-label="Switch to Monument Grid view"
             className={cn(
-              "flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-mono font-bold transition-all",
+              "flex items-center gap-1.5 px-3.5 py-2 rounded-lg text-xs font-mono font-bold transition-all cursor-pointer focus-visible:ring-2 focus-visible:ring-amber-500/60",
               viewMode === 'grid'
-                ? "bg-white/15 text-white shadow-sm"
+                ? "bg-white/15 text-white shadow-sm border border-white/10"
                 : "text-zinc-400 hover:text-white"
             )}
           >
@@ -203,10 +215,11 @@ function ExploreContent() {
               soundFx.playClick(800);
               setViewMode('ledger');
             }}
+            aria-label="Switch to Archival Ledger table view"
             className={cn(
-              "flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-mono font-bold transition-all",
+              "flex items-center gap-1.5 px-3.5 py-2 rounded-lg text-xs font-mono font-bold transition-all cursor-pointer focus-visible:ring-2 focus-visible:ring-amber-500/60",
               viewMode === 'ledger'
-                ? "bg-white/15 text-white shadow-sm"
+                ? "bg-white/15 text-white shadow-sm border border-white/10"
                 : "text-zinc-400 hover:text-white"
             )}
           >
@@ -218,7 +231,7 @@ function ExploreContent() {
 
       {/* Main Search Input */}
       <div className="relative group">
-        <div className="relative rounded-2xl bg-zinc-950/90 border-2 border-white/15 group-focus-within:border-emerald-500/80 group-focus-within:ring-4 group-focus-within:ring-emerald-500/20 transition-all shadow-xl overflow-hidden">
+        <div className="relative rounded-2xl bg-zinc-950/90 border-2 border-white/15 group-focus-within:border-emerald-500/80 group-focus-within:ring-4 group-focus-within:ring-emerald-500/20 transition-all shadow-xl overflow-hidden backdrop-blur-xl">
           <div className="flex items-center h-14 sm:h-16 px-4">
             <span className="text-emerald-400 font-mono font-bold text-lg mr-3 select-none">&gt;</span>
             <input
@@ -226,12 +239,14 @@ function ExploreContent() {
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               placeholder="Filter by title, domain, cause of death, or keywords (e.g. 'Flash games', 'social network', '2015')..."
+              aria-label="Search relics by title, domain, or cause of death"
               className="w-full bg-transparent text-white placeholder-zinc-500 font-sans text-sm sm:text-base focus:outline-none"
             />
             {searchQuery && (
               <button
                 onClick={() => setSearchQuery('')}
-                className="p-1.5 text-zinc-400 hover:text-white rounded-lg bg-zinc-800"
+                aria-label="Clear search input"
+                className="p-1.5 text-zinc-400 hover:text-white rounded-lg bg-zinc-800 transition-colors cursor-pointer"
               >
                 <X className="w-4 h-4" />
               </button>
@@ -250,9 +265,9 @@ function ExploreContent() {
               setSelectedStatus(status.id);
             }}
             className={cn(
-              "px-3 py-1.5 rounded-lg border transition-all whitespace-nowrap font-bold",
+              "px-3.5 py-2 rounded-xl border transition-all whitespace-nowrap font-bold cursor-pointer focus-visible:ring-2 focus-visible:ring-amber-500/60 min-h-[40px] flex items-center gap-1.5",
               selectedStatus === status.id
-                ? "bg-white/15 border-white/40 text-white shadow-sm"
+                ? "bg-white/15 border-white/30 text-white shadow-sm"
                 : "bg-zinc-900 border-white/10 text-zinc-400 hover:text-white hover:border-white/20"
             )}
           >
@@ -262,7 +277,7 @@ function ExploreContent() {
       </div>
 
       {/* Faceted Filter Toolbar */}
-      <div className="p-5 rounded-2xl bg-zinc-950/90 border border-white/10 space-y-4 font-sans text-xs">
+      <div className="p-5 rounded-2xl bg-zinc-950/90 border border-white/10 space-y-4 font-sans text-xs backdrop-blur-xl">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2 text-zinc-300 font-bold uppercase tracking-wider font-mono">
             <SlidersHorizontal className="w-4 h-4 text-emerald-400" />

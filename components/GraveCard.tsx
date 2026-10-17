@@ -43,24 +43,24 @@ export const GraveCard: React.FC<GraveCardProps> = ({
   return (
     <div
       className={cn(
-        'group relative flex flex-col justify-between h-full rounded-xl bg-zinc-950/95 border transition-all duration-200 overflow-hidden font-sans shadow-lg hover:-translate-y-1',
-        isDead && 'border-white/12 hover:border-red-500/50 hover:shadow-[0_16px_35px_rgba(239,68,68,0.15)]',
-        isActive && 'border-emerald-500/30 hover:border-emerald-500/60 hover:shadow-[0_16px_35px_rgba(16,185,129,0.15)]',
-        isAtRisk && 'border-amber-500/30 hover:border-amber-500/60 hover:shadow-[0_16px_35px_rgba(245,158,11,0.15)]',
-        isZombie && 'border-purple-500/30 hover:border-purple-500/60 hover:shadow-[0_16px_35px_rgba(168,85,247,0.15)]',
+        'group relative flex flex-col justify-between h-full rounded-2xl bg-zinc-950/80 border transition-all duration-200 overflow-hidden font-sans shadow-lg hover:-translate-y-1 backdrop-blur-xl',
+        isDead && 'border-white/[0.08] hover:border-red-500/50 hover:shadow-[0_16px_36px_rgba(239,68,68,0.14)]',
+        isActive && 'border-emerald-500/25 hover:border-emerald-500/60 hover:shadow-[0_16px_36px_rgba(16,185,129,0.14)]',
+        isAtRisk && 'border-amber-500/25 hover:border-amber-500/60 hover:shadow-[0_16px_36px_rgba(245,158,11,0.14)]',
+        isZombie && 'border-purple-500/25 hover:border-purple-500/60 hover:shadow-[0_16px_36px_rgba(168,85,247,0.14)]',
         className
       )}
     >
-      {/* Retro Netscape Top Chrome Bezel */}
-      <div className="bg-gradient-to-r from-zinc-900 via-zinc-850 to-zinc-900 px-3 sm:px-3.5 py-1.5 border-b border-white/10 flex items-center justify-between gap-2 text-[11px] font-mono">
-        <div className="flex items-center gap-1.5 min-w-0 flex-1">
+      {/* Top Chrome Bezel */}
+      <div className="bg-zinc-900/80 px-3.5 sm:px-4 py-2 border-b border-white/[0.06] flex items-center justify-between gap-2 text-[11px] font-mono">
+        <div className="flex items-center gap-2 min-w-0 flex-1">
           <span 
             className={cn(
               "w-2 h-2 rounded-full shrink-0",
-              isDead && "bg-red-500",
-              isActive && "bg-emerald-400 animate-pulse",
-              isAtRisk && "bg-amber-400 animate-ping",
-              isZombie && "bg-purple-400"
+              isDead && "bg-red-500 shadow-[0_0_6px_rgba(239,68,68,0.8)]",
+              isActive && "bg-emerald-400 shadow-[0_0_6px_rgba(52,211,153,0.8)] animate-pulse",
+              isAtRisk && "bg-amber-400 shadow-[0_0_6px_rgba(251,191,36,0.8)] animate-ping",
+              isZombie && "bg-purple-400 shadow-[0_0_6px_rgba(192,132,252,0.8)]"
             )} 
           />
           <span className="uppercase tracking-wider text-zinc-400 font-semibold truncate text-[10px]">
@@ -73,16 +73,18 @@ export const GraveCard: React.FC<GraveCardProps> = ({
       </div>
 
       {/* Main card body */}
-      <div className="p-4 sm:p-5 flex-1 flex flex-col justify-between space-y-3">
+      <div className="p-4 sm:p-5 flex-1 flex flex-col justify-between space-y-3.5">
         <div className="space-y-2.5">
           {/* Identity: Authentic Logo + Full Name + Lifespan */}
           <div className="flex items-center gap-3 pt-0.5">
-            <EntityLogo entity={entity} size="md" className="border border-white/15 shrink-0" />
+            <div className="relative group/logo shrink-0">
+              <EntityLogo entity={entity} size="md" className="border border-white/10 shrink-0 rounded-xl group-hover/logo:border-white/30 transition-colors" />
+            </div>
             <div className="min-w-0 flex-1">
               <Link 
                 href={`/grave/${entity.slug}`} 
                 onClick={() => soundFx.playClick(850)}
-                className="hover:underline block"
+                className="hover:underline block focus-visible:ring-2 focus-visible:ring-amber-500/60 rounded"
               >
                 <h3 
                   className={cn(
@@ -97,7 +99,7 @@ export const GraveCard: React.FC<GraveCardProps> = ({
                   {entity.name}
                 </h3>
               </Link>
-              <div className="text-[11px] font-mono text-zinc-400 mt-0.5">
+              <div className="text-[11px] font-mono text-zinc-400 mt-0.5 tabular-nums">
                 {entity.lifespan}
               </div>
             </div>
@@ -110,12 +112,12 @@ export const GraveCard: React.FC<GraveCardProps> = ({
         </div>
 
         {/* Demise & Status information */}
-        <div className="pt-2.5 border-t border-white/10 space-y-1.5 text-xs font-sans mt-auto">
+        <div className="pt-2.5 border-t border-white/[0.06] space-y-1.5 text-xs font-sans mt-auto">
           <div className="flex items-center justify-between">
             <span className="uppercase text-[10px] font-mono text-zinc-500 font-bold tracking-wider shrink-0">
               {isActive ? 'STATUS:' : 'DEMISE:'}
             </span>
-            <span className="text-zinc-300 font-medium truncate max-w-[65%] text-right text-xs" title={isActive ? 'Active Production' : entity.cause_category}>
+            <span className="text-zinc-300 font-medium truncate max-w-[68%] text-right text-xs" title={isActive ? 'Active Production' : entity.cause_category}>
               {isActive ? 'Live Production' : entity.cause_category}
             </span>
           </div>
@@ -123,7 +125,7 @@ export const GraveCard: React.FC<GraveCardProps> = ({
             <span className="uppercase text-[10px] font-mono text-zinc-500 font-bold tracking-wider shrink-0">
               {isActive ? 'MONITORED:' : 'BURIED:'}
             </span>
-            <span className={cn("font-mono text-xs", isActive ? "text-emerald-400 font-semibold" : "text-zinc-400")}>
+            <span className={cn("font-mono text-xs tabular-nums", isActive ? "text-emerald-400 font-semibold" : "text-zinc-400")}>
               {isActive 
                 ? 'Active Registry' 
                 : (entity.death_date || (entity.death_year ? `${entity.death_year}` : 'Defunct'))}
@@ -133,21 +135,22 @@ export const GraveCard: React.FC<GraveCardProps> = ({
       </div>
 
       {/* Footer action bar */}
-      <div className="px-3.5 sm:px-4 py-2.5 bg-zinc-900 border-t border-white/10 flex items-center justify-between text-xs font-sans mt-auto gap-2">
+      <div className="px-3.5 sm:px-4 py-2.5 bg-zinc-900/90 border-t border-white/[0.06] flex items-center justify-between text-xs font-sans mt-auto gap-2">
         {/* Interactive Candle Light Action Button */}
         <div className="flex items-center gap-2 sm:gap-3 shrink-0">
           <button
             onClick={handleLightCandle}
             title="Light a memorial candle"
+            aria-label={`Light candle for ${entity.name}. Currently ${candles} candles`}
             className={cn(
-              "flex items-center gap-1.5 px-2 py-1 rounded text-xs font-mono font-bold transition-all shrink-0",
+              "flex items-center gap-1.5 px-2.5 py-1 rounded-lg text-xs font-mono font-bold transition-all shrink-0 cursor-pointer focus-visible:ring-2 focus-visible:ring-amber-500/60",
               litRecently 
-                ? "bg-amber-500/30 text-amber-300 scale-105" 
+                ? "bg-amber-500/30 text-amber-300 scale-105 shadow-[0_0_12px_rgba(245,158,11,0.4)]" 
                 : "text-amber-400/90 hover:text-amber-300 hover:bg-amber-950/40"
             )}
           >
             <Flame className={cn("w-3.5 h-3.5 shrink-0 transition-transform", litRecently && "animate-bounce text-amber-300")} />
-            <span>{candles}</span>
+            <span className="tabular-nums">{candles}</span>
           </button>
 
           {/* Quick Inspect Dossier Button */}
@@ -159,7 +162,8 @@ export const GraveCard: React.FC<GraveCardProps> = ({
                 onQuickInspect(entity);
               }}
               title="Quick inspect autopsy dossier"
-              className="text-zinc-400 hover:text-white p-1 rounded hover:bg-white/10 transition-colors shrink-0 flex items-center justify-center"
+              aria-label={`Quick inspect autopsy dossier for ${entity.name}`}
+              className="text-zinc-400 hover:text-white p-1.5 rounded-lg hover:bg-white/10 transition-colors shrink-0 flex items-center justify-center cursor-pointer focus-visible:ring-2 focus-visible:ring-amber-500/60"
             >
               <Eye className="w-3.5 h-3.5 shrink-0" />
             </button>
@@ -171,7 +175,7 @@ export const GraveCard: React.FC<GraveCardProps> = ({
           href={`/grave/${entity.slug}`}
           onClick={() => soundFx.playClick(850)}
           className={cn(
-            "flex items-center gap-1 font-bold group/btn transition-colors shrink-0 text-xs",
+            "flex items-center gap-1 font-bold group/btn transition-colors shrink-0 text-xs focus-visible:ring-2 focus-visible:ring-amber-500/60 rounded px-1",
             isActive ? "text-emerald-400 hover:text-emerald-300" : "text-red-400 hover:text-red-300"
           )}
         >

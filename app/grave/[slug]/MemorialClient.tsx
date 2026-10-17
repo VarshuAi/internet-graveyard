@@ -30,7 +30,8 @@ import {
   ArrowUpRight,
   Terminal,
   Activity,
-  FileText
+  FileText,
+  Bell
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { soundFx } from '@/lib/audio/soundFx';
@@ -157,10 +158,11 @@ export const MemorialClient: React.FC<MemorialClientProps> = ({
                 onClick={() => {
                   soundFx.playBell();
                 }}
-                className="flex items-center justify-center gap-2 px-3.5 py-2.5 rounded-2xl bg-zinc-850 hover:bg-zinc-800 border border-white/20 hover:border-amber-500/50 text-amber-300 text-xs sm:text-sm font-mono font-bold transition-all shadow-md group cursor-pointer shrink-0"
+                className="flex items-center justify-center gap-2 px-3.5 py-2.5 rounded-2xl bg-zinc-850 hover:bg-zinc-800 border border-white/20 hover:border-amber-500/50 text-amber-300 text-xs sm:text-sm font-mono font-bold transition-all shadow-md group cursor-pointer shrink-0 focus-visible:ring-2 focus-visible:ring-amber-500/60"
                 title="Toll the Sacred Funeral Death Knell (Cathedral Bell Chime)"
+                aria-label="Toll funeral bell chime"
               >
-                <span className="text-base group-hover:scale-125 transition-transform shrink-0">🔔</span>
+                <Bell className="w-4 h-4 text-amber-400 group-hover:scale-125 transition-transform shrink-0" />
                 <span>Toll Bell</span>
               </button>
 

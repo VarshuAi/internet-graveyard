@@ -169,7 +169,7 @@ function LookupContent() {
                 setInputUrl(item.domain);
                 runProbe(item.domain);
               }}
-              className="px-3.5 py-1.5 rounded-xl bg-zinc-900 hover:bg-zinc-800 text-zinc-200 hover:text-white border border-white/12 hover:border-red-500/40 transition-colors cursor-pointer text-sm font-medium shadow-sm"
+              className="px-3.5 py-1.5 rounded-xl bg-zinc-900/90 hover:bg-zinc-800 text-zinc-200 hover:text-white border border-white/12 hover:border-red-500/40 transition-colors cursor-pointer text-sm font-medium shadow-sm focus-visible:ring-2 focus-visible:ring-amber-500/60"
             >
               {item.label} <span className="text-xs font-mono text-zinc-400">({item.domain})</span>
             </button>
@@ -188,14 +188,15 @@ function LookupContent() {
                 onChange={(e) => setInputUrl(e.target.value)}
                 placeholder="Enter domain or URL (e.g. vine.co, myspace.com)..."
                 disabled={loading}
-                className="w-full h-14 sm:h-18 pl-12 sm:pl-16 pr-4 sm:pr-48 rounded-2xl bg-zinc-900/95 border-2 border-white/15 text-white placeholder-zinc-400 font-sans text-sm sm:text-lg focus:outline-none focus:border-red-500 focus:ring-4 focus:ring-red-500/20 shadow-2xl transition-all"
+                aria-label="Enter website domain or URL to probe"
+                className="w-full h-14 sm:h-18 pl-12 sm:pl-16 pr-4 sm:pr-48 rounded-2xl bg-zinc-900/95 border-2 border-white/15 text-white placeholder-zinc-400 font-sans text-sm sm:text-lg focus:outline-none focus:border-red-500 focus:ring-4 focus:ring-red-500/20 shadow-2xl transition-all backdrop-blur-xl"
               />
               <Activity className="absolute left-4 sm:left-5 top-1/2 -translate-y-1/2 w-5 h-5 sm:w-6 sm:h-6 text-zinc-400 group-focus-within:text-red-400 transition-colors shrink-0" />
             </div>
             <button
               type="submit"
               disabled={loading || !inputUrl.trim()}
-              className="sm:absolute sm:right-3 sm:top-1/2 sm:-translate-y-1/2 w-full sm:w-auto px-5 sm:px-6 py-3 sm:py-3.5 rounded-xl bg-red-600 hover:bg-red-500 disabled:opacity-50 disabled:pointer-events-none text-white font-sans text-sm sm:text-base font-bold transition-all shadow-lg flex items-center justify-center gap-2.5 cursor-pointer shrink-0"
+              className="sm:absolute sm:right-3 sm:top-1/2 sm:-translate-y-1/2 w-full sm:w-auto px-5 sm:px-6 py-3 sm:py-3.5 rounded-xl bg-red-600 hover:bg-red-500 disabled:opacity-50 disabled:pointer-events-none text-white font-sans text-sm sm:text-base font-bold transition-all shadow-lg flex items-center justify-center gap-2.5 cursor-pointer shrink-0 focus-visible:ring-2 focus-visible:ring-amber-500/60"
             >
               {loading ? (
                 <>

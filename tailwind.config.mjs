@@ -62,13 +62,17 @@ const config = {
       boxShadow: {
         "bevel-outset": "inset 1px 1px 0px rgba(255,255,255,0.25), inset -1px -1px 0px rgba(0,0,0,0.7)",
         "bevel-inset": "inset 1px 1px 0px rgba(0,0,0,0.8), inset -1px -1px 0px rgba(255,255,255,0.15)",
+        "glass": "0 8px 32px 0 rgba(0, 0, 0, 0.45)",
+        "glass-elevated": "0 16px 40px 0 rgba(0, 0, 0, 0.6)",
         "crt-glow": "0 0 15px rgba(34, 197, 94, 0.45)",
-        "amber-glow": "0 0 15px rgba(245, 158, 11, 0.45)",
-        "crimson-glow": "0 0 20px rgba(239, 68, 68, 0.45)",
-        "zombie-glow": "0 0 20px rgba(168, 85, 247, 0.45)",
+        "amber-glow": "0 0 18px rgba(245, 158, 11, 0.35)",
+        "crimson-glow": "0 0 20px rgba(239, 68, 68, 0.35)",
+        "zombie-glow": "0 0 20px rgba(168, 85, 247, 0.35)",
+        "emerald-glow": "0 0 20px rgba(16, 185, 129, 0.35)",
       },
       backgroundImage: {
-        "radial-fog": "radial-gradient(circle at 50% 10%, rgba(30, 36, 56, 0.45) 0%, rgba(7, 8, 11, 0.95) 70%)",
+        "radial-fog": "radial-gradient(ellipse 80% 50% at 50% -20%, rgba(120, 119, 198, 0.12), rgba(255, 255, 255, 0))",
+        "radial-ambient": "radial-gradient(circle at 50% 0%, rgba(245, 158, 11, 0.08) 0%, transparent 70%)",
         "grave-glow": "radial-gradient(circle at 50% 0%, rgba(239, 68, 68, 0.12) 0%, transparent 60%)",
         "archive-grid": "linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px), linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px)",
         "crt-scanlines": "linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.4) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.04), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.04))",
@@ -78,6 +82,7 @@ const config = {
         "scanline": "scanline 8s linear infinite",
         "flicker": "flicker 3s infinite",
         "cursor-blink": "blink 1s step-start infinite",
+        "candle-flicker": "flame 2s ease-in-out infinite alternate",
       },
       keyframes: {
         scanline: {
@@ -93,6 +98,13 @@ const config = {
         blink: {
           "0%, 100%": { opacity: "1" },
           "50%": { opacity: "0" },
+        },
+        flame: {
+          "0%": { transform: "scale(1) rotate(-1deg)", opacity: "0.9" },
+          "25%": { transform: "scale(1.05) rotate(1deg)", opacity: "1" },
+          "50%": { transform: "scale(0.95) rotate(-0.5deg)", opacity: "0.85" },
+          "75%": { transform: "scale(1.03) rotate(0.5deg)", opacity: "0.98" },
+          "100%": { transform: "scale(1) rotate(-1deg)", opacity: "0.9" },
         }
       }
     },
