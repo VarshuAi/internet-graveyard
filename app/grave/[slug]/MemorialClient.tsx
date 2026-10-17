@@ -13,6 +13,7 @@ import { AudioRelicPlayer } from '@/components/AudioRelicPlayer';
 import { WaybackTimeMachine } from '@/components/WaybackTimeMachine';
 import { EntityLogo } from '@/components/EntityLogo';
 import { DigitalGhostTerminal } from '@/components/DigitalGhostTerminal';
+import { EulogyModal } from '@/components/EulogyModal';
 import { 
   Globe, 
   Calendar, 
@@ -31,7 +32,8 @@ import {
   Terminal,
   Activity,
   FileText,
-  Bell
+  Bell,
+  Feather
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { soundFx } from '@/lib/audio/soundFx';
@@ -47,6 +49,7 @@ export const MemorialClient: React.FC<MemorialClientProps> = ({
 }) => {
   const [showEvidenceModal, setShowEvidenceModal] = useState(false);
   const [showCertificateModal, setShowCertificateModal] = useState(false);
+  const [showEulogyModal, setShowEulogyModal] = useState(false);
   const [epitaphs, setEpitaphs] = useState<EpitaphItem[]>(entity.epitaphs || []);
   const [authorName, setAuthorName] = useState('');
   const [content, setContent] = useState('');
@@ -174,6 +177,15 @@ export const MemorialClient: React.FC<MemorialClientProps> = ({
                 <FileText className="w-4 h-4 text-amber-400 shrink-0" />
                 <span className="hidden sm:inline">Death Certificate</span>
                 <span className="sm:hidden">Certificate</span>
+              </button>
+
+              <button
+                onClick={() => setShowEulogyModal(true)}
+                className="flex items-center justify-center gap-2 px-4 py-2.5 rounded-2xl bg-amber-950/40 hover:bg-amber-900/60 border border-amber-500/40 text-amber-300 hover:text-amber-200 text-xs sm:text-sm font-mono font-bold transition-all shadow-[0_0_15px_rgba(245,158,11,0.15)] cursor-pointer shrink-0"
+                title="Orate AI Funeral Eulogy via Gemini"
+              >
+                <Feather className="w-4 h-4 text-amber-400 shrink-0" />
+                <span>AI Eulogy</span>
               </button>
               <DigitalCandle
                 slug={entity.slug}
@@ -530,6 +542,13 @@ export const MemorialClient: React.FC<MemorialClientProps> = ({
         entity={entity}
         isOpen={showCertificateModal}
         onClose={() => setShowCertificateModal(false)}
+      />
+
+      {/* AI Funeral Eulogy Modal */}
+      <EulogyModal
+        entity={entity}
+        isOpen={showEulogyModal}
+        onClose={() => setShowEulogyModal(false)}
       />
     </div>
   );

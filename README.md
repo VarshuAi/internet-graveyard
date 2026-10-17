@@ -9,6 +9,7 @@
 [![React 18](https://img.shields.io/badge/React-18.3-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.6-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![Google Gen AI](https://img.shields.io/badge/Gemini_AI-3.8_Flash-8E75C2?style=for-the-badge&logo=google&logoColor=white)](https://ai.google.dev/)
 [![Web Audio API](https://img.shields.io/badge/Audio-Procedural_Synthesis-red?style=for-the-badge&logo=webrtc&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API)
 [![Dataset](https://img.shields.io/badge/Relics-1%2C027%2B_Preserved-emerald?style=for-the-badge&logo=database&logoColor=white)](/explore)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
@@ -26,28 +27,40 @@
 When tech conglomerates pull the plug on beloved platforms, servers go dark, domains expire, and decades of human digital culture evaporate. **Internet Graveyard** treats defunct web entities with the forensic rigor of archaeological artifacts:
 
 - **1,027+ Authentic Indexed Relics:** 547 Confirmed Dead, 434 Active (under living watch), 36 Parked Zombies, and 10 Multi-Signal At-Risk platforms.
-- **Forensic Autopsies:** Verified causes of death, peak reach metrics, corporate parents, official shutdown dates, and coroner verdicts.
-- **Retro-Futuristic CRT & Web 1.0 Heritage UI:** Memorial serif typography (`Cinzel`), phosphor monospace (`JetBrains Mono`), toggleable CRT scanlines overlay, Netscape 4.0 titlebars, and ambient fog lighting.
+- **AI "Ghost in the Machine" Machine Spirit Terminal:** Powered by `@google/genai` (`gemini-3.8-flash`) and procedural neural simulation fallback, allowing visitors to commune directly with the lingering souls of historical relics.
+- **AI Funeral Eulogy Generator:** Automatically composes moving, poetic funeral orations for any deceased platform, with one-click tribute download and copy actions.
+- **Forensic Autopsies & Death Certificates:** Verified causes of death, peak reach metrics, corporate parents, official shutdown dates, and printable coroner death certificates with tamper-proof wax seals.
+- **Automated Health Monitor & Daily Inquest Cron:** Scheduled background engine probing at-risk and zombie clusters for domain parking, HTTP degradation, and sunset announcements.
+- **Retro-Futuristic Obsidian UI:** Redesigned under UI/UX Pro Max principles with strict 60-30-10 color tokens, Cinzel/Inter/JetBrains Mono typography, toggleable CRT scanlines, and 44px+ mobile touch targets.
 - **Zero-Dependency Procedural Audio:** Synthesized dial-up modems, ICQ chirps, MSN nudges, Windows 95 pads, and 528Hz crystal singing bowl memorial candles generated dynamically in Web Audio API.
-- **Official Coroner Death Certificates:** Printable forensic documents with case serials (`MORT-YYYY-SLUG-ID`), primary kill factor classification, and tamper-proof wax seals.
 - **Open Archaeological Data Hub:** Complete JSON dumps, RFC-4180 CSV exports, SHA-256 dataset checksums, and BibTeX academic citations.
 
 ---
 
 ## 🏛️ Flagship Laboratories & Features
 
-### 🔍 1. Global Command Palette (`Cmd+K` / `Ctrl+K`)
+### 👻 1. AI "Ghost in the Machine" Neural Terminal (`/grave/[slug]`)
+- Interactive retro-phosphor terminal embedded on every memorial dossier.
+- Visitors can converse in real time with the lingering digital soul of any defunct platform (Vine, GeoCities, Club Penguin, Friendster, Google Reader).
+- Powered by Google's latest **`@google/genai`** SDK utilizing the ultra-low latency **`gemini-3.8-flash`** model.
+- Includes a resilient offline procedural neural simulator that provides nostalgic, poetic reflections even in disconnected environments or when API keys are not supplied.
+
+### 📜 2. AI Funeral Eulogy Generator & Death Certificate (`/grave/[slug]`)
+- One-click **"AI Eulogy"** modal summons the High Digital Mortician to orate a solemn funeral speech celebrating the platform's genesis, cultural heyday, tragic demise, and eternal legacy.
+- Official **Coroner Death Certificate** generated on-demand with case serials (`MORT-YYYY-SLUG-ID`), primary kill factor classification, and fatal forensic notes.
+- Instant **"Print / Save PDF"**, direct tribute copy, and cathedral death knell tolling.
+
+### 💓 3. Automated At-Risk Health Monitor & Inquest Cron (`/dying-now` & `/api/cron`)
+- Continuous background forensic monitoring of at-risk online services showing terminal symptoms of neglect, infrastructure rot, or impending sunset.
+- Automated priority probes testing authoritative DNS, TLS certificates, HTTP status codes, and squatter parking pages.
+- Persistent audit logs stored in `data/inquests.json` and queryable via `/api/inquests`.
+
+### 🔍 4. Global Command Palette (`Cmd+K` / `Ctrl+K`)
 - Universal instant launcher accessible across every page via keyboard shortcut or header search.
 - Instant fuzzy query matching against all 1,027+ relics, aliases, causes of death, and historical eras.
 - Full arrow-key keyboard navigation with real-time acoustic click telemetry and responsive status badges.
 
-### 📜 2. Official Coroner Death Certificate (`/grave/[slug]`)
-- Generated on-demand for every buried grave (e.g. Vine, Club Penguin, GeoCities, Netscape, Google Reader).
-- Features official **Bureau of Digital Demise** case serials (e.g. `MORT-2017-VINE-2202`), primary kill factor classification, and fatal forensic notes.
-- Tamper-proof digital wax seal with Chief Digital Pathologist signature line.
-- Instant **"Print / Save PDF"**, direct link copy, and funeral death knell chime.
-
-### 🔊 3. "Sounds of the Dead Web" (Relic Audio Vault (`/sounds`))
+### 🔊 5. "Sounds of the Dead Web" (Relic Audio Vault (`/sounds`))
 - **100% Procedural Web Audio API Synthesis** — zero external MP3 assets, zero network latency, zero broken links:
   - **AOL 56k Dial-Up:** Complete handshake sequence (DTMF dialing + carrier negotiation + static hiss).
   - **ICQ "Uh-Oh!":** Iconic dual-tone incoming message chirp.
@@ -57,20 +70,15 @@ When tech conglomerates pull the plug on beloved platforms, servers go dark, dom
   - **Club Penguin Dance Club:** Synthesized 8-bit chiptune loop.
   - **AIM Instant Messenger:** Procedural wooden door latches.
 
-### 💓 4. Vital Signs Domain Prober (`/lookup`)
-- Real-time diagnostic forensic laboratory for testing any live or defunct domain on the internet.
-- Queries public authoritative DNS (A/AAAA records), evaluates TCP/TLS handshakes, inspects HTTP response status codes, detects parked domains, and parses HTML for farewell and obituary declarations.
-
-### ⚖️ 5. Head-to-Head Archaeological Autopsy Tool (`/compare`)
-- Curated and custom side-by-side post-mortems comparing why pioneers collapsed while successors survived:
-  - **Vine vs. TikTok:** Creative brevity vs. relentless algorithmic distribution.
+### ⚖️ 6. Head-to-Head Archaeological Autopsy Tool (`/compare`)
+- Side-by-side post-mortems comparing why pioneers collapsed while successors survived:
+  - **Vine vs. TikTok:** Creative brevity vs. algorithmic distribution.
   - **MySpace vs. Facebook:** Unrestrained HTML anarchy vs. standardized directory speed.
   - **Napster vs. Spotify:** Unchecked P2P piracy vs. streaming label compromise.
   - **Google Reader vs. Feedly:** Corporate sunsetting vs. agile independent survival.
   - **Club Penguin vs. Roblox:** Curated Flash worlds vs. player-led creator economies.
-- **Custom Dual Inquest:** Compare any two entities side-by-side from the entire 1,027+ catalog.
 
-### 🪦 6. Interactive 3D Cemetery Grounds (`/grounds`)
+### 🪦 7. Interactive 3D Cemetery Grounds (`/grounds`)
 - Isometric canvas rendering of the consecrated cyber-cemetery.
 - Themed plots and architectural mausoleums:
   - **The Google Mausoleum** (Reader, Plus, Wave, Stadia, Orkut, Songza)
@@ -80,21 +88,12 @@ When tech conglomerates pull the plug on beloved platforms, servers go dark, dom
   - **Messaging Valley** (ICQ, AIM, MSN, Yahoo Messenger, Omegle)
   - **Gaming & Virtual Crypt** (Club Penguin, Adobe Flash, PlayStation Home, Quibi)
   - **Silicon Hardware & Device Row** (Pebble, Ouya, Essential Phone, Google Glass)
-- Interactive granite gravestones with engraved epitaphs and live memorial candle lighting.
-
-### 🗞️ 7. The Sunset Gazette & Today in Web History (`/gazette`)
-- Daily broadsheet newspaper automatically calculating anniversaries of shutdowns, announcements, and acquisitions matching today's calendar date.
-- Historical wire dispatches, famous last words, and month-by-month archival chronology.
 
 ### 📊 8. Open Archaeological Data Hub (`/export`)
 - **Full JSON Repository:** Complete object dataset with life timelines, cause-of-death dossiers, archival Wayback coordinates, and metadata.
 - **RFC-4180 Forensic CSV:** Tabular dataset ready for Python Pandas, R, Tableau, or Excel data analysis pipelines.
 - **Cryptographic Integrity Digest:** SHA-256 hash checksums ensuring tamper-evident dataset integrity.
 - **Academic Citation Generator:** Ready-to-copy BibTeX reference for academic papers and digital preservation research.
-
-### 🤖 9. Autonomous Scraper Daemon & Cron Worker
-- Background pipeline with automated deduplication, Wikipedia category traversal, and Hacker News sunset radar.
-- Executes recurring autonomous health scans via GitHub Actions and Next.js route handlers (`/api/cron`).
 
 ---
 
@@ -104,11 +103,15 @@ When tech conglomerates pull the plug on beloved platforms, servers go dark, dom
 internet-graveyard/
 ├── app/                        # Next.js 14 App Router (29 routes)
 │   ├── api/                    # Route handlers
+│   │   ├── ai/                 # Gemini API endpoints
+│   │   │   ├── ghost/          # Interactive relic dialogue route (@google/genai)
+│   │   │   └── eulogy/         # AI funeral oration generator
 │   │   ├── admin/              # Curator auth & administration
 │   │   ├── at-risk/            # At-risk candidate feeds
-│   │   ├── cron/               # Autonomous scraper cron endpoint
+│   │   ├── cron/               # Scheduled autonomous crawler & probe engine
 │   │   ├── entities/           # Entity REST API & memorial candle endpoints
 │   │   ├── export/csv/         # RFC-4180 streaming CSV exporter
+│   │   ├── inquests/           # Persistent inquest history & probe telemetry
 │   │   ├── random/             # Random memorial redirector
 │   │   ├── recent/             # Recently buried platform stream
 │   │   ├── scanner/probe/      # Vital Signs live network & DNS prober
@@ -118,11 +121,11 @@ internet-graveyard/
 │   │   └── timeline/           # Epoch & decade timeline feeds
 │   ├── admin/                  # Curator Command Terminal (password-gated)
 │   ├── compare/                # Head-to-Head Autopsy Rivalries
-│   ├── dying-now/              # At-Risk Platform Radar
+│   ├── dying-now/              # At-Risk Platform Radar & Inquest Monitor
 │   ├── explore/                # Search & Tag-Based Archaeology Directory (Grid & Ledger)
 │   ├── export/                 # Open Archaeological Data Hub (JSON, CSV, BibTeX)
 │   ├── gazette/                # The Sunset Gazette Broadsheet
-│   ├── grave/[slug]/           # Memorial Dossier & Death Certificate
+│   ├── grave/[slug]/           # Memorial Dossier, Ghost Terminal & Death Certificate
 │   ├── grounds/                # 3D Isometric Cemetery Grounds Canvas
 │   ├── lookup/                 # Vital Signs Domain Prober
 │   ├── random/                 # Random Memorial Excavator
@@ -135,6 +138,8 @@ internet-graveyard/
 ├── components/                 # UI & Archaeological Components
 │   ├── CommandPalette.tsx      # Universal Cmd+K fuzzy search modal
 │   ├── DigitalCandle.tsx       # 528Hz crystal singing bowl memorial candle
+│   ├── DigitalGhostTerminal.tsx# Interactive retro-phosphor machine spirit terminal
+│   ├── EulogyModal.tsx         # Poetic funeral speech presentation dialog
 │   ├── DeathCertificateModal.tsx # Printable Coroner Autopsy Certificate
 │   ├── EntityLogo.tsx          # Authentic SVG/PNG logo renderer
 │   ├── GraveCard.tsx           # Netscape-style monument card with footer actions
@@ -145,6 +150,7 @@ internet-graveyard/
 │   └── WaybackTimeMachine.tsx  # Vintage browser historical frame
 ├── data/                       # Curated Relic Databases (1,027+ Authentic Sites)
 │   ├── graveyard.json          # Main JSON Database (1,027 records)
+│   ├── inquests.json           # Persistent daily automation inquest logs
 │   ├── seed-entities-batch2.ts # Curated TypeScript dataset with full metadata
 │   ├── rivalries.ts            # Forensic head-to-head showdowns
 │   ├── sounds.ts               # Audio relic synthesizer specifications
@@ -154,13 +160,9 @@ internet-graveyard/
 │   │   ├── soundArchive.ts     # Vintage soundboard Web Audio synthesis
 │   │   └── soundFx.ts          # Zero-dependency UI click & chime engine
 │   ├── auth/admin.ts           # Curator security & passkey authorization
-│   ├── db/graveyardDb.ts       # In-memory JSON database engine with querying
+│   ├── automation/cronEngine.ts# Scheduled crawler, at-risk health probe & inquest logger
+│   ├── db/index.ts             # In-memory JSON database engine with querying
 │   ├── discovery/              # Multi-source scraper & verifier
-│   │   ├── scraperEngine.ts    # Central orchestrator & deduplicator
-│   │   ├── wikipediaScraper.ts # Wikipedia category & infobox scraper
-│   │   ├── hnSunsetCrawler.ts  # Algolia Hacker News sunset radar
-│   │   └── waybackVerifier.ts  # Internet Archive availability verifier
-│   ├── history/anniversaries.ts# Dynamic calendar anniversary calculator
 │   └── search/searchEngine.ts  # Multi-field scoring and ranking algorithm
 ├── scripts/
 │   ├── run-scraper.mjs         # Standalone CLI archaeological crawler
@@ -175,6 +177,7 @@ internet-graveyard/
 ### 1. Prerequisites
 - **Node.js**: v18.17+ or v20+ recommended
 - **npm** or **pnpm**
+- **Google Gemini API Key** (Optional, for live generative AI responses; system features built-in fallback engine)
 
 ### 2. Clone and Install
 ```bash
@@ -188,28 +191,27 @@ cd internet-graveyard
 npm install
 ```
 
-### 3. Run Development Server
+### 3. Configure Environment (Optional)
+Create a `.env.local` file:
+```env
+# Optional: Enables live generative AI machine spirits & funeral eulogies
+GEMINI_API_KEY=your_gemini_api_key_here
+
+# Curator administration & cron passkey
+CRON_SECRET=your_cron_secret
+ADMIN_PASSKEY=your_admin_passkey
+```
+
+### 4. Run Development Server
 ```bash
 npm run dev
 ```
 Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-### 4. Build for Production
+### 5. Build for Production
 ```bash
 npm run build
 npm run start
-```
-
-### 5. Run Automated Web Scraper (CLI)
-```bash
-# Discover defunct websites from Wikipedia categories
-npm run scrape -- --source=wikipedia --limit=5
-
-# Interrogate Hacker News for sunset letters
-npm run scrape -- --source=hn --limit=5
-
-# Scrape all sources and auto-ingest directly into the graveyard catalog
-npm run scrape -- --source=all --limit=10 --ingest
 ```
 
 ---

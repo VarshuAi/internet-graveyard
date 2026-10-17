@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { graveyardDb } from '@/lib/db';
+import { getLastAutomationReport } from '@/lib/automation/cronEngine';
 import { StatusBadge } from '@/components/StatusBadge';
 import { EntityLogo } from '@/components/EntityLogo';
 import { 
@@ -13,13 +14,16 @@ import {
   ServerCrash,
   WifiOff,
   GitCommit,
-  TrendingDown
+  TrendingDown,
+  RefreshCw,
+  Cpu
 } from 'lucide-react';
 
 export const revalidate = 0;
 
 export default function DyingNowPage() {
   const atRiskList = graveyardDb.getAtRiskEntities();
+  const lastInquest = getLastAutomationReport();
 
   return (
     <div className="w-full max-w-5xl mx-auto px-4 sm:px-6 py-12 space-y-12 font-sans">
@@ -35,6 +39,35 @@ export default function DyingNowPage() {
         <p className="text-base sm:text-lg text-zinc-300 font-sans max-w-3xl leading-relaxed">
           The early warning detection system for internet products showing terminal symptoms of abandonment, infrastructure neglect, developer inactivity, and pending sunset.
         </p>
+      </div>
+
+      {/* Automated Inquest Telemetry Card */}
+      <div className="p-5 rounded-2xl bg-zinc-950 border border-emerald-500/30 shadow-[0_0_25px_rgba(16,185,129,0.1)] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 font-mono">
+        <div className="flex items-center gap-3.5">
+          <div className="p-2.5 rounded-xl bg-emerald-950/60 border border-emerald-500/40 text-emerald-400">
+            <Cpu className="w-5 h-5 animate-pulse" />
+          </div>
+          <div>
+            <div className="text-xs uppercase font-bold text-emerald-400 flex items-center gap-2">
+              <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping" />
+              Automated Forensic Inquest Monitor: ONLINE
+            </div>
+            <div className="text-xs text-zinc-400 mt-0.5">
+              {lastInquest 
+                ? `Last cycle: ${new Date(lastInquest.timestamp).toLocaleTimeString()} (${lastInquest.duration_ms}ms) • ${lastInquest.domains_probed.length} priority domains probed`
+                : "Continuous 24/7 background probe daemon active across at-risk and zombie clusters."}
+            </div>
+          </div>
+        </div>
+
+        <Link
+          href="/api/inquests"
+          target="_blank"
+          className="px-3.5 py-1.5 rounded-lg bg-zinc-900 hover:bg-zinc-850 border border-white/10 hover:border-emerald-500/40 text-xs text-zinc-300 hover:text-emerald-300 transition-colors shrink-0 flex items-center gap-1.5"
+        >
+          <Activity className="w-3.5 h-3.5 text-emerald-400" />
+          <span>Inspect Inquest Telemetry JSON</span>
+        </Link>
       </div>
 
       {/* Methodological Transparency Callout */}

@@ -1,3 +1,5 @@
+import fs from 'fs';
+import path from 'path';
 import { graveyardDb } from '@/lib/db';
 import { crawlHackerNewsSunsets } from '@/lib/discovery/hnSunsetCrawler';
 import { scrapeWikipediaDefunctWebsites } from '@/lib/discovery/wikipediaScraper';
@@ -30,11 +32,41 @@ export interface AutomationRunReport {
   summary: string;
 }
 
+const INQUESTS_FILE = path.join(process.cwd(), 'data', 'inquests.json');
+
 // In-memory record of the last automated execution
 let lastAutomationReport: AutomationRunReport | null = null;
 
+export function getInquestHistory(): AutomationRunReport[] {
+  try {
+    if (fs.existsSync(INQUESTS_FILE)) {
+      const data = fs.readFileSync(INQUESTS_FILE, 'utf-8');
+      return JSON.parse(data);
+    }
+  } catch (err) {
+    console.error('Failed to read inquest history:', err);
+  }
+  return lastAutomationReport ? [lastAutomationReport] : [];
+}
+
 export function getLastAutomationReport(): AutomationRunReport | null {
-  return lastAutomationReport;
+  if (lastAutomationReport) return lastAutomationReport;
+  const history = getInquestHistory();
+  return history.length > 0 ? history[0] : null;
+}
+
+function persistInquestReport(report: AutomationRunReport) {
+  try {
+    const history = getInquestHistory();
+    const updated = [report, ...history.filter(r => r.timestamp !== report.timestamp)].slice(0, 50);
+    const dataDir = path.dirname(INQUESTS_FILE);
+    if (!fs.existsSync(dataDir)) {
+      fs.mkdirSync(dataDir, { recursive: true });
+    }
+    fs.writeFileSync(INQUESTS_FILE, JSON.stringify(updated, null, 2), 'utf-8');
+  } catch (err) {
+    console.error('Failed to persist inquest report:', err);
+  }
 }
 
 /**
@@ -50,7 +82,7 @@ export async function runAutomatedArchaeologyPipeline(
   const {
     crawlHn = true,
     scrapeWikipedia = true,
-    probeBatchSize = 5,
+    probeBatchSize = 6,
     autoApproveScoreThreshold = 95,
     maxNewCandidates = 10
   } = options;
@@ -89,7 +121,6 @@ export async function runAutomatedArchaeologyPipeline(
           continue;
         }
 
-        // Add to discovery queue
         graveyardDb.addDiscoveryCandidate(cand);
         candidateDomains.add(cleanDom);
         newCandidatesQueued++;
@@ -119,16 +150,13 @@ export async function runAutomatedArchaeologyPipeline(
           continue;
         }
 
-        // Check if high enough confidence for auto-approval
         if (item.entity && item.candidate.confidence_score >= autoApproveScoreThreshold) {
-          // Auto-ingest rich verified entity directly into graveyard database!
           graveyardDb.saveEntity(item.entity);
           existingDomains.add(cleanDom);
           existingSlugs.add(slug);
           autoApprovedCount++;
           logs.push(`[Auto-Ingest] Verified grave created automatically: ${item.entity.name} (${item.entity.lifespan}) [Score: ${item.candidate.confidence_score}]`);
         } else {
-          // Queue in review queue
           graveyardDb.addDiscoveryCandidate(item.candidate);
           candidateDomains.add(cleanDom);
           newCandidatesQueued++;
@@ -142,7 +170,7 @@ export async function runAutomatedArchaeologyPipeline(
     }
   }
 
-  // 3. AUTOMATED HEALTH SWEEP (Probe random sample of registered graves for parking/expiry)
+  // 3. PRIORITY AT-RISK HEALTH MONITORING & FORENSIC PROBING
   const probedDomains: {
     domain: string;
     status: string;
@@ -151,12 +179,22 @@ export async function runAutomatedArchaeologyPipeline(
   }[] = [];
 
   if (probeBatchSize > 0 && existingEntities.length > 0) {
-    sourcesExecuted.push('Automated Domain Health Monitor');
-    logs.push(`[Health Sweep] Probing heartbeat of ${probeBatchSize} graveyard domains...`);
+    sourcesExecuted.push('Automated Priority Domain Health Monitor');
+    logs.push(`[Health Sweep] Probing heartbeat of at-risk and sentinel domains...`);
 
-    // Pick random slice of entities to continuously monitor
-    const shuffled = [...existingEntities].sort(() => 0.5 - Math.random());
-    const sample = shuffled.slice(0, probeBatchSize);
+    // Prioritize platforms classified as AT_RISK or ZOMBIE
+    const atRiskList = existingEntities.filter(e => e.status === 'AT_RISK' || e.status === 'ZOMBIE');
+    const normalList = existingEntities.filter(e => e.status !== 'AT_RISK' && e.status !== 'ZOMBIE');
+
+    // Shuffle both
+    const shuffledAtRisk = [...atRiskList].sort(() => 0.5 - Math.random());
+    const shuffledNormal = [...normalList].sort(() => 0.5 - Math.random());
+
+    // Take up to half from at-risk, rest from normal
+    const sample = [
+      ...shuffledAtRisk.slice(0, Math.ceil(probeBatchSize / 2)),
+      ...shuffledNormal.slice(0, Math.floor(probeBatchSize / 2))
+    ].slice(0, probeBatchSize);
 
     for (const ent of sample) {
       if (!ent.primary_domain) continue;
@@ -169,7 +207,6 @@ export async function runAutomatedArchaeologyPipeline(
           http_status: probeResult.http_status
         });
 
-        // If domain was active but is now detected parked by squatters, auto-update last_known_state
         if (probeResult.parking_detected && ent.last_known_state?.domain) {
           ent.last_known_state.domain.ownership = 'Parked / Squatter Domain';
           ent.last_known_state.domain.state_desc = 'Domain acquired by parking brokerage / resale squatter.';
@@ -199,5 +236,6 @@ export async function runAutomatedArchaeologyPipeline(
   };
 
   lastAutomationReport = report;
+  persistInquestReport(report);
   return report;
 }

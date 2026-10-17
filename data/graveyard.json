@@ -33558,7 +33558,7 @@
       "country": "United States",
       "parent_company": "Valve Corporation",
       "confidence_score": 98,
-      "candle_count": 595,
+      "candle_count": 596,
       "is_verified": true,
       "verified_at": "2026-10-01T00:00:00Z",
       "created_at": "2024-01-01T00:00:00Z",
@@ -127641,5 +127641,5 @@
       "created_at": "2024-06-26T15:00:00Z"
     }
   ],
-  "last_updated": "2026-10-08T18:00:00Z"
+  "last_updated": "2026-10-17T13:54:25.979Z"
 }
