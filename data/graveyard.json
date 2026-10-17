@@ -127581,6 +127581,22 @@
   ],
   "discovery_candidates": [
     {
+      "id": "wiki-ask-com-7927",
+      "service_name": "Ask.com",
+      "domain": "ask.com",
+      "category": "Search",
+      "detected_signals": [
+        "Verified historical record from Wikipedia (https://en.wikipedia.org/wiki/Ask.com)",
+        "Operating lifespan documented: 2000 — 2026",
+        "Primary cause of demise: Lack of Monetization",
+        "Documented cessation extract: \"Ask.com was an American answer engine, e-magazine, and later a web search engine, created by Garrett Gruener and David Warthen and launched on June 1, 1997. The...\""
+      ],
+      "confidence_score": 95,
+      "raw_evidence": "Wikipedia historical verification: Ask.com was an American answer engine, e-magazine, and later a web search engine, created by Garrett Gruener and David Warthen and launched on June 1, 1997. The service became one of the earliest prominent search engines on the World Wide Web during the late 1990s and early 2000s. Ask.com was shut down on May 1, 2026, ending nearly three decades of operation.",
+      "status": "APPROVED",
+      "created_at": "2026-10-17T14:33:49.193Z"
+    },
+    {
       "id": "wiki-ask-com-3602",
       "service_name": "Ask.com",
       "domain": "ask-com.com",
@@ -127641,5 +127657,5 @@
       "created_at": "2024-06-26T15:00:00Z"
     }
   ],
-  "last_updated": "2026-10-17T13:54:25.979Z"
+  "last_updated": "2026-10-17T14:33:49.193Z"
 }
